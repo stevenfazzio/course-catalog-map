@@ -169,11 +169,11 @@ Two raw-catalog exploration builds remain as `_raw` artifacts. `docs/index.html`
 its versioned record; v1 is "published but not promoted" as of 2026-09-05: public repo github.com/stevenfazzio/course-catalog-map,
 Pages from `docs/`, live at https://stevenfazzio.com/course-catalog-map/ (the user site's custom domain;
 the github.io address also serves it). The hosted copy returned the full 7.6 MB map and the record files. Methodology writing
-moves to blog posts later, not a docs page. Open items: the ExploreCourses click-through is
-unverified in a browser (the site has returned 503 since the fetch); the cosine guardrail ran clean (stage 06,
-`docs/record/stanford/name_guardrail.csv`); the sampled wayfinding lineup is a v1.1 item; archive the raw
-snapshot as a release asset; file the Toponymy semaphore bug upstream; `docs/lit_review.md` (2026-09-05) is the
-literature review, with candidate colormaps, validation targets, and record metrics in its section 4; the post-hoc structure analysis lives in `experiments/`
+moves to a blog post, not a docs page. **What remains before v1.1 is called complete is `docs/plan.md`**
+(2026-09-05): eight ordered steps with the cut rules, the deferred items, and the decisions taken while planning;
+strike items there as they land. The cosine guardrail ran clean (stage 06, `docs/record/stanford/name_guardrail.csv`).
+`docs/lit_review.md` (2026-09-05) is the literature review, with candidate colormaps, validation targets, and
+record metrics in its section 4; the post-hoc structure analysis lives in `experiments/`
 (`evoc_layers.py` -> `name_evoc.py` [Runpod, Opus names for two EVoC layers per model] -> `structure_numbers.py`
 -> `structure_report.py` -> `docs/embedding_structure.html`) and is not part of the preregistered comparison.
 Serve `docs/` with `python3 -m http.server 8766 --bind 127.0.0.1` to view the report; it loads plotly from
