@@ -166,9 +166,9 @@ department file that already exists; delete a file to refetch it.
 The Stanford map is built on the cleaned corpus with the preregistered model: `data/stanford/stanford_course_map.html`,
 11,091 courses, 357 / 120 / 42 / 14 named regions (naming ran on a Runpod pod in 5.6 minutes end to end).
 Two raw-catalog exploration builds remain as `_raw` artifacts. `docs/index.html` is the map, `docs/record/`
-its versioned record; v1 is "published but not promoted": create the public repo and enable Pages from
-`docs/` (Steven runs `gh repo create ... --push` and the Pages API call), then check
-https://stevenfazzio.github.io/course-catalog-map/ renders labels from the hosted copy. Methodology writing
+its versioned record; v1 is "published but not promoted" as of 2026-09-05: public repo github.com/stevenfazzio/course-catalog-map,
+Pages from `docs/`, live at https://stevenfazzio.com/course-catalog-map/ (the user site's custom domain;
+the github.io address also serves it). The hosted copy returned the full 7.6 MB map and the record files. Methodology writing
 moves to blog posts later, not a docs page. Open items: the ExploreCourses click-through is
 unverified in a browser (the site has returned 503 since the fetch); the cosine guardrail ran clean (stage 06,
 `docs/record/stanford/name_guardrail.csv`); the sampled wayfinding lineup is a v1.1 item; archive the raw

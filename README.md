@@ -4,8 +4,9 @@ An interactive semantic map of every course in a university catalog. Each point 
 placed by the meaning of its title and description, so courses that teach similar things land
 near each other regardless of which department lists them.
 
-First map: **Stanford**, academic year 2026-27, 11,500 courses from the public
-[ExploreCourses](https://explorecourses.stanford.edu/) catalog.
+First map: **Stanford**, academic year 2026-27, from the public
+[ExploreCourses](https://explorecourses.stanford.edu/) catalog: 11,091 courses after the preregistered
+corpus rules. **Live map: https://stevenfazzio.com/course-catalog-map/**
 
 ## Pipeline
 
