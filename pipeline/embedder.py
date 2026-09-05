@@ -47,7 +47,7 @@ class CourseEmbedder:
         return self.model.encode(
             list(texts),
             prompt=self.spec["prompt"] or None,
-            batch_size=kwargs.pop("batch_size", config.EMBED_BATCH_SIZE),
+            batch_size=kwargs.pop("batch_size", self.spec.get("batch_size", config.EMBED_BATCH_SIZE)),
             show_progress_bar=bool(show_progress_bar),
             normalize_embeddings=True,
             convert_to_numpy=True,

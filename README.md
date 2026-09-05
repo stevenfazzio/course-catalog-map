@@ -13,7 +13,8 @@ First map: **Stanford**, academic year 2026-27, 11,500 courses from the public
 uv sync --extra dev
 uv run python pipeline/00_fetch.py --source stanford        # raw catalog XML, one file per department
 uv run python pipeline/01_parse.py --source stanford        # -> data/stanford/courses.parquet
-uv run python pipeline/02_embed.py --source stanford        # Qwen3-Embedding-0.6B, local
+uv run python pipeline/01b_clean.py --source stanford       # preregistered corpus rules -> corpus.parquet
+uv run python pipeline/02_embed.py --source stanford        # open embedding model, local or --device runpod
 uv run python pipeline/03_reduce_umap.py --source stanford  # UMAP to 2-d, fixed seed
 uv run python pipeline/04_label_topics.py --source stanford # Toponymy region naming (Claude)
 uv run python pipeline/05_visualize.py --source stanford    # DataMapPlot -> interactive HTML
@@ -29,6 +30,8 @@ Each university is an adapter in `pipeline/sources/` producing the common schema
   title + description only, reduced to 2-d with UMAP at a fixed seed.
 - Regions are found by density clustering in the 2-d layout and named by an LLM (Claude Opus 5)
   through Toponymy. Names are labels for browsing, not ground truth.
-- Nothing is filtered out: placeholder and boilerplate courses stay on the map so the map can show them.
+- The corpus rules (placeholder listings dropped, cross-departmental administrative boilerplate
+  dropped, programme template text stripped from the embedded text) and the embedding-model choice
+  were preregistered in `docs/preregistration.md` before the comparison was run.
 
 See `CLAUDE.md` for the decision log, data facts, and provenance details.

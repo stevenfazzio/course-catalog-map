@@ -1,4 +1,4 @@
-.PHONY: install lint format test fetch parse embed umap label visualize map clean
+.PHONY: install lint format test fetch parse corpus embed umap label visualize map clean
 
 SOURCE ?= stanford
 
@@ -20,6 +20,9 @@ fetch:
 parse:
 	uv run python pipeline/01_parse.py --source $(SOURCE)
 
+corpus:
+	uv run python pipeline/01b_clean.py --source $(SOURCE)
+
 embed:
 	uv run python pipeline/02_embed.py --source $(SOURCE)
 
@@ -36,7 +39,7 @@ label:
 visualize:
 	uv run python pipeline/05_visualize.py --source $(SOURCE)
 
-map: embed umap label visualize
+map: corpus embed umap label visualize
 
 clean:
 	@echo "This will remove all files in data/. Press Ctrl+C to cancel."

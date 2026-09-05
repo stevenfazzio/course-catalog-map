@@ -80,6 +80,7 @@ EMBED_MODELS = {
         "revision": "5cf2132abc99cad020ac570b19d031efec650f2b",  # resolved 2026-09-05
         "prompt": QWEN3_INSTRUCTION,
         "max_seq_length": 1024,
+        "batch_size": 4,  # 16 GB of fp32 weights on a 24 GB card leaves little room for a 32 x 1024-token batch
         "trust_remote_code": False,
         "family": "Qwen3 decoder-only LLM, last-token pooling",
     },

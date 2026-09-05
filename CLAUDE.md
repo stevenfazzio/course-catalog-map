@@ -22,7 +22,8 @@ nothing an academic reader would call misleading or sloppy.
 uv sync --extra dev
 uv run python pipeline/00_fetch.py --source stanford        # ExploreCourses XML per department -> data/stanford/raw/
 uv run python pipeline/01_parse.py --source stanford        # raw XML -> listings.parquet, courses.parquet, drops.csv
-uv run python pipeline/02_embed.py --source stanford        # Qwen3-Embedding-0.6B on MPS, ~26 min -> embeddings.npz
+uv run python pipeline/01b_clean.py --source stanford       # preregistered corpus rules -> corpus.parquet (+ embed_text)
+uv run python pipeline/02_embed.py --source stanford        # embeds corpus.parquet embed_text; --device runpod for a GPU pod
 uv run python pipeline/03_reduce_umap.py --source stanford  # UMAP 1024-d -> 2-d, fixed seed -> umap_coords.npz
 uv run python pipeline/04_label_topics.py --source stanford # Toponymy + Claude region names -> labels.parquet
 uv run python pipeline/05_visualize.py --source stanford    # DataMapPlot -> data/stanford/stanford_course_map.html
@@ -39,10 +40,12 @@ multi-runtime OpenMP deadlocked stage 04 three times in a row (main thread parke
 `HF_HUB_OFFLINE` skips a live Hub check that is unnecessary once stage 02 has cached the model. Do not
 pipe the stage through a plain `grep`; it buffers everything until exit.
 
-**Embedding models.** `config.EMBED_MODELS` is a registry keyed by short name; `EMBED_MODEL_KEY` is the
-map's model. Stages 02-05 take `--model` / `--embedding <key>`; the default key owns the unsuffixed
-artifact names and any other key writes `_<key>`-suffixed copies (`config.keyed_files`), so exploration
-and comparison maps coexist with the real one.
+**Embedding models and corpora.** `config.EMBED_MODELS` is a registry keyed by short name; `EMBED_MODEL_KEY`
+is the map's model. Stages 02-05 take `--model` / `--embedding <key>` and `--raw`; the default key on the
+cleaned corpus owns the unsuffixed artifact names, any other key writes `_<key>`-suffixed copies, and
+`--raw` (the 11,500-course catalog before the stage-01b rules, embedded as title + description) adds
+`_raw` (`config.keyed_files`). The two exploration maps are the `_raw` builds of `qwen3-0.6b` and
+`arctic-l-v2`; the preregistered sensitivity row runs on `_raw` embeddings of every candidate.
 
 **Runpod.** `02_embed.py --device runpod` and `04_label_topics.py --device runpod` run the same scripts on
 a throwaway GPU pod via `pipeline/remote.py` (runpodctl + ssh) and pull the results back: ~136 courses/s
@@ -118,7 +121,9 @@ department file that already exists; delete a file to refetch it.
   suffix ExploreCourses appends to titles, e.g. "(LINGUIST 284, SYMSYS 195N)", is stripped from
   `title` (kept in `title_raw`) for the same reason.
 - **Embedding model: Qwen/Qwen3-Embedding-0.6B** (Apache 2.0), pinned to a Hugging Face revision hash in
-  `config.py`, fp32 on MPS, unit-normalised. Every text is embedded with the instruction "Identify the
+  `config.py`, fp32, unit-normalised. Confirmed by the preregistered comparison on 2026-09-05
+  (`docs/embedding_comparison.md`): the 4B sibling tied it on the primary metric and led on the
+  secondary ones, which the rule does not act on; the two encoder-family candidates were clearly behind. Every text is embedded with the instruction "Identify the
   topic or theme of the given university course description", the form the Qwen3 Embedding report uses
   for clustering tasks. Toponymy's keyphrases and exemplars go through the same wrapper (`embedder.py`)
   so they share the space. A 4B comparison run is on the table before the final build.
@@ -145,10 +150,16 @@ department file that already exists; delete a file to refetch it.
   cross-listed courses resolve by home department.
 - **Department index aliases.** The index lists TAPS and ILAC twice under different long names; each
   is treated as one department and the first long name is kept.
-- **Kept, not filtered:** courses with no scheduled section this year (4,765; `scheduled=False`),
-  empty descriptions (103, mostly "TGR Dissertation" placeholders; embedded on title alone),
-  boilerplate independent-study and PWR writing courses. The map is meant to surface these; filter
-  only against patterns actually observed, and log every drop.
+- **Corpus rules (stage 01b, preregistration part 2, 2026-09-05).** Developed in a declared
+  exploratory phase on the two raw-catalog maps, written against content and metadata only, applied in
+  order, every drop logged to `corpus_drops.csv`. Rule 1: descriptions under 3 words are placeholders
+  (181 dropped). Rule 2: a whole description shared verbatim by 5+ courses across 5+ departments is
+  administrative boilerplate (228 dropped in 12 groups: consent-of-instructor, repeat-for-credit,
+  faculty-sponsored research units, Medical Scholars placements, doctoral practica, TGR units). Rule 3: a
+  shared opening of 10+ words among 5+ courses is stripped from the embedded text, title alone if nothing
+  remains (148 stripped, 91 title-only: PWR programme paragraphs, music lessons, Frosh 101, EE CPT, Law
+  exchange programmes). 11,091 courses kept. Unscheduled courses (41%) are kept on purpose: the map is a
+  map of what the university teaches, and the scheduled colormap shows the difference.
 
 ## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
 

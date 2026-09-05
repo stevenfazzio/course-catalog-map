@@ -188,6 +188,26 @@ visible. No courses are combined; cross-listings were already collapsed in stage
 title + description embeddings (`--raw`), reported alongside, so a reader can see whether these rules
 changed the ranking.
 
+## Result (2026-09-05, after both parts were committed as 7142e7a)
+
+The comparison ran once: `docs/embedding_comparison.md` (cleaned corpus) and
+`docs/embedding_comparison_raw.md` (sensitivity row). All four candidates ran; none was dropped.
+Qwen3-Embedding-4B needed a batch size of 4 to fit fp32 on the 24 GB card, a memory setting that does
+not change its output.
+
+Primary metric (embedding space, k = 15, breadth category, 559 labelled courses, floor 0.306):
+incumbent 0.815; qwen3-4b 0.814, paired difference -0.001 with 95% interval [-0.009, +0.008];
+arctic-l-v2 0.733 (-0.082); nomic-v2-moe 0.746 (-0.069). No candidate beats the incumbent, so by step 4
+**the incumbent, qwen3-0.6b, is the map's model.**
+
+Reported, not decisive: qwen3-4b is ahead of the incumbent on every secondary label (department 0.484
+vs 0.428, school 0.747 vs 0.712, WAYS 0.816 vs 0.806) and in the 2-d rows, by margins well outside the
+seed range. Under the rule as written that does not reopen the choice, and it is recorded here so a
+reader can weigh it. Layout trustworthiness is 0.99 for both Qwen models against 0.93 and 0.95 for the
+two encoder-family models. Neighbourhood overlap between the two Qwen models is 0.44 in the embedding
+space and about 0.28 to 0.31 between families, so the choice of family matters more than the choice
+of size within a family.
+
 ## Deviations
 
-_None yet._
+_None._
