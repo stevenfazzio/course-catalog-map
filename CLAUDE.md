@@ -168,7 +168,13 @@ The Stanford map is built on the cleaned corpus with the preregistered model: `d
 Two raw-catalog exploration builds remain as `_raw` artifacts. Open items: the ExploreCourses click-through is
 unverified in a browser (the site has returned 503 since the fetch); the label-QA proposals (centroid-name cosine
 guardrail, sampled wayfinding lineup) await a decision; the post-hoc structure analysis lives in `experiments/`
-(`evoc_layers.py`, `structure_numbers.py`) and is not part of the preregistered comparison.
+(`evoc_layers.py` -> `name_evoc.py` [Runpod, Opus names for two EVoC layers per model] -> `structure_numbers.py`
+-> `structure_report.py` -> `docs/embedding_structure.html`) and is not part of the preregistered comparison.
+Serve `docs/` with `python3 -m http.server 8766 --bind 127.0.0.1` to view the report; it loads plotly from
+cdn.plot.ly. Headline findings: family is the main axis of disagreement and it is present in the native
+spaces (within-family AMI 0.80-0.89 vs 0.70-0.73 across; department-centroid Mantel 0.96 vs 0.72-0.80);
+the encoder spaces have less density structure (EVoC leaves 37-46% unclustered vs 28-32% for Qwen) and lose
+more in 2-d; 56 of 140 departments change nearest department between families.
 
 ## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
 

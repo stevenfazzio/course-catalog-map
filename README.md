@@ -34,4 +34,7 @@ Each university is an adapter in `pipeline/sources/` producing the common schema
   dropped, programme template text stripped from the embedded text) and the embedding-model choice
   were preregistered in `docs/preregistration.md` before the comparison was run.
 
+`docs/embedding_comparison.md` holds the preregistered result; `docs/embedding_structure.html` is a
+post-hoc, exploratory characterisation of how the four candidate models differ in global structure.
+
 See `CLAUDE.md` for the decision log, data facts, and provenance details.
