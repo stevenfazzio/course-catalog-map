@@ -1,0 +1,18 @@
+{
+  "key": "qwen3-0.6b",
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "family": "Qwen3 decoder-only LLM, last-token pooling",
+  "prompt": "Instruct: Identify the topic or theme of the given university course description\nQuery: ",
+  "max_seq_length": 1024,
+  "normalize_embeddings": true,
+  "dtype": "torch.float32",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "sentence_transformers": "5.7.0",
+  "torch": "2.8.0+cu128",
+  "n_documents": 11091,
+  "dimension": 1024,
+  "corpus": "corpus.parquet embed_text (stage 01b rules)",
+  "embedded_at": "2026-09-05T06:47:43+00:00"
+}

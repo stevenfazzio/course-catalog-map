@@ -1,0 +1,410 @@
+rule,course_id,code,title,description
+1_placeholder,101410,ACCT 802,TGR Dissertation,
+1_placeholder,102091,EDUC 380,Supervised Internship,
+1_placeholder,103429,CHEMENG 802,TGR Dissertation,
+1_placeholder,103792,CEE 801,TGR Project (Engineer Degree),
+1_placeholder,103793,CEE 802,TGR Dissertation (PhD degree),
+1_placeholder,104783,MATSCI 801,TGR Project for MS Students,
+1_placeholder,104784,MATSCI 802,TGR Dissertation for Ph.D Students,
+1_placeholder,105092,ME 500,Thesis (Ph.D.),
+1_placeholder,105150,ME 801,TGR Project,
+1_placeholder,105151,ME 802,TGR Dissertation,
+1_placeholder,109503,APPPHYS 390,Dissertation Research,Dissertation Research
+1_placeholder,110194,ANTHRO 801,TGR Project,
+1_placeholder,110195,ANTHRO 802,TGR Dissertation,
+1_placeholder,110589,ARTSTUDI 310B,Directed Reading: Studio,
+1_placeholder,110590,ARTSTUDI 310C,Directed Reading: Studio,
+1_placeholder,110600,ARTSTUDI 801,TGR Project,
+1_placeholder,110997,ARTHIST 610,Teaching Praxis,
+1_placeholder,111000,ARTHIST 640,Dissertation Proposal Preparation,(Staff)
+1_placeholder,111001,ARTHIST 650,Dissertation Research,(Staff)
+1_placeholder,111003,ARTHIST 802,TGR Dissertation,TGR Dissertation
+1_placeholder,111015,EASTASN 801,TGR Project,
+1_placeholder,111033,CSRE 200R,Directed Research,
+1_placeholder,112130,BIO 802,TGR Dissertation,
+1_placeholder,112224,OCEANS 801,TGR Project,TGR Project
+1_placeholder,112227,OCEANS 802,TGR Dissertation,TGR Dissertation
+1_placeholder,112338,CHEM 802,TGR Dissertation,
+1_placeholder,113177,COMM 299,Individual Work,
+1_placeholder,113242,COMM 801,TGR Project,
+1_placeholder,113243,COMM 802,TGR Dissertation,
+1_placeholder,113577,ECON 801,TGR Project,
+1_placeholder,113578,ECON 802,TGR Dissertation,
+1_placeholder,114523,ENGLISH 802,TGR Dissertation,
+1_placeholder,115262,HISTORY 299A,Senior Research I,
+1_placeholder,115263,HISTORY 299B,Senior Research II,
+1_placeholder,115264,HISTORY 299C,Senior Research III,
+1_placeholder,115637,HISTORY 399W,Graduate Directed Reading,
+1_placeholder,116627,RELIGST 395,Master of Arts Thesis,
+1_placeholder,116629,RELIGST 801,TGR Project,(Staff)
+1_placeholder,116630,RELIGST 802,TGR Dissertation,
+1_placeholder,116785,AMSTUD 195,Individual Work,
+1_placeholder,117055,PUBLPOL 198,Directed Readings in Public Policy,
+1_placeholder,119982,REES 299,Directed Reading,
+1_placeholder,120792,LINGUIST 198,Honors Research,
+1_placeholder,120793,LINGUIST 199,Independent Study,
+1_placeholder,121048,LINGUIST 390,M.A. Project,
+1_placeholder,121060,LINGUIST 397,Directed Reading,
+1_placeholder,121061,LINGUIST 398,Directed Research,
+1_placeholder,121062,LINGUIST 399,Dissertation Research,
+1_placeholder,121236,LINGUIST 802,TGR Dissertation,
+1_placeholder,122555,PHIL 450,Thesis,(Staff)
+1_placeholder,122557,PHIL 802,TGR Dissertation,(Staff)
+1_placeholder,122794,PHYSICS 801,TGR Project,
+1_placeholder,122795,PHYSICS 802,TGR Dissertation,
+1_placeholder,123766,POLISCI 802,TGR Dissertation,
+1_placeholder,124205,PSYCH 802,PhD TGR Dissertation,
+1_placeholder,124305,MTL 801,TGR Project,
+1_placeholder,124316,BIOPHYS 801,TGR Project,
+1_placeholder,124317,BIOPHYS 802,TGR Dissertation,
+1_placeholder,124813,SOC 393,Teaching Apprenticeship,
+1_placeholder,124822,SOC 802,TGR Dissertation,
+1_placeholder,125319,TAPS 802,TGR Dissertation,(Staff)
+1_placeholder,125415,STATS 199,Independent Study,For undergraduates.
+1_placeholder,125572,STATS 801,TGR Project,
+1_placeholder,125573,STATS 802,TGR Dissertation,
+1_placeholder,126105,COMPLIT 194,Independent Research,(Staff)
+1_placeholder,126357,CSRE 200W,Directed Reading,
+1_placeholder,127246,CBIO 802,TGR Dissertation,
+1_placeholder,127294,SBIO 801,TGR Project,
+1_placeholder,127295,SBIO 802,TGR Dissertation,
+1_placeholder,127344,BIOC 802,TGR Dissertation,
+1_placeholder,127360,DBIO 802,TGR Dissertation,
+1_placeholder,127400,GENE 801,TGR Project,
+1_placeholder,127401,GENE 802,TGR Dissertation,
+1_placeholder,127483,MI 801,TGR Master's Project,
+1_placeholder,127484,MI 802,TGR PhD Dissertation,
+1_placeholder,127527,CSB 801,TGR Project,
+1_placeholder,127528,CSB 802,TGR Dissertation,
+1_placeholder,127586,MCP 802,TGR Dissertation,
+1_placeholder,128381,PSYC 802,TGR Dissertation,TGR Dissertation
+1_placeholder,128580,RADO 101,Readings in Radiation Biology,
+1_placeholder,128834,IMMUNOL 801,TGR Project,
+1_placeholder,128835,IMMUNOL 802,TGR Dissertation,
+1_placeholder,128861,NEPR 801,TGR Project,
+1_placeholder,128862,NEPR 802,TGR Dissertation,
+1_placeholder,129121,EARTHSYS 299,M.S. Thesis,M.S. Thesis
+1_placeholder,129137,GEOPHYS 100,Directed Reading,(Staff)
+1_placeholder,129783,ENERGY 801,TGR Project,TGR Project
+1_placeholder,129784,ENERGY 802,TGR Dissertation,TGR Dissertation
+1_placeholder,131001,URBANST 195,Special Projects in Urban Studies,
+1_placeholder,131004,URBANST 197,Directed Reading,
+1_placeholder,131006,URBANST 199,Senior Honors Thesis,
+1_placeholder,141152,SLE 199,Teaching SLE,-
+1_placeholder,200907,NATIVEAM 200R,Directed Research,
+1_placeholder,200908,NATIVEAM 200W,Directed Reading,
+1_placeholder,201070,CHILATST 200W,Directed Reading,(Staff)
+1_placeholder,201073,ASNAMST 200W,Directed Reading,(Staff)
+1_placeholder,201108,SYMSYS 290,Master's Degree Project,
+1_placeholder,201780,CEE 381,Advanced Engineering Informatics,
+1_placeholder,203349,EDUC 185,Master's Thesis,(all areas)
+1_placeholder,203716,EARTHSYS 801,TGR Project,TGR Project
+1_placeholder,203728,ENVRES 801,TGR Project,TGR Project
+1_placeholder,203729,ENVRES 802,TGR Dissertation,TGR Dissertation
+1_placeholder,204255,BIOE 802,TGR Dissertation,(Staff)
+1_placeholder,204294,CME 400,Ph.D. Research,
+1_placeholder,204449,BIOC 801,TGR Project,
+1_placeholder,204450,CBIO 801,TGR Project,
+1_placeholder,204451,MCP 801,TGR Project,
+1_placeholder,205042,CME 801,TGR Project,
+1_placeholder,205043,CME 802,TGR Dissertation,
+1_placeholder,208657,PHIL 111,Aristotle's Posterior Analytics,TBA
+1_placeholder,209168,ESS 802,TGR Dissertation,TGR Dissertation
+1_placeholder,209721,LAW 802,TGR: Dissertation,TGR: Dissertation
+1_placeholder,209811,CHINLANG 199,Individual Reading,
+1_placeholder,210716,OSPKYOTO 210K,Advanced Japanese,Advanced Japanese
+1_placeholder,210802,ARCHLGY 190,Archaeology Directed Reading/Independent Study,
+1_placeholder,210859,MLA 300,Oxford Summer Programme,-
+1_placeholder,211327,PHIL 801,TGR Project,
+1_placeholder,211798,ARCHLGY 299,Independent Study/Research,Independent Study/Research
+1_placeholder,212611,STEMREM 802,TGR Dissertation,
+1_placeholder,213421,STEMREM 801,TGR Project,
+1_placeholder,213500,ARABLANG 297,Directed Reading,
+1_placeholder,213981,AFRICAAM 195,Independent Study,
+1_placeholder,214456,FRENCH 801,TGR Project,
+1_placeholder,216034,GSBGEN 697,Research Fellows Practicum,
+1_placeholder,216875,FILMPROD 801,TGR Project,
+1_placeholder,217105,SLAVIC 801,TGR PROJECT,
+1_placeholder,218484,COMPMED 801,TGR Project,
+1_placeholder,218774,CHPR 801,TGR Project,TGR Project
+1_placeholder,218810,SIW 190,Directed Readings,Directed Readings
+1_placeholder,218957,NSUR 802,TGR Dissertation,
+1_placeholder,220128,BMP 802,TGR Dissertation,TGR Dissertation
+1_placeholder,220286,NSUR 290,Curricular Practical Training,
+1_placeholder,220332,OSPOXFRD 196V,Tutorial in Medieval and Modern Languages,OSPOXFRD 196V
+1_placeholder,220899,CBIO 290,Curricular Practical Training,
+1_placeholder,220977,MTL 200,Curricular Practical Training,-
+1_placeholder,221383,SINY 199,Directed Reading,Directed Reading
+1_placeholder,222215,MLA 353,"The Fourth R: Religion, Education and Schooling in America",
+1_placeholder,222477,HISTORY 230L,Modern Irish History,
+1_placeholder,222494,EPI 801,TGR Project,
+1_placeholder,222495,EPI 802,TGR Dissertation,
+1_placeholder,223521,PHIL 370,Grad seminar: Contemporary Political Theory,Graduate seminar.
+1_placeholder,223530,PHIL 108C,Topics in Aristotle: Aristotle on Potentiality,tba
+1_placeholder,223531,PHIL 181E,External World Skepticism,tba
+1_placeholder,223687,HISTORY 154F,Against Slavery: African Americans and Self Emancipation,TBD.
+1_placeholder,223837,OSPKYOTO 1K,"First-Year Japanese Language, Culture, and Communication, First Quarter",TBD
+1_placeholder,224175,ENGLISH 10E,Intro to English I: Love and Death from Chaucer to Milton,.
+1_placeholder,224192,AFRICAAM 261E,Black Mirror: Representations of Race & Gender in AI,tba
+1_placeholder,224264,ILAC 202,Revolution and Dictatorship in Latin American Literature and Film,TBD
+1_placeholder,224275,ILAC 117,Spanish Cities,TBD
+1_placeholder,224350,ARTSTUDI 188,Papermaking: Eastern and Western Traditions,TBD
+1_placeholder,224498,DATASCI 199,Independent Study,For undergraduates.
+1_placeholder,224581,SLAVIC 256,Language and Identity in Ukraine,TBD
+1_placeholder,224589,AMSTUD 162,"Selling the American Dream, Living the American Nightmare",Description TBD
+1_placeholder,224705,OSPPARIS 13C,Internship,Internship
+1_placeholder,224706,OSPPARIS 13B,Internship,Internship
+1_placeholder,224719,URBANST 193,Directed Research in Urban Studies,--
+1_placeholder,224849,PAS 802,TGR Dissertation,TGR Dissertation
+1_placeholder,224917,JEWISHST 200R,Directed Research,Independent Research
+1_placeholder,224963,CEE 201F,Software Development in Structural Engineering,TBA
+1_placeholder,225235,ARTHIST 434,Race & Abstraction,TBD
+1_placeholder,225298,ARTSTUDI 118,Intro to Installation Art,TBD
+1_placeholder,225366,OSPOXFRD 199E,Earth Sciences,Earth Sciences
+1_placeholder,226142,ITALIAN 801,TGR Project,TGR Project
+1_placeholder,226220,OSPHONGK 81,Special Topics in Chinese Studies (Cold War and China),TBC
+1_placeholder,226282,ENGLISH 334,The Practices of Early Modern Literature,TBD
+1_placeholder,226367,ANTHRO 335,Multimodal Methods/Med Anthro,Multimodal Methods
+1_placeholder,226394,CEE 134C,Theory and Practice of Global Sustainability,TBD
+1_placeholder,226397,CEE 134D,"Constructing Sustainability: 10 Buildings, 10 Documents",TBD
+1_placeholder,226636,ENGLISH 162,Victorian Long Novel,TBD
+1_placeholder,226649,PHIL 148,Taboo Topics: Adventures in Critical Thinking,Undergrad lecture.
+1_placeholder,227046,ANES 802,TGR Dissertation,TGR Dissertation.
+1_placeholder,227125,ENGLISH 55N,Shakespeare and Social Justice,TBD
+1_placeholder,227130,OSPBER 8,Exploring German Colonialism and German Colonial Memory,TBA
+1_placeholder,227313,OSPPARIS 84P,"Democratizing Ethics with Discrimination, Inequality, Injustice and Technology in Mind",TBC
+1_placeholder,227314,OSPPARIS 95P,Mon Petit Chou à la Crème. Recipes: The Story of French Food,TBC
+1_placeholder,227423,SOC 801,TGR PROJECT,TGR PROJECT
+1_placeholder,227534,HISTORY 266,DuBois,DuBois
+1_placeholder,228191,ENGLISH 349,Jane Austen,Jane Austen
+1_placeholder,228317,PHIL 375W,Self-Determination,Graduate seminar.
+1_placeholder,228432,ENGLISH 8W,On Adaptation,On Adaptation
+1_placeholder,228593,ARTSTUDI 238,Cross-Media Painting,Cross-Media Painting
+2_administrative,104194,EE 801,TGR Project,May be repeated for credit.
+2_administrative,104195,EE 802,TGR Dissertation,May be repeated for credit.
+2_administrative,104695,MATSCI 230,Materials Science Colloquium,May be repeated for credit.
+2_administrative,104772,MATSCI 400,Participation in Materials Science Teaching,May be repeated for credit.
+2_administrative,106082,OSPPARIS 104A,French Lecture Series 2,May be repeated for credit.
+2_administrative,108982,OSPOXFRD 195L,Tutorial in Healthcare and Social Policy,May be repeated for credit.
+2_administrative,109040,OSPOXFRD 197V,Tutorial in Philosophy (Advanced),May be repeated for credit.
+2_administrative,109044,OSPOXFRD 197Z,Tutorial in Political Science (Advanced),May be repeated for credit.
+2_administrative,109047,OSPOXFRD 198C,Tutorial in Sociology,May be repeated for credit.
+2_administrative,109049,OSPOXFRD 198E,Tutorial in History (Advanced),May be repeated for credit.
+2_administrative,109050,OSPOXFRD 198F,Tutorial in History of Art,May be repeated for credit.
+2_administrative,109057,OSPOXFRD 198N,Tutorial in Statistics,May be repeated for credit.
+2_administrative,109346,OSPSANTG 199A,Directed Reading A,May be repeated for credit.
+2_administrative,110127,ANTHRO 96,Directed Individual Study,Prerequisite: consent of instructor.
+2_administrative,111224,CHINLANG 200,Directed Reading,May be repeated for credit. Prerequisite: consent of instructor.
+2_administrative,113332,ECON 139D,Directed Reading,May be repeated for credit.
+2_administrative,115269,HISTORY 299M,"Undergraduate Directed Research: Martin Luther King, Jr., Research and Education Institute",May be repeated for credit.
+2_administrative,115272,HISTORY 299S,Undergraduate Directed Research and Writing,May be repeated for credit.
+2_administrative,116576,RELIGST 389,Individual Work for Graduate Students,May be repeated for credit. Prerequisite: consent of instructor.
+2_administrative,117056,PUBLPOL 199,Senior Honors Thesis Research,May be repeated for credit.
+2_administrative,117694,HPS 199,Directed Reading,May be repeated for credit.
+2_administrative,117714,HPS 299,Graduate Individual Work,May be repeated for credit.
+2_administrative,117862,FRENLANG 199,Language Specials,Prerequisite: consent of instructor.
+2_administrative,118325,ITALLANG 99,Language Specials,Prerequisite: consent of instructor.
+2_administrative,118648,GERLANG 99,Language Specials,Prerequisite: consent of instructor.
+2_administrative,118693,GERLANG 199,Individual Reading,Prerequisite: consent of instructor.
+2_administrative,120019,SPANLANG 99,Language Specials,May be repeated for credit. Prerequisite: consent of instructor.
+2_administrative,120438,ILAC 802,TGR Dissertation,"Doctoral students who have been admitted to candidacy, completed all required co"
+2_administrative,122018,MUSIC 325,Individual Graduate Projects in Composition,May be repeated for credit.
+2_administrative,122336,PHIL 197,"Individual Work, Undergraduate",May be repeated for credit.
+2_administrative,122406,PHIL 240,Individual Work for Graduate Students,May be repeated for credit.
+2_administrative,124314,BIOPHYS 399,Directed Reading in Biophysics,Prerequisite: consent of instructor.
+2_administrative,124315,BIOPHYS 300,Graduate Research,Investigations sponsored by individual faculty members. Prerequisite: consent of
+2_administrative,126254,COMPLIT 802,TGR Dissertation,"Doctoral students who have been admitted to candidacy, completed all required co"
+2_administrative,127243,CBIO 299,Directed Reading in Cancer Biology,Prerequisite: consent of instructor.
+2_administrative,127291,SBIO 299,Directed Reading in Structural Biology,Prerequisite: consent of instructor.
+2_administrative,127292,SBIO 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,127339,BIOC 299,Directed Reading in Biochemistry,Prerequisite: consent of instructor.
+2_administrative,127356,DBIO 299,Directed Reading in Developmental Biology,Prerequisite: consent of instructor.
+2_administrative,127358,DBIO 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,127369,GENE 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,127395,GENE 299,Directed Reading in Genetics,Prerequisite: consent of instructor.
+2_administrative,127399,GENE 399,Graduate Research,Investigations sponsored by individual faculty members. Prerequisite: consent of
+2_administrative,127409,COMPMED 199,Undergraduate Research,Investigations sponsored by individual faculty members. Prerequisite: consent of
+2_administrative,127480,MI 299,Directed Reading in Microbiology and Immunology,Prerequisite: consent of instructor.
+2_administrative,127513,CSB 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,127524,CSB 299,Directed Reading in Chemical and Systems Biology,Prerequisite: consent of instructor.
+2_administrative,127525,CSB 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,127565,MCP 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,127583,MCP 299,Directed Reading in Molecular and Cellular Physiology,Prerequisite: consent of instructor.
+2_administrative,127587,NBIO 199,Undergraduate Research,Investigations sponsored by individual faculty members. Prerequisite: consent of
+2_administrative,127607,NBIO 299,Directed Reading in Neurobiology,Prerequisite: consent of instructor.
+2_administrative,127609,NBIO 399,Graduate Research,Investigations sponsored by individual faculty members. Prerequisite: consent of
+2_administrative,127657,ANES 280,Early Clinical Experience in Anesthesia,Provides an observational experience as determined by the instructor and student
+2_administrative,127658,ANES 299,Directed Reading in Anesthesiology,Prerequisite: consent of instructor.
+2_administrative,127732,MED 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,127817,MED 299,Directed Reading in Medicine,Prerequisite: consent of instructor.
+2_administrative,127960,MED 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,127967,OBGYN 280,Early Clinical Experience in Obstetrics and Gynecology,Provides an observational experience as determined by the instructor and student
+2_administrative,127969,OBGYN 299,Directed Reading in Obstetrics and Gynecology,Prerequisite: consent of instructor.
+2_administrative,128000,OBGYN 399,Graduate Research in Reproductive Biology,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,128030,PATH 280,Early Clinical Experience in Pathology,Provides an observational experience as determined by the instructor and student
+2_administrative,128035,PATH 299,Directed Reading in Pathology,Prerequisite: consent of instructor.
+2_administrative,128057,PEDS 199,Undergraduate Directed Reading/Research,Prerequisite: consent of instructor.
+2_administrative,128072,PEDS 299,Directed Reading in Pediatrics,Prerequisite: consent of instructor.
+2_administrative,128225,PSYC 199,"Undergraduate Research, Independent Study, or Directed Reading",Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,128314,PSYC 299,Directed Reading in Psychiatry,Prerequisite: consent of instructor.
+2_administrative,128378,PSYC 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,128382,RAD 101,Readings in Radiology Research,Prerequisite: consent of instructor.
+2_administrative,128383,RAD 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,128395,RAD 280,Early Clinical Experience in Radiology,Provides an observational experience as determined by the instructor and student
+2_administrative,128396,RAD 299,Directed Reading in Radiology,Prerequisite: consent of instructor.
+2_administrative,128416,RAD 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,128422,SURG 199,Undergraduate Research,Investigations sponsored by individual faculty members. Prerequisite: consent of
+2_administrative,128592,RADO 280,Early Clinical Experience in Radiation Oncology,Provides an observational experience as determined by the instructor and student
+2_administrative,128594,RADO 299,Directed Reading in Radiation Oncology,Prerequisite: consent of instructor.
+2_administrative,128599,RADO 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,128680,OPHT 299,Directed Reading in Ophthalmology,Prerequisite: consent of instructor.
+2_administrative,128693,NENS 299,Directed Reading in Neurology and Neurological Science,Prerequisite: consent of instructor.
+2_administrative,128710,NSUR 299,Directed Reading in Neurosurgery,Prerequisite: consent of instructor.
+2_administrative,128718,NSUR 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,128720,UROL 299,Directed Reading in Urology,Prerequisite: consent of instructor.
+2_administrative,128731,UROL 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,128756,ORTHO 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,128769,CTS 299,Directed Reading in Cardiothoracic Surgery,Prerequisite: consent of instructor.
+2_administrative,128829,IMMUNOL 299,Directed Reading in Immunology,Prerequisite: consent of instructor.
+2_administrative,128856,NEPR 299,Directed Reading in Neurosciences,Prerequisite: consent of instructor.
+2_administrative,129710,ENERGY 194,Special Topics in Energy and Mineral Fluids,May be repeated for credit.
+2_administrative,140522,OSPSANTG 40,Academic Internship,May be repeated for credit.
+2_administrative,200192,OSPFLOR 56,University of Florence Courses,May be repeated for credit.
+2_administrative,201072,ASNAMST 200R,Directed Research,May be repeated for credit.
+2_administrative,201475,BIOC 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201477,DBIO 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201479,HRP 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201482,UROL 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201483,SBIO 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201486,ORTHO 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201487,OBGYN 199,Undergraduate Research in Reproductive Biology,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201488,NSUR 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201489,PATH 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201490,RADO 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,201798,SPANLANG 199,Individual Reading,May be repeated for credit. Prerequisite: consent of instructor.
+2_administrative,202028,RUSSLANG 199,Individual Work,Prerequisite: consent of instructor.
+2_administrative,202670,ETHICSOC 199,Independent Studies in Ethics in Society,May be repeated for credit.
+2_administrative,203791,FRENLANG 395,Graduate Studies in French,Prerequisite: consent of instructor.
+2_administrative,203792,GERLANG 395,Graduate Studies in German,Prerequisite: consent of instructor.
+2_administrative,203797,SPANLANG 395,Graduate Studies in Spanish,Prerequisite: consent of instructor.
+2_administrative,203803,CHINLANG 395,Graduate Studies in Chinese,Prerequisite: consent of instructor.
+2_administrative,203805,CEE 374S,Advanced Topics in Microbial Pollution,May be repeated for credit. Prerequisite: consent of instructor.
+2_administrative,203815,CHINLANG 394,Graduate Studies in Chinese Conversation,Prerequisite: consent of instructor.
+2_administrative,203828,KORLANG 395,Graduate Studies in Korean,Prerequisite: consent of instructor.
+2_administrative,203829,SPANLANG 394,Graduate Studies in Spanish Conversation,Prerequisite: consent of instructor.
+2_administrative,204809,ANES 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204890,MED 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204891,DERM 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204892,RADO 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204893,NSUR 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204894,PSYC 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204895,DBIO 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204896,PATH 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204897,RAD 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204898,SURG 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204899,ORTHO 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204900,PEDS 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204902,NBIO 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204919,OPHT 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204920,OBGYN 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,204926,OTOHNS 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205014,OTOHNS 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,205565,HRP 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205566,BIOC 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205567,NENS 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205568,UROL 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205569,MI 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205808,ARTHIST 297,Honors Thesis Writing,May be repeated for credit.
+2_administrative,205810,CTS 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205814,COMPMED 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205824,MCP 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205825,CSB 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,205835,SBIO 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,206736,ECON 239D,Directed Reading,May be repeated for credit.
+2_administrative,207172,FAMMED 199,Undergraduate Directed Reading and Research in Family and Community Medicine,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,207612,CATLANG 395,Graduate Studies in Catalan,May be repeated for credit. Prerequisite: consent of instructor.
+2_administrative,208006,BMDS 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,208370,EPS 292,Directed Reading with Earth & Planetary Sciences Faculty,May be repeated for credit.
+2_administrative,208830,FILMEDIA 297,Honors Thesis Writing,May be repeated for credit.
+2_administrative,211058,OSPPARIS 180,Paris Special Topics,May be repeated for credit.
+2_administrative,211679,FAMMED 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,212610,STEMREM 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,212869,STEMREM 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,213416,STEMREM 299,Directed Reading in Stem Cell Biology and Regenerative Medicine,Prerequisite: consent of instructor.
+2_administrative,213420,STEMREM 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,213790,SLAVIC 802,TGR Dissertation,"Doctoral students who have been admitted to candidacy, completed all required co"
+2_administrative,213807,FRENCH 802,TGR Dissertation,"Doctoral students who have been admitted to candidacy, completed all required co"
+2_administrative,213812,ITALIAN 802,TGR Dissertation,"Doctoral students who have been admitted to candidacy, completed all required co"
+2_administrative,213813,ITALIAN 199,Individual Work,Prerequisite: consent of instructor.
+2_administrative,213816,GERMAN 802,TGR Dissertation,"Doctoral students who have been admitted to candidacy, completed all required co"
+2_administrative,214425,CEE 199L,Independent Project in Civil and Environmental Engineering,Prerequisite: Consent of Instructor
+2_administrative,214426,CEE 299L,Independent Project in Civil and Environmental Engineering,Prerequisite: Consent of Instructor
+2_administrative,216555,ARABLANG 394,Graduate Studies in Arabic Conversation,Prerequisite: Consent of Instructor
+2_administrative,216893,HISTORY 351A,"Core in American History, Part I",May be repeated for credit.
+2_administrative,217374,ACCT 698,Doctoral Practicum in Teaching,Doctoral Practicum in Teaching
+2_administrative,217375,FINANCE 698,Doctoral Practicum in Teaching,Doctoral Practicum in Teaching
+2_administrative,217376,MGTECON 698,Doctoral Practicum in Teaching,Doctoral Practicum in Teaching
+2_administrative,217377,MKTG 698,Doctoral Practicum in Teaching,Doctoral Practicum in Teaching
+2_administrative,217378,OB 698,Doctoral Practicum in Teaching,Doctoral Practicum in Teaching
+2_administrative,217379,OIT 698,Doctoral Practicum in Teaching,Doctoral Practicum in Teaching
+2_administrative,217380,POLECON 698,Doctoral Practicum in Teaching,Doctoral Practicum in Teaching
+2_administrative,217381,ACCT 699,Doctoral Practicum in Research,Doctoral Practicum in Research
+2_administrative,217382,FINANCE 699,Doctoral Practicum in Research,Doctoral Practicum in Research
+2_administrative,217383,MGTECON 699,Doctoral Practicum in Research,Doctoral Practicum in Research
+2_administrative,217384,MKTG 699,Doctoral Practicum in Research,Doctoral Practicum in Research
+2_administrative,217385,OB 699,Doctoral Practicum in Research,Doctoral Practicum in Research
+2_administrative,217386,OIT 699,Doctoral Practicum in Research,Doctoral Practicum in Research
+2_administrative,217387,POLECON 699,Doctoral Practicum in Research,Doctoral Practicum in Research
+2_administrative,217721,EMED 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,218364,ARTSTUDI 390,Curricular Practical Training,CPT course required for international students completing degree.
+2_administrative,218917,CHPR 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,219240,OSPOXFRD 196Q,Tutorial in Computer Science,May be repeated for credit.
+2_administrative,219246,OSPOXFRD 196R,Tutorial in Geography,May be repeated for credit.
+2_administrative,219262,ARTHIST 290,Curricular Practical Training,CPT course required for international students completing degree.
+2_administrative,221025,ARTSTUDI 290,Curricular Practical Training,CPT course required for international students completing degree.
+2_administrative,221073,FILMEDIA 680,Curricular Practical Training,CPT course required for international students completing degree.
+2_administrative,221876,OSPPARIS 195B,Paris University 2,May be repeated for credit
+2_administrative,222491,EPI 199,Undergraduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,222493,EPI 399,Graduate Research,Investigations sponsored by individual faculty members. Prerequisite: consent of
+2_administrative,222496,EPI 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,222500,BMDS 399,Graduate Research on Biomedical Data Science,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,223132,SUST 290,Curricular Practical Training,CPT course required for international students completing degree.
+2_administrative,223971,OSPOXFRD 199F,Directed Reading in Formal Logic,May be repeated for credit
+2_administrative,224285,CHINA 391,Seminar in Chinese Syntax,May be repeated for credit.
+2_administrative,224422,BIOE 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,224452,OSPOXFRD 199X,Tutorial in Linguistics,May be repeated for Credit
+2_administrative,224840,APPPHYS 300,Department Colloquium,May be repeated for credit.
+2_administrative,224918,CBIO 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,224921,BMP 399,Graduate Research,Students undertake investigations sponsored by individual faculty members. Prere
+2_administrative,226421,NEPR 370,Medical Scholars Research,"Provides an opportunity for student and faculty interaction, as well as academic"
+2_administrative,226732,SWAHLANG 395,Graduate Studies in Swahili,Prerequisite: For grad students only and consent of Instructor
+2_administrative,226733,VIETLANG 395,Graduate Studies in Vietnamese,Prerequisite: For grad students only and consent of instructor.
+2_administrative,226734,ASLLANG 395,Graduate Studies of American Sign Language,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226735,AMHRLANG 395,Graduate Studies in Amharic,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226736,ARMELANG 395,Graduate Studies in Armenian,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226737,CZECLANG 395,Graduate Studies in Czech,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226739,FILILANG 395,Graduate Studies in Filipino,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226740,HAWALANG 395,Graduate Studies in Hawaiian,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226741,HEBRLANG 395,Graduate Studies in Hebrew,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226742,HINDLANG 395,Graduate Studies in Hindi,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226743,HNGRLANG 395,Graduate Studies in Hungarian,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226744,IGBOLANG 395,Graduate Studies in Igbo,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226746,KHMRLANG 395,Graduate Studies in Khmer,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226747,LAKOTLNG 395,Graduate Studies in Lakota,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226748,GREELANG 395,Graduate Studies in Greek,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226749,NAHUALNG 395,Graduate Studies in Nahuatl,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226750,OROMLANG 395,Graduate Studies in Oromo,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226751,PERSLANG 395,Graduate Studies in Persian,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226753,NVJOLANG 395,Graduate Studies in Navajo,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226754,PUNJLANG 395,Graduate Studies in Punjabi,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226755,QUECHLNG 395,Graduate Studies of Quechua,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226756,ROMALANG 395,Graduate Studies in Romanian,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226757,SAMOALNG 395,Graduate Studies in Samoan,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226758,SNSKTLNG 395,Graduate Studies in Sanskrit,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226759,TIGRYLNG 395,Graduate Studies in Tigrinya,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226760,TWILANG 395,Graduate Studies in Twi,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226761,UKRNLANG 395,Graduate Studies in Ukrainian,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226762,YDDSHLNG 395,Graduate Studies in Yiddish,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226773,URDULANG 395,Graduate Studies in Urdu,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,226774,YORULANG 395,Graduate Studies in Yoruba,Prerequisite: For Grad Students Only and Consent of Instructor
+2_administrative,227358,EMED 291,Curricular Practical Training,CPT course required for international students completing degree.

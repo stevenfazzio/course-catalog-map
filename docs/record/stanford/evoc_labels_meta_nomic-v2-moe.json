@@ -1,0 +1,11 @@
+{
+  "embedding": "nomic-v2-moe",
+  "layers": [
+    89,
+    36
+  ],
+  "namer_model": "claude-opus-5",
+  "namer_style": "Keep every topic name to five words or fewer, in title case, with no colon, subtitle, or list of examples.",
+  "minutes": 1.0,
+  "named_at": "2026-09-05T07:50:51+00:00"
+}

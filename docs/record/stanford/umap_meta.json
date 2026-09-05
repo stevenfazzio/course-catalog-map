@@ -1,0 +1,13 @@
+{
+  "n_neighbors": 15,
+  "min_dist": 0.05,
+  "metric": "cosine",
+  "n_components": 2,
+  "random_state": 42,
+  "embedding": "qwen3-0.6b",
+  "raw": false,
+  "umap_learn": "0.5.12",
+  "n_documents": 11091,
+  "seconds": 14,
+  "reduced_at": "2026-09-05T06:54:17+00:00"
+}

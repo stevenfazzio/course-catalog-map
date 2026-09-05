@@ -1,0 +1,18 @@
+{
+  "thresholds": {
+    "min_description_words": 3,
+    "shared_min_courses": 5,
+    "shared_min_departments": 5,
+    "template_min_words": 10
+  },
+  "counts": {
+    "rule_1_placeholder_dropped": 181,
+    "rule_2_administrative_dropped": 228,
+    "rule_2_groups": 12,
+    "rule_3_template_stripped": 148,
+    "rule_3_title_only": 91,
+    "kept": 11091
+  },
+  "n_in": 11500,
+  "cleaned_at": "2026-09-05T06:40:49+00:00"
+}

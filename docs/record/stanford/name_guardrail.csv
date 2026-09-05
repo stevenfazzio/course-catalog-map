@@ -1,0 +1,534 @@
+layer,cluster,name,n,cosine,rank_in_layer
+0,31,Faculty-Sponsored CPT Employment Reporting,23,0.6999750137329102,0.0028011204481792717
+0,288,Themed PWR Seminars On Belonging And Change,11,0.7462416887283325,0.0056022408963585435
+0,325,Paris On-Site Study Abroad Seminars,10,0.7494633197784424,0.008403361344537815
+0,30,Industry Research Lab Practical Training,12,0.753048300743103,0.011204481792717087
+0,14,Departmental CPT Degree Completion Requirements,18,0.7761492729187012,0.014005602240896359
+0,333,Persuasive Brief Drafting And Rhetoric,12,0.797397792339325,0.01680672268907563
+0,13,Hybrid Distance Indigenous Language Sequences,32,0.8038721084594727,0.0196078431372549
+0,231,Introductory Computer Science Supplemental Labs,15,0.8440402150154114,0.022408963585434174
+0,9,Vietnamese and Khmer Language Sequences,12,0.8447484970092773,0.025210084033613446
+0,282,Classical Literature In Translation Seminars,25,0.8529211282730103,0.028011204481792718
+0,216,Global Health In Resource-Poor Settings,37,0.8533861637115479,0.03081232492997199
+0,71,Student Wellbeing and Peer Health Education,28,0.8554613590240479,0.03361344537815126
+0,133,Earth and Planetary Sciences Research,15,0.8554724454879761,0.036414565826330535
+0,287,Core PWR Research Based Argument Sequence,23,0.8568434715270996,0.0392156862745098
+0,228,Scenic Lighting And Properties Design,16,0.8575912714004517,0.04201680672268908
+0,223,Practical Software Tools And Design,10,0.8627866506576538,0.04481792717086835
+0,104,Proof-Based Analysis And PDE Theory,24,0.8650344014167786,0.047619047619047616
+0,21,Terminal Graduate Registration Dissertation Courses,34,0.870286762714386,0.05042016806722689
+0,17,Beginning Polish Czech Hungarian Finnish,35,0.871155858039856,0.05322128851540616
+0,129,Social Epistemology and Embodied Phenomenology,11,0.8722779750823975,0.056022408963585436
+0,311,Critical Concept Seminars In Cultural Anthropology,22,0.8756296634674072,0.058823529411764705
+0,22,Private Applied Lessons For Music Majors,41,0.878598690032959,0.06162464985994398
+0,267,Senior Thesis MFA Professional Practice,30,0.8797523975372314,0.06442577030812324
+0,212,Carbon Markets And Climate Tech Economics,24,0.8809007406234741,0.06722689075630252
+0,206,Equitable Electrification Law And Policy Practicums,11,0.881787896156311,0.0700280112044818
+0,306,Evidence Law and Clinical Practice,11,0.8819425106048584,0.07282913165266107
+0,339,Black Queer Trans Anticolonial Sexuality Scholarship,33,0.8828393220901489,0.07563025210084033
+0,242,"Science, Technology, Society Studies",26,0.8828854560852051,0.0784313725490196
+0,200,General And Subspecialty Surgery Rotations,21,0.8831413984298706,0.08123249299719888
+0,320,Wonder Sublimity And Literary Imagination,46,0.8833875060081482,0.08403361344537816
+0,227,Scholarly Organization Theory And Analysis,25,0.8838850259780884,0.08683473389355742
+0,4,South Asian Language Instruction,26,0.883903443813324,0.0896358543417367
+0,95,"Abstract Algebra, Number Theory",24,0.8841240406036377,0.09243697478991597
+0,111,"Astrophysics, Cosmology, And Observational Astronomy",14,0.8846580982208252,0.09523809523809523
+0,28,Communicative Swahili Zulu Amharic Sequences,33,0.8853517770767212,0.09803921568627451
+0,179,Immunology and Biomedical Engineering Technologies,25,0.8854547142982483,0.10084033613445378
+0,230,Computer Science Independent Research Credit,14,0.8863550424575806,0.10364145658263306
+0,268,Classical Language Reading And Composition,13,0.8865582942962646,0.10644257703081232
+0,130,Quantum Condensed Matter Physics,12,0.8878600597381592,0.1092436974789916
+0,80,Moral Philosophy For Personal And Civic Life,16,0.8882754445075989,0.11204481792717087
+0,201,Clinical And Surgical Human Anatomy,25,0.8903563022613525,0.11484593837535013
+0,114,"Culture, Identity, and Mental Health",19,0.8909781575202942,0.11764705882352941
+0,149,Modern Physics And Quantum Mechanics,40,0.8910435438156128,0.12044817927170869
+0,269,Greek And Latin Language Instruction,24,0.891156792640686,0.12324929971988796
+0,215,Artificial Intelligence And Deep Learning,41,0.8920276165008545,0.12605042016806722
+0,271,Public Art And Visual Literacy,16,0.8921180963516235,0.12885154061624648
+0,323,Rule Of Law Statebuilding And Anticorruption,11,0.8932275772094727,0.13165266106442577
+0,265,Digital Media Art Theory,11,0.8932596445083618,0.13445378151260504
+0,101,Full-Stack Web And Mobile Development,11,0.8938456773757935,0.13725490196078433
+0,318,Formal Models Of Electoral Behavior,25,0.8939477205276489,0.1400560224089636
+0,321,Moral Judgment And Visual Culture,10,0.8941754698753357,0.14285714285714285
+0,153,Integrated Organ System Pathophysiology,36,0.8950182199478149,0.14565826330532214
+0,235,"Taxation, Estate Planning, Business Policy",12,0.8958938717842102,0.1484593837535014
+0,147,"Organic Synthesis, Mechanism, Laboratory Training",30,0.8961299061775208,0.15126050420168066
+0,27,Igbo Twi Tigrinya Continuation Courses,13,0.8963004350662231,0.15406162464985995
+0,225,Primary Care Clinical Clerkships,31,0.8963110446929932,0.1568627450980392
+0,190,Artificial Intelligence In Healthcare,22,0.8963664770126343,0.15966386554621848
+0,209,Environmental Social Sciences Research Training,26,0.8965446352958679,0.16246498599439776
+0,92,Clinical Neurosciences Clerkships,27,0.8970170021057129,0.16526610644257703
+0,239,Quantitative Cell Dynamics And Signaling Networks,24,0.8970746397972107,0.16806722689075632
+0,39,Academic Writing And Thesis Support,10,0.8971655964851379,0.17086834733893558
+0,294,Youth Education Law Advocacy,11,0.8973596096038818,0.17366946778711484
+0,254,Urban Studies And Inequality,12,0.8976709842681885,0.17647058823529413
+0,169,"Evolutionary Biology, Biodiversity, and Paleobiology",34,0.8984785079956055,0.1792717086834734
+0,155,Studio Sequence Craft And Architectural Drawing,10,0.8987732529640198,0.18207282913165265
+0,173,Internet Speech Governance And Content Moderation,37,0.8993911743164062,0.18487394957983194
+0,276,PWR Rhetorics Of Witness And Identity,11,0.8994555473327637,0.1876750700280112
+0,117,Water and Wastewater Treatment Engineering,12,0.8994659185409546,0.19047619047619047
+0,78,Education Data Science and Statistics,23,0.9006279110908508,0.19327731092436976
+0,245,Medical Narrative Writing Workshops,18,0.9012651443481445,0.19607843137254902
+0,348,Modern British Imperial Historical Memory,21,0.9013744592666626,0.19887955182072828
+0,150,Community-Partnered Data Science Capstone Teams,13,0.9017478823661804,0.20168067226890757
+0,16,Multiyear Russian Ukrainian Romanian Proficiency,38,0.9022469520568848,0.20448179271708683
+0,241,Global Environmental Change and Society,41,0.9025418758392334,0.20728291316526612
+0,100,ACE Supplemental Engineering Calculus Sections,13,0.9026921987533569,0.21008403361344538
+0,356,Early Modern Through Nineteenth-Century Prose Fiction,28,0.9029094576835632,0.21288515406162464
+0,60,Marine Organismal Physiology and Conservation,22,0.9038890600204468,0.21568627450980393
+0,172,Biodesign Health Technology Innovation,16,0.9042245149612427,0.2184873949579832
+0,277,History of Early Modern Science,12,0.9044408798217773,0.22128851540616246
+0,210,Natural Language Processing,11,0.9044543504714966,0.22408963585434175
+0,301,Continental Philosophy And Literature,11,0.9063732028007507,0.226890756302521
+0,189,Learning Sciences And Technology Design,31,0.9064164161682129,0.22969187675070027
+0,217,Structural Racism And Health Disparities,10,0.9073432087898254,0.23249299719887956
+0,15,"Filipino, Hawaiian, Samoan, Haitian Creole",19,0.9075192809104919,0.23529411764705882
+0,0,Frosh 101 Residence Seminars,22,0.9081580638885498,0.23809523809523808
+0,29,Sustainable Food Systems And Agroecology,41,0.908353328704834,0.24089635854341737
+0,324,International Business Law And Arbitration,31,0.9092269539833069,0.24369747899159663
+0,84,Academic Career And Graduate Success,27,0.9092578887939453,0.24649859943977592
+0,316,Science Fiction and Speculative Futures,16,0.9093787670135498,0.24929971988795518
+0,59,Shipboard Oceanography and Estuarine Biogeochemistry,35,0.9094219207763672,0.25210084033613445
+0,75,AI Strategy For Business,25,0.9095182418823242,0.2549019607843137
+0,196,Human-Centered AI Interaction Design,34,0.9096074104309082,0.25770308123249297
+0,191,Drug Development and Digital Health,10,0.9096090793609619,0.2605042016806723
+0,340,"Race, Indigeneity, Colonialism In Americas",26,0.9098888039588928,0.26330532212885155
+0,146,"Quantum Theory, Spectroscopy, Bonding In Solids",20,0.9099781513214111,0.2661064425770308
+0,86,Diagnostic Radiology And Radiation Oncology,21,0.91013503074646,0.2689075630252101
+0,167,History of Epidemics and Society,10,0.9102663993835449,0.27170868347338933
+0,341,European And Middle Eastern Literature,31,0.9106292724609375,0.27450980392156865
+0,182,Independent Biology Research and Mentorship,48,0.9111663103103638,0.2773109243697479
+0,106,Clinical Neuroscience Of Stress Sleep Psychopathology,12,0.9114896059036255,0.2801120448179272
+0,205,Computational Genomics And Molecular Biology,15,0.9117885828018188,0.28291316526610644
+0,219,Sociology Research Training Seminars,19,0.9119762182235718,0.2857142857142857
+0,343,Black Diaspora And Indigenous Studies Foundations,16,0.9123361110687256,0.28851540616246496
+0,46,Auditioned Choral Orchestral And Wind Ensembles,35,0.9129612445831299,0.2913165266106443
+0,83,Higher Education Diversity Admissions Debates,19,0.9140075445175171,0.29411764705882354
+0,47,Audition-Based Instrument Class And Lesson Signups,30,0.9140510559082031,0.2969187675070028
+0,175,Statistical Theory and Applied Inference,51,0.9143081307411194,0.29971988795518206
+0,211,Sustainable Energy Transitions And Equity,13,0.9143915176391602,0.3025210084033613
+0,52,Multitrack Spanish For Heritage Learners,31,0.9144941568374634,0.30532212885154064
+0,144,Health Care Management And Innovation,14,0.9150032997131348,0.3081232492997199
+0,305,Global Food History And Culture,10,0.915436327457428,0.31092436974789917
+0,304,Early Modern European Global History,11,0.9155197143554688,0.3137254901960784
+0,236,East Asian Art and Nature,27,0.9155727624893188,0.3165266106442577
+0,332,"Negotiation, Mediation And Dispute Resolution",12,0.9155797958374023,0.31932773109243695
+0,350,"Social Movements, Migration, Racial Politics",12,0.9156935214996338,0.32212885154061627
+0,314,National Security Technology Innovation,15,0.9159573316574097,0.32492997198879553
+0,185,"Environmental, Climate and Natural Resources Law",29,0.9167054295539856,0.3277310924369748
+0,203,Convex And Combinatorial Optimization Algorithms,13,0.9167232513427734,0.33053221288515405
+0,161,Human-Centered Design Studio Curriculum,53,0.9171065092086792,0.3333333333333333
+0,3,Intellectual Property Law,43,0.9172104597091675,0.33613445378151263
+0,145,Urology and Nephrology Clinical Clerkships,10,0.9175245761871338,0.3389355742296919
+0,105,Synaptic Physiology And Neural Circuit Foundations,27,0.9175355434417725,0.34173669467787116
+0,251,Business Strategy And Operations Management,34,0.9179713726043701,0.3445378151260504
+0,128,"Scientific Realism, Grounding, Physicalist Metaphysics",34,0.9179767370223999,0.3473389355742297
+0,139,Plasma Physics And High-Temperature Gas Diagnostics,13,0.9180693626403809,0.35014005602240894
+0,221,Media Psychology And Communication Research,35,0.9185042381286621,0.35294117647058826
+0,23,Multilevel Portuguese For Lusophone Contexts,11,0.918958306312561,0.3557422969187675
+0,322,Transactional Lawyering Drafting And Clinics,11,0.9190804362297058,0.3585434173669468
+0,253,Technology Entrepreneurship And Venture Creation,85,0.919172465801239,0.36134453781512604
+0,119,"Social Theory, Equity, Schooling Institutions",22,0.9195102453231812,0.3641456582633053
+0,312,Ethnographic Methods And Anthropology Degree Training,32,0.9195805191993713,0.36694677871148457
+0,353,"Soviet Socialism, Terror, Industrial Utopia",11,0.9201492071151733,0.3697478991596639
+0,238,Biomolecular Chemistry And Structural Characterization Methods,30,0.9202296733856201,0.37254901960784315
+0,178,Bioengineering Biomaterials And Tissue Engineering,23,0.9203013181686401,0.3753501400560224
+0,335,"Supreme Court Practice, Moot Court Competition",17,0.9203456044197083,0.37815126050420167
+0,347,African Slavery Colonialism Global History,41,0.9204316735267639,0.38095238095238093
+0,184,Obstetrics And Gynecology Clinical Clerkships,10,0.9204764366149902,0.38375350140056025
+0,233,Molecular Bioengineering And Protein Design,14,0.9206329584121704,0.3865546218487395
+0,275,Hispanic Modernisms Across Visual Media,10,0.9206367135047913,0.38935574229691877
+0,8,Italian Proficiency And Florence Preparation,21,0.9209369421005249,0.39215686274509803
+0,255,Urban Planning And Sustainable Cities,34,0.920994222164154,0.3949579831932773
+0,327,"Founding, Reconstruction And Constitutional Change Over Time",13,0.9212798476219177,0.39775910364145656
+0,148,Quantum Computing And Information,12,0.9219123125076294,0.4005602240896359
+0,197,AI Ethics and Society,26,0.9219660758972168,0.40336134453781514
+0,232,Corporate Law and Governance,34,0.922336220741272,0.4061624649859944
+0,163,"Structural Geology, Tectonics, Geophysics",35,0.9223499298095703,0.40896358543417366
+0,286,Global Economic History,22,0.9224579334259033,0.4117647058823529
+0,91,"Blockchain, Cryptocurrency, and DeFi",15,0.9226080179214478,0.41456582633053224
+0,220,Sustainability Leadership And Systems Transformation,27,0.9227637052536011,0.4173669467787115
+0,38,English for Non-Native Speakers,13,0.9227747321128845,0.42016806722689076
+0,20,Voice Class and Vocal Pedagogy,27,0.923145055770874,0.42296918767507
+0,224,Inpatient Medicine And Pediatrics Clerkships,39,0.9232287406921387,0.4257703081232493
+0,142,Construction Engineering And Project Management,15,0.9234843254089355,0.42857142857142855
+0,138,Undergraduate Physics Research And Laboratory,17,0.9236196279525757,0.43137254901960786
+0,309,Criminal Law And Procedure,46,0.924115777015686,0.4341736694677871
+0,33,Putonghua And Southern Min Foundational Skills,24,0.9242360591888428,0.4369747899159664
+0,181,Psychology Curriculum and Research Methods,11,0.9243167638778687,0.43977591036414565
+0,170,Biostatistics for Clinical Research,24,0.9243210554122925,0.4425770308123249
+0,258,Fashion Cultures and Apocalyptic Futures,12,0.9243792295455933,0.44537815126050423
+0,122,Computational and Cognitive Neuroscience Methods,36,0.9244921803474426,0.4481792717086835
+0,123,Cancer Biology,20,0.9246622323989868,0.45098039215686275
+0,187,Indigenous Environmental Knowledge And Sovereignty,10,0.9247970581054688,0.453781512605042
+0,285,Political Economy of China,31,0.9250504970550537,0.4565826330532213
+0,284,History of Political Thought,31,0.9253021478652954,0.45938375350140054
+0,299,Asylum Borders And Crimmigration Enforcement Law,33,0.9254432916641235,0.46218487394957986
+0,121,Cognitive Science of Memory,14,0.9257414937019348,0.4649859943977591
+0,76,Social Science Research Methods,34,0.9258884787559509,0.4677871148459384
+0,298,Greco-Roman And Ancient Near Eastern Empires,12,0.9261118173599243,0.47058823529411764
+0,51,Spanish Service-Learning and Madrid Study Abroad,16,0.9261390566825867,0.4733893557422969
+0,186,"Microbiology, Microbial Genomics And Microbiomes",30,0.9261692762374878,0.47619047619047616
+0,40,"Sociolinguistics, Phonetics, And Interaction",62,0.9264618754386902,0.4789915966386555
+0,132,"Child Development, Risk, Resilience",11,0.9265920519828796,0.48179271708683474
+0,125,Coastal Physical Oceanography And Environmental Fluid Mechanics,19,0.9268246293067932,0.484593837535014
+0,94,Graduate Topology And Differential Geometry,25,0.9269402623176575,0.48739495798319327
+0,293,Renaissance Florence Art And Architecture,34,0.9270327091217041,0.49019607843137253
+0,154,Biomedical Data Science Graduate Training,19,0.9270880818367004,0.49299719887955185
+0,7,Francophone French Proficiency And Composition,26,0.9271327257156372,0.4957983193277311
+0,326,Comparative Global Urban History Methods,17,0.9282705783843994,0.49859943977591037
+0,349,United States History Surveys,35,0.9285361170768738,0.5014005602240896
+0,110,Ancient and Comparative Philosophy,13,0.9286333322525024,0.5042016806722689
+0,19,Korean Interpersonal Interpretive Presentational Proficiency Courses,24,0.929163932800293,0.5070028011204482
+0,222,Housing Policy And Urban Law,13,0.9293399453163147,0.5098039215686274
+0,24,Chinese Language Proficiency Sequences,35,0.9298681616783142,0.5126050420168067
+0,319,Ethnic Studies Research Praxis Workshops,13,0.9300094842910767,0.5154061624649859
+0,214,Cognitive Science and AI,17,0.9300801753997803,0.5182072829131653
+0,344,American And Latin American Studies,21,0.9301355481147766,0.5210084033613446
+0,283,European Union Politics,10,0.930453896522522,0.5238095238095238
+0,281,Political Science Methodology and Research,37,0.930892288684845,0.5266106442577031
+0,250,Corporate Finance And Financial Statement Analysis,54,0.9309254884719849,0.5294117647058824
+0,113,Fluid Mechanics And Heat Transfer,19,0.9309678077697754,0.5322128851540616
+0,176,Health Policy And Economics,35,0.9310181140899658,0.5350140056022409
+0,67,Jazz World And Vocal Ensembles,15,0.9310699701309204,0.5378151260504201
+0,74,Departmental Honors Thesis Capstone Tutorials,16,0.9311431646347046,0.5406162464985994
+0,199,Stem Cell Biology Regenerative Medicine,10,0.9312871098518372,0.5434173669467787
+0,57,Physical Education Swimming and Horsemanship,13,0.9315575361251831,0.5462184873949579
+0,151,Reproducible Research Computing And Data Tooling,25,0.9315798878669739,0.5490196078431373
+0,308,"Crime, Punishment, Policing, Mass Incarceration",13,0.9316127300262451,0.5518207282913166
+0,61,Faculty-Supervised Doctoral Dissertation Research,54,0.9316844344139099,0.5546218487394958
+0,5,Multilevel Cantonese Conversation And Cantopop Culture,19,0.931831955909729,0.5574229691876751
+0,168,Mathematical Population Biology And Evolution,18,0.931948184967041,0.5602240896358543
+0,63,Sport Skill Instruction And Competitive Athletics,20,0.9322012662887573,0.5630252100840336
+0,291,Medieval Studies Sources And Methods,27,0.9322584867477417,0.5658263305322129
+0,296,Modern East Asian History,29,0.9323917627334595,0.5686274509803921
+0,183,"Christian Theology, Scripture, Political Theology",30,0.9325052499771118,0.5714285714285714
+0,334,Lawyer Regulation And Litigation Practice Norms,24,0.9326422810554504,0.5742296918767507
+0,198,Medical Humanities and Healing Arts,16,0.9330631494522095,0.5770308123249299
+0,73,Faculty-Supervised Independent Study Courses,30,0.9330793619155884,0.5798319327731093
+0,352,"Imperial Russia, Ukraine, Modern Europe",10,0.9333874583244324,0.5826330532212886
+0,192,Community-Engaged Research And Public Service,18,0.9338717460632324,0.5854341736694678
+0,6,German Proficiency Sequences And Berlin Study,23,0.9339275360107422,0.5882352941176471
+0,307,Russian And Slavic Literature,27,0.9340329170227051,0.5910364145658263
+0,240,Environmental Anthropology And Justice,12,0.9343061447143555,0.5938375350140056
+0,346,Historical Methods and Research Practice,18,0.9343317747116089,0.5966386554621849
+0,58,Outdoor Adventure Skills And Safety,18,0.9343809485435486,0.5994397759103641
+0,226,Applied Leadership Practice And Self-Development,51,0.9344874620437622,0.6022408963585434
+0,135,Faculty-Supervised Engineering Research And Thesis,45,0.9346996545791626,0.6050420168067226
+0,107,Materials Science Curriculum And Mentorship,10,0.9348269701004028,0.6078431372549019
+0,141,Integrated Sustainable Building Design Studios,26,0.934914231300354,0.6106442577030813
+0,124,Atmospheric And Climate Dynamics,17,0.9350540637969971,0.6134453781512605
+0,120,Education Policy And Comparative Research,23,0.935093879699707,0.6162464985994398
+0,252,Entrepreneurial Marketing And Go-To-Market Strategy,27,0.9351041316986084,0.6190476190476191
+0,134,Mechanical Design And Product Realization,41,0.935523509979248,0.6218487394957983
+0,162,Planetary Geophysics And Remote Sensing,21,0.935565710067749,0.6246498599439776
+0,96,Numerical Methods and Scientific Computing,21,0.9363940954208374,0.6274509803921569
+0,351,"Race, Immigration, And Asian American Studies",45,0.9365586042404175,0.6302521008403361
+0,156,Modern Architecture Histories Theory And Placemaking,15,0.9367960095405579,0.6330532212885154
+0,229,Environmental Storytelling And Media Communication,20,0.9369126558303833,0.6358543417366946
+0,2,Intermediate Photography Practice And Theory,35,0.936965823173523,0.6386554621848739
+0,12,Modern Persian Language Instruction,12,0.9370958209037781,0.6414565826330533
+0,25,Linguistics Research Training Seminars,13,0.9371451735496521,0.6442577030812325
+0,103,Mathematics Department Independent Study Requirements,17,0.9371467232704163,0.6470588235294118
+0,109,Teacher Preparation Seminars And Practicum,20,0.9373040199279785,0.6498599439775911
+0,246,World Cinema Studies,80,0.9373692870140076,0.6526610644257703
+0,208,"Computer Systems, Networks, Parallel Architecture",48,0.9374107718467712,0.6554621848739496
+0,303,"Medieval Vernacular Romance, Epic, and Dante",26,0.9374269247055054,0.6582633053221288
+0,85,Economics And Finance Of Education,12,0.9374387264251709,0.6610644257703081
+0,310,Indo-Pacific Great Power Rivalry And Strategy,20,0.9374736547470093,0.6638655462184874
+0,302,Warfare Society And Asia-Pacific Historical Transformation,11,0.9375348091125488,0.6666666666666666
+0,79,Disability Studies In Education,11,0.9379464387893677,0.6694677871148459
+0,188,Physician Assistant Studies Clinical Clerkships,18,0.938015341758728,0.6722689075630253
+0,66,Theater History Dramaturgy And Playwriting,11,0.9383976459503174,0.6750700280112045
+0,204,"Algorithm Design, Data Structures, Information Theory",13,0.9384846687316895,0.6778711484593838
+0,166,Emerging Viral Diseases And Biosecurity,14,0.9384902715682983,0.680672268907563
+0,317,"Democratic Erosion, Polarization, Representation",39,0.9386395215988159,0.6834733893557423
+0,260,Writing And Rhetoric Of Digital Culture,25,0.9390746355056763,0.6862745098039216
+0,244,Science Communication Writing Courses,19,0.9392894506454468,0.6890756302521008
+0,264,Modern Greek Language Sequence,11,0.9395604729652405,0.6918767507002801
+0,115,Clinical Psychiatry Clerkships And Electives,17,0.939612090587616,0.6946778711484594
+0,72,Mathematical Logic and Philosophy,16,0.9396305084228516,0.6974789915966386
+0,126,Earth Systems Capstone And Research,15,0.93986976146698,0.7002801120448179
+0,329,Legal History Across National Traditions,20,0.9401302337646484,0.7030812324929971
+0,342,Literary Translation And Middle Eastern Literature,10,0.9402021169662476,0.7058823529411765
+0,234,Public Economics And Fiscal Policy,25,0.9404157400131226,0.7086834733893558
+0,237,Frontline Environmental Justice Community Praxis,10,0.9406490325927734,0.711484593837535
+0,10,Graduate East Asian Humanities Training,13,0.9407047629356384,0.7142857142857143
+0,112,Aeronautics And Astronautics Engineering,52,0.9407486915588379,0.7170868347338936
+0,118,Electrical Engineering Independent Study Requirements,38,0.9411393404006958,0.7198879551820728
+0,140,"Bioethics, Genetics And Neurolaw",29,0.9413076043128967,0.7226890756302521
+0,202,Environmental and Climate Economics Policy,20,0.9413371086120605,0.7254901960784313
+0,194,Theories of Religion and Religious Studies,69,0.9414981603622437,0.7282913165266106
+0,56,Faculty-Sponsored Undergraduate Directed Research Credit,14,0.9417225122451782,0.7310924369747899
+0,164,Statistical Mechanics And Disordered Systems,14,0.9419392347335815,0.7338935574229691
+0,90,"Turbulence, Flow Instability, Advanced Fluid Mechanics",10,0.942004919052124,0.7366946778711485
+0,207,Social Entrepreneurship And Strategic Philanthropy,25,0.942049503326416,0.7394957983193278
+0,331,Cross-Genre Creative Nonfiction Workshops,18,0.942335844039917,0.742296918767507
+0,177,Statistical Machine Learning Methods,18,0.9426720142364502,0.7450980392156863
+0,313,Federal Courts And Structural Constitutional Law,15,0.9429423213005066,0.7478991596638656
+0,345,American Modernist Fiction Race Gender,21,0.9432867169380188,0.7507002801120448
+0,165,"Materials Structure, Characterization, and Thermodynamics",18,0.9433062672615051,0.7535014005602241
+0,70,Comedy Theory and Satirical Resistance,11,0.9434325695037842,0.7563025210084033
+0,243,Graduate Economic Theory And Finance,90,0.9434897303581238,0.7591036414565826
+0,180,Social and Cultural Psychology Interventions,25,0.9435125589370728,0.7619047619047619
+0,116,Hydrology And Environmental Fluid Mechanics,14,0.9438266158103943,0.7647058823529411
+0,18,Multiyear Japanese Language Culture Communication Sequence,58,0.943842887878418,0.7675070028011205
+0,259,Experimental Animation And Moving-Image Arts,17,0.9439691305160522,0.7703081232492998
+0,36,Yiddish and Hebrew Language Study,19,0.9441972374916077,0.773109243697479
+0,82,ROTC Military Leadership Training,16,0.9443427324295044,0.7759103641456583
+0,289,Ancient Mediterranean Art And Reception,11,0.9444568157196045,0.7787114845938375
+0,50,"Ethnomusicology, Popular Music And Society",54,0.944526731967926,0.7815126050420168
+0,160,"Analog, RF, and Digital Circuits",36,0.9447184801101685,0.7843137254901961
+0,274,Latin American Narrative And Poetry Canon,21,0.9447894096374512,0.7871148459383753
+0,64,Health Related Fitness Training And Injury Prevention,37,0.9449478983879089,0.7899159663865546
+0,257,Media Theory And Cultural Studies,34,0.945080041885376,0.7927170868347339
+0,337,Jurisprudential Schools And Critical Legal Movements,19,0.9450824856758118,0.7955182072829131
+0,32,Public Speaking and Presentation Skills,13,0.9451577663421631,0.7983193277310925
+0,41,Syntactic Theory and Lexical Semantics,24,0.945221483707428,0.8011204481792717
+0,174,Stochastic Processes And Applied Probability,26,0.9453965425491333,0.803921568627451
+0,87,Medical Imaging Physics And Reconstruction,17,0.945415735244751,0.8067226890756303
+0,354,"Race, Gender, Identity In Literature",62,0.9454557299613953,0.8095238095238095
+0,55,"Computer Graphics, Vision, Imaging",25,0.9455200433731079,0.8123249299719888
+0,328,First And Fourteenth Amendment Doctrine,15,0.9460666179656982,0.8151260504201681
+0,45,Secondary English And World Language Teaching Methods,14,0.9460707902908325,0.8179271708683473
+0,43,Digital Humanities Computational Methods,12,0.9461463689804077,0.8207282913165266
+0,218,Game Theory And Market Design,43,0.9462303519248962,0.8235294117647058
+0,26,Directed Reading And Independent Study,16,0.9463750123977661,0.8263305322128851
+0,131,Museum Studies And Decolonial Curation,19,0.9464278221130371,0.8291316526610645
+0,292,International Relations Thesis and Capstone Research,13,0.9465372562408447,0.8319327731092437
+0,77,Analytic Philosophy And Language,10,0.9467976093292236,0.834733893557423
+0,34,"Advanced Mandarin Discussion, Business, And Academic Chinese",14,0.9469095468521118,0.8375350140056023
+0,102,Normative Ethical Theory and Metaethics,37,0.9469908475875854,0.8403361344537815
+0,249,Quantitative Finance And Investment Modeling,10,0.947522759437561,0.8431372549019608
+0,127,Computational Social Science And Networks,11,0.9476091265678406,0.84593837535014
+0,81,Mathematics Education Curriculum And Teacher Preparation,12,0.9476102590560913,0.8487394957983193
+0,157,Structural Engineering Analysis and Seismic Design,32,0.9479951858520508,0.8515406162464986
+0,193,AI Law Policy Governance,38,0.9483966827392578,0.8543417366946778
+0,272,Global Modernism And Marginalized Artists,60,0.9484189748764038,0.8571428571428571
+0,53,Composition Seminars Orchestration And Improvisation Collectives,11,0.9488614797592163,0.8599439775910365
+0,98,Federal Indian and Tribal Law,10,0.9489786624908447,0.8627450980392157
+0,278,Negotiation Strategy And Conflict Management,10,0.9492015242576599,0.865546218487395
+0,336,"Legal Philosophy, Gender, Sexuality Law",18,0.9492238163948059,0.8683473389355743
+0,262,"Printmaking, Artist Books, Weaving Studios",27,0.9498643279075623,0.8711484593837535
+0,247,Screenwriting And Audio Narrative Workshops,14,0.949974775314331,0.8739495798319328
+0,99,Laboratory Animal Science And Medicine,15,0.9500817656517029,0.876750700280112
+0,93,Chemical Engineering Curriculum And Research,18,0.950204074382782,0.8795518207282913
+0,143,Clinical Medical Genetics And Genetic Counseling,35,0.9504265785217285,0.8823529411764706
+0,330,Short Story And Novel Workshops,10,0.9505603909492493,0.8851540616246498
+0,42,Computer Music And Audio Technology,37,0.9506939649581909,0.8879551820728291
+0,295,Contemporary Chinese Politics And Society,18,0.9508683681488037,0.8907563025210085
+0,68,Tonal Theory Musicianship And Jazz Studies,16,0.9510374665260315,0.8935574229691877
+0,263,Islamic Intellectual And Religious History,30,0.9510700702667236,0.896358543417367
+0,273,Poetry Workshops and Lyric Studies,51,0.9510995149612427,0.8991596638655462
+0,315,American Foreign Policymaking Intervention And Economic Statecraft,10,0.9513765573501587,0.9019607843137255
+0,355,British Novel Genre And Theory,31,0.951547384262085,0.9047619047619048
+0,48,Shakespeare And Early Modern Drama,19,0.9515489339828491,0.907563025210084
+0,65,Studio Acting And Devised Performance,38,0.9515712857246399,0.9103641456582633
+0,54,"Robotics Perception, Planning, Control",30,0.9516791105270386,0.9131652661064426
+0,256,Journalism Reporting And News Media,26,0.952100396156311,0.9159663865546218
+0,300,Human Rights Trafficking And Atrocity Accountability,13,0.9521188735961914,0.9187675070028011
+0,270,"Institutions, Poverty, And Global Development",23,0.9521772265434265,0.9215686274509803
+0,338,Foundational Feminist Studies Curriculum And Capstones,17,0.9523895978927612,0.9243697478991597
+0,137,Dynamic Systems Modeling And Control,12,0.9531590342521667,0.927170868347339
+0,171,Epidemiologic Study Design and Methods,10,0.9539350271224976,0.9299719887955182
+0,49,Western Music History And Analysis,24,0.9541414380073547,0.9327731092436975
+0,195,Buddhist Studies Texts And Traditions,28,0.9541721343994141,0.9355742296918768
+0,69,"Keyboard Skills, Collaborative Piano, Repertoire Study",15,0.954184889793396,0.938375350140056
+0,297,Archaeological Theory Methods And Heritage,55,0.954258382320404,0.9411764705882353
+0,280,"Genocide, Humanitarian Intervention, Transitional Justice",17,0.9548107981681824,0.9439775910364145
+0,213,Community Organizing And Leadership Facilitation,11,0.9553576707839966,0.9467787114845938
+0,159,Semiconductor Device Physics And Nanofabrication,20,0.9554134607315063,0.9495798319327731
+0,290,Ottoman Legacies And Modern Middle East,36,0.9561666250228882,0.9523809523809523
+0,152,Applied Public Policy Capstone Practicums,31,0.95619797706604,0.9551820728291317
+0,97,"Photonics, Lasers, and Optical Devices",14,0.9568204879760742,0.957983193277311
+0,1,Turkish Language Instruction,18,0.9572885036468506,0.9607843137254902
+0,44,"Literacy Development, Research, And Instruction",10,0.957675576210022,0.9635854341736695
+0,89,Causal Inference and Quasi-Experimental Methods,18,0.9579809308052063,0.9663865546218487
+0,136,Perioperative Anesthesiology Clerkships And Subinternships,11,0.9582226276397705,0.969187675070028
+0,37,Jewish Studies History Thought,35,0.9582812786102295,0.9719887955182073
+0,35,Dance Technique And Choreography Courses,39,0.9589977264404297,0.9747899159663865
+0,11,Arabic Language Proficiency Sequence,23,0.9591218829154968,0.9775910364145658
+0,62,Dramatic Literature And Theatrical Genres,10,0.9606345295906067,0.9803921568627451
+0,261,Chinese Literary History And Criticism,11,0.9608291387557983,0.9831932773109243
+0,279,Modern Military History And Warfare,14,0.9609382152557373,0.9859943977591037
+0,88,Graduate Econometrics Theory And Methods,19,0.9612529873847961,0.988795518207283
+0,108,"Curriculum Design, Teaching Practicum, Directed Education Research",17,0.9613931179046631,0.9915966386554622
+0,266,Introductory Drawing Painting Sculpture Studios,48,0.962848424911499,0.9943977591036415
+0,158,Computational Solid Mechanics And Plasticity,14,0.9641973972320557,0.9971988795518207
+0,248,Documentary Film Production MFA,34,0.972467303276062,1.0
+1,9,Introductory Central European Nordic Languages,35,0.7895208597183228,0.008333333333333333
+1,2,African Asian Indigenous Language Sequences,134,0.810716986656189,0.016666666666666666
+1,95,China Reform and Global Development History,62,0.8478530049324036,0.025
+1,40,"Modern Physics, Quantum Mechanics, Astrophysics",99,0.8515927195549011,0.03333333333333333
+1,115,Transnational German Turkish Arabic Writing,41,0.8545248508453369,0.041666666666666664
+1,10,Individual Instrumental Instruction For Majors,41,0.8582360148429871,0.05
+1,50,"Physical, Organic, and Inorganic Chemistry",66,0.8613288402557373,0.058333333333333334
+1,73,Sustainability Governance Justice And Social Science,139,0.8627454042434692,0.06666666666666667
+1,82,Science Communication and Medical Narrative Writing,65,0.867929220199585,0.075
+1,55,"Biodesign, Digital Health Innovation",73,0.8755051493644714,0.08333333333333333
+1,53,Epidemiology and Clinical Research Methods,76,0.8773430585861206,0.09166666666666666
+1,65,Global Health Equity and Social Justice,94,0.8809259533882141,0.1
+1,100,"Asylum, Atrocity Accountability, Border Governance",58,0.8867213726043701,0.10833333333333334
+1,106,Global Urban History of Capitals,50,0.8873476982116699,0.11666666666666667
+1,42,Clinical Psychiatry and Mental Health,41,0.8900808095932007,0.125
+1,6,Spanish Portuguese Multitrack Proficiency Courses,77,0.8927720785140991,0.13333333333333333
+1,29,Medical Imaging and Radiation Oncology,44,0.8947258591651917,0.14166666666666666
+1,66,Molecular Biology and Biochemical Techniques,158,0.8948394656181335,0.15
+1,56,Integrated Organ System Pathophysiology,36,0.8950182199478149,0.15833333333333333
+1,15,Agroecology Farming And Food System Innovation,41,0.8962483406066895,0.16666666666666666
+1,43,Hands-On Data Analysis And Capstones,63,0.8964546918869019,0.175
+1,4,French Italian Proficiency With Study Abroad,47,0.8984208106994629,0.18333333333333332
+1,41,"Developmental, Social, and Cultural Psychology",86,0.8990062475204468,0.19166666666666668
+1,44,Geophysics and Earth-Planetary Systems,111,0.8992533683776855,0.2
+1,61,Internet Speech Governance And Content Moderation,37,0.8993911743164062,0.20833333333333334
+1,101,Early Modern Europe Global Encounters,40,0.8996604681015015,0.21666666666666667
+1,33,Neuroscience from Synapses to Cognition,101,0.9020003080368042,0.225
+1,91,"Greek, Latin, and Ancient Philology",53,0.9020320177078247,0.23333333333333334
+1,88,Iberian And Latin American Letters,63,0.9020645618438721,0.24166666666666667
+1,59,Bioengineering Biomaterials Immunology and Devices,52,0.9022789597511292,0.25
+1,94,Ancient Mediterranean Archaeology and Medieval Worlds,154,0.9024068117141724,0.25833333333333336
+1,1,Curricular Practical Training Internships,64,0.9039566516876221,0.26666666666666666
+1,37,"Reality, Knowledge, and Conscious Experience",68,0.9041091203689575,0.275
+1,32,"Applied Analysis, Linear Algebra, Computation",83,0.9048926830291748,0.2833333333333333
+1,68,Provable Algorithms Optimization Randomized Sampling,42,0.9060157537460327,0.2916666666666667
+1,30,Aerospace Engineering and Fluid Mechanics,119,0.9060800075531006,0.3
+1,22,Auditioned Large Performing Ensembles,35,0.9064337015151978,0.30833333333333335
+1,58,"Evolutionary Biology, Biodiversity, and Paleobiology",53,0.9064380526542664,0.31666666666666665
+1,23,Marine Biology and Oceanography Fieldwork,66,0.9073656797409058,0.325
+1,76,Operating Systems Networks Parallel Programming,48,0.907469630241394,0.3333333333333333
+1,79,"Urban Sociology, Housing and Inequality",115,0.9096288084983826,0.3416666666666667
+1,114,"Black, Latinx, and Indigenous Americas",70,0.9099591970443726,0.35
+1,39,Elasticity Plasticity And Structural Dynamics,91,0.9099772572517395,0.35833333333333334
+1,113,"Feminist, Queer, and Trans Studies",52,0.9104050397872925,0.36666666666666664
+1,67,Independent Biology Research and Mentorship,48,0.9111663103103638,0.375
+1,69,Foundations Of AI And Language Models,92,0.9114452600479126,0.38333333333333336
+1,31,"Graduate Algebra, Geometry, Topology",53,0.9122074842453003,0.39166666666666666
+1,93,Political Science Research Methods Workshops,60,0.9125409126281738,0.4
+1,119,Novel Form From Romance To Modernism,83,0.9129112958908081,0.4083333333333333
+1,63,Clinical Clerkships in Patient Care,138,0.9129155874252319,0.4166666666666667
+1,85,PhD Macroeconomics And Financial Economics,90,0.9131233096122742,0.425
+1,72,Human-Centered AI Design Ethics Studios,60,0.9133930206298828,0.43333333333333335
+1,8,Sequential Russian Ukrainian Romanian Proficiency,38,0.9140608906745911,0.44166666666666665
+1,26,Undergraduate Directed Study Honors Tutorials,65,0.9142778515815735,0.45
+1,48,Prototyping Manufacturing And Capstone Design,41,0.914340615272522,0.4583333333333333
+1,96,Western Political Philosophy From Machiavelli,44,0.9144071936607361,0.4666666666666667
+1,118,Black Feminist And Diasporic Fiction,62,0.9149942398071289,0.475
+1,70,Leadership and Social-Impact Organizations,150,0.9150287508964539,0.48333333333333334
+1,83,PWR Seminars on Media Rhetoric,223,0.9150813221931458,0.49166666666666664
+1,98,Modern East Asian History,63,0.9162062406539917,0.5
+1,57,Human-Centered Design Studio Curriculum,53,0.9171065092086792,0.5083333333333333
+1,3,Intellectual Property Law,43,0.9172104597091675,0.5166666666666667
+1,74,Energy Climate Economics and Policy,75,0.9176573753356934,0.525
+1,77,CS Supplemental Labs and Research,51,0.9182389974594116,0.5333333333333333
+1,80,Media Psychology And Communication Research,35,0.9185042381286621,0.5416666666666666
+1,13,Modern and Classical Chinese Reading Sequences,35,0.9206262826919556,0.55
+1,34,Education Policy and Comparative Schooling,64,0.9219827651977539,0.5583333333333333
+1,107,"Jurisprudence, Legal History, Rule Of Law",100,0.9236019849777222,0.5666666666666667
+1,45,"Atmosphere, Ocean, and Climate Dynamics",38,0.9243967533111572,0.575
+1,38,Architectural Design and Sustainable Construction,90,0.9253431558609009,0.5833333333333334
+1,51,"Materials Structure, Thermodynamics, and Characterization",42,0.9257797002792358,0.5916666666666667
+1,62,Surgical Clerkships and Clinical Anatomy,67,0.9270976781845093,0.6
+1,71,AI Regulation Privacy Law Practicums,38,0.9271565675735474,0.6083333333333333
+1,54,Probability Theory and Statistical Inference,88,0.9274375438690186,0.6166666666666667
+1,111,African Slavery and Historical Methods,91,0.9278141260147095,0.625
+1,84,Applied Valuation And Investment Analysis,67,0.9279800057411194,0.6333333333333333
+1,109,"Aesthetics, Imagination, and Literary Philosophy",59,0.9294355511665344,0.6416666666666667
+1,46,EE Independent Projects And Practical Training,38,0.9295207262039185,0.65
+1,25,"Computer Vision, Graphics, and Robotics",55,0.9297105073928833,0.6583333333333333
+1,108,"Legal Profession, Drafting, Dispute Resolution",144,0.9298775792121887,0.6666666666666666
+1,104,Voter Behavior and Democratic Erosion,79,0.9299594163894653,0.675
+1,60,Comparative Religious Studies And Theology,144,0.9305046796798706,0.6833333333333333
+1,90,Studio Art Practice,96,0.9305339455604553,0.6916666666666667
+1,36,"Moral Theory, Responsibility, Metaethical Foundations",37,0.9306694865226746,0.7
+1,64,Health Policy And Economics,35,0.9310181140899658,0.7083333333333334
+1,35,Teacher Preparation Seminars And Practicum,44,0.931226909160614,0.7166666666666667
+1,24,Physical Education Fitness and Sports,104,0.931686520576477,0.725
+1,7,Japanese and Korean Proficiency Sequences,82,0.932929515838623,0.7333333333333333
+1,16,Jewish Studies and Hebrew Language,54,0.9338386058807373,0.7416666666666667
+1,47,Integrated Circuit Design And Semiconductor Devices,71,0.9343054890632629,0.75
+1,49,Engineering Directed Research And Theses,45,0.9346779584884644,0.7583333333333333
+1,0,Intermediate Photography Practice And Theory,35,0.936965823173523,0.7666666666666667
+1,110,Fiction and Cross-Genre Prose Workshops,43,0.9375524520874023,0.775
+1,116,Russian Empire and Soviet Europe,47,0.9379225373268127,0.7833333333333333
+1,81,Tax Design and Government Budgets,38,0.9381701946258545,0.7916666666666666
+1,5,Arabic and Persian Proficiency Sequences,35,0.9404782056808472,0.8
+1,12,"Linguistic Theory, Sociolinguistics, and Research",107,0.9413610696792603,0.8083333333333333
+1,92,Lyric Craft and Poetic Form,51,0.9413690567016602,0.8166666666666667
+1,19,Musicology and Ethnomusicology Studies,87,0.9419199824333191,0.825
+1,75,"Entrepreneurship, Venture Growth And Go-To-Market",178,0.9425153732299805,0.8333333333333334
+1,105,"Federal Courts, Amendments, Democratic Structure",90,0.9426548480987549,0.8416666666666667
+1,112,"Migration, Citizenship, and Asian America",86,0.9447382688522339,0.85
+1,28,Econometrics and Causal Inference Methods,43,0.9460508823394775,0.8583333333333333
+1,89,Modern Art Institutions and Marginality,90,0.9460774064064026,0.8666666666666667
+1,78,Game Theory And Market Design,43,0.9462303519248962,0.875
+1,14,Spoken Mandarin and Putonghua Communication,42,0.9473280310630798,0.8833333333333333
+1,117,Anglo-American Revolutions and Survey Histories,64,0.9476045370101929,0.8916666666666667
+1,27,Doctoral Candidacy Dissertation Research Registration,54,0.947706937789917,0.9
+1,11,Academic English Literacy And Teaching Methods,73,0.948840856552124,0.9083333333333333
+1,52,Clinical Medical Genetics And Genetic Counseling,35,0.9504265785217285,0.9166666666666666
+1,20,Computer Music And Audio Technology,37,0.9506939649581909,0.925
+1,103,Anthropological Theory and Ethnographic Methods,58,0.9508787393569946,0.9333333333333333
+1,97,International Security and Foreign Policy,112,0.9523012638092041,0.9416666666666667
+1,102,Criminal Justice Doctrine And Clinics,80,0.9542477130889893,0.95
+1,21,Instrument Classes Composition And Musicianship,105,0.954795241355896,0.9583333333333334
+1,99,Ottoman Legacies And Modern Middle East,36,0.9561666250228882,0.9666666666666667
+1,18,Theater Performance Studies and Dramaturgy,98,0.9569345712661743,0.975
+1,17,Dance Technique And Choreography Courses,39,0.9589977264404297,0.9833333333333333
+1,87,Documentary Production And Screenwriting Practice,48,0.9638568162918091,0.9916666666666667
+1,86,Global Film History And Theory,80,0.9665939807891846,1.0
+2,22,Biodesign and Organ System Medicine,127,0.8232121467590332,0.023809523809523808
+2,14,Psychology and Clinical Psychiatry,138,0.8436459302902222,0.047619047619047616
+2,20,Molecular Biology and Bioengineering,380,0.853620171546936,0.07142857142857142
+2,1,Slavic Central European Language Courses,107,0.8683549165725708,0.09523809523809523
+2,3,Asian and Middle Eastern Languages,230,0.8688770532608032,0.11904761904761904
+2,16,Quantum Physics and Materials Chemistry,236,0.8735668659210205,0.14285714285714285
+2,17,Electrical Engineering Devices and Design,232,0.8786139488220215,0.16666666666666666
+2,0,"Independent Study, Research, and CPT",275,0.8815155625343323,0.19047619047619047
+2,24,Hospital Clerkship Rotations,221,0.8838557004928589,0.21428571428571427
+2,4,African Asian Pacific Language Courses,134,0.8847144842147827,0.23809523809523808
+2,23,Public Health Equity and Policy,140,0.8860099911689758,0.2619047619047619
+2,2,European Languages and Linguistics,315,0.8864029049873352,0.2857142857142857
+2,25,"AI Ethics, Design, and Governance",273,0.8879350423812866,0.30952380952380953
+2,10,Education Policy and Teacher Preparation,265,0.8883501887321472,0.3333333333333333
+2,11,Pure and Applied Mathematics Courses,141,0.8929528594017029,0.35714285714285715
+2,30,Financial Economics and Corporate Finance,301,0.895832896232605,0.38095238095238093
+2,8,"Philosophy: Metaphysics, Epistemology, Ethics",212,0.8967719078063965,0.40476190476190477
+2,19,Geophysics and Earth System Dynamics,159,0.897728681564331,0.42857142857142855
+2,15,Neuroscience from Synapses to Cognition,101,0.9020003080368042,0.4523809523809524
+2,38,Ancient Mediterranean Archaeology and Medieval Worlds,154,0.9024068117141724,0.47619047619047616
+2,18,Climate Policy and Sustainability Governance,362,0.9033222794532776,0.5
+2,34,Studio Art Practice,294,0.9048094153404236,0.5238095238095238
+2,12,Aerospace Engineering and Fluid Mechanics,119,0.9060800075531006,0.5476190476190477
+2,31,PWR Seminars on Media Rhetoric,351,0.90839022397995,0.5714285714285714
+2,6,Musicology and Computer Music,127,0.9094705581665039,0.5952380952380952
+2,32,"Urban Sociology, Housing and Inequality",115,0.9096288084983826,0.6190476190476191
+2,35,Comparative Literature and Fiction Studies,690,0.9106042385101318,0.6428571428571429
+2,13,Structural Engineering and Architectural Design,187,0.912143349647522,0.6666666666666666
+2,26,"Computer Systems, Algorithms, and Research",184,0.9149677753448486,0.6904761904761905
+2,28,Leadership and Social-Impact Organizations,150,0.9150287508964539,0.7142857142857143
+2,36,International Security and Foreign Policy,267,0.9186180830001831,0.7380952380952381
+2,40,Legal Theory and Comparative Law,100,0.9202076196670532,0.7619047619047619
+2,21,"Genetic Counseling, Epidemiology, and Bioethics",148,0.9252904057502747,0.7857142857142857
+2,41,"Legal Profession, Drafting, Dispute Resolution",144,0.9298775792121887,0.8095238095238095
+2,27,Comparative Religious Studies And Theology,144,0.9305046796798706,0.8333333333333334
+2,37,"Global History, Race, and Empire",754,0.9310994744300842,0.8571428571428571
+2,9,Physical Education Fitness and Sports,104,0.931686520576477,0.8809523809523809
+2,5,Theater and Dance Performance Studies,147,0.9351499676704407,0.9047619047619048
+2,29,"Entrepreneurship, Venture Growth And Go-To-Market",178,0.9425153732299805,0.9285714285714286
+2,39,Constitutional Structure and Electoral Politics,174,0.9448738098144531,0.9523809523809523
+2,7,Music Lessons and Performing Ensembles,145,0.9491322040557861,0.9761904761904762
+2,33,Cinema History and Documentary Filmmaking,130,0.9559990167617798,1.0
+3,4,Earth and Climate Systems,542,0.8066806793212891,0.07142857142857142
+3,5,Engineering and Applied Physics,933,0.8132171630859375,0.14285714285714285
+3,3,Computer Science and AI,812,0.8310869336128235,0.21428571428571427
+3,6,Clinical Medicine Training,666,0.8314370512962341,0.2857142857142857
+3,8,Business and Finance,647,0.8431927561759949,0.35714285714285715
+3,1,Asian African Language Sequences,364,0.8474365472793579,0.42857142857142855
+3,7,Molecular Biology and Bioengineering,380,0.853620171546936,0.5
+3,13,Global History and Empire,914,0.8634103536605835,0.5714285714285714
+3,0,European Language Sequences,422,0.8823517560958862,0.6428571428571429
+3,9,Visual and Film Arts,485,0.8865567445755005,0.7142857142857143
+3,10,PWR Seminars on Media Rhetoric,351,0.90839022397995,0.7857142857142857
+3,12,Law and Politics,1012,0.9086503982543945,0.8571428571428571
+3,11,Comparative Literature and Fiction Studies,690,0.9106042385101318,0.9285714285714286
+3,2,Music and Performing Arts,493,0.9229332208633423,1.0
