@@ -53,7 +53,8 @@ CUSTOM_CSS = """
    colormap gets a 24px swatch and its label sits 36px left of the others. Fix the swatch width and let
    the boxes share it. */
 .color-swatch { display: inline-flex !important; width: 60px !important; }
-.color-swatch-box { flex: 1 1 0 !important; width: auto !important; }
+.color-swatch .color-swatch-box { flex: 1 1 0 !important; width: auto !important; }
+/* Legend rows (.legend-item > .color-swatch-box) are not inside .color-swatch and keep their 12px boxes. */
 """
 CUSTOM_JS = """
 datamap.deckgl.setProps({controller: {scrollZoom: {speed: 0.05, smooth: true}}});
