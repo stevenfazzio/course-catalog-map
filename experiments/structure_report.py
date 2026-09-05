@@ -30,7 +30,7 @@ import config  # noqa: E402
 MODELS = ["qwen3-0.6b", "qwen3-4b", "arctic-l-v2", "nomic-v2-moe"]
 INCUMBENT = "qwen3-0.6b"
 K = 15
-SANKEY_PAIRS = [("qwen3-0.6b", "arctic-l-v2"), ("qwen3-0.6b", "qwen3-4b")]
+SANKEY_PAIRS = [("qwen3-0.6b", "arctic-l-v2"), ("qwen3-0.6b", "nomic-v2-moe"), ("qwen3-0.6b", "qwen3-4b")]
 SAMPLE_FOR_GEOMETRY = 3000
 
 
