@@ -17,6 +17,7 @@ dependencies = [
     "sentence-transformers>=3.0",
     "torch>=2.3",
     "toponymy>=0.5.4",
+    "evoc>=0.3",  # EVoCClusterer: clusters the embeddings directly, no 2-d constraint (post-hoc structure analysis)
     "datamapplot>=0.7.3",  # 0.7.3 pins deck.gl 9.1; earlier versions load deck.gl@latest, which breaks initial label render
     "glasbey>=0.2",
     "anthropic>=0.40",

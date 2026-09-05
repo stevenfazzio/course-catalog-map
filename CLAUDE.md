@@ -161,6 +161,15 @@ department file that already exists; delete a file to refetch it.
   exchange programmes). 11,091 courses kept. Unscheduled courses (41%) are kept on purpose: the map is a
   map of what the university teaches, and the scheduled colormap shows the difference.
 
+## Current state (2026-09-05)
+
+The Stanford map is built on the cleaned corpus with the preregistered model: `data/stanford/stanford_course_map.html`,
+11,091 courses, 357 / 120 / 42 / 14 named regions (naming ran on a Runpod pod in 5.6 minutes end to end).
+Two raw-catalog exploration builds remain as `_raw` artifacts. Open items: the ExploreCourses click-through is
+unverified in a browser (the site has returned 503 since the fetch); the label-QA proposals (centroid-name cosine
+guardrail, sampled wayfinding lineup) await a decision; the post-hoc structure analysis lives in `experiments/`
+(`evoc_layers.py`, `structure_numbers.py`) and is not part of the preregistered comparison.
+
 ## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
 
 - 254 departments in 9 schools, 16 with zero active courses.
