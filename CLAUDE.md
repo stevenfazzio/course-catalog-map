@@ -1,0 +1,172 @@
+# CLAUDE.md
+
+Guidance for Claude Code when working in this repository.
+
+## Project overview
+
+An interactive datamap of every course in a university's catalog: embed each course's title and
+description, lay the corpus out in 2-d with UMAP, name the regions with Toponymy, render with
+DataMapPlot. The first map is Stanford (ExploreCourses, academic year 2026-27). More universities
+may follow; each is an adapter under `pipeline/sources/` that normalises to one common schema, and
+everything downstream of stage 01 is source-agnostic.
+
+**Audience and standards.** The intended audience skews more academic than Steven's other maps
+(Steam games, Jeopardy). Err on the side of rigor and transparency: pinned versions and seeds,
+provenance recorded (snapshot date, catalog year, model revisions), every filter and collapse rule
+documented with its count, LLM-generated region names disclosed as such. Not journal-grade, but
+nothing an academic reader would call misleading or sloppy.
+
+## Running the pipeline
+
+```bash
+uv sync --extra dev
+uv run python pipeline/00_fetch.py --source stanford        # ExploreCourses XML per department -> data/stanford/raw/
+uv run python pipeline/01_parse.py --source stanford        # raw XML -> listings.parquet, courses.parquet, drops.csv
+uv run python pipeline/02_embed.py --source stanford        # Qwen3-Embedding-0.6B on MPS, ~26 min -> embeddings.npz
+uv run python pipeline/03_reduce_umap.py --source stanford  # UMAP 1024-d -> 2-d, fixed seed -> umap_coords.npz
+uv run python pipeline/04_label_topics.py --source stanford # Toponymy + Claude region names -> labels.parquet
+uv run python pipeline/05_visualize.py --source stanford    # DataMapPlot -> data/stanford/stanford_course_map.html
+```
+
+`make fetch|parse|embed|umap|label|visualize|map` wrap the same commands (`map` runs 02-05); `make lint`,
+`make test`. Useful flags: `02_embed.py --limit 200` measures throughput without writing;
+`04_label_topics.py --sweep` reports region counts per layer at several granularities with no LLM calls.
+Stage 04 is the only stage that costs money (roughly ten dollars of Claude Opus 5 per map). Run it the way
+`make label` does: `OMP_NUM_THREADS=1 TOKENIZERS_PARALLELISM=false HF_HUB_OFFLINE=1 PYTHONUNBUFFERED=1`.
+On macOS torch, scikit-learn and numba each load their own `libomp.dylib` into the process and the
+multi-runtime OpenMP deadlocked stage 04 three times in a row (main thread parked in `__kmp_join_call`,
+0% CPU, no error); a single OpenMP thread sidesteps it and costs little because embedding runs on MPS.
+`HF_HUB_OFFLINE` skips a live Hub check that is unnecessary once stage 02 has cached the model. Do not
+pipe the stage through a plain `grep`; it buffers everything until exit.
+
+**Embedding models.** `config.EMBED_MODELS` is a registry keyed by short name; `EMBED_MODEL_KEY` is the
+map's model. Stages 02-05 take `--model` / `--embedding <key>`; the default key owns the unsuffixed
+artifact names and any other key writes `_<key>`-suffixed copies (`config.keyed_files`), so exploration
+and comparison maps coexist with the real one.
+
+**Runpod.** `02_embed.py --device runpod` and `04_label_topics.py --device runpod` run the same scripts on
+a throwaway GPU pod via `pipeline/remote.py` (runpodctl + ssh) and pull the results back: ~136 courses/s
+for embedding versus ~7/s on the M3, and a whole stage-04 sweep round trip in ~2 minutes. The runner reads
+per-data-center stock and walks `RUNPOD_GPU_CANDIDATES` in order, because an unconstrained create can be
+"rented" in a site with no machine and never get an ssh port (two such orphans on 2026-09-05; they are now
+deleted after a 4-minute wait and the next placement tried). The Anthropic key reaches the pod as a
+remote `.env`, never on a command line. The pod is deleted in a `finally` unless `--keep-pod`; this
+runpodctl build has no terminate-after guard, so check `runpodctl pod list` after any crash. Needs
+`RUNPOD_API_KEY` or `~/.runpod/config.toml` and the account's registered SSH key at `~/.ssh/id_ed25519`.
+Cluster extraction is not bit-identical across machines: the same layout gave 378 finest regions locally
+and 381 on the pod, so a map's labels belong to the machine that produced them; the labels files are the
+record, not something to regenerate.
+
+**Preregistration.** `docs/preregistration.md` fixes how the embedding model is chosen (kNN label
+agreement against the registrar's breadth categories, paired bootstrap, keep-the-incumbent default).
+Part 1 is the evaluation design; part 2 will freeze the corpus after a declared exploratory phase on
+the incumbent's and arctic's maps. Do not compute comparison metrics before part 2 is committed.
+`pipeline/compare_embeddings.py` implements part 1 and is tested on synthetic data only.
+`experiments/explore_regions.py --embedding <key>` is the exploratory-phase helper: it describes each
+named region by content and metadata (dominant departments, boilerplate description share, title
+patterns, unscheduled share) so that hygiene rules can be written against the data, never against
+map position. Exploration maps are served with `python3 -m http.server 8765 --bind 127.0.0.1` from
+`data/stanford/`; never open them via `file://`. Stage scripts are run
+from the repo root; they import sibling modules (`config`, `io_utils`, `sources`) because
+`pipeline/` is `sys.path[0]` when a script there is executed. Tests get the same path via
+`conftest.py`.
+
+`01_parse.py --only CS,HISTORY` parses a subset and writes nothing, for iterating on parsing rules.
+
+## Data layout
+
+`data/` is gitignored. Per source:
+
+```
+data/stanford/raw/_departments.xml   school -> department index
+data/stanford/raw/<DEPT>.xml         one search result per department, sections inline (217 MB total)
+data/stanford/raw/_manifest.json     academic year, fetch timestamp, filters used
+data/stanford/listings.parquet       one row per (course, code) listing, before collapse
+data/stanford/courses.parquet        one row per course, common schema (sources/__init__.py)
+data/stanford/drops.csv              every listing removed by the collapse, with the rule and the row kept
+data/stanford/embeddings.npz         course_id + unit-norm float32 embeddings; embeddings_meta.json records model revision etc.
+data/stanford/umap_coords.npz        course_id + 2-d layout; umap_meta.json records the parameters
+data/stanford/labels.parquet         course_id + cluster_layer_i (int, -1 = unlabelled) + label_layer_i (name); layer 0 is FINEST
+data/stanford/topic_names.json       region names per layer; cluster_tree.json the parent edges; labels_meta.json the run record
+data/stanford/stanford_course_map.html
+```
+
+Every `*.npz` is aligned to `courses.parquet` row order and carries `course_id`; the readers assert it.
+
+Raw files are the provenance record: never delete or regenerate them casually. Stage 00 skips any
+department file that already exists; delete a file to refetch it.
+
+## Conventions
+
+- Data files are written via `io_utils.write_parquet_safely` / `atomic_write_bytes` (tmp + verify +
+  `os.replace`). Never write directly to a live data path.
+- Every stage prints its row delta with a reason. An unexplained drop is a bug.
+- `uv` for the environment, `ruff` for lint and format (line length 120, isort with local modules as
+  first-party). Python 3.12 (`.python-version`).
+- Fixed `random_state` on UMAP; `cvd_safer=True` and glasbey palettes in DataMapPlot; search on a
+  composed field; hovercard with code, title, school, units, and a click-through to ExploreCourses.
+  No histogram, no topic tree. See `~/.claude/skills/datamap` for the full defaults.
+
+## Decisions so far (2026-09-04)
+
+- **Stanford first, MIT second.** Chosen on data availability, size, and prestige. Probed and
+  workable: MIT FireRoad (one JSON call, 7,168 courses, already validated), Cornell class roster API,
+  UIUC Course Explorer. Berkeley, Harvard, Princeton, CMU block plain HTTP and would need browser
+  scraping.
+- **Embedding text = title + description only.** Department and school stay out of the text so the
+  layout is content-driven and the org-structure colormaps can disagree with it. The cross-listing
+  suffix ExploreCourses appends to titles, e.g. "(LINGUIST 284, SYMSYS 195N)", is stripped from
+  `title` (kept in `title_raw`) for the same reason.
+- **Embedding model: Qwen/Qwen3-Embedding-0.6B** (Apache 2.0), pinned to a Hugging Face revision hash in
+  `config.py`, fp32 on MPS, unit-normalised. Every text is embedded with the instruction "Identify the
+  topic or theme of the given university course description", the form the Qwen3 Embedding report uses
+  for clustering tasks. Toponymy's keyphrases and exemplars go through the same wrapper (`embedder.py`)
+  so they share the space. A 4B comparison run is on the table before the final build.
+- **Clustering happens in the 2-d layout.** One UMAP (n_neighbors 15, min_dist 0.05, cosine, seed 42)
+  feeds both the plot and Toponymy's `clusterable_vectors`, so named regions match what a viewer sees.
+- **Region names come from Claude Opus 5** via `LoopSafeNamer` in `04_label_topics.py`, a subclass of
+  Toponymy's `AsyncLiteLLMNamer` built the way `AsyncAnthropicNamer` builds it, with two changes.
+  `provider_kwargs={"drop_params": True}`: Opus 5 rejects the `temperature` parameter Toponymy sends,
+  and litellm drops it, so naming runs at the model default of 1.0. And one semaphore per event loop:
+  Toponymy 0.5.4 runs each naming pass in its own `asyncio.run()`, so the namer's single semaphore binds
+  to the first loop and every contended call afterwards fails with "bound to a different event loop"
+  (70 exhausted-retry failures on the first arctic run). Worth an upstream fix; Steven contributes to
+  Toponymy. `NAMER_STYLE` caps names at five words; Opus 5 otherwise wrote 11-word finest-layer names.
+  Names are LLM-generated labels and the methodology page must say so. An open naming model on Runpod
+  is a possible later experiment.
+- **Colormaps in v1:** school, level (career), scheduled in 2026-27, primary section format, WAYS
+  general-education requirement, max units. Department (254 values) is on hover and in search only.
+- **No LLM enrichment in v1.** Descriptions are already summaries and the catalog metadata carries
+  the colormaps. Not ruled out later; this corpus could illustrate the LLM-normalisation technique.
+- **One point per registrar courseId.** A cross-listed course appears once in every department that
+  lists it, with the same `courseId`. Copies are collapsed; all codes are kept in `codes`. The
+  primary code is the listing in a department owned by the course's `academicOrganization` (mapping
+  learned from single-listing courses), then lowest `offerNumber`, then alphabetical. 2,507 of 2,509
+  cross-listed courses resolve by home department.
+- **Department index aliases.** The index lists TAPS and ILAC twice under different long names; each
+  is treated as one department and the first long name is kept.
+- **Kept, not filtered:** courses with no scheduled section this year (4,765; `scheduled=False`),
+  empty descriptions (103, mostly "TGR Dissertation" placeholders; embedded on title alone),
+  boilerplate independent-study and PWR writing courses. The map is meant to surface these; filter
+  only against patterns actually observed, and log every drop.
+
+## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
+
+- 254 departments in 9 schools, 16 with zero active courses.
+- 15,649 listings -> 11,500 courses. Largest departments by listings: HISTORY 754, LAW 690, ENGLISH
+  432, EDUC 395, CEE 369, MUSIC 365, CS 363.
+- By school: Humanities & Sciences 5,805; Engineering 1,557; Medicine 1,163; VPUE 1,017; Law 697;
+  Sustainability 445; GSB 426; Education 307; Athletics 83.
+- Career: UG 6,147; GR 3,969; LAW 691; GSB 403; MED 290.
+- Description length: median 88 words, p10 22, p90 211.
+- Colormap candidates in the metadata: school, career, `scheduled`, components (LEC/SEM/LAB/INS...),
+  WAYS general-education tags (`gers`), units. Department (254 values) belongs on hover and search.
+
+## Stanford ExploreCourses API notes
+
+- Department index: `GET /?view=xml-20200810`.
+- Per department: `GET /search?view=xml-20200810&academicYear=20262027&filter-coursestatus-Active=on
+  &filter-departmentcode-CODE=on&q=CODE`. Sections are ~93% of the bytes.
+- Course page URL pattern used for click-through:
+  `/search?view=catalog&academicYear=20262027&q=CS224N&filter-departmentcode-CS=on&filter-coursestatus-Active=on`.
+  Serves a JS redirect shell to curl; not yet verified in a real browser.
