@@ -138,16 +138,32 @@ def _float(s: str):
         return None
 
 
+def navigator_url(term_id: str, class_id: str) -> str:
+    """Stanford Navigator's class page. Navigate Classes (April 2024) is the official catalog and is slated to
+    replace ExploreCourses; termId and classId here are the ones ExploreCourses' XML carries per section,
+    and they match Navigator's URLs (checked: CS 329X Autumn 2026 -> /classes/1272/27853)."""
+    return f"https://navigator.stanford.edu/classes/{term_id}/{class_id}"
+
+
 def course_url(subject: str, code: str) -> str:
+    """ExploreCourses catalog page: the only address an unscheduled catalog course has. Heritage site."""
     return (
         f"{config.STANFORD_BASE_URL}search?view=catalog&academicYear={config.STANFORD_ACADEMIC_YEAR}"
         f"&q={subject}{code}&filter-departmentcode-{subject}=on&filter-coursestatus-Active=on"
     )
 
 
+def _first_class(sections) -> tuple[str, str]:
+    """(termId, classId) of the earliest-term scheduled section, for the Navigator link."""
+    ids = [(_t(s, "termId"), _t(s, "classId")) for s in sections]
+    ids = [(t, c) for t, c in ids if t.isdigit() and c]
+    return min(ids, key=lambda tc: int(tc[0])) if ids else ("", "")
+
+
 def _listing(el, dept: dict) -> dict:
     admin = el.find("administrativeInformation")
     sections = el.findall("sections/section")
+    term_id, class_id = _first_class(sections)
     subject, code = _t(el, "subject"), _t(el, "code")
     title_raw = _t(el, "title")
     return {
@@ -185,6 +201,8 @@ def _listing(el, dept: dict) -> dict:
             {_t(i, "name") for s in sections for i in s.findall("schedules/schedule/instructors/instructor")} - {""}
         ),
         "n_sections": len(sections),
+        "navigator_term_id": term_id,
+        "navigator_class_id": class_id,
     }
 
 
@@ -268,7 +286,12 @@ def collapse_listings(listings: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFram
                 "instructors": sorted(set().union(*grp["instructors"])),
                 "n_sections": int(grp["n_sections"].max()),
                 "scheduled": bool(grp["n_sections"].max() > 0),
-                "url": course_url(primary["subject"], primary["code"]),
+                "url_catalog": course_url(primary["subject"], primary["code"]),
+                "url": (
+                    navigator_url(primary["navigator_term_id"], primary["navigator_class_id"])
+                    if primary["navigator_term_id"] and primary["navigator_class_id"]
+                    else course_url(primary["subject"], primary["code"])
+                ),
             }
         )
         courses.append(row)

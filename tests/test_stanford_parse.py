@@ -75,6 +75,8 @@ def _listing(course_id, listed_in, subject, code, org, offer=1, **extra):
         "terms_offered": [],
         "instructors": [],
         "n_sections": 0,
+        "navigator_term_id": "",
+        "navigator_class_id": "",
     }
     row.update(extra)
     return row
@@ -85,7 +87,17 @@ def test_collapse_prefers_home_department_and_keeps_all_codes():
         [
             _listing("1", "CS", "CS", "101", "COMPUTSCI"),  # single listing: teaches COMPUTSCI -> CS
             _listing("2", "LINGUIST", "LINGUIST", "284", "COMPUTSCI", n_sections=2, components=["LEC"]),
-            _listing("2", "CS", "CS", "224N", "COMPUTSCI", n_sections=2, components=["LEC", "DIS"]),
+            _listing(
+                "2",
+                "CS",
+                "CS",
+                "224N",
+                "COMPUTSCI",
+                n_sections=2,
+                components=["LEC", "DIS"],
+                navigator_term_id="1274",
+                navigator_class_id="1953",
+            ),
             _listing("3", "CHINA", "CHINA", "111", "ASIANLANG", offer=1),  # no single-listing course for ASIANLANG
             _listing("3", "CHINA", "CHINA", "211", "ASIANLANG", offer=2),
         ]
@@ -101,3 +113,18 @@ def test_collapse_prefers_home_department_and_keeps_all_codes():
     assert stats == {"cross_listed_courses": 2, "primary_by_home_department": 1, "primary_by_fallback": 1}
     assert set(drops["listing_code"]) == {"LINGUIST 284", "CHINA 211"}
     assert courses["course_id"].is_unique
+    # Scheduled courses link to Navigator's class page; unscheduled ones fall back to the ExploreCourses catalog.
+    assert by_id.loc["2", "url"] == "https://navigator.stanford.edu/classes/1274/1953"
+    assert by_id.loc["1", "url"].startswith("https://explorecourses.stanford.edu/search?view=catalog")
+    assert by_id.loc["2", "url_catalog"].startswith("https://explorecourses.stanford.edu/")
+
+
+def test_first_class_picks_earliest_term():
+    import xml.etree.ElementTree as ET
+
+    xml = ET.fromstring(
+        "<sections><section><termId>1274</termId><classId>9</classId></section>"
+        "<section><termId>1272</termId><classId>7</classId></section></sections>"
+    )
+    assert stanford._first_class(xml.findall("section")) == ("1272", "7")
+    assert stanford._first_class([]) == ("", "")

@@ -193,6 +193,15 @@ more in 2-d; 56 of 140 departments change nearest department between families.
 - Department index: `GET /?view=xml-20200810`.
 - Per department: `GET /search?view=xml-20200810&academicYear=20262027&filter-coursestatus-Active=on
   &filter-departmentcode-CODE=on&q=CODE`. Sections are ~93% of the bytes.
-- Course page URL pattern used for click-through:
-  `/search?view=catalog&academicYear=20262027&q=CS224N&filter-departmentcode-CS=on&filter-coursestatus-Active=on`.
-  Serves a JS redirect shell to curl; not yet verified in a real browser.
+- **Click-through (2026-09-05).** Stanford Navigator's Navigate Classes (April 2024) is the official catalog
+  and is slated to replace ExploreCourses, which Stanford now calls the heritage catalog and which returned
+  503 for hours after our fetch. Scheduled courses link to Navigator's exact class page,
+  `navigator.stanford.edu/classes/<termId>/<classId>`, built from the section ids in the XML (verified:
+  CS 329X Autumn 2026 -> /classes/1272/27853); 6,257 of 11,091 courses. Unscheduled courses have no
+  Navigator page (it lists sections, not the catalog), so they keep the ExploreCourses catalog URL
+  `/search?view=catalog&academicYear=20262027&q=CS224N&filter-departmentcode-CS=on&filter-coursestatus-Active=on`
+  as a fallback that works only while that site is up (`url_catalog` keeps it for every course).
+- **Source risk.** The adapter depends on the ExploreCourses XML API. Navigator has no documented API, is a
+  term-scoped Algolia front end, and does not carry unscheduled catalog entries, so it cannot replace the
+  fetch one for one. The 217 MB raw snapshot in `data/stanford/raw/` may be the last easy copy of the
+  2026-27 catalog in this form; archive it as a release asset.
