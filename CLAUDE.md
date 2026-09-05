@@ -172,7 +172,8 @@ the github.io address also serves it). The hosted copy returned the full 7.6 MB 
 moves to blog posts later, not a docs page. Open items: the ExploreCourses click-through is
 unverified in a browser (the site has returned 503 since the fetch); the cosine guardrail ran clean (stage 06,
 `docs/record/stanford/name_guardrail.csv`); the sampled wayfinding lineup is a v1.1 item; archive the raw
-snapshot as a release asset; file the Toponymy semaphore bug upstream; the post-hoc structure analysis lives in `experiments/`
+snapshot as a release asset; file the Toponymy semaphore bug upstream; `docs/lit_review.md` (2026-09-05) is the
+literature review, with candidate colormaps, validation targets, and record metrics in its section 4; the post-hoc structure analysis lives in `experiments/`
 (`evoc_layers.py` -> `name_evoc.py` [Runpod, Opus names for two EVoC layers per model] -> `structure_numbers.py`
 -> `structure_report.py` -> `docs/embedding_structure.html`) and is not part of the preregistered comparison.
 Serve `docs/` with `python3 -m http.server 8766 --bind 127.0.0.1` to view the report; it loads plotly from
