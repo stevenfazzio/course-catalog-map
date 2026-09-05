@@ -92,3 +92,14 @@ def test_decision_rule_keeps_incumbent_without_a_clear_win():
         "cand": {"breadth (GER:DB)": {"mean": 0.50, "min": 0.49, "max": 0.51}},
     }
     assert ce.decide(res, "inc", ["inc", "cand"], "breadth (GER:DB)")["winner"] == "inc"
+
+
+def test_chunked_trustworthiness_matches_sklearn():
+    from sklearn.manifold import trustworthiness as sk_trust
+
+    rng = np.random.default_rng(3)
+    X = rng.normal(size=(300, 32))
+    Y = X[:, :2] + 0.3 * rng.normal(size=(300, 2))
+    ours = ce.trustworthiness(X, Y, 15, chunk=64)
+    ref = sk_trust(X, Y, n_neighbors=15, metric="cosine")
+    assert abs(ours - ref) < 1e-9

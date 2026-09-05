@@ -13,7 +13,6 @@ import json
 
 import numpy as np
 import pandas as pd
-from sklearn.manifold import trustworthiness
 from sklearn.neighbors import NearestNeighbors
 
 import config
@@ -61,6 +60,26 @@ def agreement_for_label(X: np.ndarray, labels: list[frozenset], k: int, metric: 
     if len(Xl) <= k:
         raise ValueError(f"only {len(Xl)} labelled rows for k={k}")
     return label_agreement(knn_indices(Xl, k, metric), ll)
+
+
+def trustworthiness(X: np.ndarray, Y: np.ndarray, k: int, chunk: int = 512) -> float:
+    """Venna & Kaski trustworthiness of layout Y with respect to space X, identical to
+    sklearn.manifold.trustworthiness(X, Y, n_neighbors=k, metric="cosine") but computed in row chunks.
+    sklearn materialises two n x n distance matrices and an n x n argsort; at n = 11,500 that is several GB."""
+    n = len(X)
+    Xn = X / np.linalg.norm(X, axis=1, keepdims=True)
+    ind_Y = knn_indices(Y, k, metric="euclidean")
+    total = 0.0
+    for start in range(0, n, chunk):
+        rows = np.arange(start, min(start + chunk, n))
+        dist = 1.0 - Xn[rows] @ Xn.T  # cosine distance, chunk x n
+        dist[np.arange(len(rows)), rows] = np.inf  # self last, as sklearn does
+        order = np.argsort(dist, axis=1, kind="stable")
+        inv = np.empty_like(order)
+        inv[np.arange(len(rows))[:, None], order] = np.arange(1, n + 1)  # 1-based rank of every point
+        ranks = inv[np.arange(len(rows))[:, None], ind_Y[rows]] - k
+        total += float(ranks[ranks > 0].sum())
+    return 1.0 - total * (2.0 / (n * k * (2.0 * n - 3.0 * k - 1.0)))
 
 
 def paired_bootstrap(a: np.ndarray, b: np.ndarray, n: int = N_BOOTSTRAP, seed: int = RNG_SEED) -> dict:
@@ -181,7 +200,7 @@ def run(courses: pd.DataFrame, embeddings: dict[str, np.ndarray], incumbent: str
                     coords42[key] = Y
                 for name, ls in labels.items():
                     vals[name].append(float(agreement_for_label(Y, ls, K_PRIMARY, metric="euclidean").mean()))
-                tw.append(float(trustworthiness(embeddings[key], Y, n_neighbors=K_PRIMARY, metric="cosine")))
+                tw.append(trustworthiness(embeddings[key], Y, K_PRIMARY))
             res["layout_2d"][key] = {
                 name: {"mean": float(np.mean(v)), "min": float(np.min(v)), "max": float(np.max(v))}
                 for name, v in vals.items()

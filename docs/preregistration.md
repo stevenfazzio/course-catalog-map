@@ -208,6 +208,10 @@ two encoder-family models. Neighbourhood overlap between the two Qwen models is 
 space and about 0.28 to 0.31 between families, so the choice of family matters more than the choice
 of size within a family.
 
+**Sensitivity row** (`docs/embedding_comparison_raw.md`, raw 11,500-course catalog, raw-text embeddings):
+same ranking, same decision. Primary: incumbent 0.815; qwen3-4b 0.815 (-0.001, [-0.009, +0.007]);
+arctic-l-v2 0.732; nomic-v2-moe 0.746. The part-2 rules did not change the outcome.
+
 ## Deviations
 
 _None._
