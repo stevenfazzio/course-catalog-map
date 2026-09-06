@@ -211,9 +211,11 @@ refused it, category bio; about $5.50 for 680 calls. Outputs `wayfinding_items.j
 `wayfinding_lineup.json`, copied into the record by stage 07. Step 3, `experiments/name_intrusion.py`: fifty
 items written to `name_intrusion_items.csv`, a sealed `name_intrusion_key.json`, and a rater page
 `name_intrusion_rater.html` (serve `data/stanford/` on 8765; answers are kept in localStorage and copied out as
-CSV); `--llm` had the listener answer them (48/50) and `--score` writes `name_intrusion.json`, marked as awaiting
-the human rating until `name_intrusion_answers.csv` exists. Both instruments are unit-tested on synthetic maps in
-`tests/`. Run everything with `OMP_NUM_THREADS=1` as for stage 04.
+CSV); `--llm` had the listener answer them (48/50) and `--score` writes `name_intrusion.json`. Steven rated all
+fifty on 2026-09-06: 45/50 (Wilson 95% [0.79, 0.96]), same pick as the listener on 45, both wrong on two; three of
+his five misses had an intruder from a content-adjacent top-level region, which the tree-based intruder rule does
+not exclude. Both instruments are unit-tested on synthetic maps in `tests/`. Run everything with
+`OMP_NUM_THREADS=1` as for stage 04.
 
 ## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
 

@@ -12,7 +12,116 @@
   "grandparent": 10,
   "parent": 40
  },
- "status": "awaiting the human rating (name_intrusion_answers.csv)",
+ "status": "complete",
+ "human": {
+  "n_items": 50,
+  "n_answered": 50,
+  "n_correct": 45,
+  "accuracy": 0.9,
+  "wilson95": [
+   0.7863950966521162,
+   0.956524876008429
+  ],
+  "p_value_vs_chance": 2.510578045515748e-26,
+  "chance": 0.2,
+  "by_child_layer": {
+   "layer_0": {
+    "n": 37,
+    "n_correct": 35,
+    "accuracy": 0.9459459459459459,
+    "wilson95": [
+     0.822950349364601,
+     0.9850493372294601
+    ]
+   },
+   "layer_1": {
+    "n": 10,
+    "n_correct": 7,
+    "accuracy": 0.7,
+    "wilson95": [
+     0.39677321997956516,
+     0.892210712513788
+    ]
+   },
+   "layer_2": {
+    "n": 3,
+    "n_correct": 3,
+    "accuracy": 1.0,
+    "wilson95": [
+     0.43849391955098227,
+     1.0
+    ]
+   }
+  },
+  "misses": [
+   {
+    "item": "I08",
+    "child_layer": 1,
+    "unit": "parent",
+    "ancestor_name": "Global History, Race, and Empire",
+    "picked": "Feminist, Queer, and Trans Studies",
+    "intruder": "Criminal Justice Doctrine And Clinics",
+    "intruder_parent_name": "Law and Politics"
+   },
+   {
+    "item": "I15",
+    "child_layer": 0,
+    "unit": "parent",
+    "ancestor_name": "Climate Policy and Sustainability Governance",
+    "picked": "Indigenous Environmental Knowledge And Sovereignty",
+    "intruder": "Shipboard Oceanography and Estuarine Biogeochemistry",
+    "intruder_parent_name": "Marine Biology and Oceanography Fieldwork"
+   },
+   {
+    "item": "I18",
+    "child_layer": 1,
+    "unit": "parent",
+    "ancestor_name": "Law and Politics",
+    "picked": "China Reform and Global Development History",
+    "intruder": "AI Regulation Privacy Law Practicums",
+    "intruder_parent_name": "AI Ethics, Design, and Governance"
+   },
+   {
+    "item": "I26",
+    "child_layer": 1,
+    "unit": "parent",
+    "ancestor_name": "Asian and Middle Eastern Languages",
+    "picked": "Modern and Classical Chinese Reading Sequences",
+    "intruder": "Spanish Portuguese Multitrack Proficiency Courses",
+    "intruder_parent_name": "European Languages and Linguistics"
+   },
+   {
+    "item": "I50",
+    "child_layer": 0,
+    "unit": "grandparent",
+    "ancestor_name": "AI Ethics, Design, and Governance",
+    "picked": "Learning Sciences And Technology Design",
+    "intruder": "Proof-Based Analysis And PDE Theory",
+    "intruder_parent_name": "Applied Analysis, Linear Algebra, Computation"
+   }
+  ],
+  "by_unit": {
+   "grandparent": {
+    "n": 10,
+    "n_correct": 9,
+    "accuracy": 0.9,
+    "wilson95": [
+     0.5958436145024278,
+     0.9821242504842788
+    ]
+   },
+   "parent": {
+    "n": 40,
+    "n_correct": 36,
+    "accuracy": 0.9,
+    "wilson95": [
+     0.7694792561952611,
+     0.9604211124044252
+    ]
+   }
+  },
+  "rater": "the map's author, a single rater, who had seen the map and every region name before rating"
+ },
  "listener": {
   "n_items": 50,
   "n_answered": 50,
@@ -95,10 +204,19 @@
   },
   "model": "claude-sonnet-5"
  },
+ "human_listener_agreement": {
+  "n": 50,
+  "same_pick": 45,
+  "share_same_pick": 0.9,
+  "both_correct": 45,
+  "human_only_correct": 0,
+  "listener_only_correct": 3,
+  "both_wrong": 2
+ },
  "disclosures": [
   "single human rater, the map's author, who had seen the map and all names before rating",
   "the region names were written by Claude Opus 5 (stage 04); the listener is Claude Sonnet 5",
   "items test whether names of regions that share an ancestor read as one group; a miss can come from a vague or wrong name or from an ancestor whose descendants do not read as one group"
  ],
- "computed_at": "2026-09-06T05:01:17+00:00"
+ "computed_at": "2026-09-06T14:54:23+00:00"
 }

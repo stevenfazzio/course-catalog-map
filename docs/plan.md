@@ -65,10 +65,18 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   Biosecurity" (category bio), recorded in the JSON. 680 calls in two runs, about $5.50. The numbers sit where
   the same instrument put gold labels on 20 Newsgroups and arXiv (0.55 to 0.57 gold, 0.12 to 0.18 shuffled,
   0.81 to 0.94 distant).
-- [ ] **3. Name intrusion task** [4.1.3]: fifty items, four names from one region layer plus one
+- [x] ~~**3. Name intrusion task** [4.1.3]: fifty items, four names from one region layer plus one
   intruder, layers mixed and order shuffled. Steven is the single rater and has seen the map; both
-  facts are disclosed in the record next to the result.
-  *Instrument built 2026-09-06; the rating is the remaining action.* `experiments/name_intrusion.py`. The
+  facts are disclosed in the record next to the result.~~
+  *Landed 2026-09-06:* Steven rated all fifty: 45 correct (0.90, Wilson 95% [0.79, 0.96], exact binomial p
+  against chance 0.20 of 2.5e-26); by child layer 35/37, 7/10, 3/3 finest first; parent-unit items 36/40,
+  grandparent-unit 9/10. The listener (Sonnet 5) scored 48/50 on the same items and made the same pick as
+  Steven on 45; both missed I15 and I18, the listener alone got three more, Steven alone none. Three of
+  Steven's five misses had an intruder whose own parent sits next to the item's ancestor in content (criminal
+  justice among global-history names, oceanography among climate-policy names, Spanish among Asian-language
+  names): the intruder rule is "different coarsest ancestor", a tree criterion, and does not guarantee
+  semantic distance, so those items read as hard rather than as bad names. Record: `name_intrusion.json`,
+  with the answers, key, items and rater page beside it. *Instrument, built earlier the same day:* `experiments/name_intrusion.py`. The
   plan left the coherence unit of the four names open; the parent region is the direct analogue of Chang et
   al.'s topic, so an item is four children of one region at one layer plus one same-layer region under a
   different coarsest ancestor. Parents with four or more same-layer children give 40 items (several parents'
