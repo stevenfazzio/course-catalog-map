@@ -182,6 +182,21 @@ spaces (within-family AMI 0.80-0.89 vs 0.70-0.73 across; department-centroid Man
 the encoder spaces have less density structure (EVoC leaves 37-46% unclustered vs 28-32% for Qwen) and lose
 more in 2-d; 56 of 140 departments change nearest department between families.
 
+**Plan step 1 landed (2026-09-05).** `experiments/record_metrics.py` (run with `OMP_NUM_THREADS=1`, 3.7 minutes,
+no LLM; metric functions tested on synthetic data) writes `layout_metrics.json`, `stability.parquet` (per course, aligned
+to the corpus), `stability_regions.csv`, `stability_meta.json` and `stability_layouts.npz` (every rerun's coordinates
+and cluster layers) to `data/stanford/`, and stage 07 copies them into the record. The reference for stability is the
+published `labels.parquet`, never a local re-clustering: the clusterer is deterministic on one machine but not across
+machines (local re-clustering of the published layout gives 354 / 119 / 41 / 14 regions against the published
+357 / 120 / 42 / 14, AMI 0.99+), and that control is in the record as the machine floor. Published layout: KNN 0.45
+(k = 15), KNC 0.45 over 237 departments, 0.54 over the 121 with 20+ courses, 0.67 over schools, CPD 0.49, trustworthiness
+0.99. At `n_neighbors` 100: KNN 0.34, CPD 0.53, KNC unchanged (reported, not adopted). Ten UMAP seeds: AMI against the
+published layers 0.92 / 0.94 / 0.91 / 0.86 finest to coarsest, 14-16% of published members left unclustered; ten 80%
+subsamples 0.89 / 0.91 / 0.88 / 0.82. Median region co-assignment 0.68 at the finest layer (71 of 357 regions above
+0.9, 10 below 0.2); the coarsest layer's large regions split (median 0.60). Per course, `stay_seeds_layer_i` is the
+share of its published-region peers it stays with, NaN where the published layer leaves it unlabelled: the step-6
+hover or colormap input. The seed layouts in the npz are step 2's null layouts.
+
 ## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
 
 - 254 departments in 9 schools, 16 with zero active courses.

@@ -1,0 +1,625 @@
+{
+ "reference": "published labels.parquet (labels_meta.json); layer 0 is the finest",
+ "clusterer": {
+  "min_clusters": 6,
+  "base_min_cluster_size": 10,
+  "deterministic_on_this_machine": true
+ },
+ "control": {
+  "what": "the published layout re-clustered on this machine; disagreement here is machine-to-machine variation in the clusterer, not a perturbation",
+  "rerun_counts": [
+   354,
+   119,
+   41,
+   14
+  ],
+  "matched_layers": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "layers": [
+   {
+    "ami": 0.9935081088839425,
+    "share_both_clustered": 0.7382562438012803,
+    "published_members_unclustered": 0.013850415512465374,
+    "n_clusters": 354,
+    "unlabelled_share": 0.2586782075556758
+   },
+   {
+    "ami": 0.9955543323991196,
+    "share_both_clustered": 0.7610675322333423,
+    "published_members_unclustered": 0.0011832919181161993,
+    "n_clusters": 119,
+    "unlabelled_share": 0.2318997385267334
+   },
+   {
+    "ami": 0.9970125747647433,
+    "share_both_clustered": 0.8250834009557299,
+    "published_members_unclustered": 0.0004369197160021846,
+    "n_clusters": 41,
+    "unlabelled_share": 0.172662519159679
+   },
+   {
+    "ami": 0.9986739760559862,
+    "share_both_clustered": 0.7854115949869264,
+    "published_members_unclustered": 0.0,
+    "n_clusters": 14,
+    "unlabelled_share": 0.21449824181769
+   }
+  ]
+ },
+ "seeds": {
+  "seeds": [
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   51,
+   52
+  ],
+  "per_run": [
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     366,
+     117,
+     38,
+     14
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     353,
+     117,
+     39,
+     13
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     364,
+     129,
+     42,
+     13,
+     6
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     357,
+     111,
+     37,
+     14
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     356,
+     113,
+     36,
+     13
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     345,
+     115,
+     37,
+     13
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     356,
+     114,
+     40,
+     13
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     356,
+     116,
+     35,
+     11
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     360,
+     122,
+     36,
+     14
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     353,
+     109,
+     35,
+     13
+    ]
+   }
+  ],
+  "layers": [
+   {
+    "published_n_clusters": 357,
+    "matched_rerun_n_clusters": [
+     366,
+     353,
+     364,
+     357,
+     356,
+     345,
+     356,
+     356,
+     360,
+     353
+    ],
+    "ami": {
+     "mean": 0.9217880324513897,
+     "min": 0.9140222130303083,
+     "max": 0.9301501955673034
+    },
+    "published_members_unclustered": {
+     "mean": 0.16398891966759002,
+     "min": 0.14946404913886546,
+     "max": 0.1940262555702758
+    },
+    "unlabelled_share": {
+     "mean": 0.2659724100622126,
+     "min": 0.25128482553421694,
+     "max": 0.2804977008385177
+    }
+   },
+   {
+    "published_n_clusters": 120,
+    "matched_rerun_n_clusters": [
+     117,
+     117,
+     129,
+     111,
+     113,
+     115,
+     114,
+     116,
+     122,
+     109
+    ],
+    "ami": {
+     "mean": 0.9351656338572238,
+     "min": 0.9206812742067224,
+     "max": 0.9451685775706576
+    },
+    "published_members_unclustered": {
+     "mean": 0.13850431901550114,
+     "min": 0.10010649627263046,
+     "max": 0.16648917287894924
+    },
+    "unlabelled_share": {
+     "mean": 0.24045622576864126,
+     "min": 0.2025065368316653,
+     "max": 0.27202236047245515
+    }
+   },
+   {
+    "published_n_clusters": 42,
+    "matched_rerun_n_clusters": [
+     38,
+     39,
+     42,
+     37,
+     36,
+     37,
+     40,
+     35,
+     36,
+     35
+    ],
+    "ami": {
+     "mean": 0.9112005834189295,
+     "min": 0.8884913662413969,
+     "max": 0.9385177918250984
+    },
+    "published_members_unclustered": {
+     "mean": 0.15836155106499178,
+     "min": 0.12004369197160022,
+     "max": 0.2162752594210814
+    },
+    "unlabelled_share": {
+     "mean": 0.23264809304841766,
+     "min": 0.18591650888107475,
+     "max": 0.2774321521954738
+    }
+   },
+   {
+    "published_n_clusters": 14,
+    "matched_rerun_n_clusters": [
+     14,
+     13,
+     13,
+     14,
+     13,
+     13,
+     13,
+     11,
+     14,
+     13
+    ],
+    "ami": {
+     "mean": 0.8621931081675008,
+     "min": 0.823391067462191,
+     "max": 0.9142098063925841
+    },
+    "published_members_unclustered": {
+     "mean": 0.14288830214671105,
+     "min": 0.07875100447709792,
+     "max": 0.23418666054413959
+    },
+    "unlabelled_share": {
+     "mean": 0.2614912992516455,
+     "min": 0.1752772518258047,
+     "max": 0.33441529167793704
+    }
+   }
+  ]
+ },
+ "subsamples": {
+  "fraction": 0.8,
+  "rng_seeds": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "umap_seed": 42,
+  "per_run": [
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     305,
+     98,
+     36,
+     14
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     305,
+     101,
+     37,
+     13
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     298,
+     99,
+     36,
+     13
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     315,
+     103,
+     33,
+     9
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     306,
+     94,
+     37,
+     13
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     296,
+     99,
+     35,
+     11
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     296,
+     93,
+     28,
+     9
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     299,
+     103,
+     36,
+     12
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     285,
+     91,
+     34,
+     11
+    ]
+   },
+   {
+    "matched_layers": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rerun_counts": [
+     302,
+     98,
+     33,
+     11
+    ]
+   }
+  ],
+  "layers": [
+   {
+    "published_n_clusters": 357,
+    "matched_rerun_n_clusters": [
+     305,
+     305,
+     298,
+     315,
+     306,
+     296,
+     296,
+     299,
+     285,
+     302
+    ],
+    "ami": {
+     "mean": 0.8944344190152405,
+     "min": 0.88897632798101,
+     "max": 0.9012639232706797
+    },
+    "published_members_unclustered": {
+     "mean": 0.17268697714512943,
+     "min": 0.15728476821192053,
+     "max": 0.19467829224293445
+    },
+    "unlabelled_share": {
+     "mean": 0.2499718246365378,
+     "min": 0.23363011382846838,
+     "max": 0.26383410345993463
+    }
+   },
+   {
+    "published_n_clusters": 120,
+    "matched_rerun_n_clusters": [
+     98,
+     101,
+     99,
+     103,
+     94,
+     99,
+     93,
+     103,
+     91,
+     98
+    ],
+    "ami": {
+     "mean": 0.9049668666421946,
+     "min": 0.8986900880209576,
+     "max": 0.9150217805120945
+    },
+    "published_members_unclustered": {
+     "mean": 0.17676102554692566,
+     "min": 0.15951643815420904,
+     "max": 0.19119163352481955
+    },
+    "unlabelled_share": {
+     "mean": 0.2477516059957173,
+     "min": 0.21773920883579398,
+     "max": 0.2691310717908261
+    }
+   },
+   {
+    "published_n_clusters": 42,
+    "matched_rerun_n_clusters": [
+     36,
+     37,
+     36,
+     33,
+     37,
+     35,
+     28,
+     36,
+     34,
+     33
+    ],
+    "ami": {
+     "mean": 0.8790409356262874,
+     "min": 0.8655940540381157,
+     "max": 0.9069430045828588
+    },
+    "published_members_unclustered": {
+     "mean": 0.16227818472672068,
+     "min": 0.11077721622729135,
+     "max": 0.21842536905412793
+    },
+    "unlabelled_share": {
+     "mean": 0.21525977685112138,
+     "min": 0.17277132875014087,
+     "max": 0.25887523949058944
+    }
+   },
+   {
+    "published_n_clusters": 14,
+    "matched_rerun_n_clusters": [
+     14,
+     13,
+     13,
+     9,
+     13,
+     11,
+     9,
+     12,
+     11,
+     11
+    ],
+    "ami": {
+     "mean": 0.8176109646260283,
+     "min": 0.780654449144774,
+     "max": 0.8627840295354413
+    },
+    "published_members_unclustered": {
+     "mean": 0.18750025634488857,
+     "min": 0.07214285714285715,
+     "max": 0.3412595474852284
+    },
+    "unlabelled_share": {
+     "mean": 0.2750478981178857,
+     "min": 0.13873548968781696,
+     "max": 0.41214921672489574
+    }
+   }
+  ]
+ },
+ "layer_matching": "each published layer to the rerun layer with the nearest region count",
+ "coassignment": "share of a published region's member pairs that share a rerun region; unclustered members are co-assigned with nobody; subsamples count present pairs only",
+ "ami": "adjusted mutual information on courses both partitions cluster; published_members_unclustered is the share of the published layer's clustered courses the rerun leaves unclustered",
+ "versions": {
+  "umap_learn": "0.5.12",
+  "toponymy": "0.5.4",
+  "fast_hdbscan": "unknown",
+  "scikit_learn": "1.9.0",
+  "numpy": "2.2.6"
+ },
+ "quick": false,
+ "minutes": 3.7,
+ "computed_at": "2026-09-05T22:28:28+00:00"
+}

@@ -1,0 +1,352 @@
+{
+ "published": {
+  "knn_k10": 0.4298890992696781,
+  "knn_k15": 0.45282361073543115,
+  "knc_department": {
+   "value": 0.4527426160337553,
+   "k": 10,
+   "n_classes": 237
+  },
+  "knc_department_min20": {
+   "value": 0.5388429752066115,
+   "k": 10,
+   "n_classes": 121
+  },
+  "knc_school": {
+   "value": 0.6666666666666666,
+   "k": 3,
+   "n_classes": 9
+  },
+  "cpd": {
+   "mean": 0.4940527276965739,
+   "min": 0.4732235219482587,
+   "max": 0.5186244206646482
+  },
+  "trustworthiness": {
+   "value": 0.9895959063932461,
+   "k": 15
+  }
+ },
+ "n_neighbors_100": {
+  "knn_k10": 0.2960688846812731,
+  "knn_k15": 0.3350945210831605,
+  "knc_department": {
+   "value": 0.4548523206751055,
+   "k": 10,
+   "n_classes": 237
+  },
+  "knc_department_min20": {
+   "value": 0.5371900826446281,
+   "k": 10,
+   "n_classes": 121
+  },
+  "knc_school": {
+   "value": 0.5925925925925926,
+   "k": 3,
+   "n_classes": 9
+  },
+  "cpd": {
+   "mean": 0.5271378797147748,
+   "min": 0.507723631576279,
+   "max": 0.5438218003658695
+  },
+  "trustworthiness": {
+   "value": 0.9835882515477337,
+   "k": 15
+  },
+  "cluster_layer_counts": [
+   256,
+   81,
+   29,
+   11
+  ],
+  "seconds": 41
+ },
+ "seeds": {
+  "43": {
+   "knn_k10": 0.4317284284555044,
+   "knn_k15": 0.45477714663541013,
+   "knc_department": {
+    "value": 0.4383966244725738,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.5537190082644627,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.6296296296296297,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.5020305606943489,
+    "min": 0.4751600980420776,
+    "max": 0.5307332737385395
+   }
+  },
+  "44": {
+   "knn_k10": 0.42908664683076364,
+   "knn_k15": 0.4524148709163586,
+   "knc_department": {
+    "value": 0.45232067510548524,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.5355371900826447,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.6666666666666666,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.4868970783956527,
+    "min": 0.4580686073619123,
+    "max": 0.5214607381969524
+   }
+  },
+  "45": {
+   "knn_k10": 0.4250022540798846,
+   "knn_k15": 0.4475460583656418,
+   "knc_department": {
+    "value": 0.43966244725738396,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.5355371900826447,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.6296296296296297,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.480063423115071,
+    "min": 0.443875969807068,
+    "max": 0.5011754554493266
+   }
+  },
+  "46": {
+   "knn_k10": 0.43228744026688304,
+   "knn_k15": 0.4551678538154059,
+   "knc_department": {
+    "value": 0.44261603375527425,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.5388429752066115,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.6666666666666666,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.5168411512008013,
+    "min": 0.4948153880663661,
+    "max": 0.5428739968450903
+   }
+  },
+  "47": {
+   "knn_k10": 0.4253358579028041,
+   "knn_k15": 0.44924112643885433,
+   "knc_department": {
+    "value": 0.45991561181434604,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.5363636363636364,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.7037037037037037,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.49551038589390106,
+    "min": 0.47044134642345226,
+    "max": 0.5193796797008148
+   }
+  },
+  "48": {
+   "knn_k10": 0.42682355062663424,
+   "knn_k15": 0.44942746370931386,
+   "knc_department": {
+    "value": 0.4383966244725738,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.5338842975206612,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.6666666666666666,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.4908811484073031,
+    "min": 0.46157553891410386,
+    "max": 0.5137918043325683
+   }
+  },
+  "49": {
+   "knn_k10": 0.43174646109458126,
+   "knn_k15": 0.4537432753283443,
+   "knc_department": {
+    "value": 0.45358649789029537,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.5520661157024793,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.6666666666666666,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.49033243282822375,
+    "min": 0.4617113696255473,
+    "max": 0.5195741338559724
+   }
+  },
+  "50": {
+   "knn_k10": 0.42996122982598506,
+   "knn_k15": 0.45299792624650614,
+   "knc_department": {
+    "value": 0.44050632911392407,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.540495867768595,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.6666666666666666,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.49884069031404127,
+    "min": 0.4671850968484631,
+    "max": 0.528858028400106
+   }
+  },
+  "51": {
+   "knn_k10": 0.4332071048597962,
+   "knn_k15": 0.4562317795209329,
+   "knc_department": {
+    "value": 0.45358649789029537,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.5545454545454546,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.6666666666666666,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.5030541330103143,
+    "min": 0.4796345499459697,
+    "max": 0.5295334713982699
+   }
+  },
+  "52": {
+   "knn_k10": 0.4285817329366153,
+   "knn_k15": 0.45002855167853817,
+   "knc_department": {
+    "value": 0.4443037974683544,
+    "k": 10,
+    "n_classes": 237
+   },
+   "knc_department_min20": {
+    "value": 0.5363636363636364,
+    "k": 10,
+    "n_classes": 121
+   },
+   "knc_school": {
+    "value": 0.6666666666666666,
+    "k": 3,
+    "n_classes": 9
+   },
+   "cpd": {
+    "mean": 0.5018542197927649,
+    "min": 0.47790813492688217,
+    "max": 0.5251489966766573
+   }
+  }
+ },
+ "definitions": {
+  "knn": "share of each course's k nearest neighbours (cosine, embedding space) also among its k nearest in the layout (euclidean); Kobak & Berens 2019",
+  "knc": "the same for class centroids: departments (all present; and those with at least 20 courses) and schools",
+  "cpd": "Spearman correlation of pairwise distances, 1000 sampled courses, 5 draws",
+  "trustworthiness": "Venna & Kaski, as in compare_embeddings.py"
+ },
+ "layout_params": {
+  "n_neighbors": 15,
+  "min_dist": 0.05,
+  "metric": "cosine",
+  "published_seed": 42,
+  "larger_n_neighbors": 100
+ },
+ "seed_summary": {
+  "knn_k10": {
+   "mean": 0.42937607068794514,
+   "min": 0.4250022540798846,
+   "max": 0.4332071048597962
+  },
+  "knn_k15": {
+   "mean": 0.45215760526553056,
+   "min": 0.4475460583656418,
+   "max": 0.4562317795209329
+  },
+  "cpd": {
+   "mean": 0.4966305223652423,
+   "min": 0.443875969807068,
+   "max": 0.5428739968450903
+  },
+  "knc_department": {
+   "mean": 0.4463291139240506,
+   "min": 0.4383966244725738,
+   "max": 0.45991561181434604
+  },
+  "knc_department_min20": {
+   "mean": 0.5417355371900826,
+   "min": 0.5338842975206612,
+   "max": 0.5545454545454546
+  },
+  "knc_school": {
+   "mean": 0.662962962962963,
+   "min": 0.6296296296296297,
+   "max": 0.7037037037037037
+  }
+ }
+}

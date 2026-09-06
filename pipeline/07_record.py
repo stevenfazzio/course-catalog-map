@@ -24,6 +24,12 @@ RECORD_FILES = [
     "labels_meta.json",
     "embedding_comparison.json",
     "embedding_comparison_raw.json",
+    # step 1 of docs/plan.md (experiments/record_metrics.py): layout metrics and region stability, names off
+    "layout_metrics.json",
+    "stability.parquet",
+    "stability_regions.csv",
+    "stability_meta.json",
+    "stability_layouts.npz",
 ]
 RECORD_GLOBS = ["evoc_topic_names*.json", "evoc_labels_meta*.json", "name_guardrail*.csv", "raw/_manifest.json"]
 
