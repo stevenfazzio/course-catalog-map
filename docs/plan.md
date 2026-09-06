@@ -15,14 +15,32 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
 
 ## Steps, in order
 
-- [ ] **1. Record metrics and stability.** One experiments script, names off, output into
+- [x] ~~**1. Record metrics and stability.** One experiments script, names off, output into
   `docs/record/stanford/`. Kobak-Berens triple: KNN preservation, KNC over departments and schools,
   CPD [4.1.1]. One UMAP run at a larger `n_neighbors`, KNC compared, reported not adopted [4.1.5].
   Stability [4.1.2]: ten UMAP seeds on the full corpus and ten 80% subsamples at the published seed,
   Toponymy clustering only. Per region and layer, mean pairwise co-assignment of published members;
   per course, the fraction of its published-region peers it stays with; per layer, AMI against the
   published clustering. One parquet aligned to the corpus so that every display option in step 6 is
-  possible from it.
+  possible from it.~~
+  *Landed 2026-09-05:* `experiments/record_metrics.py` (metric functions unit-tested on synthetic data in
+  `tests/test_record_metrics.py`), 3.7 minutes locally, no LLM. Outputs, copied into the record by stage 07:
+  `layout_metrics.json`, `stability.parquet` (per course), `stability_regions.csv` (per region),
+  `stability_meta.json` (run record), `stability_layouts.npz` (every rerun's coordinates and cluster
+  layers, so step 2 has its null layouts and step 6 needs no new runs). Choices made in implementation:
+  KNN at k = 10 (Kobak-Berens) and 15 (the pipeline's); KNC at k = 10 over all 237 departments present
+  and again over the 121 with 20+ courses, k = 3 over the nine schools; CPD on five draws of 1,000
+  courses; embedding-space distances are cosine throughout, as UMAP saw them. Published layers are
+  matched to rerun layers by nearest region count (one seed produced a fifth, six-region layer, left
+  unmatched). A pair the rerun leaves unclustered is not co-assigned; AMI is on courses both partitions
+  cluster, with the share of published members the rerun unclusters reported next to it. Two additions
+  beyond the plan: a zero-perturbation control (the published layout re-clustered on this machine, since
+  the clusterer is deterministic per machine but not across machines) and the triple for every seed
+  layout. Headline: KNN 0.45, KNC 0.45 / 0.54 / 0.67 (departments / large departments / schools), CPD
+  0.49, trustworthiness 0.99; `n_neighbors` 100 drops KNN to 0.34 for CPD 0.53 with KNC flat, so 15
+  stands. Seeds: AMI 0.92 / 0.94 / 0.91 / 0.86 by layer, finest first; subsamples 0.89 / 0.91 / 0.88 /
+  0.82; control 0.99+. Median region co-assignment 0.68 at the finest layer, 71 of 357 regions above
+  0.9 and 10 below 0.2; the coarsest layer splits its large regions (median 0.60).
 - [ ] **2. Wayfinding lineup** (Wickham et al.), sampled, reusing the step-1 seed runs as the null
   layouts.
 - [ ] **3. Name intrusion task** [4.1.3]: fifty items, four names from one region layer plus one
