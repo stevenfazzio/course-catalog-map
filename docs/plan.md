@@ -152,6 +152,33 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   redistribution is allowed, Zenodo deposit of the raw XML snapshot, embeddings, corpus parquet, and
   the record; if not, the deposit drops the raw XML and the write-up says why. DOI into the README
   and the record.
+  *In progress, 2026-09-06.* Gate read: ExploreCourses' footer links Stanford's site terms of use
+  (stanford.edu/site/terms), which allow downloads "only for User's own personal, non-commercial use" and forbid
+  otherwise copying, reproducing, distributing or publishing material; its About page says the course data API
+  "is available to students and faculty". ExploreCourses itself returned 503 at every attempt that day, so its
+  pages were read from the Internet Archive capture of 2026-08-29 and the Stanford terms page live. Outcome: the
+  raw XML is not deposited. `pipeline/08_archive.py --checksums` writes `raw_checksums.json` (256 files, 227 MB,
+  SHA-256 each, the fetch manifest, the terms finding) so that a copy obtained from Stanford can be verified
+  against the snapshot the map was built from, and stage 07 puts it in the record. The corpus and catalog
+  parquet files stay in the deposit as the plan lists them: they carry the same descriptions the public map and
+  the committed record already do, a judgment the write-up states rather than hides. The stage (`--checksums`,
+  `--reserve`, `--upload`, `--publish`; `--sandbox` for a rehearsal, `--dry-run` to print the requests; pure
+  parts unit-tested in `tests/test_archive.py`) builds a 19-file, 551 MB deposit: the six primary artifacts
+  (corpus, catalog, labels, layout, names, tree), the eight candidate-model embeddings, the record directory as
+  one tarball, an exploration tarball (the raw-catalog maps, the other candidates' layouts, the EVoC layers),
+  the repo at the archived commit, a README with every file's SHA-256, and `raw_checksums.json`. Metadata:
+  dataset, CC BY 4.0, version 1.1, related identifiers for the repo, the live map and ExploreCourses, DOI
+  pre-reserved so it can go into the README and the record before publishing. `archive.json` (host,
+  deposition, DOI, per-file checksums, the terms finding) is in the record, and so, from now on, is the
+  published layout `umap_coords.npz`, which the record had left to the map HTML. The map HTML is not in the
+  deposit: step 6 rebuilds it and changes nothing the record rests on. *Remaining:* a Zenodo token
+  (`ZENODO_TOKEN` exported in `~/.secrets`; `ZENODO_SANDBOX_TOKEN` to rehearse), then `--reserve`, the DOI
+  into README.md, stage 07, commit, `--upload`, `--publish` (irreversible), stage 07, commit. *Reserved 2026-09-06:*
+  deposition 22550382 on zenodo.org, DOI 10.5281/zenodo.22550382, in the README and the record; upload and publish pending.
+  *Open before upload (2026-09-06 discussion):* whether the deposited parquet files keep the full descriptions
+  (the map already ships them; the Course-Skill Atlas precedent released derived features only) or carry a
+  per-course description hash instead; whether to ask the Registrar's webmaster for permission in parallel;
+  and dropping the `instructors` column from the deposit, which plays no part in the analysis.
 - [ ] **6. Stage-05 rebuild, once.** Cross-listing count colormap [4.2.2]; course-number level
   colormap [4.2.8]; footer link to the repo and to the reserved blog-post slug; region stability
   [4.2.3] in whichever of hover text and continuous colormap survives a look at the rebuilt map.
@@ -161,6 +188,21 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   cut the three lit-review characterisations that rest on recollection (Börner et al. 2018's third
   corpus, Biasi & Ma's gap measure, Wang et al. 2021's venue); tag the release; file the Toponymy
   per-event-loop semaphore bug upstream.
+  *Partly landed, 2026-09-06.* Click-through: the Navigator link verified in a browser (ORALCOMM 117 opens
+  navigator.stanford.edu/classes/1274/24952, its Winter 2027 class page); the ExploreCourses fallback could not
+  be verified because explorecourses.stanford.edu returned 503 all day (the Internet Archive's last 200 capture
+  is 2026-08-29). Re-check when it is back; if the outage persists, step 6 should weigh a different fallback for
+  the 4,912 unscheduled courses. The stale 4B line is out of `CLAUDE.md`. The three lit-review
+  characterisations were checked against the sources and corrected in place: Börner et al. 2018's corpora are
+  publications, course syllabi and job advertisements (the review said "course offerings"); Biasi & Ma's gap is
+  100 times the ratio of a syllabus's mean cosine similarity to older articles (τ years before it, a three-year
+  window) to that with recent ones (τ' years), τ and τ' the field's 90th and 5th percentile citation lags, and
+  NBER 29853 was revised in August 2026 as "Frontier Knowledge in Higher Education" with the measure renamed
+  frontier knowledge proximity; Wang et al. 2021 is JMLR 22(201):1-73. The Toponymy issue is drafted (the
+  `AsyncLiteLLMNamer` semaphore binds to the first `asyncio.run` loop; a reproduction without an API key; the
+  per-loop fix) and waits on a go to file. *Remaining:* file the issue; verify the fallback; tag. *Decision:*
+  tag after step 6, so the tag marks the completed map; the Zenodo record names the archived commit and takes
+  the tag as a related identifier through a metadata edit, which needs no new version.
 - [ ] **8. Blog post, then promote.** The post is the methodology page. It must carry: region names
   are LLM-generated; the claimed-versus-practised and descriptions-versus-syllabi caveats [4.1.4]; the
   corpus rules with counts; the preregistration outcome including the 4B tie; the Chari-Pachter debate
@@ -189,3 +231,5 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   rebuilt map. All three are cheap once the step-1 parquet exists.
 - (2026-09-06) "Wayfinding lineup" means the discussion-177 instrument, an identification task on course text;
   the step-1 seed layouts are not its nulls and stay available for step 6's display options.
+- (2026-09-06) The deposit excludes the raw XML (Stanford's terms) and the map HTML (step 6 rebuilds it) and
+  keeps the corpus and catalog parquet files; the release tag follows step 6 rather than step 7's order.

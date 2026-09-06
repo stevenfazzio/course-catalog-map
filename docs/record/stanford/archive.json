@@ -1,0 +1,134 @@
+{
+  "source": "stanford",
+  "version": "1.1",
+  "zenodo": {
+    "host": "zenodo.org",
+    "sandbox": false,
+    "deposition_id": 22550382,
+    "doi": "10.5281/zenodo.22550382",
+    "doi_url": "https://doi.org/10.5281/zenodo.22550382",
+    "concept_doi": null,
+    "record_url": null,
+    "reserved_at": "2026-09-06T19:09:55+00:00",
+    "published_at": null,
+    "bucket_url": "https://zenodo.org/api/files/541f66f7-6d50-4d31-bc32-24efe66bd764"
+  },
+  "commit": {
+    "uploaded": "eda0f3334ab6599478351d316f7afb6d7637e107",
+    "reserved": "eda0f3334ab6599478351d316f7afb6d7637e107"
+  },
+  "terms": {
+    "read_on": "2026-09-06",
+    "terms_url": "https://www.stanford.edu/site/terms/",
+    "terms_quote": "User may download material from the Sites only for User's own personal, non-commercial use. User may not otherwise copy, reproduce, retransmit, distribute, publish, commercially exploit or otherwise transfer any material.",
+    "about_url": "https://explorecourses.stanford.edu/about",
+    "about_quote": "A course data API is available to students and faculty. This API allows developers to programmatically query the course database.",
+    "how_read": "ExploreCourses returned HTTP 503 on 2026-09-06. Its footer (Terms of Use -> stanford.edu/site/terms.html) and its About page were read from the Internet Archive capture of 2026-08-29; the Stanford terms page was read live.",
+    "decision": "The raw XML snapshot is not redistributed. Its per-file SHA-256 checksums are deposited so that a copy obtained from Stanford can be verified against the one the map was built from. The corpus and catalog parquet files carry the course titles and descriptions the public map already displays; they are the minimum needed to audit the corpus rules and rebuild the embeddings."
+  },
+  "raw_snapshot": {
+    "included": false,
+    "n_files": 256,
+    "total_bytes": 227448368,
+    "fetched_at": "2026-09-05T03:52:18+00:00",
+    "raw_checksums_sha256": "eb2b0f7cadbb778a58b12937843a3de86c747653f6bfaf2274b9c711f82019e0",
+    "reason": "The raw XML snapshot is not redistributed. Its per-file SHA-256 checksums are deposited so that a copy obtained from Stanford can be verified against the one the map was built from. The corpus and catalog parquet files carry the course titles and descriptions the public map already displays; they are the minimum needed to audit the corpus rules and rebuild the embeddings."
+  },
+  "files": {
+    "cluster_tree.json": {
+      "bytes": 8036,
+      "sha256": "a447c7e2e8fb0faf4736d0d60a93d03afb65b88cb70b0986e9bcb66c9d2dedd0",
+      "kind": "data"
+    },
+    "corpus.parquet": {
+      "bytes": 15754787,
+      "sha256": "8a7cfa26508889f027fd2dbf9e2c035da7a360c01f3ea31981864fe82216db84",
+      "kind": "data"
+    },
+    "courses.parquet": {
+      "bytes": 6301789,
+      "sha256": "16dcb8cf362525b9139d6c5b846ad9da5200911f31ecb1f5862a75f32088524b",
+      "kind": "data"
+    },
+    "embeddings.npz": {
+      "bytes": 45529260,
+      "sha256": "6e1290f6cb87851ba284dc929a979c66b51579c57165b1dd064171a4f9400d35",
+      "kind": "data"
+    },
+    "embeddings_arctic-l-v2.npz": {
+      "bytes": 45529260,
+      "sha256": "0b85921bea2ac4bc3824814ae29c62da64ee5c340e8e635f00937c460682014c",
+      "kind": "data"
+    },
+    "embeddings_nomic-v2-moe.npz": {
+      "bytes": 34172076,
+      "sha256": "5a24a4831f6d000719eb645f669cd5119d123652a940fbeff34d5c2bf9c2f048",
+      "kind": "data"
+    },
+    "embeddings_qwen3-4b.npz": {
+      "bytes": 113672364,
+      "sha256": "64fe6be3aff4a9f6a2b93ebbd01483135e61d7f91a905e6864d0ecded7a05f30",
+      "kind": "data"
+    },
+    "embeddings_raw.npz": {
+      "bytes": 47208205,
+      "sha256": "307faf247a3e07f79daa80fdb74b68f645aca911b9c6eee519bbaab2f2102cb3",
+      "kind": "data"
+    },
+    "embeddings_raw_arctic-l-v2.npz": {
+      "bytes": 47208205,
+      "sha256": "10759afd1638ec3827191cf3e4b224f7dc249455b703ff9b76fc361b08e8dc4e",
+      "kind": "data"
+    },
+    "embeddings_raw_nomic-v2-moe.npz": {
+      "bytes": 35432205,
+      "sha256": "c79f67bf69571c8f024791deb10696d785a6f6e303a651fafff484afaf258352",
+      "kind": "data"
+    },
+    "embeddings_raw_qwen3-4b.npz": {
+      "bytes": 117864205,
+      "sha256": "c3ef870faa9390a0cba1085a33ff89f668f02dc3593bf386ab920bbb693428d5",
+      "kind": "data"
+    },
+    "labels.parquet": {
+      "bytes": 164116,
+      "sha256": "a5a5e8ebc2618d69fa3c94c10da4f6d3876ffd099f06e9dedfb942b5b2a58a8f",
+      "kind": "data"
+    },
+    "raw_checksums.json": {
+      "bytes": 39069,
+      "sha256": "eb2b0f7cadbb778a58b12937843a3de86c747653f6bfaf2274b9c711f82019e0",
+      "kind": "data"
+    },
+    "topic_names.json": {
+      "bytes": 24913,
+      "sha256": "9cdee884d4a22e32cf92427551f476621e3074fc9692bb70f3eb8486b0024e97",
+      "kind": "data"
+    },
+    "umap_coords.npz": {
+      "bytes": 189244,
+      "sha256": "c6990be2b0f3dfb0d89dbfb15d17c3c00bec40f8aabc861af605623c4befb54b",
+      "kind": "data"
+    },
+    "record_stanford.tar.gz": {
+      "bytes": 17587167,
+      "sha256": "eb11dea7d7d76d73fe64c63ff03077c55dcd29de3ab30af0dc2c6e473ae63839",
+      "kind": "bundle"
+    },
+    "exploration_stanford.tar.gz": {
+      "bytes": 1301581,
+      "sha256": "ad28a9b180bf48f82d89f58d1291c1444bea175c6cd92e48dc65c0b49d74aebd",
+      "kind": "bundle"
+    },
+    "course-catalog-map-eda0f3334ab6.zip": {
+      "bytes": 23431790,
+      "sha256": "f8ada95873ce34646406865819d666312a3615ab07d2f947f592aef44b2995fd",
+      "kind": "bundle"
+    },
+    "README.md": {
+      "bytes": 5627,
+      "sha256": "402abc882d2df58529f8e427c641aa1ac758c0b7763985634e9e65dea7d84c5f",
+      "kind": "readme"
+    }
+  }
+}

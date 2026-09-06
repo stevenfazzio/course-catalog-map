@@ -126,7 +126,7 @@ department file that already exists; delete a file to refetch it.
   secondary ones, which the rule does not act on; the two encoder-family candidates were clearly behind. Every text is embedded with the instruction "Identify the
   topic or theme of the given university course description", the form the Qwen3 Embedding report uses
   for clustering tasks. Toponymy's keyphrases and exemplars go through the same wrapper (`embedder.py`)
-  so they share the space. A 4B comparison run is on the table before the final build.
+  so they share the space.
 - **Clustering happens in the 2-d layout.** One UMAP (n_neighbors 15, min_dist 0.05, cosine, seed 42)
   feeds both the plot and Toponymy's `clusterable_vectors`, so named regions match what a viewer sees.
 - **Region names come from Claude Opus 5** via `LoopSafeNamer` in `04_label_topics.py`, a subclass of
@@ -238,6 +238,21 @@ spread (Spearman 0.63), the H&S Natural Sciences are the periphery (mean rank 11
 in-degree only; the probe gives school 0.83 / 0.84 and department 0.66 / 0.66 for embeddings / tf-idf (majority 0.50 and
 0.06), so bag-of-words recovers the org chart as well as the embedding does, with half the department errors inside the
 right school.
+
+**Plan steps 5 and 7 (2026-09-06, in progress).** `pipeline/08_archive.py` is the Zenodo deposit
+(`--checksums` offline, then `--reserve`, `--upload`, `--publish`; `--sandbox`, `--dry-run`; token `ZENODO_TOKEN` or
+`ZENODO_SANDBOX_TOKEN` exported in `~/.secrets` or set in the repo-local `.env`; state in `archive.json`, copied into the record by
+stage 07 along with `raw_checksums.json` and, new, `umap_coords.npz`). The terms gate closed against redistributing
+the raw XML: ExploreCourses' footer links Stanford's site terms (personal, non-commercial use only; no copying or
+distributing) and its About page calls the course data API "available to students and faculty". So the deposit is
+the corpus and catalog parquet files, every candidate model's embeddings, the published layout, labels, names and
+tree, the record and exploration artifacts as tarballs, the repo at the archived commit, and the SHA-256 checksums
+of the withheld raw snapshot (19 files, 551 MB; dataset, CC BY 4.0, version 1.1, DOI pre-reserved). DOI 10.5281/zenodo.22550382 was reserved
+on 2026-09-06 (deposition 22550382, unpublished); upload and publish are pending. Tidy: Navigator click-through verified in a browser; the ExploreCourses fallback
+could not be, because the site returned 503 all day (last Internet Archive capture 2026-08-29), which also bears on
+step 6's fallback for the 4,912 unscheduled courses; the three lit-review characterisations verified and corrected
+(`docs/lit_review.md`); Toponymy issue drafted, not filed; tag deferred to after step 6. The repo has no LICENSE
+file, which the CC BY 4.0 deposit makes visible; Steven's other public repos have none either.
 
 ## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
 

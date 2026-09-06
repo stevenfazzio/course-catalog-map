@@ -1,0 +1,1304 @@
+{
+  "n_files": 256,
+  "total_bytes": 227448368,
+  "manifest": {
+    "source": "stanford",
+    "academic_year": "20262027",
+    "xml_view": "xml-20200810",
+    "fetched_at": "2026-09-05T03:52:18+00:00",
+    "n_departments": 256,
+    "course_status_filter": "Active"
+  },
+  "terms": {
+    "read_on": "2026-09-06",
+    "terms_url": "https://www.stanford.edu/site/terms/",
+    "terms_quote_download": "User may download material from the Sites only for User's own personal, non-commercial use.",
+    "terms_quote_copy": "User may not otherwise copy, reproduce, retransmit, distribute, publish, commercially exploit or otherwise transfer any material.",
+    "about_url": "https://explorecourses.stanford.edu/about",
+    "about_quote": "A course data API is available to students and faculty. This API allows developers to programmatically query the course database.",
+    "how_read": "ExploreCourses returned HTTP 503 on 2026-09-06. Its footer (Terms of Use -> stanford.edu/site/terms.html) and its About page were read from the Internet Archive capture of 2026-08-29; the Stanford terms page was read live.",
+    "decision": "The raw XML snapshot is not redistributed. Its per-file SHA-256 checksums are deposited so that a copy obtained from Stanford can be verified against the one the map was built from. The corpus and catalog parquet files carry the course titles and descriptions the public map already displays; they are the minimum needed to audit the corpus rules and rebuild the embeddings."
+  },
+  "files": [
+    {
+      "name": "AA.xml",
+      "bytes": 1768736,
+      "sha256": "d87256d9f056222b331cd920b3d16aba9c7b9ed160c02e40b1774f7883184456"
+    },
+    {
+      "name": "ACCT.xml",
+      "bytes": 760124,
+      "sha256": "a9868823a6a191ee59b0c9d9177ce71b9df2da3827d9ce1afb6d7af18099abff"
+    },
+    {
+      "name": "AFRICAAM.xml",
+      "bytes": 793136,
+      "sha256": "10de18a55ace2eabf75686e7db4ef258417afb552968fcad8d4c56f5d92e48d8"
+    },
+    {
+      "name": "ALP.xml",
+      "bytes": 27370,
+      "sha256": "ebefa5193eb92ffe2c82d217cf35140d41be2af8090b725670df381c4eb61f95"
+    },
+    {
+      "name": "AMELANG.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "AMHRLANG.xml",
+      "bytes": 20711,
+      "sha256": "ee919e67cbfabb1ced4d8590c148b237d9f40297c9d63a45657629a9b771403c"
+    },
+    {
+      "name": "AMSTUD.xml",
+      "bytes": 758082,
+      "sha256": "1504fc09e95cc080d4f46743170524f1fb0a5126d380bc1036a482414d68ef85"
+    },
+    {
+      "name": "ANES.xml",
+      "bytes": 1261586,
+      "sha256": "0e87442c5910bb5b3ea6c87cdc6db7b36ddf6524bbcfb68498610dcaf23a6019"
+    },
+    {
+      "name": "ANTHRO.xml",
+      "bytes": 2726705,
+      "sha256": "f672b8efbd1e931cec0d27d0c3a459d271666f30173436f2188fcaf664e2e2af"
+    },
+    {
+      "name": "APPPHYS.xml",
+      "bytes": 2257359,
+      "sha256": "a69caef325b5e159a301925b94a0f685ed1af4352178c6bc1711606f0232c52c"
+    },
+    {
+      "name": "ARABLANG.xml",
+      "bytes": 140132,
+      "sha256": "38965240ebfea7c848321a414fd7205965aec31fe6390d694808f62c2ded533c"
+    },
+    {
+      "name": "ARCHLGY.xml",
+      "bytes": 487118,
+      "sha256": "9b9303ed14b8efcc60062ba5d24513d8beee2ce0d676dacc04865f839b1ddb55"
+    },
+    {
+      "name": "ARMELANG.xml",
+      "bytes": 26637,
+      "sha256": "9d1336d984694e59d5d9c21690ce8ec0cd1d4b81079d632b6f46794c8b8fea5d"
+    },
+    {
+      "name": "ARTHIST.xml",
+      "bytes": 1970112,
+      "sha256": "0fb92caab32e76195f9a04af348f2c7993fc0c82752903f7450bad5eeef0a603"
+    },
+    {
+      "name": "ARTSINST.xml",
+      "bytes": 75054,
+      "sha256": "2338a3250692a9b876c26c66a74efc4357716d599dca57ccfb489a66120322dd"
+    },
+    {
+      "name": "ARTSTUDI.xml",
+      "bytes": 987451,
+      "sha256": "f9c8992c2bdb9eebc951571c58de812b5ecec14cf05b7d9575b5489ce2b12384"
+    },
+    {
+      "name": "ASLLANG.xml",
+      "bytes": 50839,
+      "sha256": "09a1b44b1ea1f96437d510745baccadf22efff7f3e97f0f6d301c2aeebc956ae"
+    },
+    {
+      "name": "ASNAMST.xml",
+      "bytes": 180082,
+      "sha256": "d42b3ea8ee3ce10192cb526631d17e18693537f1e7229966955a585c5a25c47a"
+    },
+    {
+      "name": "ATHLETIC.xml",
+      "bytes": 596861,
+      "sha256": "9f5b59f95fb8597255195fb417df9a8445abb1293450a837bb2782d41af5ef3c"
+    },
+    {
+      "name": "BIO.xml",
+      "bytes": 4771361,
+      "sha256": "894b92405a11e34024c61770cc4e9baa870083653b0755a653afce3e36538105"
+    },
+    {
+      "name": "BIOC.xml",
+      "bytes": 1104219,
+      "sha256": "9ac96fa983ae4dfeeba666d572cd7192ce1a1ac6ff596f5f0be6e92d9997c1dc"
+    },
+    {
+      "name": "BIOE.xml",
+      "bytes": 4668984,
+      "sha256": "99140462e29a969f531a917f415fddeceb33c02096ebc5b021ffd1454854ad06"
+    },
+    {
+      "name": "BIOHOPK.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "BIOPHYS.xml",
+      "bytes": 2335571,
+      "sha256": "3cbf140e1b336c02dd73368a7b8eaa3cdf1707b01e9c9f1305287b4ab1dfb890"
+    },
+    {
+      "name": "BIOS.xml",
+      "bytes": 524605,
+      "sha256": "9c5e6226700ee51f3ee05cdf6d9a410487162fe813ec092633edc097d87c0d9a"
+    },
+    {
+      "name": "BMDS.xml",
+      "bytes": 3248382,
+      "sha256": "0231d2708859c08de9dc3d5675502d8a3cc1cae00dc6dd038ead78d4cc5dfc15"
+    },
+    {
+      "name": "BMP.xml",
+      "bytes": 372115,
+      "sha256": "482679ee1572377f6f429909884f737e74dba1f7bb0af3b3bd46cc32132abf56"
+    },
+    {
+      "name": "BUSGEN.xml",
+      "bytes": 68325,
+      "sha256": "4eee33eae86a78cbe22dd2172e2bf3441fd2da22aaa8a22e55182f504d9787bd"
+    },
+    {
+      "name": "CATLANG.xml",
+      "bytes": 13938,
+      "sha256": "fa418790346d10c7d09ad110e53d1a14a1ad80fcb13b326c7f1f6f21c221676d"
+    },
+    {
+      "name": "CBIO.xml",
+      "bytes": 1732891,
+      "sha256": "42ef46991488e8d019a9e24ff3cb2bb035308bdeec8d72fbaea5701ea73d331f"
+    },
+    {
+      "name": "CEE.xml",
+      "bytes": 5579822,
+      "sha256": "758138d3ea10aa019392323d6c480c9b40c83d02c13b5301cb08a9f305591e05"
+    },
+    {
+      "name": "CHEM.xml",
+      "bytes": 2409768,
+      "sha256": "4d4494b34431e70cc2fa223679bdd71e0c751ffeb6c13ea9e59adcadf965202d"
+    },
+    {
+      "name": "CHEMENG.xml",
+      "bytes": 1037328,
+      "sha256": "63e0e28fb0ce9828ec87f74a25e76cb76bf8fde6af586c88bf6166ba6d1c378b"
+    },
+    {
+      "name": "CHILATST.xml",
+      "bytes": 140207,
+      "sha256": "c71d716cedb74dc512c78991c42c856f4f5a1541ee052f9b7e864f4c5d0095b6"
+    },
+    {
+      "name": "CHINA.xml",
+      "bytes": 266238,
+      "sha256": "7eff2e11f113b4bcc6feaeb194735ae181d2ae31973080761a9f1eb9104337a2"
+    },
+    {
+      "name": "CHINLANG.xml",
+      "bytes": 479907,
+      "sha256": "1648da3a7fe1ba48c5ef8fe88939846c2035a2e548be838212a6bdc7c9167d3c"
+    },
+    {
+      "name": "CHPR.xml",
+      "bytes": 1890431,
+      "sha256": "94c95b13847b43480c0b06ed079ed0b04fa444539f2843bfcb3fc2dc023e7c48"
+    },
+    {
+      "name": "CHRKELNG.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "CLASSICS.xml",
+      "bytes": 1990884,
+      "sha256": "a46da478946d5cbf537a68d5c26fc7868bbd71481af45c8878f955df48adedb9"
+    },
+    {
+      "name": "CME.xml",
+      "bytes": 2054546,
+      "sha256": "2f1df30eb369bd2ed453ddfe80070e9f812e4b40f00688b95825a56e76949655"
+    },
+    {
+      "name": "COLLEGE.xml",
+      "bytes": 563918,
+      "sha256": "f0c1fcbcd00db1102b04a825c1fce3f2483339d5a5733ff715bc0fb3664feac6"
+    },
+    {
+      "name": "COMM.xml",
+      "bytes": 1753457,
+      "sha256": "4e3b4aee8bb79d498b0ab8fde843326ac113d15af57a2d30ed712a97919928ae"
+    },
+    {
+      "name": "COMPLIT.xml",
+      "bytes": 1251514,
+      "sha256": "239284c3ff9ef012d158b852cfd42628f6f9fa85649cb0727158706a74f44f00"
+    },
+    {
+      "name": "COMPMED.xml",
+      "bytes": 816061,
+      "sha256": "d0cc1da29a2befe9d3a74c49b9e4c83cb827725719f21f5c90a2e8018ebd91e9"
+    },
+    {
+      "name": "CS.xml",
+      "bytes": 14114148,
+      "sha256": "2b4bb07d0086b5a7888a027c7e8d8f767e3bf0142e8afe9ab36352f4cff636d6"
+    },
+    {
+      "name": "CSB.xml",
+      "bytes": 584090,
+      "sha256": "0222284677f0b918ce7f53265daf3f9463ce14dd413a0fc17ce867454bdab5d6"
+    },
+    {
+      "name": "CSRE.xml",
+      "bytes": 1027192,
+      "sha256": "69c4e4ae549f5c91110be1b9c93bde158c398d78943bbb4d11af03c989d5fb83"
+    },
+    {
+      "name": "CTL.xml",
+      "bytes": 21070,
+      "sha256": "233277534055a7a9f2764b10316b28984a6d3dea30a5ac68a3938e9ac9070500"
+    },
+    {
+      "name": "CTS.xml",
+      "bytes": 348220,
+      "sha256": "e7ce07d7142a4b4daae1b7cb358b22afc87bc792259858ae2b896a6de31e0876"
+    },
+    {
+      "name": "CZECLANG.xml",
+      "bytes": 24282,
+      "sha256": "3e948c01746f8d998ac93281737b2989eae4fb64079c3642596bb8d7c80256b2"
+    },
+    {
+      "name": "DANCE.xml",
+      "bytes": 213474,
+      "sha256": "d53b682333a9ddb24c09fd1d419c930932fdeaa95d554eb1189d566ab2547c8e"
+    },
+    {
+      "name": "DATASCI.xml",
+      "bytes": 126911,
+      "sha256": "23d9e27f8cb6a359397ae5c2c8d6f9383f86bba041e6ba0aae74921ca20b859a"
+    },
+    {
+      "name": "DBIO.xml",
+      "bytes": 575513,
+      "sha256": "41c9cc814e16389c2a60e3129e7061d9ee6ce5c6accb31829e2bc6e43ea74a08"
+    },
+    {
+      "name": "DERM.xml",
+      "bytes": 610267,
+      "sha256": "d39dbf4d515cdc32b28fcbe8c75369abe622c703dd2cf3f19121abebce481828"
+    },
+    {
+      "name": "DESIGN.xml",
+      "bytes": 588071,
+      "sha256": "d24f0761149f97c03b6e645f13b6875800d42ce41932782b4851bae4934681a9"
+    },
+    {
+      "name": "DESINST.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "DLCL.xml",
+      "bytes": 251503,
+      "sha256": "b6677c3c0f1519b1119e7c7cb15f9bb2e0c1b0c75783c51328be466a91ac532e"
+    },
+    {
+      "name": "DUTCHLNG.xml",
+      "bytes": 9539,
+      "sha256": "0adf159dcc0b6c4adc4da1b4705fb58a9d32ddb715e99489e952fe27188cabce"
+    },
+    {
+      "name": "EALC.xml",
+      "bytes": 930157,
+      "sha256": "d2c4e397f59dd8d699b9e00a9e28901ead9185830c29c0dce70b4c3b1c704bba"
+    },
+    {
+      "name": "EARTHSYS.xml",
+      "bytes": 2671675,
+      "sha256": "47cf8a4305625b6818992d8816c3dc4ad710abb1435ff0bfe6b652104892f0ef"
+    },
+    {
+      "name": "EASTASN.xml",
+      "bytes": 686787,
+      "sha256": "5d624dc512eaa0e5b3ddb5cf685664ba5a9b085c553788392e91d91ec39ca17c"
+    },
+    {
+      "name": "EBS.xml",
+      "bytes": 555207,
+      "sha256": "fb56a0735bb6b6f659454481ce893dd0051f9542e81867b9e8c48b912dc1372e"
+    },
+    {
+      "name": "ECON.xml",
+      "bytes": 3268320,
+      "sha256": "1cec94da444bcecd99d80eb5412e681a9f5431c9d81393e5762442c46e23dfcc"
+    },
+    {
+      "name": "EDUC.xml",
+      "bytes": 7170607,
+      "sha256": "bef431b0547fb6003ef7679c0d4ef54beda403ce752253cfece930c921e122f0"
+    },
+    {
+      "name": "EE.xml",
+      "bytes": 5030275,
+      "sha256": "fdcafedc7a24fb3e63d9ef9a46b152570a10c86486674ad3b6566c12296ab088"
+    },
+    {
+      "name": "EMED.xml",
+      "bytes": 637917,
+      "sha256": "5ad77eb06309f6444e06ba6f414b2cb01261560f2d256c6c6090e6b4dfa99474"
+    },
+    {
+      "name": "ENERGY.xml",
+      "bytes": 1504956,
+      "sha256": "1c03644111adf83cb8a43371f715ab2945d05dfdfa91800a31adc98b247e0812"
+    },
+    {
+      "name": "ENGLISH.xml",
+      "bytes": 2970840,
+      "sha256": "8b3c0fd7324ba00a32fab036cbe0c2733d3844870b2762793dcc867f0b4d6fc6"
+    },
+    {
+      "name": "ENGR.xml",
+      "bytes": 763394,
+      "sha256": "1c93d174c87d8dd112a389a1ed4cb03ef373699e0ee3baca86910e5a2d3f1776"
+    },
+    {
+      "name": "ENVRES.xml",
+      "bytes": 2271299,
+      "sha256": "624e8afff905c1ad9c075d0f20629236fe904d399092a7626ff629ff94f840b0"
+    },
+    {
+      "name": "EPI.xml",
+      "bytes": 2163456,
+      "sha256": "8dfc26dee4bae2886404b66cb00d5576c8cdb9c8080a43a0b01a9a91c6a0200b"
+    },
+    {
+      "name": "EPS.xml",
+      "bytes": 2273389,
+      "sha256": "0daaf58be69c94ff8b8f2ecbcb6bd8fa7c53709c5187b59efbc787cfd3c0b831"
+    },
+    {
+      "name": "ESF.xml",
+      "bytes": 184447,
+      "sha256": "edf484b0cfa3bdd7662b99f511a30ddd9cd115fe15e40d4986a67f1e07a9ae08"
+    },
+    {
+      "name": "ESOLLANG.xml",
+      "bytes": 138118,
+      "sha256": "db483576ce6ecada02599aa98e203f16c70eb7f64e389cfc3da5e8983984d4e4"
+    },
+    {
+      "name": "ESS.xml",
+      "bytes": 1022620,
+      "sha256": "d4ab3f1c28b48812be63e1901ea0540ca733523daef3bd3301b086752688c365"
+    },
+    {
+      "name": "ETHICSOC.xml",
+      "bytes": 293438,
+      "sha256": "951aadb249a75aac4879e6d3aadf540291ff05cf97284353db288c2550f60c08"
+    },
+    {
+      "name": "FAMMED.xml",
+      "bytes": 303054,
+      "sha256": "f37a5b0c6f79085dd48a3dfe44fdf18ec89918c0ef4d10e68659795f98c1ba70"
+    },
+    {
+      "name": "FEMGEN.xml",
+      "bytes": 934262,
+      "sha256": "1bc1f5504ee776543cedbe6647f781147514988538d513698a64924590ee89ff"
+    },
+    {
+      "name": "FILILANG.xml",
+      "bytes": 32526,
+      "sha256": "beadf5156947c1d9a51e74ca0a2b6883855065c3e626a1829caf23c2919ce7d7"
+    },
+    {
+      "name": "FILMEDIA.xml",
+      "bytes": 696209,
+      "sha256": "20a28f29f26e33772f0dade6f52ed8fc71dfd8be7f83f4d8f20fda2c9f6be7c4"
+    },
+    {
+      "name": "FILMPROD.xml",
+      "bytes": 143940,
+      "sha256": "a7eb0d2c4133eaac51c55148cd08830cf1b6c8105c935c0ebd3681e163fac709"
+    },
+    {
+      "name": "FINANCE.xml",
+      "bytes": 1170426,
+      "sha256": "253cc1ce468f68b6fe855579d7caf5da4b392ca50dd143546b7a7e462f9c1e41"
+    },
+    {
+      "name": "FINNLANG.xml",
+      "bytes": 3329,
+      "sha256": "07cd0bf84c18e7b45308fecb0309cc21ed6c9b1a83448cea15abb2389ace63dd"
+    },
+    {
+      "name": "FRENCH.xml",
+      "bytes": 575414,
+      "sha256": "e59be1cbb6e39578e2ab6701712ae53e3da4bcac733e13f98f16c270f13f95b6"
+    },
+    {
+      "name": "FRENLANG.xml",
+      "bytes": 250881,
+      "sha256": "3cb81b9329cfa6a08a02abfb48390d4e1f95feeb89ad8d9d3f0d1c01aef11749"
+    },
+    {
+      "name": "GENE.xml",
+      "bytes": 2748173,
+      "sha256": "a5fe2ee98bf093c7f9c3fb257032a1f4acd01a3d8b36b05367bfe874762c2fe1"
+    },
+    {
+      "name": "GEOPHYS.xml",
+      "bytes": 1307507,
+      "sha256": "374c04645cb8480c8a4db4c77401e8e55b3ff19f7d5c9d29bd884297c94eb3fa"
+    },
+    {
+      "name": "GEP.xml",
+      "bytes": 315602,
+      "sha256": "af796dd2bd7e822c99368d04d35093fa45efebf0a1f03598fdbd8093c4d76bc4"
+    },
+    {
+      "name": "GERLANG.xml",
+      "bytes": 104320,
+      "sha256": "6c3726056dcd75870c91bf26706e5ca2cfd852ed5d2564aad5feefc2d93caa2c"
+    },
+    {
+      "name": "GERMAN.xml",
+      "bytes": 637572,
+      "sha256": "f8a7f86fd56580ce1412771427e01a21da820b717ae4da4f1c908c03b330ca94"
+    },
+    {
+      "name": "GLOBAL.xml",
+      "bytes": 195625,
+      "sha256": "77295306c634c701709b83af3ac4d17920296f928a35ca8bef4c9750e1731409"
+    },
+    {
+      "name": "GREELANG.xml",
+      "bytes": 33195,
+      "sha256": "61a59e24a9eb29898e920ba009859506002fcca175b00a71e3fa8966c021c9dd"
+    },
+    {
+      "name": "GSBGEN.xml",
+      "bytes": 1833349,
+      "sha256": "ba50f81a2f62dc07b2c4fc2cef23dd3d1695dec745532987bb2dc9b51d3206d3"
+    },
+    {
+      "name": "GSBGID.xml",
+      "bytes": 197960,
+      "sha256": "b46b343c7957197ead2c22d8785c1410d26d7aed36ab682c44e8a9b1b65d9b92"
+    },
+    {
+      "name": "GUJARLNG.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "HAITLANG.xml",
+      "bytes": 18101,
+      "sha256": "a2d0523b2dca3196a00e0971b543f5786d68505f6673876ec901b26cae7a6690"
+    },
+    {
+      "name": "HAWALANG.xml",
+      "bytes": 21182,
+      "sha256": "945ff1de9209c32c8d6c55cd703e3efa0a4db5a4e998346d832836685752d346"
+    },
+    {
+      "name": "HEBRLANG.xml",
+      "bytes": 32331,
+      "sha256": "cbc77230b59ff2fdc45f7bd1439701b7a2fa18b016aa5257d30a873409bd508b"
+    },
+    {
+      "name": "HINDLANG.xml",
+      "bytes": 44459,
+      "sha256": "04f9fff897156ed5eb83860a6fcddde334fb2928c1fcfe064652c2a5f7f2c88c"
+    },
+    {
+      "name": "HISTORY.xml",
+      "bytes": 4993329,
+      "sha256": "200d10183c6ee1023240a50105d71b000e4123a26610fb88fa519af139ecb312"
+    },
+    {
+      "name": "HITTLANG.xml",
+      "bytes": 5120,
+      "sha256": "d99fb11f16d89a7aad6e07d7d911281754870f45cda39bf499fc13dabad3e964"
+    },
+    {
+      "name": "HNGRLANG.xml",
+      "bytes": 17118,
+      "sha256": "ea25cc0084f056ae42bdf20d3f6ca95daf7156ceb3da5028c40316f005631374"
+    },
+    {
+      "name": "HORSE.xml",
+      "bytes": 43914,
+      "sha256": "5b5116177b53eb26b708d02481caf86fa42f2b0a4cff818a9e8f9082b78cca74"
+    },
+    {
+      "name": "HPS.xml",
+      "bytes": 25126,
+      "sha256": "b35c39121d2b7ee9bb38abbb839847a13567683760eb85010ecc1e2a83acda99"
+    },
+    {
+      "name": "HRMGT.xml",
+      "bytes": 19143,
+      "sha256": "31952f2383fcca30720b92446e26c4ff1371c25ace180deb2259df359f8bf1cc"
+    },
+    {
+      "name": "HRP.xml",
+      "bytes": 1333994,
+      "sha256": "d19f594ab9e9ed8bdfb29ac058a312858ab18257d2fb211b2bbd2756caba7f39"
+    },
+    {
+      "name": "HUMBIO.xml",
+      "bytes": 886710,
+      "sha256": "2bfb83ecfab8e0230fad782ecc23d25bb0771ad97bdd5b8e2c2c18a0658f0895"
+    },
+    {
+      "name": "HUMCORE.xml",
+      "bytes": 58818,
+      "sha256": "5d4c61fe07648a623b8b88ffd236620e4423d50c91d49697dbf59655d45c57a7"
+    },
+    {
+      "name": "HUMRTS.xml",
+      "bytes": 193352,
+      "sha256": "4f1a2d24213151306e55d239e8ac00d79b68c55b907f94087651488727c2d9d3"
+    },
+    {
+      "name": "HUMSCI.xml",
+      "bytes": 9030,
+      "sha256": "176f86c50434b44ae1ae579f46c68daa048f2efe2c1987cbc88808cd8384189c"
+    },
+    {
+      "name": "IGBOLANG.xml",
+      "bytes": 18951,
+      "sha256": "7d2a997429b32f7c7c63a1c3da469887c56344f6f105a65bed584489761ce712"
+    },
+    {
+      "name": "IIS.xml",
+      "bytes": 15467,
+      "sha256": "e89a93fd97253e13566f8e166ab6b05cf8436424f065a2ef4d7f0f7bd445dc81"
+    },
+    {
+      "name": "ILAC.xml",
+      "bytes": 648518,
+      "sha256": "31b5cc49c24a0b809bcef8e4995cd52c293f9b2359edc1a87544cab6e454d6a2"
+    },
+    {
+      "name": "IMMUNOL.xml",
+      "bytes": 2754753,
+      "sha256": "99deec0e95b2e7fd1f407b3bdfd215cb603c849a5687359d8816d09b01491efb"
+    },
+    {
+      "name": "INDE.xml",
+      "bytes": 352843,
+      "sha256": "8727620f33d1f9f56ad9034e350a03a428057123e3fe6d86127c227217b4b9fd"
+    },
+    {
+      "name": "INTLPOL.xml",
+      "bytes": 738252,
+      "sha256": "f8e43bce0a58840ab0ea3fde818b5b8be2a2444f3a9f63137e81237851e700dc"
+    },
+    {
+      "name": "INTNLREL.xml",
+      "bytes": 459448,
+      "sha256": "aea5fef0a297aa9bf76771a2d6e0d6cafe07fec0a8b21513a34cfcf6fb90be41"
+    },
+    {
+      "name": "INUPQLNG.xml",
+      "bytes": 3228,
+      "sha256": "f7d1f828b434d2b7e6bd06ec94a1db6c3f5423994a614463d24eaf5803894bbb"
+    },
+    {
+      "name": "ITALIAN.xml",
+      "bytes": 424563,
+      "sha256": "8cbde20186f76f48f7189c2cb9d20b2dbb7a0d133bda61915625a1a8c3a04580"
+    },
+    {
+      "name": "ITALIC.xml",
+      "bytes": 79884,
+      "sha256": "1a2652d4c60023369529bda556c872a8c9566a09ccec68207fb5bd606bb059aa"
+    },
+    {
+      "name": "ITALLANG.xml",
+      "bytes": 127356,
+      "sha256": "ead523924b1b08680bd9381e2f00b10e48d99953d347429dce5fefc9fb16b5e8"
+    },
+    {
+      "name": "JAPAN.xml",
+      "bytes": 141749,
+      "sha256": "be74002c260c6a80cff2d68bb255328f49513eb4023c86281c683a5639ef70c1"
+    },
+    {
+      "name": "JAPANLNG.xml",
+      "bytes": 247544,
+      "sha256": "1264e7724c4205b255bd2a7af1e9ce11624c48c5bac5009e48478205763ba8a3"
+    },
+    {
+      "name": "JEWISHST.xml",
+      "bytes": 390956,
+      "sha256": "1e370cd5b27ed6f80df57d3978b6dfd5afb7c8cfcbe90746c54ebe033e526b9c"
+    },
+    {
+      "name": "KAZKHLNG.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "KHMRLANG.xml",
+      "bytes": 7892,
+      "sha256": "8879349a5548ed1450a09990b34711e4d1c9c46fb5948cae1d6fb6a28f9a3ae7"
+    },
+    {
+      "name": "KIN.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "KINYLANG.xml",
+      "bytes": 1841,
+      "sha256": "887df2fc6a76a77ea6b1abc7b33175dcdc8fc81e6f7363412426888dc578e4ad"
+    },
+    {
+      "name": "KOREA.xml",
+      "bytes": 50863,
+      "sha256": "9a76d119b432e289de66d8c60e7ef4ccaea02e466e375c2875a00d18c69878b3"
+    },
+    {
+      "name": "KORLANG.xml",
+      "bytes": 91136,
+      "sha256": "5bf8d88a30063defd8aee5a5c9faf70686b998548450bb81d130347cc8b1f8c6"
+    },
+    {
+      "name": "LAKOTLNG.xml",
+      "bytes": 25706,
+      "sha256": "362e20e0b929c84060192688a30f8bd69d7dfcd73cad51cb64200cc42b8f01e2"
+    },
+    {
+      "name": "LATINAM.xml",
+      "bytes": 37314,
+      "sha256": "7ba9c7697e9bd411570256d5a320d522c4545ace30e545d52714ac4f20f79a86"
+    },
+    {
+      "name": "LAW.xml",
+      "bytes": 4666550,
+      "sha256": "4da7052e8673a6a58454d9fc7c20d4c78e591e4b9939c7439e5d26fcb71ea37b"
+    },
+    {
+      "name": "LAWGEN.xml",
+      "bytes": 25214,
+      "sha256": "5486fc0f3e1b961a2024a013892513dd1016c4c9725a299231cc6666622dd49d"
+    },
+    {
+      "name": "LEAD.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "LIFE.xml",
+      "bytes": 2027,
+      "sha256": "edf894514a71b2d78f896a243156f9dfb83ee6b1e7d64d5de5489079757275c2"
+    },
+    {
+      "name": "LINGUIST.xml",
+      "bytes": 1546477,
+      "sha256": "c3eefd530dbd837981ae04d36dac18cd7a1d2b4fd877209ba05392d98c1c73bb"
+    },
+    {
+      "name": "LUGALANG.xml",
+      "bytes": 3081,
+      "sha256": "b4ee0c7c3919b3b8e4e7328de087e951f4e013bcbbc27d19d07b4a3bc4b9efca"
+    },
+    {
+      "name": "MATH.xml",
+      "bytes": 1361233,
+      "sha256": "af6e410c36ea52c204ba343d7e283adbc0c56d89b9bce8aac2e7ce756ab451d0"
+    },
+    {
+      "name": "MATSCI.xml",
+      "bytes": 2989230,
+      "sha256": "821a5a009f08ad8008501f05b08a8b2ef50f3bd148ce8d85d02f27effe80cc28"
+    },
+    {
+      "name": "MCP.xml",
+      "bytes": 616399,
+      "sha256": "c0a19d011c65a39c94902a6a85386977a5ceb5d121fc1f6ca0a511c2239478f9"
+    },
+    {
+      "name": "MCS.xml",
+      "bytes": 2276,
+      "sha256": "77d41e12be51688bdfcccf1f34d6961c1bc35cf50f70b4d3e48a8aeb51364f8e"
+    },
+    {
+      "name": "ME.xml",
+      "bytes": 5382910,
+      "sha256": "40bb14a188b426b3f0b2587290cad184641c559f6478f59d9745742caf29efda"
+    },
+    {
+      "name": "MED.xml",
+      "bytes": 4210272,
+      "sha256": "b64db17bd6014a1ab7ca26624aa293afba2ca68c244d8d5073e792dba10b2a9b"
+    },
+    {
+      "name": "MEDVLST.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "MGTECON.xml",
+      "bytes": 1204338,
+      "sha256": "15a5795156363c7fa8c45f290cc96ecf04ff1eb6e08276e58167062732159f6f"
+    },
+    {
+      "name": "MI.xml",
+      "bytes": 1589744,
+      "sha256": "c7698ef1f39a021e1cbed975c13d2e41ccdb015b5fb6df04527ab9913a8285a1"
+    },
+    {
+      "name": "MKTG.xml",
+      "bytes": 842968,
+      "sha256": "f6ff9c2cec05766505a31e91d13392e8fd20e14b2eb05f91446c6ef1d1cadf65"
+    },
+    {
+      "name": "MLA.xml",
+      "bytes": 240345,
+      "sha256": "11c4594de8359c43d17aefc1b1e11812f64a6825c7ec5ddf350252d6579acb43"
+    },
+    {
+      "name": "MS&E.xml",
+      "bytes": 1396610,
+      "sha256": "9d38a21251c2bedf3117ebd2c117cda0cd5c9af6c663b795e0bcf1461048c5cc"
+    },
+    {
+      "name": "MTL.xml",
+      "bytes": 613366,
+      "sha256": "0c1b7a3bdd27f22dccc2f8ca4710c039eab7b7ac2adfbeba3f4a0c7df8a1c552"
+    },
+    {
+      "name": "MUSIC.xml",
+      "bytes": 6112253,
+      "sha256": "6322adc961a0ae0bcd3e549ce912d434bbb97a7abf272788c47b823691c44e0e"
+    },
+    {
+      "name": "NAHUALNG.xml",
+      "bytes": 35688,
+      "sha256": "cb596ac093fb8523a96ded9075d6e6fc9a65ef4eff4ad7a8a972c1923ea2f77c"
+    },
+    {
+      "name": "NATIVEAM.xml",
+      "bytes": 215564,
+      "sha256": "fe5a4d0e9dd99afca8a61615824268bd0262260bddbe320cc05cdd1ef4465bbc"
+    },
+    {
+      "name": "NBIO.xml",
+      "bytes": 453123,
+      "sha256": "3ae8918dd415d4989c07c5bc67a6a0302f10ea7a1b7e6c850af0021c98bfa9ba"
+    },
+    {
+      "name": "NENS.xml",
+      "bytes": 1108571,
+      "sha256": "140eacdb6254d7f5d9a7c81aef2b329ecae4b43563ba896101dff3beedecb463"
+    },
+    {
+      "name": "NEPR.xml",
+      "bytes": 1752925,
+      "sha256": "ca0319614eee3d88fd481d45e6f1ed185579b18a528fb9e3d569bdd8435cc8a9"
+    },
+    {
+      "name": "NSUR.xml",
+      "bytes": 1542729,
+      "sha256": "79da215d21e588320e34bc3ece1bf23f5c8bd9f53bba3f8908245dae84961ab4"
+    },
+    {
+      "name": "NVJOLANG.xml",
+      "bytes": 24177,
+      "sha256": "c4d9605435232f18f6b8a9322f4068b959d32b91a2906aaff28cec05460774c4"
+    },
+    {
+      "name": "OB.xml",
+      "bytes": 1485046,
+      "sha256": "46017cc94525d65a63892b98aa189e99172800eff62a01e5c6644825399fb451"
+    },
+    {
+      "name": "OBGYN.xml",
+      "bytes": 1425116,
+      "sha256": "9a6cba0610e5dfdcac3344cb73564460874564e29f9a2b38831ddfd7ba30aa26"
+    },
+    {
+      "name": "OCEANS.xml",
+      "bytes": 682796,
+      "sha256": "109430cf09bdbe178049db70c8082c36e074f42bb51e27a22e07cb99ed1a7f68"
+    },
+    {
+      "name": "OIT.xml",
+      "bytes": 861229,
+      "sha256": "7e8fd22e9aff4281a970f50bf5efdce08db55121b82b94ef0107a5f7a7947963"
+    },
+    {
+      "name": "OPHT.xml",
+      "bytes": 987766,
+      "sha256": "4d85b689798df3dc8fde2ed06748dbb55728855317635a139872e396dcb1b463"
+    },
+    {
+      "name": "ORALCOMM.xml",
+      "bytes": 67793,
+      "sha256": "a79fc8ed8ac2b544de3c97a780385c76b4f70bc38f33ae87e0aba2f7c505ec81"
+    },
+    {
+      "name": "OROMLANG.xml",
+      "bytes": 6615,
+      "sha256": "15f2fc05d0e8d62aa5c747121bdb34b8c3cfde96c0f1098999ec3e362427979c"
+    },
+    {
+      "name": "ORTHO.xml",
+      "bytes": 858240,
+      "sha256": "aaf77c12182454192d9eefaa6ce54cc73032d6925a709b6118c3f7ba52ed1d4b"
+    },
+    {
+      "name": "OSPAUSTL.xml",
+      "bytes": 26808,
+      "sha256": "dff517fa8d7523c252dcbec7a22ecd74b4876a629b04a7f5c937b51d50bbbcdc"
+    },
+    {
+      "name": "OSPBEIJ.xml",
+      "bytes": 42565,
+      "sha256": "f2c124b14295eaca63e92c28a8cf28d03dd12a7210edbb2b78d08c8f91f940b2"
+    },
+    {
+      "name": "OSPBER.xml",
+      "bytes": 164361,
+      "sha256": "1513c9aa37d46fb6bad4435230b0faca724cbb6119f2cc5f3e42ae2cf50fbb0f"
+    },
+    {
+      "name": "OSPCPTWN.xml",
+      "bytes": 86495,
+      "sha256": "88302c5eb9865a350e3d1d4a802a9509eb4e6619853d8dd70e27204f494e68ed"
+    },
+    {
+      "name": "OSPFLOR.xml",
+      "bytes": 296492,
+      "sha256": "e0dab494d5d3093c5389c5881cc696d771f12c1a899c0d4a9f817423b143f5ff"
+    },
+    {
+      "name": "OSPGEN.xml",
+      "bytes": 54014,
+      "sha256": "c361a4827cced624019e259ccc3c3851a54f7ac0d7b59ebbe26ba52d5ee76dce"
+    },
+    {
+      "name": "OSPHONGK.xml",
+      "bytes": 239809,
+      "sha256": "b87a4db30f379dc989205791d6485684a16498fd41e319fd6062fd5341c5d288"
+    },
+    {
+      "name": "OSPISTAN.xml",
+      "bytes": 42813,
+      "sha256": "191c7fa020d1253b183d25ab2cd6ba5d7742057bb5d1e91f1eb93e066ed0398b"
+    },
+    {
+      "name": "OSPKYOCT.xml",
+      "bytes": 28359,
+      "sha256": "2b654f5e3c7298b81f79bbe60d4c60d4dd6db46e0705784df2b07ccd1de66b56"
+    },
+    {
+      "name": "OSPKYOTO.xml",
+      "bytes": 80779,
+      "sha256": "3b0bd7cb675874e209d0f820ba2f90623285dde40b4d773e62528abb4ee5ae97"
+    },
+    {
+      "name": "OSPMADRD.xml",
+      "bytes": 238626,
+      "sha256": "a8e9dc9886bde95c112e9eac1620f9a87473bd58b1c4cfdd157565da7a17ca8f"
+    },
+    {
+      "name": "OSPOXFRD.xml",
+      "bytes": 247865,
+      "sha256": "3d609e447f05e8376d98be1f9f362c3b72908983818f0d6bfc016a40e9a59ec8"
+    },
+    {
+      "name": "OSPPARIS.xml",
+      "bytes": 269925,
+      "sha256": "d5e22f62321febd800d0336b8f9aba4918273016dbffaf9a562224b15adeb9c6"
+    },
+    {
+      "name": "OSPSANTG.xml",
+      "bytes": 125657,
+      "sha256": "4d71fd42642111c57ab15d03fdba136b4ea959e7231839c7233e2718f5dea896"
+    },
+    {
+      "name": "OTOHNS.xml",
+      "bytes": 1233174,
+      "sha256": "7538b0b16b00c958bfcc7663e60da395b84dcb5674f297c3ce8b7445f6b409f8"
+    },
+    {
+      "name": "OUTDOOR.xml",
+      "bytes": 92855,
+      "sha256": "b0b3fdce3c4b0437318a1791640f8498c1d8976c7ec99da25773cf51ae5fe97a"
+    },
+    {
+      "name": "PAS.xml",
+      "bytes": 259791,
+      "sha256": "41adb922b736ca80f1b4db71a4327244f133d32756ebc15483c6b22c25fdfbae"
+    },
+    {
+      "name": "PATH.xml",
+      "bytes": 1740765,
+      "sha256": "eb896c3e13ef37a66989eee1f97015096b3aa7d7644c03bd69f2d2cfd339c549"
+    },
+    {
+      "name": "PEDS.xml",
+      "bytes": 5149076,
+      "sha256": "97aca251546794144c7db3d153622317cfbeb6cf04b5b6c428ac7eff9188bc7b"
+    },
+    {
+      "name": "PERSLANG.xml",
+      "bytes": 49056,
+      "sha256": "ea9626d0144e26dd6684eb9c13046c1ab58055ce32ee425f9918d3fb2ae1791f"
+    },
+    {
+      "name": "PHIL.xml",
+      "bytes": 2272994,
+      "sha256": "7d55a3ab44910ac2e2c3eda6a04bf93a4eaf7170ccd33e694e14c5841c1cfbc1"
+    },
+    {
+      "name": "PHYSICS.xml",
+      "bytes": 3675564,
+      "sha256": "4ba835658c732a3a5109810a9b35c3d1dd1e5f710b50153d711bac59ae310365"
+    },
+    {
+      "name": "PHYSWELL.xml",
+      "bytes": 458968,
+      "sha256": "6fb436b2396a49011510f6c781dcb55ed67892d7e3f2f5aec9980b9eaf7797f3"
+    },
+    {
+      "name": "POLECON.xml",
+      "bytes": 577145,
+      "sha256": "3d7dd55f62a39623c76b2b7d5bc95fd09ee70b2d4dfac81c9a0ff99fba4479c3"
+    },
+    {
+      "name": "POLISCI.xml",
+      "bytes": 2764415,
+      "sha256": "b072502f1d0ffafd93f8e88bd4520dfa34e973a8eea134258a678130a102eb8c"
+    },
+    {
+      "name": "POLSHLNG.xml",
+      "bytes": 30026,
+      "sha256": "60a276fabcae7ce961aa23bd36905563493a1331a97b92c855dae13351a08345"
+    },
+    {
+      "name": "PORTLANG.xml",
+      "bytes": 96097,
+      "sha256": "746013d3e9c328f6739e59610da01bb4b9d718d72a2d7ffd7530aa15cd8673be"
+    },
+    {
+      "name": "PSYC.xml",
+      "bytes": 4428633,
+      "sha256": "1225056e3900cd660a6058f741f75473d514c7b56e1ccf5d00b5fc14f8892849"
+    },
+    {
+      "name": "PSYCH.xml",
+      "bytes": 2656556,
+      "sha256": "4248be160918af6c8737d753b3617794cf8817a4929747b8cd4779fa9f46cc2e"
+    },
+    {
+      "name": "PUBLPOL.xml",
+      "bytes": 663727,
+      "sha256": "d74f22d888d955be739fb4d1bf70e79255e1bd2870c27d3b893b9471fa585e8c"
+    },
+    {
+      "name": "PUNJLANG.xml",
+      "bytes": 24455,
+      "sha256": "4234f3f21158e3d9480e05106da4c02ecf40a8e261afa6604bf23f7d358497e6"
+    },
+    {
+      "name": "PWR.xml",
+      "bytes": 880219,
+      "sha256": "edc18f520a5680f34ab46ee04e7a77155241069b8bd9b40c4d1f867560f78da2"
+    },
+    {
+      "name": "QUECHLNG.xml",
+      "bytes": 26467,
+      "sha256": "ffd0cfc568bd24efc30ab919219fa9a6daee36bc363b486d602e6bf123af562f"
+    },
+    {
+      "name": "RAD.xml",
+      "bytes": 1703435,
+      "sha256": "abf8bcebf9887f71376f741350e3563466799c10ced087d0bd8260324ccb9c47"
+    },
+    {
+      "name": "RADO.xml",
+      "bytes": 1246940,
+      "sha256": "e37e390de01608e406fc5ca48403ba92cdada243f9ed9ff33d3a5741161ac6f8"
+    },
+    {
+      "name": "REES.xml",
+      "bytes": 219996,
+      "sha256": "c041900ef5af13442fe074f1f6bf3957a81cd8253986736fef393fcdfd387cc7"
+    },
+    {
+      "name": "RELIGST.xml",
+      "bytes": 1773972,
+      "sha256": "0bf4235f0868076e6f00dd81ac119dfd520bbb2d446a50f988978ed89aba85fd"
+    },
+    {
+      "name": "RESPROG.xml",
+      "bytes": 34392,
+      "sha256": "dec8a2bd9e9ce311a109313acb45da7950c15abc57a1aca887c6d4ed0f4271f7"
+    },
+    {
+      "name": "ROMALANG.xml",
+      "bytes": 11432,
+      "sha256": "43104a848b33bed91ab8fa18a842a8bc909bdbc6c280eeb4a3e86437b6bdfbf8"
+    },
+    {
+      "name": "ROTCAF.xml",
+      "bytes": 10766,
+      "sha256": "b02025b7f6275e7bb1f3709c619baf31eb5335a4cb2a50356e130cfbb9e567ed"
+    },
+    {
+      "name": "ROTCARMY.xml",
+      "bytes": 27130,
+      "sha256": "681fc2bd321e808e33e215f57baea67733e51a46a5c5cc0b876478fa4f7cd650"
+    },
+    {
+      "name": "ROTCNAVY.xml",
+      "bytes": 23015,
+      "sha256": "e33eee21d0e3dae7ce0f98c8f40227cc645c8d7bed3aa8f9efee8f257e4b92ae"
+    },
+    {
+      "name": "RUSSLANG.xml",
+      "bytes": 117513,
+      "sha256": "f50ef7c3c57e15d79ce87f5c3b65e7a1c21ef216ee01541818acb1137e42c50e"
+    },
+    {
+      "name": "SAMOALNG.xml",
+      "bytes": 20417,
+      "sha256": "ee16f29f407156b1c557da22d539b1cbedf6facea323e53f1944909badb861e6"
+    },
+    {
+      "name": "SBIO.xml",
+      "bytes": 517036,
+      "sha256": "45cb5d6cb712066586ff0b7f2238e8936f1ffbaf53296de744820438859494ed"
+    },
+    {
+      "name": "SCCM.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "SERBLANG.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "SINY.xml",
+      "bytes": 91212,
+      "sha256": "12a7533c9310ccc0ff06aea1e2aaaeb45c56a8d3468a8df3f0d7cb9642e4702f"
+    },
+    {
+      "name": "SIW.xml",
+      "bytes": 91511,
+      "sha256": "c1709ac98df2248e2ecc85b9e00c1f9b07aed485da833c0ab0fcac0af7951f0c"
+    },
+    {
+      "name": "SLAVIC.xml",
+      "bytes": 441759,
+      "sha256": "2fb8f0304bae6df4e779608de62b8f01a0e092a19c8df4c42fb2d5beb803c0a0"
+    },
+    {
+      "name": "SLE.xml",
+      "bytes": 110022,
+      "sha256": "e69ace912eaab89c9bb49c5145ed4584b588e8e9c7f46d9b4c31378bfafab2d5"
+    },
+    {
+      "name": "SLVNLANG.xml",
+      "bytes": 1521,
+      "sha256": "a67c8fb35422599525453c4318e4fdf9ce0336d8dcb3ac2a68730de799341778"
+    },
+    {
+      "name": "SNSKTLNG.xml",
+      "bytes": 21564,
+      "sha256": "09206cd060f12584f2e05cdce16565fc635b32b710939ff60874b14818a0f6fa"
+    },
+    {
+      "name": "SOAR.xml",
+      "bytes": 2011,
+      "sha256": "878bd9a72a40a787dd136931acc95206425edda4a86f9793daad59e59052c3a2"
+    },
+    {
+      "name": "SOC.xml",
+      "bytes": 3137531,
+      "sha256": "a4e8d3df7333eb6adb456da767c57d449a9498d8830f1d36590b03067cf41264"
+    },
+    {
+      "name": "SOMGEN.xml",
+      "bytes": 65982,
+      "sha256": "fdea797c6e6664a2e1cd54ac75adafa6bb904b2fef0969d09241ae0cbf9519fd"
+    },
+    {
+      "name": "SPANLANG.xml",
+      "bytes": 433623,
+      "sha256": "bdb60dfe339550277a271b80a4b09df99f99a9bd3b71fc3e79cdd416798163db"
+    },
+    {
+      "name": "SPECLANG.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "STATS.xml",
+      "bytes": 1616050,
+      "sha256": "ba8f4015455ede2338e164f63bfbb6622d10349a932b19f4487b39d4aaea0977"
+    },
+    {
+      "name": "STEMREM.xml",
+      "bytes": 2061361,
+      "sha256": "08b2ed453ff42d86eeea5c28b051f1c41599bbfb01afdeb01f36097865481307"
+    },
+    {
+      "name": "STRAMGT.xml",
+      "bytes": 595425,
+      "sha256": "7da69e319e50cfd008cfcc747f3985bfee16db8a54bb90a9116fda3406833331"
+    },
+    {
+      "name": "STS.xml",
+      "bytes": 119244,
+      "sha256": "b41300635ff3a287260ba54bf655c10acbeb032a6d64e7ded75c87aff82ec12b"
+    },
+    {
+      "name": "SURG.xml",
+      "bytes": 2510781,
+      "sha256": "e48ffb317be8b30d2a3c0fc65a2c78b6bd2d3282c7653b0eb82b3ed3f47ad759"
+    },
+    {
+      "name": "SUST.xml",
+      "bytes": 87184,
+      "sha256": "08b0839d0d28f3cebb6f226aa0317d1579993edc74c60c1f368aca94ba1a70fc"
+    },
+    {
+      "name": "SUSTAIN.xml",
+      "bytes": 161214,
+      "sha256": "c37f51a2253520dff6b2acec356db55a7f4773fe042d48407bff834bcfe16559"
+    },
+    {
+      "name": "SWAHLANG.xml",
+      "bytes": 39911,
+      "sha256": "ed2ccaf101135544005ef6b75bd368f1bd1f83d52b12698d73216bcac16ac9f1"
+    },
+    {
+      "name": "SYMSYS.xml",
+      "bytes": 1518527,
+      "sha256": "f1a270226525b3a9f736f82cd5fc6cb8e5a56861b14766d8e81ee3b7663a51ba"
+    },
+    {
+      "name": "TAMILANG.xml",
+      "bytes": 4896,
+      "sha256": "1566f979162f2551cd5d5dec2bd6d823b62d86ff30a2e26d23763d80e25fc51e"
+    },
+    {
+      "name": "TAPS.xml",
+      "bytes": 848153,
+      "sha256": "9afa1472bc4621feb0cf5542276f68bf9ed2fde4e34773fc1dab6e584285f9c8"
+    },
+    {
+      "name": "THINK.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "TIBETLNG.xml",
+      "bytes": 9731,
+      "sha256": "536c5463893cd9536b1ab13c617b71bfd845f15450fe399df91b10afc6be334e"
+    },
+    {
+      "name": "TIGRYLNG.xml",
+      "bytes": 24342,
+      "sha256": "7e6fa13dc084f3af7e36bfdce5018df18a4f8ae80c834c2b536ecd66c54233cd"
+    },
+    {
+      "name": "TURKLANG.xml",
+      "bytes": 45402,
+      "sha256": "7e4626ef17eaa9c0efca8d42c540a76b5c58066da627b2e3284502b2141b5ba1"
+    },
+    {
+      "name": "TWILANG.xml",
+      "bytes": 25250,
+      "sha256": "a98e4360e0c1ac4b9b56ce36f7a6d796fbe9fdba674446352b09ea6ce9074b87"
+    },
+    {
+      "name": "UAR.xml",
+      "bytes": 272350,
+      "sha256": "b25cfdd78855568f691f4c68cc3cb91db03d679db7c80b83b7545af0651328eb"
+    },
+    {
+      "name": "UKRNLANG.xml",
+      "bytes": 28014,
+      "sha256": "ad36b5646d4e49ea4d7fc6df653324a02203259b39349451123097115184654c"
+    },
+    {
+      "name": "URBANST.xml",
+      "bytes": 590987,
+      "sha256": "34d6f8da334a5ed63447161ca83652e5ed575ec787d402658d721953e878a4bd"
+    },
+    {
+      "name": "URDULANG.xml",
+      "bytes": 25892,
+      "sha256": "9c00c832bee3e345d142a7c83917d3265b4236e4d390f6904b075c0eb6203ac9"
+    },
+    {
+      "name": "UROL.xml",
+      "bytes": 497981,
+      "sha256": "24c51d5074d359b7f39665e5e172a177f7d81c14b60d2975bb6abe20e7cdaf6c"
+    },
+    {
+      "name": "UYGHLANG.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "VIETLANG.xml",
+      "bytes": 47506,
+      "sha256": "6302c5e6460c9350acd313dff9256f86f8a7f2a46006e438ad09a14ad31260ce"
+    },
+    {
+      "name": "VPTL.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "WELLNESS.xml",
+      "bytes": 2717,
+      "sha256": "c7dadf9b81a673e35cfaaec6582b3c9af32c7a667393b53c7a493594003b76ab"
+    },
+    {
+      "name": "YDDSHLNG.xml",
+      "bytes": 25536,
+      "sha256": "cd382aa61f82cab286691a543fb11221412491ba84cb6a33f135048d41259f75"
+    },
+    {
+      "name": "YORULANG.xml",
+      "bytes": 24430,
+      "sha256": "5dd8161023ebb42cc5408823519ca93fbf466ef63fe6c85b9fa6388ea855909d"
+    },
+    {
+      "name": "YUPKLANG.xml",
+      "bytes": 159,
+      "sha256": "7c9f68f72a31c86e3cc4ce5125ab87b6ab07677809f406051fa8931f15066892"
+    },
+    {
+      "name": "ZULULANG.xml",
+      "bytes": 7040,
+      "sha256": "f9e3e5d421129d3da206709dadf47906df95477179d0ad63c37a8751f1e9eee2"
+    },
+    {
+      "name": "_departments.xml",
+      "bytes": 18622,
+      "sha256": "d8c467c53c9562ac36ba2ec5fcc7a4528b06c212bdb8f082e146b8d10655abc8"
+    },
+    {
+      "name": "_manifest.json",
+      "bytes": 192,
+      "sha256": "bad167d6ef458bff48aa9f52238fe1a8552cafb9ca53a71856ae822e87c16ca7"
+    }
+  ]
+}

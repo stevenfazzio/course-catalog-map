@@ -35,6 +35,14 @@ Each university is an adapter in `pipeline/sources/` producing the common schema
   dropped, programme template text stripped from the embedded text) and the embedding-model choice
   were preregistered in `docs/preregistration.md` before the comparison was run.
 
+## Archive
+
+The record behind the map is archived on Zenodo: https://doi.org/10.5281/zenodo.22550382. The deposit holds the cleaned
+corpus and the catalog it was cut from, every candidate model's embeddings, the layout, regions and names,
+the versioned record directory, and the code at the archived commit. The raw ExploreCourses XML is not
+redistributed (Stanford's site terms restrict downloads to personal, non-commercial use); the deposit
+carries its per-file checksums instead, and `docs/record/stanford/archive.json` records the decision.
+
 `docs/embedding_comparison.md` holds the preregistered result; `docs/embedding_structure.html` is a
 post-hoc, exploratory characterisation of how the four candidate models differ in global structure.
 
