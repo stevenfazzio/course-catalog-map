@@ -1,0 +1,327 @@
+{
+ "what": "wayfinding lineup: probability mass a listener puts on the true region given its name, among the region and its four nearest same-layer neighbours, each shown as five held-out member courses",
+ "protocol": "Steven's Toponymy label-quality instrument (TutteInstitute/toponymy discussion 177), applied to the published map's names as-is; the seed layouts from step 1 play no role because the task shows course text, not positions",
+ "sample": {
+  "per_layer": {
+   "layer_0": 40,
+   "layer_1": 40,
+   "layer_2": 42,
+   "layer_3": 14
+  },
+  "rule": "forty regions at layers 0 and 1, every region at layers 2 and 3; seed 0"
+ },
+ "candidates": {
+  "k": 5,
+  "gold_distractors": "four nearest same-layer regions by centroid cosine in the embedding space",
+  "gimme_distractors": "four regions sampled from the farther half of the layer by centroid cosine",
+  "shuffled_name": "the name of a random same-layer region that is not among the five candidates",
+  "share_gold_distractors_also_among_4_nearest_in_layout": 0.6286764705882353
+ },
+ "documents": {
+  "per_candidate": 5,
+  "text": "title and description as embedded (embed_text), truncated to 500 characters; no course codes",
+  "held_out": "Toponymy's central exemplar selection (n_exemplars=8, diversify_alpha=1.0) replayed on the published labels and embeddings; those courses are excluded from the shown sample",
+  "regions_filled_from_exemplars": 55,
+  "items_whose_true_region_shows_exemplars": [
+   "L0C106",
+   "L0C171",
+   "L0C191",
+   "L0C213",
+   "L0C264",
+   "L0C265",
+   "L0C276",
+   "L0C294",
+   "L0C302",
+   "L0C315",
+   "L0C322"
+  ],
+  "frozen": "one document sample per region, reused wherever the region appears; candidate order reshuffled per call"
+ },
+ "conditions": {
+  "gold_samples": 3,
+  "shuffled_samples": 1,
+  "gimme_samples": 1
+ },
+ "refusals": {
+  "what": "calls the listener's safety classifier declined; every condition of an affected item is dropped from the results so that no item is scored on a subset of its conditions",
+  "calls": [
+   {
+    "id": "L0C166:gold:0",
+    "item": "L0C166",
+    "name": "Emerging Viral Diseases And Biosecurity",
+    "category": "bio"
+   },
+   {
+    "id": "L0C166:gold:1",
+    "item": "L0C166",
+    "name": "Emerging Viral Diseases And Biosecurity",
+    "category": "bio"
+   },
+   {
+    "id": "L0C166:gold:2",
+    "item": "L0C166",
+    "name": "Emerging Viral Diseases And Biosecurity",
+    "category": "bio"
+   },
+   {
+    "id": "L0C166:shuffled:0",
+    "item": "L0C166",
+    "name": "World Cinema Studies",
+    "category": "bio"
+   },
+   {
+    "id": "L0C166:gimme:0",
+    "item": "L0C166",
+    "name": "Emerging Viral Diseases And Biosecurity",
+    "category": "bio"
+   }
+  ],
+  "items_dropped": [
+   "L0C166"
+  ]
+ },
+ "metric": "probability mass s_true / sum(s), uniform 1/k when every score is zero; top-1 is descriptive (true region has the unique highest score)",
+ "results": {
+  "overall": {
+   "n_items": 135,
+   "gold_pm": {
+    "mean": 0.5766541963544752,
+    "ci95": [
+     0.5520692182815544,
+     0.6003025067166865
+    ],
+    "n": 135
+   },
+   "gold_top1": 0.9259259259259259,
+   "shuffled_pm": {
+    "mean": 0.18268496111216465,
+    "ci95": [
+     0.16663709471557592,
+     0.20177032432233857
+    ],
+    "n": 135
+   },
+   "gimme_pm": {
+    "mean": 0.9288285964531758,
+    "ci95": [
+     0.9184325538696654,
+     0.9388488806155733
+    ],
+    "n": 135
+   },
+   "share_items_below_chance": 0.0
+  },
+  "layer_0": {
+   "n_items": 39,
+   "gold_pm": {
+    "mean": 0.534443331717132,
+    "ci95": [
+     0.48277455893530885,
+     0.585855299184899
+    ],
+    "n": 39
+   },
+   "gold_top1": 0.8461538461538461,
+   "shuffled_pm": {
+    "mean": 0.1915567996056681,
+    "ci95": [
+     0.1643147573040789,
+     0.2222328550078964
+    ],
+    "n": 39
+   },
+   "gimme_pm": {
+    "mean": 0.9439728631888371,
+    "ci95": [
+     0.9220436280488816,
+     0.9602321579922263
+    ],
+    "n": 39
+   },
+   "share_items_below_chance": 0.0
+  },
+  "layer_1": {
+   "n_items": 40,
+   "gold_pm": {
+    "mean": 0.5932865464570403,
+    "ci95": [
+     0.5539748620643057,
+     0.6327129210758838
+    ],
+    "n": 40
+   },
+   "gold_top1": 0.9666666666666668,
+   "shuffled_pm": {
+    "mean": 0.21238376515895901,
+    "ci95": [
+     0.18189724656805809,
+     0.2505395188536121
+    ],
+    "n": 40
+   },
+   "gimme_pm": {
+    "mean": 0.938330367332027,
+    "ci95": [
+     0.9202777852990148,
+     0.9555394596548299
+    ],
+    "n": 40
+   },
+   "share_items_below_chance": 0.0
+  },
+  "layer_2": {
+   "n_items": 42,
+   "gold_pm": {
+    "mean": 0.5789915077320874,
+    "ci95": [
+     0.5411356920980097,
+     0.6140421623967091
+    ],
+    "n": 42
+   },
+   "gold_top1": 0.9603174603174602,
+   "shuffled_pm": {
+    "mean": 0.1720119955984548,
+    "ci95": [
+     0.1439049927970373,
+     0.20374119953422548
+    ],
+    "n": 42
+   },
+   "gimme_pm": {
+    "mean": 0.9170087004342777,
+    "ci95": [
+     0.8988678598464466,
+     0.9351900600505995
+    ],
+    "n": 42
+   },
+   "share_items_below_chance": 0.0
+  },
+  "layer_3": {
+   "n_items": 14,
+   "gold_pm": {
+    "mean": 0.639708670561194,
+    "ci95": [
+     0.5683693677839357,
+     0.7055554292163569
+    ],
+    "n": 14
+   },
+   "gold_top1": 0.9285714285714286,
+   "shuffled_pm": {
+    "mean": 0.10513572457340804,
+    "ci95": [
+     0.0779969143842676,
+     0.13549044673616592
+    ],
+    "n": 14
+   },
+   "gimme_pm": {
+    "mean": 0.8949527675209545,
+    "ci95": [
+     0.858805383404975,
+     0.9269946618915064
+    ],
+    "n": 14
+   },
+   "share_items_below_chance": 0.0
+  },
+  "repeat_band_p90": 0.12190904706578697,
+  "chance": 0.2,
+  "gold_mean_score_by_position": [
+   31.32345679012346,
+   32.446913580246914,
+   31.308641975308642,
+   28.632098765432097,
+   27.43456790123457
+  ],
+  "all_zero_rows": 0
+ },
+ "listener": {
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "thinking": "adaptive (model default)",
+  "sampling": "model default (Sonnet 5 takes no temperature parameter)",
+  "anthropic_sdk": "1.4.0",
+  "usage": {
+   "calls": 680,
+   "calls_this_process": 0,
+   "calls_with_usage_recorded": 0,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "estimated_cost_usd_for_recorded_calls": 0.0,
+   "paid_runs": [
+    {
+     "computed_at": "2026-09-06T05:20:00+00:00",
+     "model": "claude-sonnet-5",
+     "calls": 89,
+     "input_tokens": 347076,
+     "output_tokens": 2606,
+     "estimated_cost_usd": 0.72,
+     "estimated": true,
+     "note": "first run, stopped by an unhandled refusal after 89 calls before usage was recorded; tokens estimated from the resumed run's per-call mean"
+    },
+    {
+     "computed_at": "2026-09-06T05:31:00+00:00",
+     "model": "claude-sonnet-5",
+     "calls": 591,
+     "input_tokens": 2304740,
+     "output_tokens": 17303,
+     "estimated_cost_usd": 4.78,
+     "note": "resumed run; figures from the process's own usage counters"
+    }
+   ],
+   "total_over_paid_runs": {
+    "calls": 680,
+    "input_tokens": 2651816,
+    "output_tokens": 19909,
+    "estimated_cost_usd": 5.5,
+    "note": "sum of every process that paid for calls to this cache; entries flagged estimated were reconstructed from a run log rather than summed from per-call usage"
+   }
+  },
+  "price_per_mtok_usd": [
+   2.0,
+   10.0
+  ]
+ },
+ "prompt": {
+  "system": "You are reading a map of a university's course catalog. Every region of the map has a short name that was written by a language model from the courses in it. You will be shown one region name and five candidate regions, each represented by five of its courses (title and the start of the description). Exactly one candidate is the region the name was written for. Score each candidate from 0 to 100 for how likely it is to be that region, judging only from the courses shown. Scores need not sum to 100.",
+  "user_example": "Region name: \"Frosh 101 Residence Seminars\"\n\nCandidate A:\n  1. Curricular Practical Training CPT course required for international students completing degree. Prerequisite: Italian Ph.D. candidate.\n  2. CURRICULAR PRACTICAL TRAINING CPT Course required for international students completing degree requirements.\n  3. TAPS Undergraduate Curricular Practical Training TAPS Undergraduate Curricular Practical Training. Prerequisite: consent of instructor.\n  4. Curricular Practical Training CPT course required for international students completing degree requirements. Appropriate for in-person instruction.\n  5. Curricular Practical Training and Internship GENE masters students enroll for a letter grade in your mentor's section.\n\nCandidate B:\n  1. Frosh 101: West Lagunita\n  2. Frosh 101: Okada\n  3. Frosh 101: Schiff\n  4. Frosh 101: Crothers\n  5. Frosh 101: Potter\n\nCandidate C:\n  1. Individual Research Need approval from sponsoring faculty member and GSB Registrar. There is a limit on the number of units in courses of independent study that may be applied toward degree requirements.\n  2. Independent Study For advanced undergraduates and graduate students who wish to do work outside the regul …",
+  "schema": {
+   "type": "object",
+   "properties": {
+    "A": {
+     "type": "integer"
+    },
+    "B": {
+     "type": "integer"
+    },
+    "C": {
+     "type": "integer"
+    },
+    "D": {
+     "type": "integer"
+    },
+    "E": {
+     "type": "integer"
+    }
+   },
+   "required": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "disclosures": [
+  "the names were written by Claude Opus 5 (stage 04) and are scored here by Claude Sonnet 5, a different model of the same family; a same-model listener was avoided, a same-family one was not",
+  "the listener is an LLM; its agreement with a human on the name-intrusion items (name_intrusion.json) is the grounding for treating it as a judge",
+  "held-out documents are a replay of the exemplar selection, not a log of the namer's actual prompts"
+ ],
+ "minutes": 0.1,
+ "computed_at": "2026-09-06T05:01:13+00:00"
+}

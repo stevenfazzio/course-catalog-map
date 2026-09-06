@@ -1,0 +1,251 @@
+item,position,name
+I01,A,Planetary Geophysics And Remote Sensing
+I01,B,Earth and Planetary Sciences Research
+I01,C,"Structural Geology, Tectonics, Geophysics"
+I01,D,"Imperial Russia, Ukraine, Modern Europe"
+I01,E,Earth Systems Capstone And Research
+I02,A,Integrated Circuit Design And Semiconductor Devices
+I02,B,Applied Valuation And Investment Analysis
+I02,C,Engineering Directed Research And Theses
+I02,D,EE Independent Projects And Practical Training
+I02,E,Prototyping Manufacturing And Capstone Design
+I03,A,Physical Education Swimming and Horsemanship
+I03,B,Health Related Fitness Training And Injury Prevention
+I03,C,Emerging Viral Diseases And Biosecurity
+I03,D,Sport Skill Instruction And Competitive Athletics
+I03,E,Outdoor Adventure Skills And Safety
+I04,A,"Linguistic Theory, Sociolinguistics, and Research"
+I04,B,Spanish Portuguese Multitrack Proficiency Courses
+I04,C,"Graduate Algebra, Geometry, Topology"
+I04,D,Academic English Literacy And Teaching Methods
+I04,E,French Italian Proficiency With Study Abroad
+I05,A,International Business Law And Arbitration
+I05,B,"Negotiation, Mediation And Dispute Resolution"
+I05,C,Lawyer Regulation And Litigation Practice Norms
+I05,D,Sport Skill Instruction And Competitive Athletics
+I05,E,"Supreme Court Practice, Moot Court Competition"
+I06,A,Theories of Religion and Religious Studies
+I06,B,Theater History Dramaturgy And Playwriting
+I06,C,Shakespeare And Early Modern Drama
+I06,D,Dramatic Literature And Theatrical Genres
+I06,E,Studio Acting And Devised Performance
+I07,A,Tonal Theory Musicianship And Jazz Studies
+I07,B,Jazz World And Vocal Ensembles
+I07,C,Audition-Based Instrument Class And Lesson Signups
+I07,D,Composition Seminars Orchestration And Improvisation Collectives
+I07,E,American And Latin American Studies
+I08,A,Russian Empire and Soviet Europe
+I08,B,"Feminist, Queer, and Trans Studies"
+I08,C,Ottoman Legacies And Modern Middle East
+I08,D,Anglo-American Revolutions and Survey Histories
+I08,E,Criminal Justice Doctrine And Clinics
+I09,A,Mechanical Design And Product Realization
+I09,B,Urban Planning And Sustainable Cities
+I09,C,Housing Policy And Urban Law
+I09,D,Urban Studies And Inequality
+I09,E,Sociology Research Training Seminars
+I10,A,Public Speaking and Presentation Skills
+I10,B,Classical Literature In Translation Seminars
+I10,C,Secondary English And World Language Teaching Methods
+I10,D,Academic Writing And Thesis Support
+I10,E,English for Non-Native Speakers
+I11,A,Quantum Computing And Information
+I11,B,Undergraduate Physics Research And Laboratory
+I11,C,Modern Physics And Quantum Mechanics
+I11,D,South Asian Language Instruction
+I11,E,"Astrophysics, Cosmology, And Observational Astronomy"
+I12,A,Jurisprudential Schools And Critical Legal Movements
+I12,B,Legal History Across National Traditions
+I12,C,Scholarly Organization Theory And Analysis
+I12,D,Rule Of Law Statebuilding And Anticorruption
+I12,E,"Legal Philosophy, Gender, Sexuality Law"
+I13,A,Ancient Mediterranean Art And Reception
+I13,B,Medieval Studies Sources And Methods
+I13,C,Archaeological Theory Methods And Heritage
+I13,D,Classical Literature In Translation Seminars
+I13,E,Scholarly Organization Theory And Analysis
+I14,A,Economics And Finance Of Education
+I14,B,Education Data Science and Statistics
+I14,C,Disability Studies In Education
+I14,D,Academic Career And Graduate Success
+I14,E,Perioperative Anesthesiology Clerkships And Subinternships
+I15,A,Hydrology And Environmental Fluid Mechanics
+I15,B,Shipboard Oceanography and Estuarine Biogeochemistry
+I15,C,"Environmental, Climate and Natural Resources Law"
+I15,D,Water and Wastewater Treatment Engineering
+I15,E,Indigenous Environmental Knowledge And Sovereignty
+I16,A,AI Regulation Privacy Law Practicums
+I16,B,Foundations Of AI And Language Models
+I16,C,Internet Speech Governance And Content Moderation
+I16,D,Human-Centered AI Design Ethics Studios
+I16,E,Documentary Production And Screenwriting Practice
+I17,A,"Genetic Counseling, Epidemiology, and Bioethics"
+I17,B,Public Health Equity and Policy
+I17,C,Hospital Clerkship Rotations
+I17,D,Biodesign and Organ System Medicine
+I17,E,Slavic Central European Language Courses
+I18,A,Criminal Justice Doctrine And Clinics
+I18,B,AI Regulation Privacy Law Practicums
+I18,C,"Asylum, Atrocity Accountability, Border Governance"
+I18,D,Western Political Philosophy From Machiavelli
+I18,E,China Reform and Global Development History
+I19,A,Equitable Electrification Law And Policy Practicums
+I19,B,Carbon Markets And Climate Tech Economics
+I19,C,"Founding, Reconstruction And Constitutional Change Over Time"
+I19,D,Sustainable Energy Transitions And Equity
+I19,E,Environmental and Climate Economics Policy
+I20,A,"Filipino, Hawaiian, Samoan, Haitian Creole"
+I20,B,Communicative Swahili Zulu Amharic Sequences
+I20,C,Hybrid Distance Indigenous Language Sequences
+I20,D,Igbo Twi Tigrinya Continuation Courses
+I20,E,Faculty-Supervised Doctoral Dissertation Research
+I21,A,Indo-Pacific Great Power Rivalry And Strategy
+I21,B,National Security Technology Innovation
+I21,C,Learning Sciences And Technology Design
+I21,D,International Relations Thesis and Capstone Research
+I21,E,American Foreign Policymaking Intervention And Economic Statecraft
+I22,A,Hands-On Data Analysis And Capstones
+I22,B,Human-Centered Design Studio Curriculum
+I22,C,Probability Theory and Statistical Inference
+I22,D,Geophysics and Earth-Planetary Systems
+I22,E,Econometrics and Causal Inference Methods
+I23,A,Structural Engineering Analysis and Seismic Design
+I23,B,Dynamic Systems Modeling And Control
+I23,C,Materials Science Curriculum And Mentorship
+I23,D,Biodesign Health Technology Innovation
+I23,E,Computational Solid Mechanics And Plasticity
+I24,A,Numerical Methods and Scientific Computing
+I24,B,Academic Writing And Thesis Support
+I24,C,Proof-Based Analysis And PDE Theory
+I24,D,ACE Supplemental Engineering Calculus Sections
+I24,E,Mathematics Department Independent Study Requirements
+I25,A,Continental Philosophy And Literature
+I25,B,Medical Humanities and Healing Arts
+I25,C,Chinese Literary History And Criticism
+I25,D,Science Fiction and Speculative Futures
+I25,E,American Modernist Fiction Race Gender
+I26,A,Spoken Mandarin and Putonghua Communication
+I26,B,Modern and Classical Chinese Reading Sequences
+I26,C,Spanish Portuguese Multitrack Proficiency Courses
+I26,D,Japanese and Korean Proficiency Sequences
+I26,E,Arabic and Persian Proficiency Sequences
+I27,A,Journalism Reporting And News Media
+I27,B,Core PWR Research Based Argument Sequence
+I27,C,Themed PWR Seminars On Belonging And Change
+I27,D,"Sociolinguistics, Phonetics, And Interaction"
+I27,E,PWR Rhetorics Of Witness And Identity
+I28,A,Comparative Literature and Fiction Studies
+I28,B,Aerospace Engineering and Fluid Mechanics
+I28,C,Quantum Physics and Materials Chemistry
+I28,D,Structural Engineering and Architectural Design
+I28,E,Pure and Applied Mathematics Courses
+I29,A,Modern Architecture Histories Theory And Placemaking
+I29,B,"Computer Graphics, Vision, Imaging"
+I29,C,Construction Engineering And Project Management
+I29,D,Studio Sequence Craft And Architectural Drawing
+I29,E,Integrated Sustainable Building Design Studios
+I30,A,Environmental Anthropology And Justice
+I30,B,Environmental Social Sciences Research Training
+I30,C,Political Economy of China
+I30,D,Global Environmental Change and Society
+I30,E,Sustainability Leadership And Systems Transformation
+I31,A,Obstetrics And Gynecology Clinical Clerkships
+I31,B,Physician Assistant Studies Clinical Clerkships
+I31,C,Primary Care Clinical Clerkships
+I31,D,Inpatient Medicine And Pediatrics Clerkships
+I31,E,Jazz World And Vocal Ensembles
+I32,A,Biostatistics for Clinical Research
+I32,B,History of Epidemics and Society
+I32,C,Multitrack Spanish For Heritage Learners
+I32,D,Epidemiologic Study Design and Methods
+I32,E,Emerging Viral Diseases And Biosecurity
+I33,A,Synaptic Physiology And Neural Circuit Foundations
+I33,B,Moral Judgment And Visual Culture
+I33,C,Clinical Neuroscience Of Stress Sleep Psychopathology
+I33,D,Computational and Cognitive Neuroscience Methods
+I33,E,Cognitive Science of Memory
+I34,A,Legal Theory and Comparative Law
+I34,B,"Legal Profession, Drafting, Dispute Resolution"
+I34,C,Constitutional Structure and Electoral Politics
+I34,D,Music Lessons and Performing Ensembles
+I34,E,International Security and Foreign Policy
+I35,A,Chemical Engineering Curriculum And Research
+I35,B,"Turbulence, Flow Instability, Advanced Fluid Mechanics"
+I35,C,Aeronautics And Astronautics Engineering
+I35,D,Faculty-Supervised Independent Study Courses
+I35,E,Fluid Mechanics And Heat Transfer
+I36,A,General And Subspecialty Surgery Rotations
+I36,B,Stem Cell Biology Regenerative Medicine
+I36,C,Quantitative Cell Dynamics And Signaling Networks
+I36,D,"Microbiology, Microbial Genomics And Microbiomes"
+I36,E,Biomolecular Chemistry And Structural Characterization Methods
+I37,A,Independent Biology Research and Mentorship
+I37,B,Auditioned Large Performing Ensembles
+I37,C,Molecular Biology and Biochemical Techniques
+I37,D,Bioengineering Biomaterials Immunology and Devices
+I37,E,"Evolutionary Biology, Biodiversity, and Paleobiology"
+I38,A,Novel Form From Romance To Modernism
+I38,B,Fiction and Cross-Genre Prose Workshops
+I38,C,"Aesthetics, Imagination, and Literary Philosophy"
+I38,D,Modern Art Institutions and Marginality
+I38,E,Black Feminist And Diasporic Fiction
+I39,A,Social Entrepreneurship And Strategic Philanthropy
+I39,B,Community-Engaged Research And Public Service
+I39,C,Applied Leadership Practice And Self-Development
+I39,D,Community Organizing And Leadership Facilitation
+I39,E,Fashion Cultures and Apocalyptic Futures
+I40,A,Applied Valuation And Investment Analysis
+I40,B,Tax Design and Government Budgets
+I40,C,PhD Macroeconomics And Financial Economics
+I40,D,Global Health Equity and Social Justice
+I40,E,Game Theory And Market Design
+I41,A,Clinical Medical Genetics And Genetic Counseling
+I41,B,Emerging Viral Diseases And Biosecurity
+I41,C,History of Epidemics and Society
+I41,D,PWR Rhetorics Of Witness And Identity
+I41,E,Epidemiologic Study Design and Methods
+I42,A,Academic Career And Graduate Success
+I42,B,Social Science Research Methods
+I42,C,Higher Education Diversity Admissions Debates
+I42,D,Artificial Intelligence And Deep Learning
+I42,E,Education Policy And Comparative Research
+I43,A,Global Health In Resource-Poor Settings
+I43,B,Physical Education Swimming and Horsemanship
+I43,C,Health Policy And Economics
+I43,D,Structural Racism And Health Disparities
+I43,E,Medical Humanities and Healing Arts
+I44,A,Mathematics Department Independent Study Requirements
+I44,B,Analytic Philosophy And Language
+I44,C,Mathematical Logic and Philosophy
+I44,D,Social Epistemology and Embodied Phenomenology
+I44,E,Ancient and Comparative Philosophy
+I45,A,Mathematics Department Independent Study Requirements
+I45,B,ACE Supplemental Engineering Calculus Sections
+I45,C,Normative Ethical Theory and Metaethics
+I45,D,Proof-Based Analysis And PDE Theory
+I45,E,Numerical Methods and Scientific Computing
+I46,A,Shakespeare And Early Modern Drama
+I46,B,Western Music History And Analysis
+I46,C,Mathematics Department Independent Study Requirements
+I46,D,Studio Acting And Devised Performance
+I46,E,Audition-Based Instrument Class And Lesson Signups
+I47,A,Emerging Viral Diseases And Biosecurity
+I47,B,Studio Acting And Devised Performance
+I47,C,Dance Technique And Choreography Courses
+I47,D,Dramatic Literature And Theatrical Genres
+I47,E,Shakespeare And Early Modern Drama
+I48,A,Practical Software Tools And Design
+I48,B,Community-Partnered Data Science Capstone Teams
+I48,C,Cognitive Science and AI
+I48,D,Structural Engineering Analysis and Seismic Design
+I48,E,Internet Speech Governance And Content Moderation
+I49,A,Global Modernism And Marginalized Artists
+I49,B,Clinical And Surgical Human Anatomy
+I49,C,Public Art And Visual Literacy
+I49,D,Introductory Drawing Painting Sculpture Studios
+I49,E,Experimental Animation And Moving-Image Arts
+I50,A,Internet Speech Governance And Content Moderation
+I50,B,Cognitive Science and AI
+I50,C,Learning Sciences And Technology Design
+I50,D,Proof-Based Analysis And PDE Theory
+I50,E,Natural Language Processing

@@ -1,0 +1,21 @@
+[
+ {
+  "computed_at": "2026-09-06T05:20:00+00:00",
+  "model": "claude-sonnet-5",
+  "calls": 89,
+  "input_tokens": 347076,
+  "output_tokens": 2606,
+  "estimated_cost_usd": 0.72,
+  "estimated": true,
+  "note": "first run, stopped by an unhandled refusal after 89 calls before usage was recorded; tokens estimated from the resumed run's per-call mean"
+ },
+ {
+  "computed_at": "2026-09-06T05:31:00+00:00",
+  "model": "claude-sonnet-5",
+  "calls": 591,
+  "input_tokens": 2304740,
+  "output_tokens": 17303,
+  "estimated_cost_usd": 4.78,
+  "note": "resumed run; figures from the process's own usage counters"
+ }
+]

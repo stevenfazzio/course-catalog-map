@@ -1,0 +1,676 @@
+item,layer,cluster,condition,sample,name_shown,shown_clusters,true_pos,scores,pm,top1
+L0C0,0,0,gold,0,Frosh 101 Residence Seminars,"[14, 0, 73, 26, 74]",1,"[0, 98, 2, 2, 2]",0.9423076923076923,True
+L0C0,0,0,gold,1,Frosh 101 Residence Seminars,"[74, 0, 73, 14, 26]",1,"[2, 98, 1, 1, 1]",0.9514563106796117,True
+L0C0,0,0,gold,2,Frosh 101 Residence Seminars,"[26, 74, 14, 73, 0]",4,"[2, 5, 1, 3, 100]",0.9009009009009009,True
+L0C0,0,0,shuffled,0,Political Science Methodology and Research,"[73, 74, 14, 0, 26]",3,"[30, 45, 5, 2, 15]",0.020618556701030927,False
+L0C0,0,0,gimme,0,Frosh 101 Residence Seminars,"[111, 0, 202, 142, 86]",1,"[2, 100, 1, 1, 1]",0.9523809523809523,True
+L0C5,0,5,gold,0,Multilevel Cantonese Conversation And Cantopop Culture,"[33, 15, 5, 34, 9]",2,"[15, 5, 90, 15, 3]",0.703125,True
+L0C5,0,5,gold,1,Multilevel Cantonese Conversation And Cantopop Culture,"[9, 15, 33, 5, 34]",3,"[5, 5, 15, 92, 10]",0.7244094488188977,True
+L0C5,0,5,gold,2,Multilevel Cantonese Conversation And Cantopop Culture,"[5, 34, 33, 15, 9]",0,"[95, 10, 15, 5, 5]",0.7307692307692307,True
+L0C5,0,5,shuffled,0,"Democratic Erosion, Polarization, Representation","[15, 33, 34, 5, 9]",3,"[5, 5, 5, 5, 5]",0.2,False
+L0C5,0,5,gimme,0,Multilevel Cantonese Conversation And Cantopop Culture,"[162, 5, 219, 144, 177]",1,"[0, 97, 0, 0, 0]",1.0,True
+L0C7,0,7,gold,0,Francophone French Proficiency And Composition,"[17, 52, 8, 6, 7]",4,"[5, 10, 8, 8, 90]",0.743801652892562,True
+L0C7,0,7,gold,1,Francophone French Proficiency And Composition,"[52, 6, 17, 7, 8]",3,"[5, 3, 2, 90, 4]",0.8653846153846154,True
+L0C7,0,7,gold,2,Francophone French Proficiency And Composition,"[7, 6, 8, 52, 17]",0,"[95, 10, 15, 10, 5]",0.7037037037037037,True
+L0C7,0,7,shuffled,0,"Crime, Punishment, Policing, Mass Incarceration","[6, 8, 52, 7, 17]",3,"[2, 2, 2, 2, 2]",0.2,False
+L0C7,0,7,gimme,0,Francophone French Proficiency And Composition,"[187, 7, 149, 165, 157]",1,"[2, 97, 1, 1, 1]",0.9509803921568627,True
+L0C11,0,11,gold,0,Arabic Language Proficiency Sequence,"[11, 12, 4, 1, 28]",0,"[98, 10, 8, 12, 8]",0.7205882352941176,True
+L0C11,0,11,gold,1,Arabic Language Proficiency Sequence,"[4, 11, 12, 1, 28]",1,"[10, 98, 15, 15, 10]",0.6621621621621622,True
+L0C11,0,11,gold,2,Arabic Language Proficiency Sequence,"[28, 12, 4, 11, 1]",3,"[5, 10, 5, 98, 5]",0.7967479674796748,True
+L0C11,0,11,shuffled,0,General And Subspecialty Surgery Rotations,"[4, 1, 28, 11, 12]",3,"[2, 2, 2, 2, 2]",0.2,False
+L0C11,0,11,gimme,0,Arabic Language Proficiency Sequence,"[128, 11, 284, 137, 63]",1,"[0, 100, 0, 0, 0]",1.0,True
+L0C13,0,13,gold,0,Hybrid Distance Indigenous Language Sequences,"[17, 28, 15, 13, 52]",3,"[20, 30, 40, 90, 5]",0.4864864864864865,True
+L0C13,0,13,gold,1,Hybrid Distance Indigenous Language Sequences,"[15, 13, 28, 52, 17]",1,"[40, 85, 30, 10, 5]",0.5,True
+L0C13,0,13,gold,2,Hybrid Distance Indigenous Language Sequences,"[17, 52, 15, 13, 28]",3,"[15, 10, 45, 75, 30]",0.42857142857142855,True
+L0C13,0,13,shuffled,0,Senior Thesis MFA Professional Practice,"[28, 15, 17, 52, 13]",4,"[3, 3, 3, 3, 3]",0.2,False
+L0C13,0,13,gimme,0,Hybrid Distance Indigenous Language Sequences,"[193, 13, 145, 156, 146]",1,"[2, 97, 1, 3, 1]",0.9326923076923077,True
+L0C24,0,24,gold,0,Chinese Language Proficiency Sequences,"[34, 33, 5, 24, 261]",3,"[75, 55, 40, 70, 5]",0.2857142857142857,False
+L0C24,0,24,gold,1,Chinese Language Proficiency Sequences,"[34, 261, 5, 24, 33]",3,"[85, 10, 60, 75, 55]",0.2631578947368421,False
+L0C24,0,24,gold,2,Chinese Language Proficiency Sequences,"[24, 33, 261, 5, 34]",0,"[90, 70, 10, 40, 80]",0.3103448275862069,True
+L0C24,0,24,shuffled,0,South Asian Language Instruction,"[5, 34, 33, 261, 24]",4,"[40, 45, 45, 10, 25]",0.15151515151515152,False
+L0C24,0,24,gimme,0,Chinese Language Proficiency Sequences,"[227, 86, 59, 78, 24]",4,"[0, 0, 0, 0, 98]",1.0,True
+L0C28,0,28,gold,0,Communicative Swahili Zulu Amharic Sequences,"[28, 27, 17, 23, 15]",0,"[95, 40, 5, 10, 30]",0.5277777777777778,True
+L0C28,0,28,gold,1,Communicative Swahili Zulu Amharic Sequences,"[27, 28, 17, 15, 23]",1,"[40, 90, 5, 45, 5]",0.4864864864864865,True
+L0C28,0,28,gold,2,Communicative Swahili Zulu Amharic Sequences,"[28, 15, 23, 17, 27]",0,"[92, 40, 5, 10, 45]",0.4791666666666667,True
+L0C28,0,28,shuffled,0,Comparative Global Urban History Methods,"[28, 23, 17, 15, 27]",0,"[3, 3, 3, 3, 3]",0.2,False
+L0C28,0,28,gimme,0,Communicative Swahili Zulu Amharic Sequences,"[126, 324, 190, 240, 28]",4,"[2, 1, 1, 2, 98]",0.9423076923076923,True
+L0C31,0,31,gold,0,Faculty-Sponsored CPT Employment Reporting,"[30, 84, 14, 31, 299]",3,"[55, 2, 40, 90, 0]",0.48128342245989303,True
+L0C31,0,31,gold,1,Faculty-Sponsored CPT Employment Reporting,"[84, 14, 299, 31, 30]",3,"[5, 60, 3, 92, 55]",0.42790697674418604,True
+L0C31,0,31,gold,2,Faculty-Sponsored CPT Employment Reporting,"[84, 31, 14, 299, 30]",1,"[5, 95, 60, 3, 55]",0.43577981651376146,True
+L0C31,0,31,shuffled,0,British Novel Genre And Theory,"[299, 30, 84, 31, 14]",3,"[2, 3, 3, 3, 2]",0.23076923076923078,False
+L0C31,0,31,gimme,0,Faculty-Sponsored CPT Employment Reporting,"[31, 122, 90, 149, 144]",0,"[97, 2, 2, 2, 3]",0.9150943396226415,True
+L0C57,0,57,gold,0,Physical Education Swimming and Horsemanship,"[57, 58, 71, 63, 64]",0,"[98, 10, 0, 15, 10]",0.7368421052631579,True
+L0C57,0,57,gold,1,Physical Education Swimming and Horsemanship,"[58, 63, 71, 57, 64]",3,"[15, 30, 0, 95, 25]",0.5757575757575758,True
+L0C57,0,57,gold,2,Physical Education Swimming and Horsemanship,"[63, 57, 64, 71, 58]",1,"[20, 95, 15, 0, 10]",0.6785714285714286,True
+L0C57,0,57,shuffled,0,Sociology Research Training Seminars,"[58, 71, 64, 57, 63]",3,"[2, 75, 3, 2, 3]",0.023529411764705882,False
+L0C57,0,57,gimme,0,Physical Education Swimming and Horsemanship,"[89, 205, 57, 96, 3]",2,"[2, 1, 98, 1, 1]",0.9514563106796117,True
+L0C61,0,61,gold,0,Faculty-Supervised Doctoral Dissertation Research,"[73, 21, 74, 56, 61]",4,"[30, 95, 10, 20, 40]",0.20512820512820512,False
+L0C61,0,61,gold,1,Faculty-Supervised Doctoral Dissertation Research,"[73, 21, 61, 56, 74]",2,"[30, 92, 40, 15, 5]",0.21978021978021978,False
+L0C61,0,61,gold,2,Faculty-Supervised Doctoral Dissertation Research,"[56, 61, 73, 74, 21]",1,"[15, 45, 20, 5, 88]",0.26011560693641617,False
+L0C61,0,61,shuffled,0,Plasma Physics And High-Temperature Gas Diagnostics,"[73, 74, 21, 56, 61]",4,"[15, 5, 10, 10, 10]",0.2,False
+L0C61,0,61,gimme,0,Faculty-Supervised Doctoral Dissertation Research,"[326, 87, 195, 333, 61]",4,"[5, 3, 2, 15, 85]",0.7727272727272727,True
+L0C86,0,86,gold,0,Diagnostic Radiology And Radiation Oncology,"[92, 87, 224, 200, 86]",4,"[10, 45, 5, 10, 90]",0.5625,True
+L0C86,0,86,gold,1,Diagnostic Radiology And Radiation Oncology,"[92, 200, 86, 224, 87]",2,"[10, 5, 92, 3, 35]",0.6344827586206897,True
+L0C86,0,86,gold,2,Diagnostic Radiology And Radiation Oncology,"[87, 92, 86, 200, 224]",2,"[60, 10, 92, 5, 5]",0.5348837209302325,True
+L0C86,0,86,shuffled,0,"Social Movements, Migration, Racial Politics","[86, 224, 87, 92, 200]",0,"[2, 2, 2, 2, 3]",0.18181818181818182,False
+L0C86,0,86,gimme,0,Diagnostic Radiology And Radiation Oncology,"[341, 95, 86, 294, 66]",2,"[0, 0, 98, 0, 0]",1.0,True
+L0C93,0,93,gold,0,Chemical Engineering Curriculum And Research,"[135, 107, 117, 134, 93]",4,"[10, 15, 15, 5, 97]",0.6830985915492958,True
+L0C93,0,93,gold,1,Chemical Engineering Curriculum And Research,"[135, 107, 93, 117, 134]",2,"[10, 15, 95, 10, 5]",0.7037037037037037,True
+L0C93,0,93,gold,2,Chemical Engineering Curriculum And Research,"[93, 135, 134, 117, 107]",0,"[95, 10, 5, 5, 8]",0.7723577235772358,True
+L0C93,0,93,shuffled,0,Vietnamese and Khmer Language Sequences,"[135, 134, 117, 93, 107]",3,"[5, 3, 10, 5, 5]",0.17857142857142858,False
+L0C93,0,93,gimme,0,Chemical Engineering Curriculum And Research,"[120, 119, 52, 93, 326]",3,"[2, 2, 1, 98, 1]",0.9423076923076923,True
+L0C99,0,99,gold,0,Laboratory Animal Science And Medicine,"[179, 182, 99, 166, 153]",2,"[10, 10, 95, 15, 5]",0.7037037037037037,True
+L0C99,0,99,gold,1,Laboratory Animal Science And Medicine,"[182, 166, 179, 99, 153]",3,"[10, 15, 10, 95, 5]",0.7037037037037037,True
+L0C99,0,99,gold,2,Laboratory Animal Science And Medicine,"[182, 179, 153, 99, 166]",3,"[15, 10, 8, 95, 12]",0.6785714285714286,True
+L0C99,0,99,shuffled,0,Shipboard Oceanography and Estuarine Biogeochemistry,"[99, 153, 182, 179, 166]",0,"[10, 5, 8, 8, 15]",0.21739130434782608,False
+L0C99,0,99,gimme,0,Laboratory Animal Science And Medicine,"[70, 148, 75, 96, 99]",4,"[2, 3, 2, 2, 98]",0.9158878504672897,True
+L0C106,0,106,gold,0,Clinical Neuroscience Of Stress Sleep Psychopathology,"[121, 114, 106, 105, 122]",2,"[15, 25, 85, 20, 15]",0.53125,True
+L0C106,0,106,gold,1,Clinical Neuroscience Of Stress Sleep Psychopathology,"[121, 106, 105, 122, 114]",1,"[15, 85, 30, 20, 25]",0.4857142857142857,True
+L0C106,0,106,gold,2,Clinical Neuroscience Of Stress Sleep Psychopathology,"[106, 122, 114, 121, 105]",0,"[90, 15, 30, 20, 25]",0.5,True
+L0C106,0,106,shuffled,0,Construction Engineering And Project Management,"[106, 105, 122, 114, 121]",0,"[5, 10, 5, 3, 3]",0.19230769230769232,False
+L0C106,0,106,gimme,0,Clinical Neuroscience Of Stress Sleep Psychopathology,"[4, 106, 286, 117, 223]",1,"[0, 95, 2, 0, 0]",0.979381443298969,True
+L0C134,0,134,gold,0,Mechanical Design And Product Realization,"[141, 134, 118, 93, 135]",1,"[25, 95, 0, 5, 15]",0.6785714285714286,True
+L0C134,0,134,gold,1,Mechanical Design And Product Realization,"[134, 93, 135, 141, 118]",0,"[95, 10, 20, 30, 5]",0.59375,True
+L0C134,0,134,gold,2,Mechanical Design And Product Realization,"[93, 134, 135, 118, 141]",1,"[3, 95, 5, 2, 20]",0.76,True
+L0C134,0,134,shuffled,0,Negotiation Strategy And Conflict Management,"[135, 134, 118, 93, 141]",1,"[15, 10, 10, 10, 15]",0.16666666666666666,False
+L0C134,0,134,gimme,0,Mechanical Design And Product Realization,"[282, 91, 134, 70, 337]",2,"[2, 5, 98, 1, 1]",0.9158878504672897,True
+L0C150,0,150,gold,0,Community-Partnered Data Science Capstone Teams,"[154, 150, 78, 151, 177]",1,"[10, 85, 40, 20, 5]",0.53125,True
+L0C150,0,150,gold,1,Community-Partnered Data Science Capstone Teams,"[78, 177, 151, 154, 150]",4,"[40, 5, 25, 15, 85]",0.5,True
+L0C150,0,150,gold,2,Community-Partnered Data Science Capstone Teams,"[177, 78, 150, 154, 151]",2,"[5, 30, 90, 10, 15]",0.6,True
+L0C150,0,150,shuffled,0,Introductory Drawing Painting Sculpture Studios,"[154, 177, 150, 78, 151]",2,"[5, 8, 10, 5, 8]",0.2777777777777778,True
+L0C150,0,150,gimme,0,Community-Partnered Data Science Capstone Teams,"[6, 150, 11, 105, 279]",1,"[2, 97, 2, 3, 1]",0.9238095238095239,True
+L0C163,0,163,gold,0,"Structural Geology, Tectonics, Geophysics","[163, 126, 133, 162, 125]",0,"[75, 5, 40, 30, 15]",0.45454545454545453,True
+L0C163,0,163,gold,1,"Structural Geology, Tectonics, Geophysics","[162, 133, 163, 126, 125]",2,"[15, 30, 80, 5, 25]",0.5161290322580645,True
+L0C163,0,163,gold,2,"Structural Geology, Tectonics, Geophysics","[162, 163, 133, 126, 125]",1,"[15, 80, 40, 5, 20]",0.5,True
+L0C163,0,163,shuffled,0,Aeronautics And Astronautics Engineering,"[126, 162, 133, 163, 125]",3,"[10, 55, 15, 10, 15]",0.09523809523809523,False
+L0C163,0,163,gimme,0,"Structural Geology, Tectonics, Geophysics","[68, 354, 171, 65, 163]",4,"[0, 0, 0, 0, 98]",1.0,True
+L0C171,0,171,gold,0,Epidemiologic Study Design and Methods,"[167, 171, 217, 216, 170]",1,"[10, 92, 8, 15, 55]",0.5111111111111111,True
+L0C171,0,171,gold,1,Epidemiologic Study Design and Methods,"[170, 216, 171, 167, 217]",2,"[45, 10, 92, 15, 8]",0.5411764705882353,True
+L0C171,0,171,gold,2,Epidemiologic Study Design and Methods,"[167, 170, 171, 216, 217]",2,"[15, 40, 92, 10, 8]",0.5575757575757576,True
+L0C171,0,171,shuffled,0,"Founding, Reconstruction And Constitutional Change Over Time","[167, 217, 170, 216, 171]",4,"[5, 3, 2, 3, 2]",0.13333333333333333,False
+L0C171,0,171,gimme,0,Epidemiologic Study Design and Methods,"[155, 9, 274, 171, 72]",3,"[2, 1, 1, 97, 1]",0.9509803921568627,True
+L0C182,0,182,gold,0,Independent Biology Research and Mentorship,"[186, 239, 169, 56, 182]",4,"[10, 5, 8, 90, 30]",0.2097902097902098,False
+L0C182,0,182,gold,1,Independent Biology Research and Mentorship,"[239, 169, 56, 186, 182]",4,"[5, 3, 80, 10, 40]",0.2898550724637681,False
+L0C182,0,182,gold,2,Independent Biology Research and Mentorship,"[239, 56, 186, 169, 182]",4,"[10, 60, 5, 5, 55]",0.4074074074074074,False
+L0C182,0,182,shuffled,0,Quantum Computing And Information,"[186, 182, 56, 169, 239]",1,"[5, 3, 3, 2, 5]",0.16666666666666666,False
+L0C182,0,182,gimme,0,Independent Biology Research and Mentorship,"[316, 182, 66, 326, 274]",1,"[2, 85, 2, 2, 2]",0.9139784946236559,True
+L0C188,0,188,gold,0,Physician Assistant Studies Clinical Clerkships,"[115, 188, 184, 225, 224]",1,"[10, 95, 10, 20, 15]",0.6333333333333333,True
+L0C188,0,188,gold,1,Physician Assistant Studies Clinical Clerkships,"[184, 115, 224, 225, 188]",4,"[10, 5, 15, 10, 95]",0.7037037037037037,True
+L0C188,0,188,gold,2,Physician Assistant Studies Clinical Clerkships,"[115, 184, 188, 224, 225]",2,"[10, 8, 95, 15, 20]",0.6418918918918919,True
+L0C188,0,188,shuffled,0,Quantitative Cell Dynamics And Signaling Networks,"[188, 225, 224, 184, 115]",0,"[5, 5, 5, 5, 5]",0.2,False
+L0C188,0,188,gimme,0,Physician Assistant Studies Clinical Clerkships,"[54, 258, 188, 340, 95]",2,"[2, 1, 98, 1, 1]",0.9514563106796117,True
+L0C190,0,190,gold,0,Artificial Intelligence In Healthcare,"[154, 215, 197, 196, 190]",4,"[55, 10, 20, 25, 95]",0.4634146341463415,True
+L0C190,0,190,gold,1,Artificial Intelligence In Healthcare,"[196, 190, 215, 197, 154]",1,"[30, 90, 20, 15, 55]",0.42857142857142855,True
+L0C190,0,190,gold,2,Artificial Intelligence In Healthcare,"[215, 197, 190, 196, 154]",2,"[15, 20, 90, 25, 55]",0.43902439024390244,True
+L0C190,0,190,shuffled,0,Comedy Theory and Satirical Resistance,"[154, 190, 197, 215, 196]",1,"[2, 2, 10, 2, 3]",0.10526315789473684,False
+L0C190,0,190,gimme,0,Artificial Intelligence In Healthcare,"[36, 190, 4, 116, 160]",1,"[0, 98, 0, 2, 5]",0.9333333333333333,True
+L0C191,0,191,gold,0,Drug Development and Digital Health,"[191, 154, 172, 179, 190]",0,"[92, 20, 30, 10, 35]",0.4919786096256685,True
+L0C191,0,191,gold,1,Drug Development and Digital Health,"[154, 172, 190, 179, 191]",4,"[15, 30, 25, 5, 92]",0.5508982035928144,True
+L0C191,0,191,gold,2,Drug Development and Digital Health,"[172, 191, 179, 154, 190]",1,"[40, 95, 5, 20, 45]",0.4634146341463415,True
+L0C191,0,191,shuffled,0,Multilevel Portuguese For Lusophone Contexts,"[191, 172, 154, 179, 190]",0,"[10, 10, 10, 10, 10]",0.2,False
+L0C191,0,191,gimme,0,Drug Development and Digital Health,"[191, 203, 267, 72, 339]",0,"[98, 2, 2, 2, 2]",0.9245283018867925,True
+L0C200,0,200,gold,0,General And Subspecialty Surgery Rotations,"[136, 224, 200, 92, 201]",2,"[15, 10, 92, 20, 15]",0.6052631578947368,True
+L0C200,0,200,gold,1,General And Subspecialty Surgery Rotations,"[201, 92, 136, 224, 200]",4,"[5, 20, 10, 5, 90]",0.6923076923076923,True
+L0C200,0,200,gold,2,General And Subspecialty Surgery Rotations,"[224, 136, 201, 200, 92]",3,"[10, 15, 5, 90, 10]",0.6923076923076923,True
+L0C200,0,200,shuffled,0,Learning Sciences And Technology Design,"[201, 136, 200, 224, 92]",2,"[10, 5, 8, 5, 5]",0.24242424242424243,False
+L0C200,0,200,gimme,0,General And Subspecialty Surgery Rotations,"[200, 269, 248, 104, 342]",0,"[98, 2, 2, 2, 2]",0.9245283018867925,True
+L0C203,0,203,gold,0,Convex And Combinatorial Optimization Algorithms,"[96, 203, 174, 177, 204]",1,"[25, 92, 15, 30, 25]",0.4919786096256685,True
+L0C203,0,203,gold,1,Convex And Combinatorial Optimization Algorithms,"[177, 96, 203, 174, 204]",2,"[15, 10, 95, 8, 12]",0.6785714285714286,True
+L0C203,0,203,gold,2,Convex And Combinatorial Optimization Algorithms,"[96, 177, 203, 174, 204]",2,"[15, 10, 95, 5, 15]",0.6785714285714286,True
+L0C203,0,203,shuffled,0,Community Organizing And Leadership Facilitation,"[204, 203, 174, 177, 96]",1,"[5, 5, 3, 5, 3]",0.23809523809523808,False
+L0C203,0,203,gimme,0,Convex And Combinatorial Optimization Algorithms,"[38, 203, 305, 200, 304]",1,"[2, 97, 1, 1, 1]",0.9509803921568627,True
+L0C211,0,211,gold,0,Sustainable Energy Transitions And Equity,"[211, 202, 212, 206, 241]",0,"[75, 45, 55, 85, 25]",0.2631578947368421,False
+L0C211,0,211,gold,1,Sustainable Energy Transitions And Equity,"[202, 241, 211, 206, 212]",2,"[40, 25, 75, 80, 50]",0.2777777777777778,False
+L0C211,0,211,gold,2,Sustainable Energy Transitions And Equity,"[206, 211, 212, 202, 241]",1,"[90, 65, 45, 35, 15]",0.26,False
+L0C211,0,211,shuffled,0,Global Modernism And Marginalized Artists,"[212, 211, 241, 206, 202]",1,"[2, 2, 3, 2, 2]",0.18181818181818182,False
+L0C211,0,211,gimme,0,Sustainable Energy Transitions And Equity,"[210, 180, 33, 211, 345]",3,"[5, 10, 0, 97, 0]",0.8660714285714286,True
+L0C213,0,213,gold,0,Community Organizing And Leadership Facilitation,"[207, 213, 192, 226, 71]",1,"[15, 95, 45, 30, 2]",0.5080213903743316,True
+L0C213,0,213,gold,1,Community Organizing And Leadership Facilitation,"[71, 207, 213, 192, 226]",2,"[3, 15, 97, 40, 20]",0.5542857142857143,True
+L0C213,0,213,gold,2,Community Organizing And Leadership Facilitation,"[71, 226, 207, 192, 213]",4,"[5, 20, 15, 40, 95]",0.5428571428571428,True
+L0C213,0,213,shuffled,0,Wonder Sublimity And Literary Imagination,"[213, 192, 207, 71, 226]",0,"[15, 10, 10, 5, 10]",0.3,True
+L0C213,0,213,gimme,0,Community Organizing And Leadership Facilitation,"[41, 92, 199, 289, 213]",4,"[2, 1, 1, 2, 98]",0.9423076923076923,True
+L0C228,0,228,gold,0,Scenic Lighting And Properties Design,"[228, 65, 262, 267, 259]",0,"[95, 15, 30, 10, 5]",0.6129032258064516,True
+L0C228,0,228,gold,1,Scenic Lighting And Properties Design,"[267, 228, 65, 262, 259]",1,"[10, 95, 15, 40, 3]",0.5828220858895705,True
+L0C228,0,228,gold,2,Scenic Lighting And Properties Design,"[262, 228, 259, 267, 65]",1,"[40, 90, 2, 10, 15]",0.5732484076433121,True
+L0C228,0,228,shuffled,0,History of Early Modern Science,"[259, 228, 262, 65, 267]",1,"[5, 5, 10, 5, 5]",0.16666666666666666,False
+L0C228,0,228,gimme,0,Scenic Lighting And Properties Design,"[202, 228, 352, 145, 130]",1,"[2, 97, 1, 1, 1]",0.9509803921568627,True
+L0C242,0,242,gold,0,"Science, Technology, Society Studies","[241, 242, 277, 244, 258]",1,"[20, 95, 40, 35, 10]",0.475,True
+L0C242,0,242,gold,1,"Science, Technology, Society Studies","[241, 244, 258, 242, 277]",3,"[25, 45, 20, 95, 40]",0.4222222222222222,True
+L0C242,0,242,gold,2,"Science, Technology, Society Studies","[241, 258, 244, 277, 242]",4,"[30, 25, 45, 40, 95]",0.40425531914893614,True
+L0C242,0,242,shuffled,0,General And Subspecialty Surgery Rotations,"[242, 258, 241, 277, 244]",0,"[3, 2, 2, 3, 2]",0.25,False
+L0C242,0,242,gimme,0,"Science, Technology, Society Studies","[144, 149, 242, 191, 9]",2,"[10, 15, 97, 20, 0]",0.6830985915492958,True
+L0C253,0,253,gold,0,Technology Entrepreneurship And Venture Creation,"[252, 251, 253, 75, 207]",2,"[65, 30, 85, 15, 25]",0.38636363636363635,True
+L0C253,0,253,gold,1,Technology Entrepreneurship And Venture Creation,"[253, 252, 207, 251, 75]",0,"[92, 55, 30, 25, 15]",0.423963133640553,True
+L0C253,0,253,gold,2,Technology Entrepreneurship And Venture Creation,"[253, 251, 207, 75, 252]",0,"[90, 40, 35, 15, 55]",0.3829787234042553,True
+L0C253,0,253,shuffled,0,Statistical Theory and Applied Inference,"[252, 253, 75, 207, 251]",1,"[40, 10, 30, 10, 15]",0.09523809523809523,False
+L0C253,0,253,gimme,0,Technology Entrepreneurship And Venture Creation,"[110, 253, 69, 113, 347]",1,"[2, 97, 0, 0, 0]",0.9797979797979798,True
+L0C264,0,264,gold,0,Modern Greek Language Sequence,"[264, 15, 17, 6, 1]",0,"[95, 15, 10, 8, 10]",0.6884057971014492,True
+L0C264,0,264,gold,1,Modern Greek Language Sequence,"[17, 15, 6, 264, 1]",3,"[10, 5, 8, 97, 6]",0.7698412698412699,True
+L0C264,0,264,gold,2,Modern Greek Language Sequence,"[17, 6, 264, 15, 1]",2,"[5, 8, 98, 3, 5]",0.8235294117647058,True
+L0C264,0,264,shuffled,0,Cognitive Science and AI,"[15, 1, 6, 264, 17]",3,"[2, 2, 2, 2, 2]",0.2,False
+L0C264,0,264,gimme,0,Modern Greek Language Sequence,"[308, 202, 314, 264, 253]",3,"[0, 0, 0, 98, 0]",1.0,True
+L0C265,0,265,gold,0,Digital Media Art Theory,"[257, 272, 259, 265, 271]",3,"[70, 20, 75, 65, 10]",0.2708333333333333,False
+L0C265,0,265,gold,1,Digital Media Art Theory,"[259, 271, 272, 265, 257]",3,"[85, 15, 20, 65, 40]",0.28888888888888886,False
+L0C265,0,265,gold,2,Digital Media Art Theory,"[257, 271, 265, 272, 259]",2,"[75, 10, 70, 20, 45]",0.3181818181818182,False
+L0C265,0,265,shuffled,0,Human Rights Trafficking And Atrocity Accountability,"[259, 257, 272, 265, 271]",3,"[5, 10, 35, 8, 40]",0.08163265306122448,False
+L0C265,0,265,gimme,0,Digital Media Art Theory,"[1, 199, 265, 63, 165]",2,"[0, 0, 92, 0, 0]",1.0,True
+L0C270,0,270,gold,0,"Institutions, Poverty, And Global Development","[270, 285, 286, 234, 318]",0,"[95, 20, 40, 30, 10]",0.48717948717948717,True
+L0C270,0,270,gold,1,"Institutions, Poverty, And Global Development","[318, 286, 270, 234, 285]",2,"[15, 20, 95, 30, 15]",0.5428571428571428,True
+L0C270,0,270,gold,2,"Institutions, Poverty, And Global Development","[318, 285, 270, 234, 286]",2,"[15, 20, 95, 40, 30]",0.475,True
+L0C270,0,270,shuffled,0,Marine Organismal Physiology and Conservation,"[270, 318, 286, 285, 234]",0,"[5, 3, 8, 5, 5]",0.19230769230769232,False
+L0C270,0,270,gimme,0,"Institutions, Poverty, And Global Development","[46, 70, 270, 135, 53]",2,"[0, 2, 98, 5, 0]",0.9333333333333333,True
+L0C276,0,276,gold,0,PWR Rhetorics Of Witness And Identity,"[288, 287, 276, 229, 260]",2,"[75, 50, 88, 5, 40]",0.34108527131782945,True
+L0C276,0,276,gold,1,PWR Rhetorics Of Witness And Identity,"[276, 260, 229, 288, 287]",0,"[85, 30, 5, 75, 40]",0.3617021276595745,True
+L0C276,0,276,gold,2,PWR Rhetorics Of Witness And Identity,"[287, 276, 288, 229, 260]",1,"[40, 75, 80, 5, 30]",0.32608695652173914,False
+L0C276,0,276,shuffled,0,Social Entrepreneurship And Strategic Philanthropy,"[229, 288, 276, 260, 287]",2,"[30, 10, 40, 15, 10]",0.38095238095238093,True
+L0C276,0,276,gimme,0,PWR Rhetorics Of Witness And Identity,"[277, 251, 160, 181, 276]",4,"[2, 1, 1, 3, 97]",0.9326923076923077,True
+L0C294,0,294,gold,0,Youth Education Law Advocacy,"[334, 309, 306, 294, 335]",3,"[10, 15, 15, 98, 5]",0.6853146853146853,True
+L0C294,0,294,gold,1,Youth Education Law Advocacy,"[334, 309, 294, 306, 335]",2,"[5, 10, 98, 15, 10]",0.7101449275362319,True
+L0C294,0,294,gold,2,Youth Education Law Advocacy,"[306, 309, 335, 334, 294]",4,"[10, 5, 8, 3, 98]",0.7903225806451613,True
+L0C294,0,294,shuffled,0,Historical Methods and Research Practice,"[306, 309, 335, 294, 334]",3,"[15, 10, 55, 5, 15]",0.05,False
+L0C294,0,294,gimme,0,Youth Education Law Advocacy,"[111, 294, 54, 214, 297]",1,"[0, 98, 0, 0, 0]",1.0,True
+L0C300,0,300,gold,0,Human Rights Trafficking And Atrocity Accountability,"[280, 300, 323, 299, 350]",1,"[60, 75, 15, 30, 5]",0.40540540540540543,True
+L0C300,0,300,gold,1,Human Rights Trafficking And Atrocity Accountability,"[299, 323, 300, 350, 280]",2,"[40, 15, 75, 5, 65]",0.375,True
+L0C300,0,300,gold,2,Human Rights Trafficking And Atrocity Accountability,"[323, 280, 299, 350, 300]",4,"[30, 60, 45, 5, 90]",0.391304347826087,True
+L0C300,0,300,shuffled,0,Audition-Based Instrument Class And Lesson Signups,"[280, 300, 299, 350, 323]",1,"[3, 3, 3, 3, 3]",0.2,False
+L0C300,0,300,gimme,0,Human Rights Trafficking And Atrocity Accountability,"[212, 101, 44, 300, 34]",3,"[2, 0, 0, 98, 0]",0.98,True
+L0C302,0,302,gold,0,Warfare Society And Asia-Pacific Historical Transformation,"[315, 310, 296, 279, 302]",4,"[15, 20, 55, 60, 45]",0.23076923076923078,False
+L0C302,0,302,gold,1,Warfare Society And Asia-Pacific Historical Transformation,"[315, 310, 296, 302, 279]",3,"[20, 30, 55, 45, 60]",0.21428571428571427,False
+L0C302,0,302,gold,2,Warfare Society And Asia-Pacific Historical Transformation,"[296, 310, 302, 315, 279]",2,"[60, 15, 25, 10, 45]",0.16129032258064516,False
+L0C302,0,302,shuffled,0,Criminal Law And Procedure,"[296, 279, 302, 315, 310]",2,"[5, 10, 8, 8, 5]",0.2222222222222222,False
+L0C302,0,302,gimme,0,Warfare Society And Asia-Pacific Historical Transformation,"[148, 103, 239, 302, 81]",3,"[0, 0, 0, 95, 0]",1.0,True
+L0C315,0,315,gold,0,American Foreign Policymaking Intervention And Economic Statecraft,"[302, 310, 314, 292, 315]",4,"[10, 25, 30, 5, 95]",0.5757575757575758,True
+L0C315,0,315,gold,1,American Foreign Policymaking Intervention And Economic Statecraft,"[314, 315, 302, 292, 310]",1,"[30, 90, 10, 5, 30]",0.5454545454545454,True
+L0C315,0,315,gold,2,American Foreign Policymaking Intervention And Economic Statecraft,"[314, 292, 302, 310, 315]",4,"[30, 10, 15, 25, 92]",0.5348837209302325,True
+L0C315,0,315,shuffled,0,"Literacy Development, Research, And Instruction","[292, 315, 310, 302, 314]",1,"[10, 5, 5, 5, 5]",0.16666666666666666,False
+L0C315,0,315,gimme,0,American Foreign Policymaking Intervention And Economic Statecraft,"[133, 191, 104, 34, 315]",4,"[0, 0, 0, 0, 98]",1.0,True
+L0C322,0,322,gold,0,Transactional Lawyering Drafting And Clinics,"[334, 324, 322, 335, 332]",2,"[15, 5, 92, 10, 8]",0.7076923076923077,True
+L0C322,0,322,gold,1,Transactional Lawyering Drafting And Clinics,"[334, 324, 335, 322, 332]",3,"[30, 10, 15, 95, 20]",0.5588235294117647,True
+L0C322,0,322,gold,2,Transactional Lawyering Drafting And Clinics,"[324, 322, 332, 334, 335]",1,"[15, 95, 20, 10, 5]",0.6551724137931034,True
+L0C322,0,322,shuffled,0,Entrepreneurial Marketing And Go-To-Market Strategy,"[322, 324, 332, 334, 335]",0,"[55, 20, 10, 8, 5]",0.5612244897959183,True
+L0C322,0,322,gimme,0,Transactional Lawyering Drafting And Clinics,"[158, 33, 118, 322, 356]",3,"[2, 1, 1, 97, 1]",0.9509803921568627,True
+L0C347,0,347,gold,0,African Slavery Colonialism Global History,"[340, 346, 347, 304, 348]",2,"[30, 15, 90, 20, 10]",0.5454545454545454,True
+L0C347,0,347,gold,1,African Slavery Colonialism Global History,"[347, 340, 348, 346, 304]",0,"[95, 40, 15, 35, 10]",0.48717948717948717,True
+L0C347,0,347,gold,2,African Slavery Colonialism Global History,"[304, 340, 348, 347, 346]",3,"[10, 30, 8, 92, 25]",0.5575757575757576,True
+L0C347,0,347,shuffled,0,Stem Cell Biology Regenerative Medicine,"[304, 340, 346, 348, 347]",4,"[5, 5, 5, 5, 5]",0.2,False
+L0C347,0,347,gimme,0,African Slavery Colonialism Global History,"[170, 104, 347, 90, 123]",2,"[2, 1, 97, 1, 1]",0.9509803921568627,True
+L1C2,1,2,gold,0,African Asian Indigenous Language Sequences,"[6, 8, 9, 11, 2]",4,"[10, 15, 15, 5, 90]",0.6666666666666666,True
+L1C2,1,2,gold,1,African Asian Indigenous Language Sequences,"[6, 2, 8, 9, 11]",1,"[10, 95, 5, 5, 5]",0.7916666666666666,True
+L1C2,1,2,gold,2,African Asian Indigenous Language Sequences,"[9, 2, 11, 6, 8]",1,"[15, 90, 5, 10, 5]",0.72,True
+L1C2,1,2,shuffled,0,Intermediate Photography Practice And Theory,"[9, 2, 11, 8, 6]",1,"[3, 3, 5, 3, 3]",0.17647058823529413,False
+L1C2,1,2,gimme,0,African Asian Indigenous Language Sequences,"[61, 3, 25, 2, 59]",3,"[2, 3, 1, 98, 1]",0.9333333333333333,True
+L1C5,1,5,gold,0,Arabic and Persian Proficiency Sequences,"[2, 4, 9, 5, 8]",3,"[5, 5, 3, 98, 3]",0.8596491228070176,True
+L1C5,1,5,gold,1,Arabic and Persian Proficiency Sequences,"[5, 2, 8, 4, 9]",0,"[98, 5, 3, 3, 3]",0.875,True
+L1C5,1,5,gold,2,Arabic and Persian Proficiency Sequences,"[5, 2, 8, 9, 4]",0,"[98, 5, 3, 3, 3]",0.875,True
+L1C5,1,5,shuffled,0,Media Psychology And Communication Research,"[2, 9, 5, 4, 8]",2,"[5, 5, 5, 5, 5]",0.2,False
+L1C5,1,5,gimme,0,Arabic and Persian Proficiency Sequences,"[5, 44, 59, 49, 74]",0,"[98, 0, 0, 0, 0]",1.0,True
+L1C7,1,7,gold,0,Japanese and Korean Proficiency Sequences,"[14, 8, 2, 9, 7]",4,"[10, 5, 5, 5, 90]",0.782608695652174,True
+L1C7,1,7,gold,1,Japanese and Korean Proficiency Sequences,"[14, 7, 9, 2, 8]",1,"[15, 85, 10, 5, 5]",0.7083333333333334,True
+L1C7,1,7,gold,2,Japanese and Korean Proficiency Sequences,"[14, 2, 8, 7, 9]",3,"[15, 5, 3, 90, 2]",0.782608695652174,True
+L1C7,1,7,shuffled,0,"Moral Theory, Responsibility, Metaethical Foundations","[9, 7, 8, 14, 2]",1,"[2, 2, 2, 2, 2]",0.2,False
+L1C7,1,7,gimme,0,Japanese and Korean Proficiency Sequences,"[63, 7, 64, 23, 49]",1,"[0, 92, 0, 0, 0]",1.0,True
+L1C9,1,9,gold,0,Introductory Central European Nordic Languages,"[8, 4, 6, 2, 9]",4,"[20, 5, 5, 5, 85]",0.7083333333333334,True
+L1C9,1,9,gold,1,Introductory Central European Nordic Languages,"[8, 9, 2, 4, 6]",1,"[40, 85, 10, 5, 5]",0.5862068965517241,True
+L1C9,1,9,gold,2,Introductory Central European Nordic Languages,"[8, 2, 9, 6, 4]",2,"[30, 10, 90, 5, 10]",0.6206896551724138,True
+L1C9,1,9,shuffled,0,Tax Design and Government Budgets,"[9, 8, 6, 2, 4]",0,"[3, 3, 3, 3, 3]",0.2,False
+L1C9,1,9,gimme,0,Introductory Central European Nordic Languages,"[9, 63, 28, 95, 71]",0,"[90, 0, 0, 0, 0]",1.0,True
+L1C10,1,10,gold,0,Individual Instrumental Instruction For Majors,"[22, 10, 21, 19, 20]",1,"[10, 95, 15, 5, 5]",0.7307692307692307,True
+L1C10,1,10,gold,1,Individual Instrumental Instruction For Majors,"[19, 22, 10, 21, 20]",2,"[10, 25, 95, 30, 5]",0.5757575757575758,True
+L1C10,1,10,gold,2,Individual Instrumental Instruction For Majors,"[20, 22, 10, 21, 19]",2,"[5, 15, 95, 20, 3]",0.6884057971014492,True
+L1C10,1,10,shuffled,0,Western Political Philosophy From Machiavelli,"[19, 22, 10, 20, 21]",2,"[10, 5, 5, 5, 5]",0.16666666666666666,False
+L1C10,1,10,gimme,0,Individual Instrumental Instruction For Majors,"[98, 60, 23, 78, 10]",4,"[2, 2, 3, 2, 98]",0.9158878504672897,True
+L1C11,1,11,gold,0,Academic English Literacy And Teaching Methods,"[4, 9, 6, 2, 11]",4,"[20, 10, 15, 10, 80]",0.5925925925925926,True
+L1C11,1,11,gold,1,Academic English Literacy And Teaching Methods,"[6, 9, 4, 2, 11]",4,"[10, 10, 10, 10, 85]",0.68,True
+L1C11,1,11,gold,2,Academic English Literacy And Teaching Methods,"[11, 6, 2, 9, 4]",0,"[85, 8, 5, 5, 5]",0.7870370370370371,True
+L1C11,1,11,shuffled,0,Computer Music And Audio Technology,"[4, 6, 2, 9, 11]",4,"[5, 5, 5, 5, 10]",0.3333333333333333,True
+L1C11,1,11,gimme,0,Academic English Literacy And Teaching Methods,"[47, 95, 10, 11, 44]",3,"[2, 3, 1, 92, 1]",0.9292929292929293,True
+L1C13,1,13,gold,0,Modern and Classical Chinese Reading Sequences,"[14, 2, 7, 8, 13]",4,"[40, 5, 10, 2, 92]",0.6174496644295302,True
+L1C13,1,13,gold,1,Modern and Classical Chinese Reading Sequences,"[13, 14, 7, 2, 8]",0,"[90, 30, 20, 10, 5]",0.5806451612903226,True
+L1C13,1,13,gold,2,Modern and Classical Chinese Reading Sequences,"[13, 8, 14, 2, 7]",0,"[90, 10, 40, 15, 10]",0.5454545454545454,True
+L1C13,1,13,shuffled,0,"Applied Analysis, Linear Algebra, Computation","[13, 14, 7, 8, 2]",0,"[5, 5, 5, 5, 5]",0.2,False
+L1C13,1,13,gimme,0,Modern and Classical Chinese Reading Sequences,"[69, 53, 13, 37, 10]",2,"[2, 1, 98, 1, 1]",0.9514563106796117,True
+L1C15,1,15,gold,0,Agroecology Farming And Food System Innovation,"[82, 79, 15, 74, 73]",2,"[3, 2, 92, 15, 20]",0.696969696969697,True
+L1C15,1,15,gold,1,Agroecology Farming And Food System Innovation,"[74, 15, 73, 79, 82]",1,"[15, 90, 30, 0, 0]",0.6666666666666666,True
+L1C15,1,15,gold,2,Agroecology Farming And Food System Innovation,"[74, 82, 73, 15, 79]",3,"[15, 3, 20, 85, 2]",0.68,True
+L1C15,1,15,shuffled,0,Ancient Mediterranean Archaeology and Medieval Worlds,"[82, 73, 15, 79, 74]",2,"[5, 3, 3, 8, 2]",0.14285714285714285,False
+L1C15,1,15,gimme,0,Agroecology Farming And Food System Innovation,"[18, 15, 13, 10, 99]",1,"[0, 95, 0, 0, 0]",1.0,True
+L1C17,1,17,gold,0,Dance Technique And Choreography Courses,"[17, 90, 22, 21, 18]",0,"[90, 10, 15, 10, 15]",0.6428571428571429,True
+L1C17,1,17,gold,1,Dance Technique And Choreography Courses,"[17, 21, 90, 22, 18]",0,"[90, 5, 10, 8, 15]",0.703125,True
+L1C17,1,17,gold,2,Dance Technique And Choreography Courses,"[21, 22, 90, 18, 17]",4,"[5, 10, 10, 15, 97]",0.708029197080292,True
+L1C17,1,17,shuffled,0,Japanese and Korean Proficiency Sequences,"[90, 17, 22, 21, 18]",1,"[3, 3, 8, 10, 2]",0.11538461538461539,False
+L1C17,1,17,gimme,0,Dance Technique And Choreography Courses,"[17, 97, 102, 99, 52]",0,"[95, 0, 0, 0, 0]",1.0,True
+L1C18,1,18,gold,0,Theater Performance Studies and Dramaturgy,"[109, 83, 19, 18, 118]",3,"[5, 3, 10, 97, 3]",0.8220338983050848,True
+L1C18,1,18,gold,1,Theater Performance Studies and Dramaturgy,"[109, 19, 83, 18, 118]",3,"[8, 15, 3, 96, 5]",0.7559055118110236,True
+L1C18,1,18,gold,2,Theater Performance Studies and Dramaturgy,"[83, 18, 118, 19, 109]",1,"[5, 96, 3, 8, 4]",0.8275862068965517,True
+L1C18,1,18,shuffled,0,Comparative Religious Studies And Theology,"[19, 109, 118, 18, 83]",3,"[10, 65, 15, 10, 5]",0.09523809523809523,False
+L1C18,1,18,gimme,0,Theater Performance Studies and Dramaturgy,"[99, 51, 18, 64, 72]",2,"[10, 0, 95, 0, 0]",0.9047619047619048,True
+L1C21,1,21,gold,0,Instrument Classes Composition And Musicianship,"[21, 19, 10, 20, 22]",0,"[45, 15, 90, 20, 25]",0.23076923076923078,False
+L1C21,1,21,gold,1,Instrument Classes Composition And Musicianship,"[21, 22, 10, 19, 20]",0,"[55, 15, 90, 10, 5]",0.3142857142857143,False
+L1C21,1,21,gold,2,Instrument Classes Composition And Musicianship,"[22, 21, 20, 19, 10]",1,"[30, 60, 10, 5, 55]",0.375,True
+L1C21,1,21,shuffled,0,"Atmosphere, Ocean, and Climate Dynamics","[19, 21, 20, 10, 22]",1,"[5, 5, 5, 3, 5]",0.21739130434782608,False
+L1C21,1,21,gimme,0,Instrument Classes Composition And Musicianship,"[21, 117, 102, 55, 62]",0,"[95, 2, 2, 2, 2]",0.9223300970873787,True
+L1C23,1,23,gold,0,Marine Biology and Oceanography Fieldwork,"[58, 23, 67, 45, 73]",1,"[20, 95, 5, 30, 5]",0.6129032258064516,True
+L1C23,1,23,gold,1,Marine Biology and Oceanography Fieldwork,"[67, 73, 23, 45, 58]",2,"[10, 15, 95, 40, 20]",0.5277777777777778,True
+L1C23,1,23,gold,2,Marine Biology and Oceanography Fieldwork,"[73, 58, 23, 67, 45]",2,"[10, 25, 92, 5, 40]",0.5348837209302325,True
+L1C23,1,23,shuffled,0,Novel Form From Romance To Modernism,"[58, 67, 73, 23, 45]",3,"[3, 2, 1, 1, 1]",0.125,False
+L1C23,1,23,gimme,0,Marine Biology and Oceanography Fieldwork,"[29, 23, 8, 84, 109]",1,"[2, 95, 0, 0, 0]",0.979381443298969,True
+L1C29,1,29,gold,0,Medical Imaging and Radiation Oncology,"[63, 62, 29, 59, 56]",2,"[5, 15, 95, 20, 5]",0.6785714285714286,True
+L1C29,1,29,gold,1,Medical Imaging and Radiation Oncology,"[62, 59, 63, 56, 29]",4,"[15, 20, 5, 10, 95]",0.6551724137931034,True
+L1C29,1,29,gold,2,Medical Imaging and Radiation Oncology,"[63, 59, 29, 56, 62]",2,"[10, 30, 92, 15, 15]",0.5679012345679012,True
+L1C29,1,29,shuffled,0,Early Modern Europe Global Encounters,"[59, 63, 56, 62, 29]",4,"[10, 10, 10, 10, 10]",0.2,False
+L1C29,1,29,gimme,0,Medical Imaging and Radiation Oncology,"[109, 29, 105, 111, 10]",1,"[0, 97, 0, 0, 0]",1.0,True
+L1C31,1,31,gold,0,"Graduate Algebra, Geometry, Topology","[31, 68, 27, 32, 54]",0,"[95, 3, 5, 10, 8]",0.7851239669421488,True
+L1C31,1,31,gold,1,"Graduate Algebra, Geometry, Topology","[68, 32, 31, 27, 54]",2,"[3, 10, 95, 5, 8]",0.7851239669421488,True
+L1C31,1,31,gold,2,"Graduate Algebra, Geometry, Topology","[54, 68, 27, 32, 31]",4,"[10, 5, 15, 20, 92]",0.647887323943662,True
+L1C31,1,31,shuffled,0,Lyric Craft and Poetic Form,"[54, 27, 31, 68, 32]",2,"[5, 3, 8, 3, 5]",0.3333333333333333,True
+L1C31,1,31,gimme,0,"Graduate Algebra, Geometry, Topology","[3, 111, 31, 10, 99]",2,"[2, 1, 95, 1, 1]",0.95,True
+L1C39,1,39,gold,0,Elasticity Plasticity And Structural Dynamics,"[49, 46, 30, 39, 48]",3,"[10, 5, 30, 75, 10]",0.5769230769230769,True
+L1C39,1,39,gold,1,Elasticity Plasticity And Structural Dynamics,"[39, 49, 46, 30, 48]",0,"[90, 5, 5, 20, 15]",0.6666666666666666,True
+L1C39,1,39,gold,2,Elasticity Plasticity And Structural Dynamics,"[49, 46, 39, 48, 30]",2,"[10, 5, 85, 15, 20]",0.6296296296296297,True
+L1C39,1,39,shuffled,0,"Asylum, Atrocity Accountability, Border Governance","[30, 49, 46, 39, 48]",3,"[3, 5, 3, 3, 3]",0.17647058823529413,False
+L1C39,1,39,gimme,0,Elasticity Plasticity And Structural Dynamics,"[39, 60, 86, 113, 16]",0,"[95, 2, 2, 2, 2]",0.9223300970873787,True
+L1C40,1,40,gold,0,"Modern Physics, Quantum Mechanics, Astrophysics","[27, 30, 40, 50, 51]",2,"[15, 10, 90, 25, 20]",0.5625,True
+L1C40,1,40,gold,1,"Modern Physics, Quantum Mechanics, Astrophysics","[27, 30, 50, 40, 51]",3,"[10, 15, 20, 90, 25]",0.5625,True
+L1C40,1,40,gold,2,"Modern Physics, Quantum Mechanics, Astrophysics","[27, 50, 40, 30, 51]",2,"[15, 20, 92, 10, 25]",0.5679012345679012,True
+L1C40,1,40,shuffled,0,Intellectual Property Law,"[27, 50, 30, 51, 40]",4,"[10, 5, 5, 5, 5]",0.16666666666666666,False
+L1C40,1,40,gimme,0,"Modern Physics, Quantum Mechanics, Astrophysics","[40, 8, 12, 105, 94]",0,"[97, 0, 0, 0, 0]",1.0,True
+L1C48,1,48,gold,0,Prototyping Manufacturing And Capstone Design,"[30, 46, 39, 49, 48]",4,"[30, 45, 15, 5, 85]",0.4722222222222222,True
+L1C48,1,48,gold,1,Prototyping Manufacturing And Capstone Design,"[30, 49, 39, 46, 48]",4,"[30, 5, 20, 40, 85]",0.4722222222222222,True
+L1C48,1,48,gold,2,Prototyping Manufacturing And Capstone Design,"[39, 48, 46, 30, 49]",1,"[20, 85, 40, 25, 5]",0.4857142857142857,True
+L1C48,1,48,shuffled,0,Marine Biology and Oceanography Fieldwork,"[30, 49, 46, 39, 48]",4,"[10, 15, 5, 5, 5]",0.125,False
+L1C48,1,48,gimme,0,Prototyping Manufacturing And Capstone Design,"[61, 48, 23, 107, 53]",1,"[2, 95, 15, 2, 2]",0.8189655172413793,True
+L1C49,1,49,gold,0,Engineering Directed Research And Theses,"[39, 48, 30, 46, 49]",4,"[40, 5, 10, 25, 90]",0.5294117647058824,True
+L1C49,1,49,gold,1,Engineering Directed Research And Theses,"[49, 46, 30, 39, 48]",0,"[90, 25, 10, 15, 5]",0.6206896551724138,True
+L1C49,1,49,gold,2,Engineering Directed Research And Theses,"[46, 39, 30, 49, 48]",3,"[40, 10, 5, 90, 5]",0.6,True
+L1C49,1,49,shuffled,0,Comparative Religious Studies And Theology,"[30, 39, 46, 48, 49]",4,"[2, 2, 2, 2, 2]",0.2,False
+L1C49,1,49,gimme,0,Engineering Directed Research And Theses,"[0, 98, 87, 97, 49]",4,"[2, 1, 3, 30, 95]",0.7251908396946565,True
+L1C50,1,50,gold,0,"Physical, Organic, and Inorganic Chemistry","[30, 40, 50, 51, 66]",2,"[15, 10, 65, 20, 15]",0.52,True
+L1C50,1,50,gold,1,"Physical, Organic, and Inorganic Chemistry","[30, 66, 50, 51, 40]",2,"[25, 10, 75, 30, 10]",0.5,True
+L1C50,1,50,gold,2,"Physical, Organic, and Inorganic Chemistry","[50, 30, 40, 51, 66]",0,"[40, 25, 5, 15, 10]",0.42105263157894735,True
+L1C50,1,50,shuffled,0,Anthropological Theory and Ethnographic Methods,"[30, 66, 51, 50, 40]",3,"[2, 3, 3, 2, 3]",0.15384615384615385,False
+L1C50,1,50,gimme,0,"Physical, Organic, and Inorganic Chemistry","[107, 112, 102, 60, 50]",4,"[2, 1, 2, 3, 85]",0.9139784946236559,True
+L1C52,1,52,gold,0,Clinical Medical Genetics And Genetic Counseling,"[56, 53, 52, 65, 66]",2,"[15, 5, 97, 3, 2]",0.7950819672131147,True
+L1C52,1,52,gold,1,Clinical Medical Genetics And Genetic Counseling,"[66, 65, 53, 52, 56]",3,"[5, 8, 5, 97, 10]",0.776,True
+L1C52,1,52,gold,2,Clinical Medical Genetics And Genetic Counseling,"[56, 52, 65, 53, 66]",1,"[15, 97, 3, 5, 2]",0.7950819672131147,True
+L1C52,1,52,shuffled,0,"Biodesign, Digital Health Innovation","[65, 66, 52, 56, 53]",2,"[20, 30, 15, 10, 10]",0.17647058823529413,False
+L1C52,1,52,gimme,0,Clinical Medical Genetics And Genetic Counseling,"[12, 39, 106, 22, 52]",4,"[2, 1, 1, 0, 98]",0.9607843137254902,True
+L1C55,1,55,gold,0,"Biodesign, Digital Health Innovation","[53, 65, 59, 64, 55]",4,"[15, 10, 45, 10, 85]",0.5151515151515151,True
+L1C55,1,55,gold,1,"Biodesign, Digital Health Innovation","[53, 55, 59, 65, 64]",1,"[15, 85, 40, 10, 10]",0.53125,True
+L1C55,1,55,gold,2,"Biodesign, Digital Health Innovation","[64, 59, 65, 53, 55]",4,"[10, 45, 5, 5, 88]",0.5751633986928104,True
+L1C55,1,55,shuffled,0,"Entrepreneurship, Venture Growth And Go-To-Market","[65, 64, 59, 53, 55]",4,"[3, 8, 5, 3, 55]",0.7432432432432432,True
+L1C55,1,55,gimme,0,"Biodesign, Digital Health Innovation","[90, 114, 16, 55, 13]",3,"[10, 2, 2, 92, 2]",0.8518518518518519,True
+L1C66,1,66,gold,0,Molecular Biology and Biochemical Techniques,"[67, 58, 59, 56, 66]",4,"[75, 25, 40, 15, 55]",0.2619047619047619,False
+L1C66,1,66,gold,1,Molecular Biology and Biochemical Techniques,"[58, 59, 56, 66, 67]",3,"[15, 30, 10, 55, 40]",0.36666666666666664,True
+L1C66,1,66,gold,2,Molecular Biology and Biochemical Techniques,"[58, 67, 56, 59, 66]",4,"[25, 55, 10, 25, 45]",0.28125,False
+L1C66,1,66,shuffled,0,Education Policy and Comparative Schooling,"[58, 59, 66, 56, 67]",2,"[3, 2, 2, 2, 3]",0.16666666666666666,False
+L1C66,1,66,gimme,0,Molecular Biology and Biochemical Techniques,"[112, 61, 66, 11, 107]",2,"[2, 3, 78, 5, 2]",0.8666666666666667,True
+L1C68,1,68,gold,0,Provable Algorithms Optimization Randomized Sampling,"[68, 54, 32, 77, 76]",0,"[88, 20, 5, 5, 3]",0.7272727272727273,True
+L1C68,1,68,gold,1,Provable Algorithms Optimization Randomized Sampling,"[76, 77, 32, 54, 68]",4,"[5, 5, 8, 30, 75]",0.6097560975609756,True
+L1C68,1,68,gold,2,Provable Algorithms Optimization Randomized Sampling,"[76, 54, 68, 32, 77]",2,"[3, 30, 65, 5, 2]",0.6190476190476191,True
+L1C68,1,68,shuffled,0,Jewish Studies and Hebrew Language,"[77, 54, 76, 68, 32]",3,"[2, 2, 2, 2, 3]",0.18181818181818182,False
+L1C68,1,68,gimme,0,Provable Algorithms Optimization Randomized Sampling,"[110, 9, 60, 42, 68]",4,"[2, 1, 3, 2, 92]",0.92,True
+L1C70,1,70,gold,0,Leadership and Social-Impact Organizations,"[70, 75, 79, 41, 34]",0,"[85, 30, 25, 10, 15]",0.5151515151515151,True
+L1C70,1,70,gold,1,Leadership and Social-Impact Organizations,"[41, 79, 34, 70, 75]",3,"[5, 15, 10, 90, 30]",0.6,True
+L1C70,1,70,gold,2,Leadership and Social-Impact Organizations,"[79, 70, 75, 41, 34]",1,"[15, 85, 30, 5, 10]",0.5862068965517241,True
+L1C70,1,70,shuffled,0,Provable Algorithms Optimization Randomized Sampling,"[75, 34, 79, 41, 70]",4,"[3, 2, 3, 2, 3]",0.23076923076923078,False
+L1C70,1,70,gimme,0,Leadership and Social-Impact Organizations,"[70, 76, 19, 25, 92]",0,"[90, 2, 3, 8, 2]",0.8571428571428571,True
+L1C71,1,71,gold,0,AI Regulation Privacy Law Practicums,"[61, 72, 3, 71, 108]",3,"[55, 15, 25, 70, 10]",0.4,True
+L1C71,1,71,gold,1,AI Regulation Privacy Law Practicums,"[61, 108, 3, 72, 71]",4,"[40, 10, 25, 30, 85]",0.4473684210526316,True
+L1C71,1,71,gold,2,AI Regulation Privacy Law Practicums,"[3, 108, 71, 61, 72]",2,"[25, 10, 80, 55, 20]",0.42105263157894735,True
+L1C71,1,71,shuffled,0,"Developmental, Social, and Cultural Psychology","[72, 61, 108, 71, 3]",3,"[5, 5, 3, 5, 3]",0.23809523809523808,False
+L1C71,1,71,gimme,0,AI Regulation Privacy Law Practicums,"[62, 119, 54, 71, 53]",3,"[0, 2, 0, 92, 0]",0.9787234042553191,True
+L1C75,1,75,gold,0,"Entrepreneurship, Venture Growth And Go-To-Market","[57, 70, 84, 75, 81]",3,"[5, 15, 20, 90, 2]",0.6818181818181818,True
+L1C75,1,75,gold,1,"Entrepreneurship, Venture Growth And Go-To-Market","[81, 84, 75, 70, 57]",2,"[3, 30, 88, 15, 10]",0.6027397260273972,True
+L1C75,1,75,gold,2,"Entrepreneurship, Venture Growth And Go-To-Market","[57, 70, 75, 81, 84]",2,"[5, 15, 92, 2, 30]",0.6388888888888888,True
+L1C75,1,75,shuffled,0,Introductory Central European Nordic Languages,"[81, 84, 57, 75, 70]",3,"[15, 5, 3, 5, 3]",0.16129032258064516,False
+L1C75,1,75,gimme,0,"Entrepreneurship, Venture Growth And Go-To-Market","[9, 115, 10, 75, 51]",3,"[0, 0, 0, 95, 0]",1.0,True
+L1C77,1,77,gold,0,CS Supplemental Labs and Research,"[25, 43, 77, 76, 68]",2,"[15, 5, 85, 30, 10]",0.5862068965517241,True
+L1C77,1,77,gold,1,CS Supplemental Labs and Research,"[77, 76, 43, 25, 68]",0,"[85, 25, 10, 10, 15]",0.5862068965517241,True
+L1C77,1,77,gold,2,CS Supplemental Labs and Research,"[43, 76, 25, 77, 68]",3,"[15, 30, 20, 70, 10]",0.4827586206896552,True
+L1C77,1,77,shuffled,0,Modern and Classical Chinese Reading Sequences,"[25, 77, 76, 43, 68]",1,"[3, 5, 3, 2, 2]",0.3333333333333333,True
+L1C77,1,77,gimme,0,CS Supplemental Labs and Research,"[97, 77, 91, 64, 106]",1,"[2, 90, 1, 2, 1]",0.9375,True
+L1C79,1,79,gold,0,"Urban Sociology, Housing and Inequality","[73, 112, 114, 79, 103]",3,"[5, 20, 10, 85, 5]",0.68,True
+L1C79,1,79,gold,1,"Urban Sociology, Housing and Inequality","[114, 112, 103, 79, 73]",3,"[10, 15, 8, 85, 5]",0.6910569105691057,True
+L1C79,1,79,gold,2,"Urban Sociology, Housing and Inequality","[73, 112, 79, 114, 103]",2,"[5, 25, 85, 10, 10]",0.6296296296296297,True
+L1C79,1,79,shuffled,0,Political Science Research Methods Workshops,"[112, 103, 73, 114, 79]",4,"[15, 20, 10, 35, 30]",0.2727272727272727,False
+L1C79,1,79,gimme,0,"Urban Sociology, Housing and Inequality","[63, 29, 36, 79, 28]",3,"[2, 2, 3, 95, 5]",0.8878504672897196,True
+L1C81,1,81,gold,0,Tax Design and Government Budgets,"[104, 85, 81, 78, 95]",2,"[10, 25, 80, 15, 15]",0.5517241379310345,True
+L1C81,1,81,gold,1,Tax Design and Government Budgets,"[85, 104, 78, 95, 81]",4,"[15, 5, 8, 10, 70]",0.6481481481481481,True
+L1C81,1,81,gold,2,Tax Design and Government Budgets,"[104, 78, 95, 85, 81]",4,"[3, 5, 8, 15, 85]",0.7327586206896551,True
+L1C81,1,81,shuffled,0,"Modern Physics, Quantum Mechanics, Astrophysics","[95, 81, 104, 78, 85]",1,"[2, 2, 2, 3, 2]",0.18181818181818182,False
+L1C81,1,81,gimme,0,Tax Design and Government Budgets,"[7, 88, 52, 81, 77]",3,"[0, 3, 2, 85, 0]",0.9444444444444444,True
+L1C88,1,88,gold,0,Iberian And Latin American Letters,"[118, 115, 88, 119, 109]",2,"[40, 10, 95, 5, 3]",0.6209150326797386,True
+L1C88,1,88,gold,1,Iberian And Latin American Letters,"[109, 88, 118, 115, 119]",1,"[5, 95, 40, 5, 3]",0.6418918918918919,True
+L1C88,1,88,gold,2,Iberian And Latin American Letters,"[118, 119, 109, 115, 88]",4,"[40, 5, 5, 10, 95]",0.6129032258064516,True
+L1C88,1,88,shuffled,0,"Moral Theory, Responsibility, Metaethical Foundations","[109, 118, 115, 119, 88]",4,"[40, 10, 10, 15, 10]",0.11764705882352941,False
+L1C88,1,88,gimme,0,Iberian And Latin American Letters,"[78, 88, 49, 51, 70]",1,"[0, 95, 0, 0, 0]",1.0,True
+L1C89,1,89,gold,0,Modern Art Institutions and Marginality,"[106, 114, 89, 90, 109]",2,"[10, 15, 75, 20, 10]",0.5769230769230769,True
+L1C89,1,89,gold,1,Modern Art Institutions and Marginality,"[106, 109, 90, 114, 89]",4,"[10, 15, 20, 15, 80]",0.5714285714285714,True
+L1C89,1,89,gold,2,Modern Art Institutions and Marginality,"[114, 109, 106, 90, 89]",4,"[15, 20, 15, 20, 75]",0.5172413793103449,True
+L1C89,1,89,shuffled,0,Geophysics and Earth-Planetary Systems,"[89, 114, 109, 106, 90]",0,"[5, 8, 5, 10, 3]",0.16129032258064516,False
+L1C89,1,89,gimme,0,Modern Art Institutions and Marginality,"[37, 89, 55, 56, 46]",1,"[3, 85, 2, 1, 1]",0.9239130434782609,True
+L1C95,1,95,gold,0,China Reform and Global Development History,"[81, 95, 85, 96, 104]",1,"[10, 60, 15, 5, 3]",0.6451612903225806,True
+L1C95,1,95,gold,1,China Reform and Global Development History,"[81, 85, 96, 104, 95]",4,"[25, 10, 10, 5, 60]",0.5454545454545454,True
+L1C95,1,95,gold,2,China Reform and Global Development History,"[104, 81, 85, 95, 96]",3,"[5, 10, 15, 60, 5]",0.631578947368421,True
+L1C95,1,95,shuffled,0,Neuroscience from Synapses to Cognition,"[81, 95, 85, 96, 104]",1,"[3, 3, 3, 2, 2]",0.23076923076923078,False
+L1C95,1,95,gimme,0,China Reform and Global Development History,"[4, 29, 30, 95, 53]",3,"[2, 1, 1, 75, 1]",0.9375,True
+L1C96,1,96,gold,0,Western Political Philosophy From Machiavelli,"[104, 96, 116, 93, 117]",1,"[15, 75, 10, 15, 15]",0.5769230769230769,True
+L1C96,1,96,gold,1,Western Political Philosophy From Machiavelli,"[104, 96, 93, 116, 117]",1,"[15, 80, 10, 5, 15]",0.64,True
+L1C96,1,96,gold,2,Western Political Philosophy From Machiavelli,"[93, 116, 117, 96, 104]",3,"[15, 5, 20, 80, 15]",0.5925925925925926,True
+L1C96,1,96,shuffled,0,Iberian And Latin American Letters,"[116, 104, 93, 96, 117]",3,"[15, 5, 10, 10, 30]",0.14285714285714285,False
+L1C96,1,96,gimme,0,Western Political Philosophy From Machiavelli,"[31, 24, 77, 96, 27]",3,"[2, 1, 1, 85, 1]",0.9444444444444444,True
+L1C97,1,97,gold,0,International Security and Foreign Policy,"[99, 116, 93, 97, 98]",3,"[20, 25, 55, 90, 10]",0.45,True
+L1C97,1,97,gold,1,International Security and Foreign Policy,"[99, 93, 98, 97, 116]",3,"[30, 55, 10, 90, 20]",0.43902439024390244,True
+L1C97,1,97,gold,2,International Security and Foreign Policy,"[98, 99, 93, 97, 116]",3,"[5, 20, 40, 90, 10]",0.5454545454545454,True
+L1C97,1,97,shuffled,0,Integrated Organ System Pathophysiology,"[98, 116, 99, 97, 93]",3,"[2, 2, 2, 2, 2]",0.2,False
+L1C97,1,97,gimme,0,International Security and Foreign Policy,"[43, 40, 58, 97, 110]",3,"[2, 1, 1, 95, 1]",0.95,True
+L1C100,1,100,gold,0,"Asylum, Atrocity Accountability, Border Governance","[100, 93, 102, 112, 107]",0,"[75, 70, 15, 30, 15]",0.36585365853658536,True
+L1C100,1,100,gold,1,"Asylum, Atrocity Accountability, Border Governance","[93, 102, 112, 100, 107]",3,"[55, 10, 40, 85, 8]",0.4292929292929293,True
+L1C100,1,100,gold,2,"Asylum, Atrocity Accountability, Border Governance","[107, 93, 112, 100, 102]",3,"[15, 55, 40, 75, 10]",0.38461538461538464,True
+L1C100,1,100,shuffled,0,Curricular Practical Training Internships,"[100, 107, 112, 93, 102]",0,"[75, 20, 30, 15, 25]",0.45454545454545453,True
+L1C100,1,100,gimme,0,"Asylum, Atrocity Accountability, Border Governance","[76, 59, 0, 100, 33]",3,"[0, 0, 0, 95, 0]",1.0,True
+L1C102,1,102,gold,0,Criminal Justice Doctrine And Clinics,"[108, 107, 105, 102, 100]",3,"[10, 30, 15, 75, 10]",0.5357142857142857,True
+L1C102,1,102,gold,1,Criminal Justice Doctrine And Clinics,"[102, 100, 107, 105, 108]",0,"[65, 40, 55, 15, 10]",0.35135135135135137,True
+L1C102,1,102,gold,2,Criminal Justice Doctrine And Clinics,"[107, 105, 102, 108, 100]",2,"[45, 15, 72, 15, 20]",0.4311377245508982,True
+L1C102,1,102,shuffled,0,Surgical Clerkships and Clinical Anatomy,"[105, 102, 107, 100, 108]",1,"[2, 2, 2, 3, 2]",0.18181818181818182,False
+L1C102,1,102,gimme,0,Criminal Justice Doctrine And Clinics,"[77, 10, 76, 102, 30]",3,"[2, 1, 2, 85, 1]",0.9340659340659341,True
+L1C103,1,103,gold,0,Anthropological Theory and Ethnographic Methods,"[79, 112, 114, 113, 103]",4,"[10, 15, 10, 8, 95]",0.6884057971014492,True
+L1C103,1,103,gold,1,Anthropological Theory and Ethnographic Methods,"[103, 113, 114, 79, 112]",0,"[95, 15, 10, 5, 10]",0.7037037037037037,True
+L1C103,1,103,gold,2,Anthropological Theory and Ethnographic Methods,"[112, 103, 113, 114, 79]",1,"[15, 92, 10, 5, 8]",0.7076923076923077,True
+L1C103,1,103,shuffled,0,Introductory Central European Nordic Languages,"[113, 112, 103, 114, 79]",2,"[10, 15, 20, 15, 10]",0.2857142857142857,True
+L1C103,1,103,gimme,0,Anthropological Theory and Ethnographic Methods,"[38, 30, 103, 14, 71]",2,"[2, 1, 97, 3, 1]",0.9326923076923077,True
+L1C105,1,105,gold,0,"Federal Courts, Amendments, Democratic Structure","[100, 104, 96, 105, 107]",3,"[10, 25, 15, 85, 20]",0.5483870967741935,True
+L1C105,1,105,gold,1,"Federal Courts, Amendments, Democratic Structure","[107, 104, 100, 96, 105]",4,"[30, 25, 5, 10, 90]",0.5625,True
+L1C105,1,105,gold,2,"Federal Courts, Amendments, Democratic Structure","[105, 100, 107, 104, 96]",0,"[85, 10, 30, 25, 15]",0.5151515151515151,True
+L1C105,1,105,shuffled,0,Clinical Psychiatry and Mental Health,"[100, 104, 107, 105, 96]",3,"[15, 5, 10, 5, 5]",0.125,False
+L1C105,1,105,gimme,0,"Federal Courts, Amendments, Democratic Structure","[45, 29, 10, 17, 105]",4,"[0, 0, 0, 0, 97]",1.0,True
+L1C111,1,111,gold,0,African Slavery and Historical Methods,"[114, 111, 101, 117, 106]",1,"[20, 75, 40, 30, 10]",0.42857142857142855,True
+L1C111,1,111,gold,1,African Slavery and Historical Methods,"[111, 106, 101, 114, 117]",0,"[65, 10, 30, 20, 35]",0.40625,True
+L1C111,1,111,gold,2,African Slavery and Historical Methods,"[114, 117, 101, 111, 106]",3,"[30, 55, 45, 70, 10]",0.3333333333333333,True
+L1C111,1,111,shuffled,0,Surgical Clerkships and Clinical Anatomy,"[101, 106, 114, 117, 111]",4,"[3, 2, 2, 2, 2]",0.18181818181818182,False
+L1C111,1,111,gimme,0,African Slavery and Historical Methods,"[63, 111, 50, 39, 67]",1,"[2, 90, 1, 1, 3]",0.9278350515463918,True
+L1C117,1,117,gold,0,Anglo-American Revolutions and Survey Histories,"[101, 116, 114, 111, 117]",4,"[25, 15, 10, 10, 75]",0.5555555555555556,True
+L1C117,1,117,gold,1,Anglo-American Revolutions and Survey Histories,"[114, 116, 111, 101, 117]",4,"[15, 10, 10, 25, 80]",0.5714285714285714,True
+L1C117,1,117,gold,2,Anglo-American Revolutions and Survey Histories,"[111, 116, 101, 114, 117]",4,"[10, 15, 30, 10, 80]",0.5517241379310345,True
+L1C117,1,117,shuffled,0,Neuroscience from Synapses to Cognition,"[116, 114, 111, 101, 117]",4,"[3, 3, 3, 3, 3]",0.2,False
+L1C117,1,117,gimme,0,Anglo-American Revolutions and Survey Histories,"[23, 117, 14, 45, 75]",1,"[2, 92, 3, 2, 2]",0.9108910891089109,True
+L2C0,2,0,gold,0,"Independent Study, Research, and CPT","[10, 0, 32, 28, 31]",1,"[10, 90, 40, 15, 5]",0.5625,True
+L2C0,2,0,gold,1,"Independent Study, Research, and CPT","[10, 0, 28, 31, 32]",1,"[10, 90, 15, 5, 30]",0.6,True
+L2C0,2,0,gold,2,"Independent Study, Research, and CPT","[31, 0, 10, 32, 28]",1,"[3, 92, 5, 15, 5]",0.7666666666666667,True
+L2C0,2,0,shuffled,0,"Legal Profession, Drafting, Dispute Resolution","[32, 31, 28, 0, 10]",3,"[40, 10, 15, 15, 10]",0.16666666666666666,False
+L2C0,2,0,gimme,0,"Independent Study, Research, and CPT","[35, 7, 9, 0, 26]",3,"[3, 2, 1, 95, 2]",0.9223300970873787,True
+L2C1,2,1,gold,0,Slavic Central European Language Courses,"[31, 4, 3, 1, 2]",3,"[2, 5, 10, 90, 15]",0.7377049180327869,True
+L2C1,2,1,gold,1,Slavic Central European Language Courses,"[2, 31, 4, 1, 3]",3,"[10, 2, 15, 95, 5]",0.7480314960629921,True
+L2C1,2,1,gold,2,Slavic Central European Language Courses,"[1, 3, 31, 4, 2]",0,"[85, 15, 5, 20, 25]",0.5666666666666667,True
+L2C1,2,1,shuffled,0,Quantum Physics and Materials Chemistry,"[2, 31, 4, 1, 3]",3,"[5, 5, 3, 3, 3]",0.15789473684210525,False
+L2C1,2,1,gimme,0,Slavic Central European Language Courses,"[11, 15, 21, 9, 1]",4,"[2, 1, 1, 1, 85]",0.9444444444444444,True
+L2C2,2,2,gold,0,European Languages and Linguistics,"[2, 1, 3, 4, 31]",0,"[45, 85, 15, 15, 5]",0.2727272727272727,False
+L2C2,2,2,gold,1,European Languages and Linguistics,"[31, 2, 4, 1, 3]",1,"[10, 35, 15, 85, 10]",0.22580645161290322,False
+L2C2,2,2,gold,2,European Languages and Linguistics,"[2, 4, 31, 3, 1]",0,"[40, 5, 10, 15, 90]",0.25,False
+L2C2,2,2,shuffled,0,Leadership and Social-Impact Organizations,"[2, 3, 4, 31, 1]",0,"[10, 5, 5, 30, 3]",0.18867924528301888,False
+L2C2,2,2,gimme,0,European Languages and Linguistics,"[2, 13, 12, 11, 22]",0,"[95, 2, 1, 3, 1]",0.9313725490196079,True
+L2C3,2,3,gold,0,Asian and Middle Eastern Languages,"[3, 35, 4, 1, 2]",0,"[92, 2, 10, 15, 10]",0.7131782945736435,True
+L2C3,2,3,gold,1,Asian and Middle Eastern Languages,"[1, 4, 2, 35, 3]",4,"[30, 15, 10, 0, 90]",0.6206896551724138,True
+L2C3,2,3,gold,2,Asian and Middle Eastern Languages,"[35, 2, 4, 1, 3]",4,"[2, 15, 20, 10, 90]",0.656934306569343,True
+L2C3,2,3,shuffled,0,"Urban Sociology, Housing and Inequality","[3, 1, 35, 4, 2]",0,"[5, 3, 10, 3, 8]",0.1724137931034483,False
+L2C3,2,3,gimme,0,Asian and Middle Eastern Languages,"[26, 22, 23, 3, 21]",3,"[0, 0, 0, 95, 0]",1.0,True
+L2C4,2,4,gold,0,African Asian Pacific Language Courses,"[2, 4, 3, 1, 31]",1,"[15, 95, 60, 10, 0]",0.5277777777777778,True
+L2C4,2,4,gold,1,African Asian Pacific Language Courses,"[3, 2, 4, 1, 31]",2,"[40, 20, 95, 10, 0]",0.5757575757575758,True
+L2C4,2,4,gold,2,African Asian Pacific Language Courses,"[1, 4, 3, 2, 31]",1,"[10, 85, 75, 15, 0]",0.4594594594594595,True
+L2C4,2,4,shuffled,0,Public Health Equity and Policy,"[31, 4, 2, 3, 1]",1,"[5, 3, 10, 5, 3]",0.11538461538461539,False
+L2C4,2,4,gimme,0,African Asian Pacific Language Courses,"[4, 20, 9, 8, 25]",0,"[95, 0, 0, 0, 0]",1.0,True
+L2C5,2,5,gold,0,Theater and Dance Performance Studies,"[5, 7, 34, 6, 35]",0,"[95, 20, 30, 15, 5]",0.5757575757575758,True
+L2C5,2,5,gold,1,Theater and Dance Performance Studies,"[5, 34, 6, 7, 35]",0,"[95, 25, 15, 10, 5]",0.6333333333333333,True
+L2C5,2,5,gold,2,Theater and Dance Performance Studies,"[34, 35, 5, 6, 7]",2,"[30, 5, 95, 25, 10]",0.5757575757575758,True
+L2C5,2,5,shuffled,0,"Computer Systems, Algorithms, and Research","[34, 7, 6, 35, 5]",4,"[5, 3, 3, 2, 3]",0.1875,False
+L2C5,2,5,gimme,0,Theater and Dance Performance Studies,"[22, 23, 5, 41, 24]",2,"[2, 3, 97, 2, 2]",0.9150943396226415,True
+L2C6,2,6,gold,0,Musicology and Computer Music,"[34, 6, 5, 31, 7]",1,"[5, 75, 15, 5, 65]",0.45454545454545453,True
+L2C6,2,6,gold,1,Musicology and Computer Music,"[6, 34, 5, 7, 31]",0,"[78, 5, 15, 55, 3]",0.5,True
+L2C6,2,6,gold,2,Musicology and Computer Music,"[7, 34, 6, 5, 31]",2,"[75, 2, 85, 15, 5]",0.46703296703296704,True
+L2C6,2,6,shuffled,0,Asian and Middle Eastern Languages,"[31, 5, 34, 7, 6]",4,"[15, 10, 20, 5, 8]",0.13793103448275862,False
+L2C6,2,6,gimme,0,Musicology and Computer Music,"[6, 39, 8, 41, 22]",0,"[95, 0, 0, 0, 0]",1.0,True
+L2C7,2,7,gold,0,Music Lessons and Performing Ensembles,"[0, 7, 34, 5, 6]",1,"[5, 95, 2, 20, 40]",0.5864197530864198,True
+L2C7,2,7,gold,1,Music Lessons and Performing Ensembles,"[7, 0, 5, 6, 34]",0,"[95, 10, 30, 40, 5]",0.5277777777777778,True
+L2C7,2,7,gold,2,Music Lessons and Performing Ensembles,"[34, 6, 5, 7, 0]",3,"[5, 40, 15, 95, 0]",0.6129032258064516,True
+L2C7,2,7,shuffled,0,Financial Economics and Corporate Finance,"[34, 7, 0, 5, 6]",1,"[2, 2, 3, 2, 2]",0.18181818181818182,False
+L2C7,2,7,gimme,0,Music Lessons and Performing Ensembles,"[8, 7, 12, 21, 41]",1,"[2, 97, 1, 1, 1]",0.9509803921568627,True
+L2C8,2,8,gold,0,"Philosophy: Metaphysics, Epistemology, Ethics","[14, 40, 8, 27, 37]",2,"[10, 15, 97, 15, 3]",0.6928571428571428,True
+L2C8,2,8,gold,1,"Philosophy: Metaphysics, Epistemology, Ethics","[8, 40, 14, 37, 27]",0,"[95, 15, 10, 3, 10]",0.7142857142857143,True
+L2C8,2,8,gold,2,"Philosophy: Metaphysics, Epistemology, Ethics","[40, 8, 14, 37, 27]",1,"[15, 95, 10, 5, 10]",0.7037037037037037,True
+L2C8,2,8,shuffled,0,Geophysics and Earth System Dynamics,"[8, 27, 14, 40, 37]",0,"[5, 3, 3, 2, 5]",0.2777777777777778,False
+L2C8,2,8,gimme,0,"Philosophy: Metaphysics, Epistemology, Ethics","[30, 13, 4, 8, 19]",3,"[5, 3, 2, 95, 2]",0.8878504672897196,True
+L2C9,2,9,gold,0,Physical Education Fitness and Sports,"[0, 14, 9, 24, 23]",2,"[5, 10, 97, 8, 8]",0.7578125,True
+L2C9,2,9,gold,1,Physical Education Fitness and Sports,"[24, 9, 14, 0, 23]",1,"[2, 97, 3, 5, 2]",0.8899082568807339,True
+L2C9,2,9,gold,2,Physical Education Fitness and Sports,"[23, 0, 9, 14, 24]",2,"[10, 5, 97, 8, 3]",0.7886178861788617,True
+L2C9,2,9,shuffled,0,Molecular Biology and Bioengineering,"[24, 9, 14, 0, 23]",1,"[40, 2, 10, 15, 20]",0.022988505747126436,False
+L2C9,2,9,gimme,0,Physical Education Fitness and Sports,"[9, 8, 11, 12, 39]",0,"[98, 2, 3, 3, 2]",0.9074074074074074,True
+L2C10,2,10,gold,0,Education Policy and Teacher Preparation,"[14, 28, 10, 32, 0]",2,"[5, 8, 90, 10, 3]",0.7758620689655172,True
+L2C10,2,10,gold,1,Education Policy and Teacher Preparation,"[32, 14, 28, 0, 10]",4,"[10, 5, 8, 5, 78]",0.7358490566037735,True
+L2C10,2,10,gold,2,Education Policy and Teacher Preparation,"[10, 0, 32, 28, 14]",0,"[90, 10, 15, 10, 15]",0.6428571428571429,True
+L2C10,2,10,shuffled,0,"Global History, Race, and Empire","[0, 28, 32, 10, 14]",3,"[10, 5, 15, 10, 5]",0.2222222222222222,False
+L2C10,2,10,gimme,0,Education Policy and Teacher Preparation,"[7, 22, 17, 38, 10]",4,"[2, 3, 3, 5, 90]",0.8737864077669902,True
+L2C11,2,11,gold,0,Pure and Applied Mathematics Courses,"[12, 0, 26, 16, 11]",4,"[10, 5, 15, 10, 95]",0.7037037037037037,True
+L2C11,2,11,gold,1,Pure and Applied Mathematics Courses,"[11, 16, 0, 26, 12]",0,"[90, 5, 10, 25, 10]",0.6428571428571429,True
+L2C11,2,11,gold,2,Pure and Applied Mathematics Courses,"[26, 12, 16, 0, 11]",4,"[20, 10, 15, 5, 90]",0.6428571428571429,True
+L2C11,2,11,shuffled,0,Education Policy and Teacher Preparation,"[26, 12, 11, 16, 0]",2,"[5, 3, 2, 2, 15]",0.07407407407407407,False
+L2C11,2,11,gimme,0,Pure and Applied Mathematics Courses,"[33, 11, 35, 40, 38]",1,"[0, 95, 0, 0, 0]",1.0,True
+L2C12,2,12,gold,0,Aerospace Engineering and Fluid Mechanics,"[17, 12, 19, 16, 13]",1,"[15, 55, 5, 20, 25]",0.4583333333333333,True
+L2C12,2,12,gold,1,Aerospace Engineering and Fluid Mechanics,"[16, 17, 12, 13, 19]",2,"[30, 25, 75, 40, 5]",0.42857142857142855,True
+L2C12,2,12,gold,2,Aerospace Engineering and Fluid Mechanics,"[16, 19, 13, 12, 17]",3,"[25, 10, 30, 70, 25]",0.4375,True
+L2C12,2,12,shuffled,0,African Asian Pacific Language Courses,"[13, 19, 16, 17, 12]",4,"[2, 2, 2, 2, 2]",0.2,False
+L2C12,2,12,gimme,0,Aerospace Engineering and Fluid Mechanics,"[15, 12, 4, 5, 1]",1,"[2, 85, 0, 1, 0]",0.9659090909090909,True
+L2C13,2,13,gold,0,Structural Engineering and Architectural Design,"[16, 12, 13, 17, 0]",2,"[5, 40, 65, 20, 3]",0.48872180451127817,True
+L2C13,2,13,gold,1,Structural Engineering and Architectural Design,"[13, 16, 0, 12, 17]",0,"[60, 3, 5, 55, 20]",0.4195804195804196,True
+L2C13,2,13,gold,2,Structural Engineering and Architectural Design,"[16, 17, 0, 12, 13]",4,"[2, 30, 3, 45, 75]",0.4838709677419355,True
+L2C13,2,13,shuffled,0,Musicology and Computer Music,"[12, 0, 13, 16, 17]",2,"[15, 10, 5, 5, 5]",0.125,False
+L2C13,2,13,gimme,0,Structural Engineering and Architectural Design,"[13, 41, 40, 7, 8]",0,"[90, 2, 2, 2, 2]",0.9183673469387755,True
+L2C14,2,14,gold,0,Psychology and Clinical Psychiatry,"[15, 28, 10, 23, 14]",4,"[40, 0, 0, 10, 75]",0.6,True
+L2C14,2,14,gold,1,Psychology and Clinical Psychiatry,"[28, 15, 14, 10, 23]",2,"[2, 55, 85, 1, 20]",0.5214723926380368,True
+L2C14,2,14,gold,2,Psychology and Clinical Psychiatry,"[23, 14, 28, 15, 10]",1,"[30, 75, 5, 45, 5]",0.46875,True
+L2C14,2,14,shuffled,0,European Languages and Linguistics,"[23, 15, 28, 14, 10]",3,"[5, 3, 3, 8, 3]",0.36363636363636365,True
+L2C14,2,14,gimme,0,Psychology and Clinical Psychiatry,"[14, 6, 4, 7, 11]",0,"[92, 15, 3, 3, 2]",0.8,True
+L2C15,2,15,gold,0,Neuroscience from Synapses to Cognition,"[22, 15, 21, 20, 14]",1,"[5, 95, 20, 10, 15]",0.6551724137931034,True
+L2C15,2,15,gold,1,Neuroscience from Synapses to Cognition,"[21, 22, 20, 14, 15]",4,"[20, 5, 10, 30, 92]",0.5859872611464968,True
+L2C15,2,15,gold,2,Neuroscience from Synapses to Cognition,"[15, 20, 21, 14, 22]",0,"[95, 15, 30, 20, 5]",0.5757575757575758,True
+L2C15,2,15,shuffled,0,African Asian Pacific Language Courses,"[21, 15, 22, 20, 14]",1,"[5, 5, 5, 5, 5]",0.2,False
+L2C15,2,15,gimme,0,Neuroscience from Synapses to Cognition,"[40, 30, 34, 15, 33]",3,"[2, 2, 1, 98, 1]",0.9423076923076923,True
+L2C16,2,16,gold,0,Quantum Physics and Materials Chemistry,"[19, 12, 17, 0, 16]",4,"[10, 15, 15, 5, 85]",0.6538461538461539,True
+L2C16,2,16,gold,1,Quantum Physics and Materials Chemistry,"[16, 19, 0, 17, 12]",0,"[92, 10, 5, 15, 8]",0.7076923076923077,True
+L2C16,2,16,gold,2,Quantum Physics and Materials Chemistry,"[12, 17, 19, 0, 16]",4,"[10, 10, 15, 5, 85]",0.68,True
+L2C16,2,16,shuffled,0,"Genetic Counseling, Epidemiology, and Bioethics","[17, 16, 19, 12, 0]",1,"[2, 15, 5, 3, 5]",0.5,True
+L2C16,2,16,gimme,0,Quantum Physics and Materials Chemistry,"[8, 33, 28, 16, 3]",3,"[2, 1, 1, 97, 1]",0.9509803921568627,True
+L2C17,2,17,gold,0,Electrical Engineering Devices and Design,"[13, 26, 17, 16, 12]",2,"[10, 15, 75, 30, 10]",0.5357142857142857,True
+L2C17,2,17,gold,1,Electrical Engineering Devices and Design,"[16, 13, 26, 12, 17]",4,"[30, 10, 15, 25, 85]",0.5151515151515151,True
+L2C17,2,17,gold,2,Electrical Engineering Devices and Design,"[16, 17, 12, 26, 13]",1,"[20, 75, 10, 5, 5]",0.6521739130434783,True
+L2C17,2,17,shuffled,0,Molecular Biology and Bioengineering,"[26, 17, 12, 13, 16]",1,"[3, 10, 15, 8, 20]",0.17857142857142858,False
+L2C17,2,17,gimme,0,Electrical Engineering Devices and Design,"[35, 5, 23, 17, 8]",3,"[2, 2, 3, 90, 2]",0.9090909090909091,True
+L2C18,2,18,gold,0,Climate Policy and Sustainability Governance,"[19, 18, 32, 0, 28]",1,"[20, 90, 30, 5, 5]",0.6,True
+L2C18,2,18,gold,1,Climate Policy and Sustainability Governance,"[19, 18, 0, 28, 32]",1,"[20, 88, 5, 30, 25]",0.5238095238095238,True
+L2C18,2,18,gold,2,Climate Policy and Sustainability Governance,"[28, 18, 19, 32, 0]",1,"[5, 88, 20, 30, 5]",0.5945945945945946,True
+L2C18,2,18,shuffled,0,Molecular Biology and Bioengineering,"[32, 19, 28, 0, 18]",4,"[2, 5, 3, 5, 10]",0.4,True
+L2C18,2,18,gimme,0,Climate Policy and Sustainability Governance,"[24, 26, 18, 9, 15]",2,"[0, 0, 95, 0, 0]",1.0,True
+L2C19,2,19,gold,0,Geophysics and Earth System Dynamics,"[19, 16, 12, 0, 18]",0,"[92, 15, 20, 10, 25]",0.5679012345679012,True
+L2C19,2,19,gold,1,Geophysics and Earth System Dynamics,"[12, 19, 0, 18, 16]",1,"[10, 92, 5, 20, 5]",0.696969696969697,True
+L2C19,2,19,gold,2,Geophysics and Earth System Dynamics,"[19, 12, 0, 18, 16]",0,"[95, 10, 15, 30, 10]",0.59375,True
+L2C19,2,19,shuffled,0,Theater and Dance Performance Studies,"[19, 0, 12, 16, 18]",0,"[2, 15, 2, 2, 2]",0.08695652173913043,False
+L2C19,2,19,gimme,0,Geophysics and Earth System Dynamics,"[40, 39, 24, 19, 27]",3,"[2, 2, 1, 98, 1]",0.9423076923076923,True
+L2C20,2,20,gold,0,Molecular Biology and Bioengineering,"[15, 22, 21, 20, 0]",3,"[15, 30, 25, 80, 5]",0.5161290322580645,True
+L2C20,2,20,gold,1,Molecular Biology and Bioengineering,"[22, 20, 21, 15, 0]",1,"[40, 75, 25, 10, 5]",0.4838709677419355,True
+L2C20,2,20,gold,2,Molecular Biology and Bioengineering,"[15, 22, 0, 20, 21]",3,"[15, 40, 5, 80, 25]",0.48484848484848486,True
+L2C20,2,20,shuffled,0,Ancient Mediterranean Archaeology and Medieval Worlds,"[21, 20, 0, 22, 15]",1,"[5, 3, 10, 2, 2]",0.13636363636363635,False
+L2C20,2,20,gimme,0,Molecular Biology and Bioengineering,"[27, 20, 3, 33, 34]",1,"[2, 95, 2, 2, 2]",0.9223300970873787,True
+L2C21,2,21,gold,0,"Genetic Counseling, Epidemiology, and Bioethics","[22, 21, 20, 24, 23]",1,"[10, 70, 15, 5, 25]",0.56,True
+L2C21,2,21,gold,1,"Genetic Counseling, Epidemiology, and Bioethics","[21, 22, 24, 23, 20]",0,"[80, 15, 10, 40, 10]",0.5161290322580645,True
+L2C21,2,21,gold,2,"Genetic Counseling, Epidemiology, and Bioethics","[21, 20, 23, 22, 24]",0,"[85, 15, 40, 10, 5]",0.5483870967741935,True
+L2C21,2,21,shuffled,0,"Global History, Race, and Empire","[22, 20, 24, 21, 23]",3,"[5, 5, 3, 15, 35]",0.23809523809523808,False
+L2C21,2,21,gimme,0,"Genetic Counseling, Epidemiology, and Bioethics","[38, 21, 13, 1, 6]",1,"[2, 88, 1, 1, 1]",0.946236559139785,True
+L2C22,2,22,gold,0,Biodesign and Organ System Medicine,"[23, 20, 22, 21, 24]",2,"[10, 35, 75, 25, 30]",0.42857142857142855,True
+L2C22,2,22,gold,1,Biodesign and Organ System Medicine,"[22, 21, 20, 24, 23]",0,"[85, 25, 40, 30, 15]",0.4358974358974359,True
+L2C22,2,22,gold,2,Biodesign and Organ System Medicine,"[22, 21, 24, 20, 23]",0,"[85, 20, 30, 40, 10]",0.4594594594594595,True
+L2C22,2,22,shuffled,0,"Urban Sociology, Housing and Inequality","[20, 23, 22, 24, 21]",2,"[3, 15, 5, 3, 5]",0.16129032258064516,False
+L2C22,2,22,gimme,0,Biodesign and Organ System Medicine,"[3, 22, 2, 34, 5]",1,"[0, 92, 0, 0, 0]",1.0,True
+L2C23,2,23,gold,0,Public Health Equity and Policy,"[24, 14, 21, 23, 22]",3,"[5, 10, 40, 85, 30]",0.5,True
+L2C23,2,23,gold,1,Public Health Equity and Policy,"[24, 21, 22, 23, 14]",3,"[5, 30, 15, 85, 5]",0.6071428571428571,True
+L2C23,2,23,gold,2,Public Health Equity and Policy,"[21, 22, 23, 24, 14]",2,"[30, 20, 85, 10, 5]",0.5666666666666667,True
+L2C23,2,23,shuffled,0,African Asian Pacific Language Courses,"[14, 22, 21, 24, 23]",4,"[15, 5, 10, 10, 20]",0.3333333333333333,True
+L2C23,2,23,gimme,0,Public Health Equity and Policy,"[23, 2, 13, 7, 19]",0,"[92, 3, 5, 2, 2]",0.8846153846153846,True
+L2C24,2,24,gold,0,Hospital Clerkship Rotations,"[9, 23, 22, 21, 24]",4,"[0, 5, 15, 10, 97]",0.7637795275590551,True
+L2C24,2,24,gold,1,Hospital Clerkship Rotations,"[23, 9, 21, 24, 22]",3,"[10, 0, 5, 97, 8]",0.8083333333333333,True
+L2C24,2,24,gold,2,Hospital Clerkship Rotations,"[22, 24, 21, 23, 9]",1,"[5, 97, 3, 4, 0]",0.8899082568807339,True
+L2C24,2,24,shuffled,0,"Legal Profession, Drafting, Dispute Resolution","[23, 21, 22, 24, 9]",3,"[10, 25, 5, 5, 0]",0.1111111111111111,False
+L2C24,2,24,gimme,0,Hospital Clerkship Rotations,"[35, 3, 4, 1, 24]",4,"[0, 0, 0, 0, 98]",1.0,True
+L2C25,2,25,gold,0,"AI Ethics, Design, and Governance","[10, 0, 31, 26, 25]",4,"[8, 3, 30, 25, 35]",0.3465346534653465,True
+L2C25,2,25,gold,1,"AI Ethics, Design, and Governance","[31, 25, 26, 10, 0]",1,"[30, 45, 20, 15, 2]",0.4017857142857143,True
+L2C25,2,25,gold,2,"AI Ethics, Design, and Governance","[31, 25, 0, 26, 10]",1,"[40, 30, 5, 15, 5]",0.3157894736842105,False
+L2C25,2,25,shuffled,0,Comparative Literature and Fiction Studies,"[0, 10, 25, 26, 31]",2,"[20, 5, 3, 2, 65]",0.031578947368421054,False
+L2C25,2,25,gimme,0,"AI Ethics, Design, and Governance","[11, 20, 16, 24, 25]",4,"[5, 3, 5, 2, 60]",0.8,True
+L2C26,2,26,gold,0,"Computer Systems, Algorithms, and Research","[26, 11, 16, 25, 17]",0,"[90, 10, 15, 55, 10]",0.5,True
+L2C26,2,26,gold,1,"Computer Systems, Algorithms, and Research","[17, 16, 11, 26, 25]",3,"[15, 10, 20, 85, 50]",0.4722222222222222,True
+L2C26,2,26,gold,2,"Computer Systems, Algorithms, and Research","[11, 17, 16, 25, 26]",4,"[30, 15, 25, 55, 80]",0.3902439024390244,True
+L2C26,2,26,shuffled,0,Molecular Biology and Bioengineering,"[17, 16, 11, 25, 26]",4,"[25, 40, 5, 10, 5]",0.058823529411764705,False
+L2C26,2,26,gimme,0,"Computer Systems, Algorithms, and Research","[1, 14, 5, 26, 24]",3,"[2, 10, 3, 95, 2]",0.8482142857142857,True
+L2C27,2,27,gold,0,Comparative Religious Studies And Theology,"[35, 27, 38, 8, 37]",1,"[5, 95, 30, 10, 15]",0.6129032258064516,True
+L2C27,2,27,gold,1,Comparative Religious Studies And Theology,"[35, 38, 27, 8, 37]",2,"[5, 25, 95, 10, 5]",0.6785714285714286,True
+L2C27,2,27,gold,2,Comparative Religious Studies And Theology,"[27, 38, 8, 37, 35]",0,"[95, 20, 15, 10, 5]",0.6551724137931034,True
+L2C27,2,27,shuffled,0,"AI Ethics, Design, and Governance","[35, 37, 27, 8, 38]",2,"[5, 8, 10, 72, 5]",0.1,False
+L2C27,2,27,gimme,0,Comparative Religious Studies And Theology,"[17, 29, 22, 13, 27]",4,"[0, 1, 2, 1, 98]",0.9607843137254902,True
+L2C28,2,28,gold,0,Leadership and Social-Impact Organizations,"[28, 29, 32, 14, 10]",0,"[88, 30, 40, 10, 45]",0.4131455399061033,True
+L2C28,2,28,gold,1,Leadership and Social-Impact Organizations,"[32, 10, 14, 29, 28]",4,"[15, 40, 5, 15, 85]",0.53125,True
+L2C28,2,28,gold,2,Leadership and Social-Impact Organizations,"[29, 32, 10, 14, 28]",4,"[20, 25, 35, 5, 80]",0.48484848484848486,True
+L2C28,2,28,shuffled,0,Slavic Central European Language Courses,"[14, 10, 32, 28, 29]",3,"[5, 5, 3, 3, 3]",0.15789473684210525,False
+L2C28,2,28,gimme,0,Leadership and Social-Impact Organizations,"[28, 13, 12, 5, 19]",0,"[90, 5, 5, 10, 2]",0.8035714285714286,True
+L2C29,2,29,gold,0,"Entrepreneurship, Venture Growth And Go-To-Market","[28, 29, 30, 0, 10]",1,"[40, 35, 30, 5, 2]",0.3125,False
+L2C29,2,29,gold,1,"Entrepreneurship, Venture Growth And Go-To-Market","[29, 10, 0, 28, 30]",0,"[75, 5, 10, 40, 25]",0.4838709677419355,True
+L2C29,2,29,gold,2,"Entrepreneurship, Venture Growth And Go-To-Market","[28, 30, 0, 10, 29]",4,"[30, 25, 5, 5, 45]",0.4090909090909091,True
+L2C29,2,29,shuffled,0,Comparative Religious Studies And Theology,"[29, 10, 28, 30, 0]",0,"[3, 20, 10, 5, 5]",0.06976744186046512,False
+L2C29,2,29,gimme,0,"Entrepreneurship, Venture Growth And Go-To-Market","[3, 8, 35, 29, 19]",3,"[2, 5, 3, 75, 1]",0.872093023255814,True
+L2C30,2,30,gold,0,Financial Economics and Corporate Finance,"[18, 29, 28, 41, 30]",4,"[2, 8, 5, 10, 80]",0.7619047619047619,True
+L2C30,2,30,gold,1,Financial Economics and Corporate Finance,"[30, 41, 28, 29, 18]",0,"[85, 15, 5, 20, 3]",0.6640625,True
+L2C30,2,30,gold,2,Financial Economics and Corporate Finance,"[28, 30, 29, 18, 41]",1,"[5, 85, 5, 2, 10]",0.794392523364486,True
+L2C30,2,30,shuffled,0,Slavic Central European Language Courses,"[29, 28, 30, 18, 41]",2,"[3, 3, 3, 3, 3]",0.2,False
+L2C30,2,30,gimme,0,Financial Economics and Corporate Finance,"[30, 7, 19, 27, 5]",0,"[78, 2, 2, 2, 2]",0.9069767441860465,True
+L2C31,2,31,gold,0,PWR Seminars on Media Rhetoric,"[35, 2, 31, 33, 37]",2,"[20, 15, 78, 30, 5]",0.527027027027027,True
+L2C31,2,31,gold,1,PWR Seminars on Media Rhetoric,"[33, 2, 31, 35, 37]",2,"[30, 15, 75, 20, 5]",0.5172413793103449,True
+L2C31,2,31,gold,2,PWR Seminars on Media Rhetoric,"[37, 2, 31, 35, 33]",2,"[10, 15, 85, 30, 25]",0.5151515151515151,True
+L2C31,2,31,shuffled,0,Legal Theory and Comparative Law,"[35, 2, 37, 31, 33]",3,"[20, 10, 15, 10, 5]",0.16666666666666666,False
+L2C31,2,31,gimme,0,PWR Seminars on Media Rhetoric,"[31, 12, 7, 13, 26]",0,"[85, 2, 5, 2, 3]",0.8762886597938144,True
+L2C32,2,32,gold,0,"Urban Sociology, Housing and Inequality","[37, 10, 32, 31, 18]",2,"[10, 15, 85, 5, 5]",0.7083333333333334,True
+L2C32,2,32,gold,1,"Urban Sociology, Housing and Inequality","[18, 32, 31, 10, 37]",1,"[5, 90, 2, 15, 8]",0.75,True
+L2C32,2,32,gold,2,"Urban Sociology, Housing and Inequality","[10, 37, 31, 32, 18]",3,"[10, 20, 3, 90, 5]",0.703125,True
+L2C32,2,32,shuffled,0,Slavic Central European Language Courses,"[32, 18, 10, 37, 31]",0,"[2, 2, 3, 30, 5]",0.047619047619047616,False
+L2C32,2,32,gimme,0,"Urban Sociology, Housing and Inequality","[32, 1, 26, 20, 11]",0,"[90, 2, 2, 3, 2]",0.9090909090909091,True
+L2C33,2,33,gold,0,Cinema History and Documentary Filmmaking,"[5, 33, 35, 34, 31]",1,"[15, 75, 10, 5, 5]",0.6818181818181818,True
+L2C33,2,33,gold,1,Cinema History and Documentary Filmmaking,"[33, 34, 31, 35, 5]",0,"[85, 10, 5, 15, 10]",0.68,True
+L2C33,2,33,gold,2,Cinema History and Documentary Filmmaking,"[5, 31, 35, 33, 34]",3,"[15, 5, 10, 90, 10]",0.6923076923076923,True
+L2C33,2,33,shuffled,0,Music Lessons and Performing Ensembles,"[33, 35, 5, 34, 31]",0,"[5, 5, 45, 20, 5]",0.0625,False
+L2C33,2,33,gimme,0,Cinema History and Documentary Filmmaking,"[29, 18, 33, 12, 19]",2,"[2, 1, 92, 1, 1]",0.9484536082474226,True
+L2C34,2,34,gold,0,Studio Art Practice,"[5, 34, 33, 6, 31]",1,"[30, 85, 15, 20, 10]",0.53125,True
+L2C34,2,34,gold,1,Studio Art Practice,"[34, 31, 6, 5, 33]",0,"[85, 10, 20, 30, 15]",0.53125,True
+L2C34,2,34,gold,2,Studio Art Practice,"[5, 31, 6, 33, 34]",4,"[15, 10, 10, 10, 80]",0.64,True
+L2C34,2,34,shuffled,0,"Philosophy: Metaphysics, Epistemology, Ethics","[34, 6, 31, 33, 5]",0,"[3, 5, 15, 20, 5]",0.0625,False
+L2C34,2,34,gimme,0,Studio Art Practice,"[34, 22, 30, 8, 14]",0,"[85, 2, 2, 3, 2]",0.9042553191489362,True
+L2C35,2,35,gold,0,Comparative Literature and Fiction Studies,"[37, 31, 2, 35, 5]",3,"[15, 30, 10, 85, 15]",0.5483870967741935,True
+L2C35,2,35,gold,1,Comparative Literature and Fiction Studies,"[31, 37, 5, 2, 35]",4,"[30, 25, 20, 15, 85]",0.4857142857142857,True
+L2C35,2,35,gold,2,Comparative Literature and Fiction Studies,"[31, 35, 2, 37, 5]",1,"[30, 88, 15, 10, 12]",0.567741935483871,True
+L2C35,2,35,shuffled,0,Ancient Mediterranean Archaeology and Medieval Worlds,"[37, 2, 35, 31, 5]",2,"[68, 5, 15, 20, 10]",0.1271186440677966,False
+L2C35,2,35,gimme,0,Comparative Literature and Fiction Studies,"[30, 35, 18, 26, 9]",1,"[2, 95, 1, 1, 1]",0.95,True
+L2C36,2,36,gold,0,International Security and Foreign Policy,"[39, 36, 32, 37, 40]",1,"[15, 85, 3, 10, 10]",0.6910569105691057,True
+L2C36,2,36,gold,1,International Security and Foreign Policy,"[39, 32, 40, 37, 36]",4,"[15, 2, 10, 5, 78]",0.7090909090909091,True
+L2C36,2,36,gold,2,International Security and Foreign Policy,"[37, 32, 39, 36, 40]",3,"[3, 2, 15, 92, 5]",0.7863247863247863,True
+L2C36,2,36,shuffled,0,Psychology and Clinical Psychiatry,"[39, 37, 36, 40, 32]",2,"[10, 15, 8, 20, 5]",0.13793103448275862,False
+L2C36,2,36,gimme,0,International Security and Foreign Policy,"[24, 20, 36, 15, 17]",2,"[2, 2, 92, 2, 10]",0.8518518518518519,True
+L2C37,2,37,gold,0,"Global History, Race, and Empire","[36, 39, 37, 32, 38]",2,"[15, 10, 72, 5, 30]",0.5454545454545454,True
+L2C37,2,37,gold,1,"Global History, Race, and Empire","[36, 39, 37, 38, 32]",2,"[15, 20, 65, 30, 5]",0.48148148148148145,True
+L2C37,2,37,gold,2,"Global History, Race, and Empire","[38, 36, 39, 37, 32]",3,"[15, 10, 20, 75, 5]",0.6,True
+L2C37,2,37,shuffled,0,Pure and Applied Mathematics Courses,"[39, 32, 37, 38, 36]",2,"[3, 3, 3, 3, 3]",0.2,False
+L2C37,2,37,gimme,0,"Global History, Race, and Empire","[12, 20, 16, 4, 37]",4,"[2, 2, 2, 25, 85]",0.7327586206896551,True
+L2C38,2,38,gold,0,Ancient Mediterranean Archaeology and Medieval Worlds,"[35, 36, 38, 37, 27]",2,"[5, 2, 90, 15, 25]",0.656934306569343,True
+L2C38,2,38,gold,1,Ancient Mediterranean Archaeology and Medieval Worlds,"[38, 36, 35, 27, 37]",0,"[90, 0, 5, 30, 15]",0.6428571428571429,True
+L2C38,2,38,gold,2,Ancient Mediterranean Archaeology and Medieval Worlds,"[27, 35, 36, 37, 38]",4,"[15, 5, 0, 20, 85]",0.68,True
+L2C38,2,38,shuffled,0,Musicology and Computer Music,"[35, 27, 36, 38, 37]",3,"[15, 5, 2, 8, 5]",0.22857142857142856,False
+L2C38,2,38,gimme,0,Ancient Mediterranean Archaeology and Medieval Worlds,"[38, 7, 41, 20, 16]",0,"[92, 5, 3, 2, 2]",0.8846153846153846,True
+L2C39,2,39,gold,0,Constitutional Structure and Electoral Politics,"[37, 40, 36, 41, 39]",4,"[5, 30, 55, 5, 80]",0.45714285714285713,True
+L2C39,2,39,gold,1,Constitutional Structure and Electoral Politics,"[36, 39, 41, 40, 37]",1,"[30, 75, 10, 30, 5]",0.5,True
+L2C39,2,39,gold,2,Constitutional Structure and Electoral Politics,"[37, 36, 41, 40, 39]",4,"[5, 45, 10, 25, 75]",0.46875,True
+L2C39,2,39,shuffled,0,Asian and Middle Eastern Languages,"[41, 40, 39, 36, 37]",2,"[2, 3, 2, 2, 25]",0.058823529411764705,False
+L2C39,2,39,gimme,0,Constitutional Structure and Electoral Politics,"[29, 26, 6, 34, 39]",4,"[5, 3, 2, 2, 92]",0.8846153846153846,True
+L2C40,2,40,gold,0,Legal Theory and Comparative Law,"[37, 39, 41, 40, 36]",3,"[10, 30, 25, 85, 15]",0.5151515151515151,True
+L2C40,2,40,gold,1,Legal Theory and Comparative Law,"[41, 40, 36, 39, 37]",1,"[15, 85, 10, 25, 5]",0.6071428571428571,True
+L2C40,2,40,gold,2,Legal Theory and Comparative Law,"[41, 40, 39, 37, 36]",1,"[15, 85, 30, 10, 5]",0.5862068965517241,True
+L2C40,2,40,shuffled,0,"Genetic Counseling, Epidemiology, and Bioethics","[37, 36, 39, 40, 41]",3,"[15, 10, 15, 30, 10]",0.375,True
+L2C40,2,40,gimme,0,Legal Theory and Comparative Law,"[40, 5, 17, 15, 12]",0,"[97, 3, 2, 1, 1]",0.9326923076923077,True
+L2C41,2,41,gold,0,"Legal Profession, Drafting, Dispute Resolution","[41, 30, 28, 39, 40]",0,"[90, 5, 5, 20, 15]",0.6666666666666666,True
+L2C41,2,41,gold,1,"Legal Profession, Drafting, Dispute Resolution","[39, 30, 40, 41, 28]",3,"[20, 40, 25, 85, 2]",0.4941860465116279,True
+L2C41,2,41,gold,2,"Legal Profession, Drafting, Dispute Resolution","[39, 40, 30, 41, 28]",3,"[15, 25, 10, 90, 2]",0.6338028169014085,True
+L2C41,2,41,shuffled,0,"AI Ethics, Design, and Governance","[41, 30, 39, 40, 28]",0,"[15, 10, 25, 20, 5]",0.2,False
+L2C41,2,41,gimme,0,"Legal Profession, Drafting, Dispute Resolution","[17, 41, 24, 16, 19]",1,"[2, 97, 3, 1, 1]",0.9326923076923077,True
+L3C0,3,0,gold,0,European Language Sequences,"[11, 10, 13, 1, 0]",4,"[15, 5, 10, 75, 55]",0.34375,False
+L3C0,3,0,gold,1,European Language Sequences,"[0, 13, 11, 1, 10]",0,"[40, 10, 15, 75, 0]",0.2857142857142857,False
+L3C0,3,0,gold,2,European Language Sequences,"[13, 11, 1, 0, 10]",3,"[15, 10, 75, 40, 5]",0.27586206896551724,False
+L3C0,3,0,shuffled,0,Business and Finance,"[0, 11, 1, 10, 13]",0,"[5, 5, 5, 25, 10]",0.1,False
+L3C0,3,0,gimme,0,European Language Sequences,"[8, 0, 3, 6, 5]",1,"[2, 55, 1, 1, 1]",0.9166666666666666,True
+L3C1,3,1,gold,0,Asian African Language Sequences,"[1, 10, 0, 13, 11]",0,"[95, 2, 15, 1, 1]",0.8333333333333334,True
+L3C1,3,1,gold,1,Asian African Language Sequences,"[0, 1, 13, 10, 11]",1,"[15, 92, 3, 2, 2]",0.8070175438596491,True
+L3C1,3,1,gold,2,Asian African Language Sequences,"[1, 0, 11, 10, 13]",0,"[92, 20, 3, 2, 2]",0.773109243697479,True
+L3C1,3,1,shuffled,0,Business and Finance,"[1, 0, 11, 13, 10]",0,"[2, 3, 3, 5, 8]",0.09523809523809523,False
+L3C1,3,1,gimme,0,Asian African Language Sequences,"[5, 1, 3, 4, 7]",1,"[0, 95, 0, 0, 0]",1.0,True
+L3C2,3,2,gold,0,Music and Performing Arts,"[0, 2, 11, 9, 10]",1,"[5, 90, 10, 30, 5]",0.6428571428571429,True
+L3C2,3,2,gold,1,Music and Performing Arts,"[10, 9, 2, 0, 11]",2,"[10, 30, 92, 2, 10]",0.6388888888888888,True
+L3C2,3,2,gold,2,Music and Performing Arts,"[9, 0, 11, 2, 10]",3,"[30, 5, 10, 85, 5]",0.6296296296296297,True
+L3C2,3,2,shuffled,0,Law and Politics,"[0, 2, 9, 11, 10]",1,"[5, 10, 5, 15, 40]",0.13333333333333333,False
+L3C2,3,2,gimme,0,Music and Performing Arts,"[4, 2, 6, 7, 12]",1,"[2, 95, 2, 2, 2]",0.9223300970873787,True
+L3C3,3,3,gold,0,Computer Science and AI,"[5, 10, 4, 3, 8]",3,"[5, 3, 2, 75, 3]",0.8522727272727273,True
+L3C3,3,3,gold,1,Computer Science and AI,"[10, 3, 8, 5, 4]",1,"[5, 55, 5, 10, 5]",0.6875,True
+L3C3,3,3,gold,2,Computer Science and AI,"[3, 5, 8, 10, 4]",0,"[60, 5, 10, 5, 5]",0.7058823529411765,True
+L3C3,3,3,shuffled,0,Global History and Empire,"[4, 5, 10, 3, 8]",3,"[10, 2, 15, 3, 20]",0.06,False
+L3C3,3,3,gimme,0,Computer Science and AI,"[11, 2, 0, 1, 3]",4,"[2, 2, 10, 2, 75]",0.8241758241758241,True
+L3C4,3,4,gold,0,Earth and Climate Systems,"[3, 4, 12, 5, 8]",1,"[3, 95, 2, 5, 2]",0.8878504672897196,True
+L3C4,3,4,gold,1,Earth and Climate Systems,"[3, 8, 12, 4, 5]",3,"[2, 3, 2, 92, 5]",0.8846153846153846,True
+L3C4,3,4,gold,2,Earth and Climate Systems,"[4, 5, 3, 12, 8]",0,"[95, 10, 5, 2, 3]",0.8260869565217391,True
+L3C4,3,4,shuffled,0,PWR Seminars on Media Rhetoric,"[8, 5, 12, 3, 4]",4,"[10, 2, 15, 8, 5]",0.125,False
+L3C4,3,4,gimme,0,Earth and Climate Systems,"[2, 6, 4, 9, 1]",2,"[0, 3, 95, 0, 0]",0.9693877551020408,True
+L3C5,3,5,gold,0,Engineering and Applied Physics,"[5, 3, 8, 4, 7]",0,"[55, 15, 5, 10, 35]",0.4583333333333333,True
+L3C5,3,5,gold,1,Engineering and Applied Physics,"[3, 7, 8, 5, 4]",3,"[20, 15, 5, 70, 5]",0.6086956521739131,True
+L3C5,3,5,gold,2,Engineering and Applied Physics,"[7, 8, 5, 3, 4]",2,"[30, 5, 75, 15, 5]",0.5769230769230769,True
+L3C5,3,5,shuffled,0,Law and Politics,"[4, 5, 8, 3, 7]",1,"[15, 2, 75, 5, 2]",0.020202020202020204,False
+L3C5,3,5,gimme,0,Engineering and Applied Physics,"[11, 0, 12, 1, 5]",4,"[2, 3, 5, 2, 75]",0.8620689655172413,True
+L3C6,3,6,gold,0,Clinical Medicine Training,"[4, 6, 7, 12, 10]",1,"[5, 90, 40, 5, 2]",0.6338028169014085,True
+L3C6,3,6,gold,1,Clinical Medicine Training,"[6, 10, 7, 4, 12]",0,"[85, 2, 15, 1, 3]",0.8018867924528302,True
+L3C6,3,6,gold,2,Clinical Medicine Training,"[7, 6, 12, 4, 10]",1,"[20, 75, 5, 3, 2]",0.7142857142857143,True
+L3C6,3,6,shuffled,0,European Language Sequences,"[4, 6, 10, 7, 12]",1,"[3, 2, 15, 2, 5]",0.07407407407407407,False
+L3C6,3,6,gimme,0,Clinical Medicine Training,"[11, 0, 13, 6, 1]",3,"[2, 10, 3, 90, 2]",0.8411214953271028,True
+L3C7,3,7,gold,0,Molecular Biology and Bioengineering,"[7, 6, 4, 5, 3]",0,"[90, 15, 5, 20, 5]",0.6666666666666666,True
+L3C7,3,7,gold,1,Molecular Biology and Bioengineering,"[4, 7, 6, 3, 5]",1,"[5, 92, 15, 2, 20]",0.6865671641791045,True
+L3C7,3,7,gold,2,Molecular Biology and Bioengineering,"[7, 6, 4, 3, 5]",0,"[90, 10, 2, 3, 20]",0.72,True
+L3C7,3,7,shuffled,0,Visual and Film Arts,"[4, 5, 6, 3, 7]",4,"[3, 2, 2, 3, 3]",0.23076923076923078,False
+L3C7,3,7,gimme,0,Molecular Biology and Bioengineering,"[1, 0, 9, 7, 11]",3,"[2, 3, 2, 95, 1]",0.9223300970873787,True
+L3C8,3,8,gold,0,Business and Finance,"[12, 10, 8, 4, 3]",2,"[15, 5, 75, 5, 30]",0.5769230769230769,True
+L3C8,3,8,gold,1,Business and Finance,"[4, 10, 8, 3, 12]",2,"[5, 5, 75, 30, 10]",0.6,True
+L3C8,3,8,gold,2,Business and Finance,"[4, 3, 12, 8, 10]",3,"[5, 40, 25, 70, 5]",0.4827586206896552,True
+L3C8,3,8,shuffled,0,Molecular Biology and Bioengineering,"[3, 4, 12, 8, 10]",3,"[10, 15, 5, 5, 5]",0.125,False
+L3C8,3,8,gimme,0,Business and Finance,"[9, 2, 8, 1, 11]",2,"[2, 2, 85, 1, 1]",0.9340659340659341,True
+L3C9,3,9,gold,0,Visual and Film Arts,"[10, 2, 9, 11, 13]",2,"[15, 20, 85, 10, 2]",0.6439393939393939,True
+L3C9,3,9,gold,1,Visual and Film Arts,"[10, 9, 2, 13, 11]",1,"[15, 85, 20, 5, 10]",0.6296296296296297,True
+L3C9,3,9,gold,2,Visual and Film Arts,"[10, 13, 11, 2, 9]",4,"[10, 5, 10, 30, 90]",0.6206896551724138,True
+L3C9,3,9,shuffled,0,Molecular Biology and Bioengineering,"[2, 10, 9, 11, 13]",2,"[5, 3, 3, 2, 2]",0.2,False
+L3C9,3,9,gimme,0,Visual and Film Arts,"[8, 4, 7, 3, 9]",4,"[2, 3, 1, 2, 96]",0.9230769230769231,True
+L3C10,3,10,gold,0,PWR Seminars on Media Rhetoric,"[0, 9, 13, 11, 10]",4,"[15, 5, 10, 5, 90]",0.72,True
+L3C10,3,10,gold,1,PWR Seminars on Media Rhetoric,"[11, 13, 9, 10, 0]",3,"[10, 20, 8, 85, 5]",0.6640625,True
+L3C10,3,10,gold,2,PWR Seminars on Media Rhetoric,"[9, 0, 10, 13, 11]",2,"[5, 3, 90, 15, 4]",0.7692307692307693,True
+L3C10,3,10,shuffled,0,Music and Performing Arts,"[10, 13, 0, 11, 9]",0,"[15, 10, 8, 20, 75]",0.1171875,False
+L3C10,3,10,gimme,0,PWR Seminars on Media Rhetoric,"[10, 4, 8, 3, 7]",0,"[95, 2, 3, 2, 1]",0.9223300970873787,True
+L3C11,3,11,gold,0,Comparative Literature and Fiction Studies,"[9, 10, 0, 13, 11]",4,"[5, 10, 15, 15, 90]",0.6666666666666666,True
+L3C11,3,11,gold,1,Comparative Literature and Fiction Studies,"[10, 0, 9, 13, 11]",4,"[10, 15, 10, 20, 92]",0.6258503401360545,True
+L3C11,3,11,gold,2,Comparative Literature and Fiction Studies,"[11, 10, 9, 13, 0]",0,"[92, 15, 10, 20, 5]",0.647887323943662,True
+L3C11,3,11,shuffled,0,Music and Performing Arts,"[10, 11, 0, 13, 9]",1,"[10, 5, 5, 5, 75]",0.05,False
+L3C11,3,11,gimme,0,Comparative Literature and Fiction Studies,"[7, 5, 8, 4, 11]",4,"[2, 3, 5, 3, 97]",0.8818181818181818,True
+L3C12,3,12,gold,0,Law and Politics,"[8, 12, 10, 11, 13]",1,"[40, 90, 5, 3, 20]",0.569620253164557,True
+L3C12,3,12,gold,1,Law and Politics,"[8, 10, 11, 13, 12]",4,"[30, 10, 5, 25, 90]",0.5625,True
+L3C12,3,12,gold,2,Law and Politics,"[11, 12, 10, 8, 13]",1,"[5, 92, 15, 40, 25]",0.519774011299435,True
+L3C12,3,12,shuffled,0,Visual and Film Arts,"[8, 10, 12, 11, 13]",2,"[5, 30, 3, 25, 10]",0.0410958904109589,False
+L3C12,3,12,gimme,0,Law and Politics,"[9, 2, 12, 7, 1]",2,"[3, 5, 95, 2, 3]",0.8796296296296297,True
+L3C13,3,13,gold,0,Global History and Empire,"[10, 13, 12, 9, 11]",1,"[5, 55, 25, 3, 10]",0.5612244897959183,True
+L3C13,3,13,gold,1,Global History and Empire,"[13, 11, 10, 12, 9]",0,"[65, 20, 5, 25, 5]",0.5416666666666666,True
+L3C13,3,13,gold,2,Global History and Empire,"[9, 10, 11, 12, 13]",4,"[5, 10, 20, 15, 55]",0.5238095238095238,True
+L3C13,3,13,shuffled,0,Engineering and Applied Physics,"[12, 9, 13, 10, 11]",2,"[15, 5, 3, 5, 2]",0.1,False
+L3C13,3,13,gimme,0,Global History and Empire,"[13, 8, 4, 7, 6]",0,"[65, 10, 8, 3, 3]",0.7303370786516854,True
