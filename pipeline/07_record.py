@@ -45,6 +45,17 @@ RECORD_FILES = [
     "name_intrusion_calls.jsonl",
     "name_intrusion_calls.runs.json",
     "name_intrusion.json",
+    # step 4 (experiments/level_agreement.py, crosslisting_distance.py, linear_probe.py, department_centrality.py):
+    # validation checks against findings in the literature, names off
+    "validation_level.json",
+    "validation_crosslisting.json",
+    "validation_crosslisting_pairs.csv",
+    "crosslisting_displacement.parquet",
+    "validation_probe.json",
+    "validation_probe_predictions.parquet",
+    "validation_probe_departments.csv",
+    "validation_centrality.json",
+    "validation_centrality.csv",
 ]
 RECORD_GLOBS = ["evoc_topic_names*.json", "evoc_labels_meta*.json", "name_guardrail*.csv", "raw/_manifest.json"]
 
