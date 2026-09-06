@@ -1,8 +1,8 @@
 # Literature review: course catalogs as a corpus, and what it implies for the map
 
-Working review, entries verified progressively; a few characterisations rest on recollection rather
-than on text read at compile time (noted in the response that produced this file: the third corpus in
-Börner et al. 2018, the exact form of Biasi & Ma's gap measure, the venue of Wang et al. 2021).
+Working review, entries verified progressively. Three characterisations rested on recollection at compile
+time (the third corpus in Börner et al. 2018, the exact form of Biasi & Ma's gap measure, the venue of Wang
+et al. 2021); all three were checked against the sources on 2026-09-06 and corrected in place.
 
 Compiled 2026-09-05 from OpenAlex, Semantic Scholar, and the open web. Scope: work that uses course
 catalogs, course descriptions, or syllabi as a dataset; the map-of-science and embedding-visualisation
@@ -112,8 +112,8 @@ subject classification, which is the shape of the preregistered breadth-category
   relations among concepts from course descriptions directly (abstract).
 
 ### 2.3 Skills, tasks, and the labour market
-- [Börner et al. 2018] compare skill vocabularies across research publications, job ads, and course
-  offerings and find a soft-skills gap.
+- [Börner et al. 2018] compare skill vocabularies across research publications, course syllabi, and job
+  advertisements (millions of each, 2010-2016) and find a soft-skills gap.
 - [Chau et al. 2023] and [Javadian Sabet et al. 2024] (Course-Skill Atlas, Scientific Data): 3M+ syllabi
   from ~3,000 institutions; sentences classified as learning content (86% of sentences were logistics
   and dropped), embedded with SBERT all-mpnet-base-v2, and scored against each O*NET detailed work
@@ -130,8 +130,12 @@ subject classification, which is the shape of the preregistered breadth-category
   LLM skill extraction from 400 curriculum documents: retrieval-augmented prompting wins, zero-shot
   prompting loses to traditional NLP in most settings; [Xu et al. 2026] extend to 21st-century
   competencies; [Musazade, Mezei & Zhang 2026] release UniSkill, an ESCO-to-course matching dataset.
-- [Biasi & Ma 2022] "education-innovation gap": text similarity between 1.7M syllabi and 20M articles,
-  measuring how close a course sits to the research frontier.
+- [Biasi & Ma 2022] "education-innovation gap": for each of 1.7M syllabi, 100 times the ratio of its mean
+  cosine similarity to older articles (published τ years before the syllabus, a three-year window) to its
+  mean similarity to recent ones (τ' years before), with τ and τ' the 90th and 5th percentiles of citation
+  lags in the syllabus's field, over 20M articles; higher means older content. The NBER paper was revised in
+  August 2026 as "Frontier Knowledge in Higher Education" and now calls the measure frontier knowledge
+  proximity.
 
 ### 2.4 Classifying courses into external schemes
 - SDGs: [Kharlashkin et al. 2024] distil PaLM 2 labels into small classifiers for course descriptions;
@@ -276,7 +280,7 @@ preregistered kNN label agreement is a neighbourhood-hit statistic in Espadoto's
 - Aldrich, P. R. (2015). The curriculum prerequisite network: modeling the curriculum as a complex system. *Biochemistry and Molecular Biology Education*. https://doi.org/10.1002/bmb.20861
 - Ballester, O., & Penner, O. (2021). Robustness, replicability and scalability in topic modelling. *Journal of Informetrics*. https://doi.org/10.1016/j.joi.2021.101224
 - Ben-Hur, A., Elisseeff, A., & Guyon, I. (2002). A stability based method for discovering structure in clustered data. *Pacific Symposium on Biocomputing*. https://doi.org/10.1142/9789812799623_0002
-- Biasi, B., & Ma, S. (2022). The education-innovation gap. NBER Working Paper 29853. https://doi.org/10.3386/w29853
+- Biasi, B., & Ma, S. (2022). The education-innovation gap. NBER Working Paper 29853. https://doi.org/10.3386/w29853 (revised August 2026 as *Frontier knowledge in higher education*; the gap definition above is from the May 2023 version, SSRN 4072258)
 - Bleemer, Z. (2018). The UC ClioMetric History Project and formatted optical character recognition. CSHE 3.18. https://escholarship.org/uc/item/9xz1748q ; data at https://uccliometric.org/courses/
 - Börner, K., et al. (2012). Design and update of a classification system: the UCSD map of science. *PLoS ONE*. https://doi.org/10.1371/journal.pone.0039464
 - Börner, K., Scrivner, O., Gallant, M., et al. (2018). Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy. *PNAS*. https://doi.org/10.1073/pnas.1804247115
@@ -333,7 +337,7 @@ preregistered kNN label agreement is a neighbourhood-hit statistic in Espadoto's
 - Suominen, A., & Toivanen, H. (2015). Map of science with topic modeling: comparison of unsupervised learning and human-assigned subject classification. *JASIST*. https://doi.org/10.1002/asi.23596
 - van Eck, N. J., & Waltman, L. (2010). Software survey: VOSviewer. *Scientometrics*. https://doi.org/10.1007/s11192-009-0146-3
 - von Luxburg, U. (2010). Clustering stability: an overview. *Foundations and Trends in Machine Learning*. https://doi.org/10.1561/2200000008
-- Wang, Y., Huang, H., Rudin, C., & Shaposhnik, Y. (2021). Understanding how dimension reduction tools work: an empirical approach to deciphering t-SNE, UMAP, TriMap, and PaCMAP. *JMLR* (arXiv:2012.04456).
+- Wang, Y., Huang, H., Rudin, C., & Shaposhnik, Y. (2021). Understanding how dimension reduction tools work: an empirical approach to deciphering t-SNE, UMAP, TriMap, and PaCMAP. *JMLR* 22(201):1-73. https://jmlr.org/papers/v22/20-1061.html (arXiv:2012.04456)
 - Wickham, H., Cook, D., Hofmann, H., & Buja, A. (2010). Graphical inference for infovis. *IEEE TVCG*. https://doi.org/10.1109/tvcg.2010.161
 - Xiao, K., Bai, Y., & Wang, Z. (2022). Extracting prerequisite relations among concepts from the course descriptions. *IJSEKE*. https://doi.org/10.1142/s0218194022400034 (abstract)
 - Xu, Y., & Pardos, Z. A. (2024). Extracting course similarity signal using subword embeddings. *LAK*. https://doi.org/10.1145/3636555.3636903

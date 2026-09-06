@@ -5,8 +5,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-load_dotenv(Path.home() / ".config" / "data-apis" / ".env")
-load_dotenv(override=True)
+load_dotenv(override=True)  # a repo-local .env; keys otherwise arrive through the shell environment (~/.secrets)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -187,3 +186,14 @@ NAMER_STYLE = (
 # A handful of far-flung points (placeholder and overseas-programme listings) otherwise squeeze the
 # cloud into the middle third of the initial view. This trims the outermost points from the framing only.
 MAP_INITIAL_ZOOM_FRACTION = 0.98
+
+
+# ── Archive (stage 08; docs/plan.md step 5) ───────────────────────────────────
+ZENODO_TOKEN = os.environ.get("ZENODO_TOKEN", "")  # personal token with deposit:write and deposit:actions
+ZENODO_SANDBOX_TOKEN = os.environ.get("ZENODO_SANDBOX_TOKEN", "")  # sandbox.zenodo.org has separate accounts
+ARCHIVE_CREATOR = {"name": "Fazzio, Steven"}
+ARCHIVE_ORCID = os.environ.get("ARCHIVE_ORCID", "")  # added to the creator record when set
+ARCHIVE_LICENSE = "cc-by-4.0"  # the derived data; the code carries its own licence
+ARCHIVE_VERSION = "1.1"  # the completion plan's version; a rebuilt record would be a new Zenodo version
+REPO_URL = "https://github.com/stevenfazzio/course-catalog-map"
+MAP_URL = "https://stevenfazzio.com/course-catalog-map/"

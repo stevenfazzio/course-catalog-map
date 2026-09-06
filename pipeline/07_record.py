@@ -18,6 +18,7 @@ RECORD_FILES = [
     "drops.csv",
     "embeddings_meta.json",
     "umap_meta.json",
+    "umap_coords.npz",  # the published layout itself (188 KB); the map HTML carried it, the record did not
     "labels.parquet",
     "topic_names.json",
     "cluster_tree.json",
@@ -56,6 +57,9 @@ RECORD_FILES = [
     "validation_probe_departments.csv",
     "validation_centrality.json",
     "validation_centrality.csv",
+    # step 5 (pipeline/08_archive.py): the Zenodo deposit record and the checksums of the withheld raw snapshot
+    "raw_checksums.json",
+    "archive.json",
 ]
 RECORD_GLOBS = ["evoc_topic_names*.json", "evoc_labels_meta*.json", "name_guardrail*.csv", "raw/_manifest.json"]
 
