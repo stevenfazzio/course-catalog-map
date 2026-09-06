@@ -160,6 +160,12 @@ department file that already exists; delete a file to refetch it.
   remains (148 stripped, 91 title-only: PWR programme paragraphs, music lessons, Frosh 101, EE CPT, Law
   exchange programmes). 11,091 courses kept. Unscheduled courses (41%) are kept on purpose: the map is a
   map of what the university teaches, and the scheduled colormap shows the difference.
+- **Multi-university is v2, after v1.1 ships (2026-09-06).** Stanford stays for v1.1; the IP question is
+  settled at the deposit (derived data open, full text in a restricted sibling record), not by switching
+  source, because the alternatives' public APIs carry no redistribution license either (only Waterloo has
+  one). v2: three catalogs, a selection rule written before fetching (documented public endpoint required,
+  explicit license preferred), comparison in a shared embedding space plus a map per university, gallery
+  alone as the fallback. Designed in its own doc after step 8; not part of `docs/plan.md`.
 
 ## Current state (2026-09-05)
 
@@ -252,7 +258,16 @@ on 2026-09-06 (deposition 22550382, unpublished); upload and publish are pending
 could not be, because the site returned 503 all day (last Internet Archive capture 2026-08-29), which also bears on
 step 6's fallback for the 4,912 unscheduled courses; the three lit-review characterisations verified and corrected
 (`docs/lit_review.md`); Toponymy issue drafted, not filed; tag deferred to after step 6. The repo has no LICENSE
-file, which the CC BY 4.0 deposit makes visible; Steven's other public repos have none either.
+file, which the CC BY 4.0 deposit makes visible; Steven's other public repos have none either. *Decided 2026-09-06 (IP discussion; `docs/plan.md` decisions):*
+Stanford stays as the v1.1 source. The deposit is derived data only: the parquet files lose `description`,
+`embedded_description`, `embed_text`, `learning_objectives` and `instructors` and gain `description_sha256`;
+`corpus_drops.csv` keeps its 409 placeholder and boilerplate descriptions as the audit of rules 1-2; no other record
+file carries description text. The full text goes into a second, `access_right: restricted` deposition linked both
+ways (Zenodo's access right is per deposition). The tracked `docs/record/stanford/corpus.parquet` is stripped the same
+way and stage 07 keeps it stripped; the map's hover and search are unchanged; the Registrar is not asked. Multi-university
+is v2, planned in its own doc after step 8 (three catalogs, terms-driven selection, comparison plus per-university
+gallery with the gallery alone as fallback); the blog post is not held for it; step 6 moves the map to `docs/stanford/`
+with a root redirect so the v1.1 build keeps a stable path.
 
 ## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
 

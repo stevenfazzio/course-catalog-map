@@ -179,10 +179,34 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   (the map already ships them; the Course-Skill Atlas precedent released derived features only) or carry a
   per-course description hash instead; whether to ask the Registrar's webmaster for permission in parallel;
   and dropping the `instructors` column from the deposit, which plays no part in the analysis.
+  *Decided 2026-09-06 (the IP discussion; see the decisions below):* the deposit is derived data only. The
+  catalog and corpus parquet files lose their prose and people columns (`description`, `embedded_description`,
+  `embed_text`, `learning_objectives`, `instructors`) and gain a per-course `description_sha256`, so a copy
+  fetched from Stanford can be matched row by row; titles, every metadata column and the rule columns
+  (`embed_text_rule`, `stripped_words`, `template_shared_by`) stay. Embeddings, layout, labels, names, tree,
+  record and code are unchanged; the license statement is CC BY 4.0 on the derived data, with the titles named
+  as Stanford's. The full-text corpus goes into a second Zenodo deposition with `access_right: restricted` and
+  an `access_conditions` statement (personal, non-commercial research use, the use Stanford's terms allow),
+  each record naming the other as a related identifier, so a reproducer can request the text once
+  ExploreCourses is gone (it returned 503 again on 2026-09-06). Zenodo's access right is per deposition, which
+  is why it is two records rather than one with mixed files. The committed record gets the same treatment: the
+  tracked `docs/record/stanford/corpus.parquet` is stripped of the same columns and stage 07 copies it stripped
+  from now on; the old blob stays in git history, which the write-up says rather than rewriting public history.
+  `corpus_drops.csv` keeps its description column: its 409 rows are the placeholders and the twelve boilerplate
+  texts of rules 1 and 2, and the file is the audit of those rules. Checked 2026-09-06: no other record file
+  carries description text (the listener call logs store id, answer and model only). The map is unchanged,
+  hover excerpt and search field included, a judgment the write-up states. The Registrar is not asked for
+  v1.1: a derived-only deposit needs no permission, and asking is worth it only for a v2 corpus meant for
+  redistribution, for every university at once. *Remaining:* the stage-07 and stage-08 changes above, the
+  stripped record committed, `--upload`, `--publish`, the restricted sibling record, stage 07, commit.
 - [ ] **6. Stage-05 rebuild, once.** Cross-listing count colormap [4.2.2]; course-number level
   colormap [4.2.8]; footer link to the repo and to the reserved blog-post slug; region stability
   [4.2.3] in whichever of hover text and continuous colormap survives a look at the rebuilt map.
   Reserve the slug before this step so the map is rebuilt only once.
+  *Decided 2026-09-06:* the rebuild also moves the map to `docs/stanford/` (a redirect stays at the root), so
+  that a later index over several catalogs breaks none of the links the post and the Zenodo record carry; the
+  v1.1 build keeps that path when v2 adds a shared-space map, and the record's live-map identifier is updated
+  by metadata edit, as for the tag.
 - [ ] **7. Tidy.** Verify the click-through in a browser for both the Navigator link and the
   ExploreCourses fallback; fix the stale "4B comparison on the table" line in `CLAUDE.md`; verify or
   cut the three lit-review characterisations that rest on recollection (Börner et al. 2018's third
@@ -209,6 +233,9 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   answered with the step-1 numbers; the note that collapsed cross-listings make the Pardos validation
   set unusable as written [4.1.6]; the stability and intrusion results; the DOI. Then share with the
   reader groups in [4.4.4].
+  *Decided 2026-09-06:* not held for the multi-university v2. This is the methods-and-record post for the
+  first catalog; it says more may follow and promises no design. A v2 post would be a findings post that
+  cites it.
 
 ## Deferred, not part of completion
 
@@ -220,7 +247,7 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   Cut for effort.
 - Anything needing new data or a new inference layer: O*NET work-activity layer [4.2.5], SDG tags
   [4.2.6], research-frontier proximity [4.2.7], first year offered [4.2.9], longitudinal Stanford
-  [4.4.1, 4.3.6], second institution [4.4.3]. Follow-on projects.
+  [4.4.1, 4.3.6], second institution [4.4.3], which is now the v2 decision below. Follow-on projects.
 
 ## Decisions taken while planning (2026-09-05)
 
@@ -233,3 +260,18 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   the step-1 seed layouts are not its nulls and stay available for step 6's display options.
 - (2026-09-06) The deposit excludes the raw XML (Stanford's terms) and the map HTML (step 6 rebuilds it) and
   keeps the corpus and catalog parquet files; the release tag follows step 6 rather than step 7's order.
+- (2026-09-06) **Stanford stays for v1.1.** The IP concern step 5 raised is about the deposit, not the source.
+  The alternatives considered (Cornell, UIUC, MIT) expose or publish an API without any license to
+  redistribute the text, so the derived-only posture would be the same there; only Waterloo has an explicit
+  open-data license. Silence is not permission. The larger Stanford risk is the source's survival
+  (ExploreCourses is the heritage catalog and was down again on 2026-09-06), which bears on v2, not on a
+  snapshot with a DOI.
+- (2026-09-06) **Multi-university is v2**, planned in its own doc after step 8 and kept out of this plan (a
+  guard against expanding scope until the first version is never shared). Three catalogs, not five. A
+  selection rule written before fetching: a documented public endpoint required, an explicit license
+  preferred, Stanford grandfathered as the disclosed exception with its text withheld. Steven's lean is the
+  shared-embedding-space comparison plus a map per university (the gallery is cheap once the comparison
+  exists and shows what the shared view cannot), with the gallery alone as the fallback if the comparison
+  proves less feasible or less interesting than expected. Known hazards for the design doc: registrar house
+  style as a batch effect, and a common corpus definition (Cornell's roster is term-scoped).
+- (2026-09-06) The blog post is not held for v2 (step 8), and the v1.1 map keeps a stable path (step 6).
