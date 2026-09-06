@@ -1,0 +1,1063 @@
+{
+  "source": "stanford",
+  "embedding_model": "qwen3-0.6b",
+  "computed_at": "2026-09-06T15:29:23+00:00",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.0"
+  },
+  "min_courses": 15,
+  "k_nearest": 5,
+  "n_bootstrap": 200,
+  "hs_division_source": "https://en.wikipedia.org/wiki/Stanford_University_School_of_Humanities_and_Sciences (read 2026-09-06)",
+  "hs_divisions": {
+    "ART": "H&S Humanities and Arts",
+    "CLASSICS": "H&S Humanities and Arts",
+    "DRAMA": "H&S Humanities and Arts",
+    "ASIANLANG": "H&S Humanities and Arts",
+    "ENGLISH": "H&S Humanities and Arts",
+    "HISTORY": "H&S Humanities and Arts",
+    "LINGUISTIC": "H&S Humanities and Arts",
+    "MUSIC": "H&S Humanities and Arts",
+    "PHILOSOPHY": "H&S Humanities and Arts",
+    "RELIGST": "H&S Humanities and Arts",
+    "COMPARLIT": "H&S Humanities and Arts",
+    "FRENCHITAL": "H&S Humanities and Arts",
+    "GERMANSTU": "H&S Humanities and Arts",
+    "SPANPORT": "H&S Humanities and Arts",
+    "SLAVIC": "H&S Humanities and Arts",
+    "APPLPHYSIC": "H&S Natural Sciences",
+    "BIO": "H&S Natural Sciences",
+    "CHEMISTRY": "H&S Natural Sciences",
+    "MATH": "H&S Natural Sciences",
+    "PHYSICS": "H&S Natural Sciences",
+    "STATISTICS": "H&S Natural Sciences",
+    "ANTHRO": "H&S Social Sciences",
+    "COMMUN": "H&S Social Sciences",
+    "ECONOMICS": "H&S Social Sciences",
+    "POLITSCI": "H&S Social Sciences",
+    "PSYCHOLOGY": "H&S Social Sciences",
+    "STS": "H&S Social Sciences",
+    "SOCIOLOGY": "H&S Social Sciences"
+  },
+  "hs_other": "H&S programs and centers",
+  "definitions": {
+    "centroid": "unit-norm mean embedding over the department's courses by primary code",
+    "strength": "mean cosine similarity to every other department centroid",
+    "eigenvector": "principal eigenvector of the similarity matrix with zero diagonal, scaled to sum 1",
+    "indegree": "number of departments whose 5 most similar departments include this one",
+    "closeness": "Wasserman-Faust closeness in the undirected 5-nearest-department graph",
+    "layout_*": "the same in-degree and closeness from euclidean centroid distances in the published 2-d layout",
+    "spread": "mean cosine distance of a department's courses to its own centroid: a heterogeneous department's centroid sits near the global mean and is similar to everyone",
+    "rank_strength_ci": "95% interval of the strength rank over 200 bootstraps of courses within department",
+    "prob_higher": "P(a department in the group has higher strength than one outside it), Mann-Whitney U / (n1 n0)"
+  },
+  "n_departments": 140,
+  "n_courses_covered": 10433,
+  "by_school": [
+    {
+      "group": "Office of Vice Provost for Undergraduate Education",
+      "n_departments": 19,
+      "strength": {
+        "mean": 0.7734088932659752,
+        "ci_low": 0.7636128645693551,
+        "ci_high": 0.7832805875450564,
+        "n": 19
+      },
+      "mean_rank_strength": 20.736842105263158,
+      "eigenvector": {
+        "mean": 0.007768537823610461,
+        "ci_low": 0.007670751340170815,
+        "ci_high": 0.007865367546668866,
+        "n": 19
+      },
+      "mean_rank_eigenvector": 20.842105263157894,
+      "indegree": {
+        "mean": 6.315789473684211,
+        "ci_low": 4.998684210526316,
+        "ci_high": 7.7894736842105265,
+        "n": 19
+      },
+      "mean_rank_indegree": 49.10526315789474,
+      "closeness": {
+        "mean": 0.2897194184977058,
+        "ci_low": 0.27643286917904686,
+        "ci_high": 0.30353380905341865,
+        "n": 19
+      },
+      "mean_rank_closeness": 41.578947368421055
+    },
+    {
+      "group": "School of Education",
+      "n_departments": 1,
+      "strength": {
+        "mean": 0.7614262915517599,
+        "ci_low": 0.7614262915517599,
+        "ci_high": 0.7614262915517599,
+        "n": 1
+      },
+      "mean_rank_strength": 30.0,
+      "eigenvector": {
+        "mean": 0.007634887656928859,
+        "ci_low": 0.007634887656928859,
+        "ci_high": 0.007634887656928859,
+        "n": 1
+      },
+      "mean_rank_eigenvector": 31.0,
+      "indegree": {
+        "mean": 2.0,
+        "ci_low": 2.0,
+        "ci_high": 2.0,
+        "n": 1
+      },
+      "mean_rank_indegree": 116.0,
+      "closeness": {
+        "mean": 0.32400932400932403,
+        "ci_low": 0.32400932400932403,
+        "ci_high": 0.32400932400932403,
+        "n": 1
+      },
+      "mean_rank_closeness": 9.0
+    },
+    {
+      "group": "Law School",
+      "n_departments": 1,
+      "strength": {
+        "mean": 0.7450310902752083,
+        "ci_low": 0.7450310902752083,
+        "ci_high": 0.7450310902752083,
+        "n": 1
+      },
+      "mean_rank_strength": 43.0,
+      "eigenvector": {
+        "mean": 0.007480887553072454,
+        "ci_low": 0.007480887553072454,
+        "ci_high": 0.007480887553072454,
+        "n": 1
+      },
+      "mean_rank_eigenvector": 41.0,
+      "indegree": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n": 1
+      },
+      "mean_rank_indegree": 124.0,
+      "closeness": {
+        "mean": 0.31376975169300225,
+        "ci_low": 0.31376975169300225,
+        "ci_high": 0.31376975169300225,
+        "n": 1
+      },
+      "mean_rank_closeness": 16.0
+    },
+    {
+      "group": "School of Humanities & Sciences",
+      "n_departments": 66,
+      "strength": {
+        "mean": 0.7172111917258622,
+        "ci_low": 0.7068185678721124,
+        "ci_high": 0.7285492197737333,
+        "n": 66
+      },
+      "mean_rank_strength": 67.36363636363636,
+      "eigenvector": {
+        "mean": 0.007204582852971843,
+        "ci_low": 0.007097493895315429,
+        "ci_high": 0.007320535375451903,
+        "n": 66
+      },
+      "mean_rank_eigenvector": 66.53030303030303,
+      "indegree": {
+        "mean": 4.803030303030303,
+        "ci_low": 3.908712121212121,
+        "ci_high": 5.818560606060606,
+        "n": 66
+      },
+      "mean_rank_indegree": 75.53030303030303,
+      "closeness": {
+        "mean": 0.27071263147292923,
+        "ci_low": 0.26325436249593437,
+        "ci_high": 0.2790649356076585,
+        "n": 66
+      },
+      "mean_rank_closeness": 63.621212121212125
+    },
+    {
+      "group": "Doerr School of Sustainability",
+      "n_departments": 9,
+      "strength": {
+        "mean": 0.7069769023024546,
+        "ci_low": 0.687404982656639,
+        "ci_high": 0.7264185387952246,
+        "n": 9
+      },
+      "mean_rank_strength": 76.55555555555556,
+      "eigenvector": {
+        "mean": 0.0070772563548741375,
+        "ci_low": 0.006877700536328943,
+        "ci_high": 0.007275089911130014,
+        "n": 9
+      },
+      "mean_rank_eigenvector": 77.11111111111111,
+      "indegree": {
+        "mean": 4.333333333333333,
+        "ci_low": 3.111111111111111,
+        "ci_high": 5.555555555555555,
+        "n": 9
+      },
+      "mean_rank_indegree": 71.77777777777777,
+      "closeness": {
+        "mean": 0.2536241710489035,
+        "ci_low": 0.2420252288659099,
+        "ci_high": 0.26700260225388656,
+        "n": 9
+      },
+      "mean_rank_closeness": 83.77777777777777
+    },
+    {
+      "group": "School of Engineering",
+      "n_departments": 12,
+      "strength": {
+        "mean": 0.6957168059766897,
+        "ci_low": 0.6782369886079322,
+        "ci_high": 0.7150140494107593,
+        "n": 12
+      },
+      "mean_rank_strength": 85.0,
+      "eigenvector": {
+        "mean": 0.006951220839511351,
+        "ci_low": 0.00677223851943465,
+        "ci_high": 0.007146777567919061,
+        "n": 12
+      },
+      "mean_rank_eigenvector": 86.58333333333333,
+      "indegree": {
+        "mean": 6.166666666666667,
+        "ci_low": 4.58125,
+        "ci_high": 8.0,
+        "n": 12
+      },
+      "mean_rank_indegree": 54.166666666666664,
+      "closeness": {
+        "mean": 0.2638875010204146,
+        "ci_low": 0.2475166278754463,
+        "ci_high": 0.28238731700377057,
+        "n": 12
+      },
+      "mean_rank_closeness": 73.41666666666667
+    },
+    {
+      "group": "Graduate School of Business",
+      "n_departments": 11,
+      "strength": {
+        "mean": 0.6860171899717947,
+        "ci_low": 0.6603793211860569,
+        "ci_high": 0.7128397382275746,
+        "n": 11
+      },
+      "mean_rank_strength": 90.9090909090909,
+      "eigenvector": {
+        "mean": 0.0068738487215764,
+        "ci_low": 0.006616518771806614,
+        "ci_high": 0.007145423693723286,
+        "n": 11
+      },
+      "mean_rank_eigenvector": 90.9090909090909,
+      "indegree": {
+        "mean": 4.818181818181818,
+        "ci_low": 3.3636363636363638,
+        "ci_high": 6.363636363636363,
+        "n": 11
+      },
+      "mean_rank_indegree": 68.54545454545455,
+      "closeness": {
+        "mean": 0.23788590872659557,
+        "ci_low": 0.2296044068998495,
+        "ci_high": 0.24732795423453016,
+        "n": 11
+      },
+      "mean_rank_closeness": 106.18181818181819
+    },
+    {
+      "group": "School of Medicine",
+      "n_departments": 19,
+      "strength": {
+        "mean": 0.6679918393830863,
+        "ci_low": 0.6499654816077433,
+        "ci_high": 0.6887880362302191,
+        "n": 19
+      },
+      "mean_rank_strength": 104.0,
+      "eigenvector": {
+        "mean": 0.006671319792883738,
+        "ci_low": 0.006491125128322833,
+        "ci_high": 0.006881637931605215,
+        "n": 19
+      },
+      "mean_rank_eigenvector": 105.52631578947368,
+      "indegree": {
+        "mean": 4.842105263157895,
+        "ci_low": 3.210526315789474,
+        "ci_high": 6.631578947368421,
+        "n": 19
+      },
+      "mean_rank_indegree": 73.78947368421052,
+      "closeness": {
+        "mean": 0.23939672094892214,
+        "ci_low": 0.22984435930601504,
+        "ci_high": 0.24937494295925478,
+        "n": 19
+      },
+      "mean_rank_closeness": 103.05263157894737
+    },
+    {
+      "group": "Department of Athletics, Physical Education and Recreation",
+      "n_departments": 2,
+      "strength": {
+        "mean": 0.615197362350939,
+        "ci_low": 0.6116735884232701,
+        "ci_high": 0.618721136278608,
+        "n": 2
+      },
+      "mean_rank_strength": 136.0,
+      "eigenvector": {
+        "mean": 0.006151084287561682,
+        "ci_low": 0.006112041721043368,
+        "ci_high": 0.006190126854079997,
+        "n": 2
+      },
+      "mean_rank_eigenvector": 136.5,
+      "indegree": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n": 2
+      },
+      "mean_rank_indegree": 130.0,
+      "closeness": {
+        "mean": 0.28238582263519063,
+        "ci_low": 0.26127819548872183,
+        "ci_high": 0.3034934497816594,
+        "n": 2
+      },
+      "mean_rank_closeness": 47.5
+    }
+  ],
+  "by_division": [
+    {
+      "group": "Office of Vice Provost for Undergraduate Education",
+      "n_departments": 19,
+      "strength": {
+        "mean": 0.7734088932659752,
+        "ci_low": 0.7636128645693551,
+        "ci_high": 0.7832805875450564,
+        "n": 19
+      },
+      "mean_rank_strength": 20.736842105263158,
+      "eigenvector": {
+        "mean": 0.007768537823610461,
+        "ci_low": 0.007670751340170815,
+        "ci_high": 0.007865367546668866,
+        "n": 19
+      },
+      "mean_rank_eigenvector": 20.842105263157894,
+      "indegree": {
+        "mean": 6.315789473684211,
+        "ci_low": 4.998684210526316,
+        "ci_high": 7.7894736842105265,
+        "n": 19
+      },
+      "mean_rank_indegree": 49.10526315789474,
+      "closeness": {
+        "mean": 0.2897194184977058,
+        "ci_low": 0.27643286917904686,
+        "ci_high": 0.30353380905341865,
+        "n": 19
+      },
+      "mean_rank_closeness": 41.578947368421055
+    },
+    {
+      "group": "School of Education",
+      "n_departments": 1,
+      "strength": {
+        "mean": 0.7614262915517599,
+        "ci_low": 0.7614262915517599,
+        "ci_high": 0.7614262915517599,
+        "n": 1
+      },
+      "mean_rank_strength": 30.0,
+      "eigenvector": {
+        "mean": 0.007634887656928859,
+        "ci_low": 0.007634887656928859,
+        "ci_high": 0.007634887656928859,
+        "n": 1
+      },
+      "mean_rank_eigenvector": 31.0,
+      "indegree": {
+        "mean": 2.0,
+        "ci_low": 2.0,
+        "ci_high": 2.0,
+        "n": 1
+      },
+      "mean_rank_indegree": 116.0,
+      "closeness": {
+        "mean": 0.32400932400932403,
+        "ci_low": 0.32400932400932403,
+        "ci_high": 0.32400932400932403,
+        "n": 1
+      },
+      "mean_rank_closeness": 9.0
+    },
+    {
+      "group": "H&S Social Sciences",
+      "n_departments": 7,
+      "strength": {
+        "mean": 0.7490953223782134,
+        "ci_low": 0.7256057075847532,
+        "ci_high": 0.7669692900820503,
+        "n": 7
+      },
+      "mean_rank_strength": 40.42857142857143,
+      "eigenvector": {
+        "mean": 0.007520790488990886,
+        "ci_low": 0.007282281778258551,
+        "ci_high": 0.007703626724552952,
+        "n": 7
+      },
+      "mean_rank_eigenvector": 40.714285714285715,
+      "indegree": {
+        "mean": 3.857142857142857,
+        "ci_low": 3.142857142857143,
+        "ci_high": 4.714285714285714,
+        "n": 7
+      },
+      "mean_rank_indegree": 79.57142857142857,
+      "closeness": {
+        "mean": 0.2974542948717545,
+        "ci_low": 0.2744145184563012,
+        "ci_high": 0.3155859532702946,
+        "n": 7
+      },
+      "mean_rank_closeness": 32.57142857142857
+    },
+    {
+      "group": "Law School",
+      "n_departments": 1,
+      "strength": {
+        "mean": 0.7450310902752083,
+        "ci_low": 0.7450310902752083,
+        "ci_high": 0.7450310902752083,
+        "n": 1
+      },
+      "mean_rank_strength": 43.0,
+      "eigenvector": {
+        "mean": 0.007480887553072454,
+        "ci_low": 0.007480887553072454,
+        "ci_high": 0.007480887553072454,
+        "n": 1
+      },
+      "mean_rank_eigenvector": 41.0,
+      "indegree": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n": 1
+      },
+      "mean_rank_indegree": 124.0,
+      "closeness": {
+        "mean": 0.31376975169300225,
+        "ci_low": 0.31376975169300225,
+        "ci_high": 0.31376975169300225,
+        "n": 1
+      },
+      "mean_rank_closeness": 16.0
+    },
+    {
+      "group": "H&S programs and centers",
+      "n_departments": 31,
+      "strength": {
+        "mean": 0.7285609203305811,
+        "ci_low": 0.7122626345278782,
+        "ci_high": 0.7452844110045361,
+        "n": 31
+      },
+      "mean_rank_strength": 57.45161290322581,
+      "eigenvector": {
+        "mean": 0.007320303872755853,
+        "ci_low": 0.007156402519715823,
+        "ci_high": 0.007489876339219202,
+        "n": 31
+      },
+      "mean_rank_eigenvector": 56.61290322580645,
+      "indegree": {
+        "mean": 5.903225806451613,
+        "ci_low": 4.354838709677419,
+        "ci_high": 7.8072580645161285,
+        "n": 31
+      },
+      "mean_rank_indegree": 66.51612903225806,
+      "closeness": {
+        "mean": 0.2765273749639236,
+        "ci_low": 0.26394908083642105,
+        "ci_high": 0.2890817289985274,
+        "n": 31
+      },
+      "mean_rank_closeness": 57.29032258064516
+    },
+    {
+      "group": "H&S Humanities and Arts",
+      "n_departments": 22,
+      "strength": {
+        "mean": 0.7078650509993761,
+        "ci_low": 0.6953037562490147,
+        "ci_high": 0.7210638263257713,
+        "n": 22
+      },
+      "mean_rank_strength": 76.31818181818181,
+      "eigenvector": {
+        "mean": 0.007119595700533576,
+        "ci_low": 0.006991111342223,
+        "ci_high": 0.007253550363889271,
+        "n": 22
+      },
+      "mean_rank_eigenvector": 74.68181818181819,
+      "indegree": {
+        "mean": 3.9545454545454546,
+        "ci_low": 2.8181818181818183,
+        "ci_high": 5.181818181818182,
+        "n": 22
+      },
+      "mean_rank_indegree": 82.22727272727273,
+      "closeness": {
+        "mean": 0.25997198665145366,
+        "ci_low": 0.25118109819151785,
+        "ci_high": 0.26930813345638643,
+        "n": 22
+      },
+      "mean_rank_closeness": 74.81818181818181
+    },
+    {
+      "group": "Doerr School of Sustainability",
+      "n_departments": 9,
+      "strength": {
+        "mean": 0.7069769023024546,
+        "ci_low": 0.687404982656639,
+        "ci_high": 0.7264185387952246,
+        "n": 9
+      },
+      "mean_rank_strength": 76.55555555555556,
+      "eigenvector": {
+        "mean": 0.0070772563548741375,
+        "ci_low": 0.006877700536328943,
+        "ci_high": 0.007275089911130014,
+        "n": 9
+      },
+      "mean_rank_eigenvector": 77.11111111111111,
+      "indegree": {
+        "mean": 4.333333333333333,
+        "ci_low": 3.111111111111111,
+        "ci_high": 5.555555555555555,
+        "n": 9
+      },
+      "mean_rank_indegree": 71.77777777777777,
+      "closeness": {
+        "mean": 0.2536241710489035,
+        "ci_low": 0.2420252288659099,
+        "ci_high": 0.26700260225388656,
+        "n": 9
+      },
+      "mean_rank_closeness": 83.77777777777777
+    },
+    {
+      "group": "School of Engineering",
+      "n_departments": 12,
+      "strength": {
+        "mean": 0.6957168059766897,
+        "ci_low": 0.6782369886079322,
+        "ci_high": 0.7150140494107593,
+        "n": 12
+      },
+      "mean_rank_strength": 85.0,
+      "eigenvector": {
+        "mean": 0.006951220839511351,
+        "ci_low": 0.00677223851943465,
+        "ci_high": 0.007146777567919061,
+        "n": 12
+      },
+      "mean_rank_eigenvector": 86.58333333333333,
+      "indegree": {
+        "mean": 6.166666666666667,
+        "ci_low": 4.58125,
+        "ci_high": 8.0,
+        "n": 12
+      },
+      "mean_rank_indegree": 54.166666666666664,
+      "closeness": {
+        "mean": 0.2638875010204146,
+        "ci_low": 0.2475166278754463,
+        "ci_high": 0.28238731700377057,
+        "n": 12
+      },
+      "mean_rank_closeness": 73.41666666666667
+    },
+    {
+      "group": "Graduate School of Business",
+      "n_departments": 11,
+      "strength": {
+        "mean": 0.6860171899717947,
+        "ci_low": 0.6603793211860569,
+        "ci_high": 0.7128397382275746,
+        "n": 11
+      },
+      "mean_rank_strength": 90.9090909090909,
+      "eigenvector": {
+        "mean": 0.0068738487215764,
+        "ci_low": 0.006616518771806614,
+        "ci_high": 0.007145423693723286,
+        "n": 11
+      },
+      "mean_rank_eigenvector": 90.9090909090909,
+      "indegree": {
+        "mean": 4.818181818181818,
+        "ci_low": 3.3636363636363638,
+        "ci_high": 6.363636363636363,
+        "n": 11
+      },
+      "mean_rank_indegree": 68.54545454545455,
+      "closeness": {
+        "mean": 0.23788590872659557,
+        "ci_low": 0.2296044068998495,
+        "ci_high": 0.24732795423453016,
+        "n": 11
+      },
+      "mean_rank_closeness": 106.18181818181819
+    },
+    {
+      "group": "School of Medicine",
+      "n_departments": 19,
+      "strength": {
+        "mean": 0.6679918393830863,
+        "ci_low": 0.6499654816077433,
+        "ci_high": 0.6887880362302191,
+        "n": 19
+      },
+      "mean_rank_strength": 104.0,
+      "eigenvector": {
+        "mean": 0.006671319792883738,
+        "ci_low": 0.006491125128322833,
+        "ci_high": 0.006881637931605215,
+        "n": 19
+      },
+      "mean_rank_eigenvector": 105.52631578947368,
+      "indegree": {
+        "mean": 4.842105263157895,
+        "ci_low": 3.210526315789474,
+        "ci_high": 6.631578947368421,
+        "n": 19
+      },
+      "mean_rank_indegree": 73.78947368421052,
+      "closeness": {
+        "mean": 0.23939672094892214,
+        "ci_low": 0.22984435930601504,
+        "ci_high": 0.24937494295925478,
+        "n": 19
+      },
+      "mean_rank_closeness": 103.05263157894737
+    },
+    {
+      "group": "H&S Natural Sciences",
+      "n_departments": 6,
+      "strength": {
+        "mean": 0.6556419575041892,
+        "ci_low": 0.6437960810843478,
+        "ci_high": 0.6705019457154924,
+        "n": 6
+      },
+      "mean_rank_strength": 117.16666666666667,
+      "eigenvector": {
+        "mean": 0.006549401567672561,
+        "ci_low": 0.006431832560767926,
+        "ci_high": 0.006695629291746255,
+        "n": 6
+      },
+      "mean_rank_eigenvector": 118.0,
+      "indegree": {
+        "mean": 3.3333333333333335,
+        "ci_low": 1.8333333333333333,
+        "ci_high": 5.17083333333333,
+        "n": 6
+      },
+      "mean_rank_indegree": 92.83333333333333,
+      "closeness": {
+        "mean": 0.24885354714957264,
+        "ci_low": 0.2291292370112127,
+        "ci_high": 0.2701084809133528,
+        "n": 6
+      },
+      "mean_rank_closeness": 91.5
+    },
+    {
+      "group": "Department of Athletics, Physical Education and Recreation",
+      "n_departments": 2,
+      "strength": {
+        "mean": 0.615197362350939,
+        "ci_low": 0.6116735884232701,
+        "ci_high": 0.618721136278608,
+        "n": 2
+      },
+      "mean_rank_strength": 136.0,
+      "eigenvector": {
+        "mean": 0.006151084287561682,
+        "ci_low": 0.006112041721043368,
+        "ci_high": 0.006190126854079997,
+        "n": 2
+      },
+      "mean_rank_eigenvector": 136.5,
+      "indegree": {
+        "mean": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "n": 2
+      },
+      "mean_rank_indegree": 130.0,
+      "closeness": {
+        "mean": 0.28238582263519063,
+        "ci_low": 0.26127819548872183,
+        "ci_high": 0.3034934497816594,
+        "n": 2
+      },
+      "mean_rank_closeness": 47.5
+    }
+  ],
+  "versus_rest": {
+    "school": [
+      {
+        "group": "Office of Vice Provost for Undergraduate Education",
+        "n": 19,
+        "prob_higher": 0.9112657677250978,
+        "p": 8.941451157586508e-09
+      },
+      {
+        "group": "School of Humanities & Sciences",
+        "n": 66,
+        "prob_higher": 0.5423832923832924,
+        "p": 0.3886809325334142
+      },
+      {
+        "group": "Graduate School of Business",
+        "n": 11,
+        "prob_higher": 0.34178999295278367,
+        "p": 0.08278439433521932
+      },
+      {
+        "group": "School of Education",
+        "n": 1,
+        "prob_higher": 0.7913669064748201,
+        "p": 0.42857142857142866
+      },
+      {
+        "group": "Doerr School of Sustainability",
+        "n": 9,
+        "prob_higher": 0.453774385072095,
+        "p": 0.6463819564106149
+      },
+      {
+        "group": "School of Engineering",
+        "n": 12,
+        "prob_higher": 0.38671875,
+        "p": 0.19654011677478855
+      },
+      {
+        "group": "School of Medicine",
+        "n": 19,
+        "prob_higher": 0.2231404958677686,
+        "p": 0.00010900361465996282
+      },
+      {
+        "group": "Law School",
+        "n": 1,
+        "prob_higher": 0.697841726618705,
+        "p": 0.614285714285714
+      },
+      {
+        "group": "Department of Athletics, Physical Education and Recreation",
+        "n": 2,
+        "prob_higher": 0.025362318840579712,
+        "p": 0.0041109969167523125
+      }
+    ],
+    "division": [
+      {
+        "group": "Office of Vice Provost for Undergraduate Education",
+        "n": 19,
+        "prob_higher": 0.9112657677250978,
+        "p": 8.941451157586508e-09
+      },
+      {
+        "group": "H&S programs and centers",
+        "n": 31,
+        "prob_higher": 0.6197099733649009,
+        "p": 0.042607740242435424
+      },
+      {
+        "group": "H&S Humanities and Arts",
+        "n": 22,
+        "prob_higher": 0.450693374422188,
+        "p": 0.46537369667450046
+      },
+      {
+        "group": "H&S Social Sciences",
+        "n": 7,
+        "prob_higher": 0.7261009667024705,
+        "p": 0.04293431406317594
+      },
+      {
+        "group": "Graduate School of Business",
+        "n": 11,
+        "prob_higher": 0.34178999295278367,
+        "p": 0.08278439433521932
+      },
+      {
+        "group": "School of Education",
+        "n": 1,
+        "prob_higher": 0.7913669064748201,
+        "p": 0.42857142857142866
+      },
+      {
+        "group": "Doerr School of Sustainability",
+        "n": 9,
+        "prob_higher": 0.453774385072095,
+        "p": 0.6463819564106149
+      },
+      {
+        "group": "School of Engineering",
+        "n": 12,
+        "prob_higher": 0.38671875,
+        "p": 0.19654011677478855
+      },
+      {
+        "group": "School of Medicine",
+        "n": 19,
+        "prob_higher": 0.2231404958677686,
+        "p": 0.00010900361465996282
+      },
+      {
+        "group": "Law School",
+        "n": 1,
+        "prob_higher": 0.697841726618705,
+        "p": 0.614285714285714
+      },
+      {
+        "group": "H&S Natural Sciences",
+        "n": 6,
+        "prob_higher": 0.1517412935323383,
+        "p": 0.0022613305550978043
+      },
+      {
+        "group": "Department of Athletics, Physical Education and Recreation",
+        "n": 2,
+        "prob_higher": 0.025362318840579712,
+        "p": 0.0041109969167523125
+      }
+    ]
+  },
+  "measure_rank_spearman": {
+    "rank_strength": {
+      "rank_strength": 1.0,
+      "rank_eigenvector": 0.999,
+      "rank_indegree": 0.4412,
+      "rank_closeness": 0.6756
+    },
+    "rank_eigenvector": {
+      "rank_strength": 0.999,
+      "rank_eigenvector": 1.0,
+      "rank_indegree": 0.434,
+      "rank_closeness": 0.6759
+    },
+    "rank_indegree": {
+      "rank_strength": 0.4412,
+      "rank_eigenvector": 0.434,
+      "rank_indegree": 1.0,
+      "rank_closeness": 0.1248
+    },
+    "rank_closeness": {
+      "rank_strength": 0.6756,
+      "rank_eigenvector": 0.6759,
+      "rank_indegree": 0.1248,
+      "rank_closeness": 1.0
+    }
+  },
+  "spread_spearman": {
+    "strength": 0.6308412236775929,
+    "eigenvector": 0.6133782335833461,
+    "indegree": 0.5455426863706885,
+    "closeness": 0.3504197161286688
+  },
+  "top_10_strength": [
+    {
+      "department_code": "OSPOXFRD",
+      "department": "Overseas Studies in Oxford",
+      "school": "Office of Vice Provost for Undergraduate Education",
+      "strength": 0.8191846886567564,
+      "rank_strength_ci_low": 1,
+      "rank_strength_ci_high": 1
+    },
+    {
+      "department_code": "MLA",
+      "department": "Master of Liberal Arts",
+      "school": "School of Humanities & Sciences",
+      "strength": 0.7939095920387814,
+      "rank_strength_ci_low": 2,
+      "rank_strength_ci_high": 12
+    },
+    {
+      "department_code": "OSPBER",
+      "department": "Overseas Studies in Berlin",
+      "school": "Office of Vice Provost for Undergraduate Education",
+      "strength": 0.7934403535271869,
+      "rank_strength_ci_low": 2,
+      "rank_strength_ci_high": 13
+    },
+    {
+      "department_code": "OSPGEN",
+      "department": "Overseas Studies General",
+      "school": "Office of Vice Provost for Undergraduate Education",
+      "strength": 0.7932186184585291,
+      "rank_strength_ci_low": 2,
+      "rank_strength_ci_high": 18
+    },
+    {
+      "department_code": "OSPMADRD",
+      "department": "Overseas Studies in Madrid",
+      "school": "Office of Vice Provost for Undergraduate Education",
+      "strength": 0.7931772039563221,
+      "rank_strength_ci_low": 2,
+      "rank_strength_ci_high": 11
+    },
+    {
+      "department_code": "DLCL",
+      "department": "Division of Literatures, Cultures, & Languages",
+      "school": "School of Humanities & Sciences",
+      "strength": 0.7910148086927081,
+      "rank_strength_ci_low": 2,
+      "rank_strength_ci_high": 21
+    },
+    {
+      "department_code": "SINY",
+      "department": "Stanford in New York",
+      "school": "Office of Vice Provost for Undergraduate Education",
+      "strength": 0.7863196106898979,
+      "rank_strength_ci_low": 3,
+      "rank_strength_ci_high": 21
+    },
+    {
+      "department_code": "OSPPARIS",
+      "department": "Overseas Studies in Paris",
+      "school": "Office of Vice Provost for Undergraduate Education",
+      "strength": 0.7845116200458899,
+      "rank_strength_ci_low": 2,
+      "rank_strength_ci_high": 21
+    },
+    {
+      "department_code": "SYMSYS",
+      "department": "Symbolic Systems",
+      "school": "School of Humanities & Sciences",
+      "strength": 0.7843909873026658,
+      "rank_strength_ci_low": 2,
+      "rank_strength_ci_high": 31
+    },
+    {
+      "department_code": "CSRE",
+      "department": "Comparative Studies in Race & Ethnicity",
+      "school": "School of Humanities & Sciences",
+      "strength": 0.7841844325154012,
+      "rank_strength_ci_low": 4,
+      "rank_strength_ci_high": 14
+    }
+  ],
+  "bottom_10_strength": [
+    {
+      "department_code": "FILMPROD",
+      "department": "Film Production",
+      "school": "School of Humanities & Sciences",
+      "strength": 0.6338965673601817,
+      "rank_strength_ci_low": 124,
+      "rank_strength_ci_high": 133
+    },
+    {
+      "department_code": "EMED",
+      "department": "Emergency Medicine",
+      "school": "School of Medicine",
+      "strength": 0.6315442827603015,
+      "rank_strength_ci_low": 107,
+      "rank_strength_ci_high": 140
+    },
+    {
+      "department_code": "NEPR",
+      "department": "Neurosciences Program",
+      "school": "School of Medicine",
+      "strength": 0.6206302025679009,
+      "rank_strength_ci_low": 113,
+      "rank_strength_ci_high": 140
+    },
+    {
+      "department_code": "OUTDOOR",
+      "department": "Outdoor Education",
+      "school": "Department of Athletics, Physical Education and Recreation",
+      "strength": 0.618721136278608,
+      "rank_strength_ci_low": 129,
+      "rank_strength_ci_high": 140
+    },
+    {
+      "department_code": "ORTHO",
+      "department": "Orthopedic Surgery",
+      "school": "School of Medicine",
+      "strength": 0.614606016728223,
+      "rank_strength_ci_low": 131,
+      "rank_strength_ci_high": 140
+    },
+    {
+      "department_code": "PAS",
+      "department": "Physician Assistant Studies",
+      "school": "School of Medicine",
+      "strength": 0.6131674832105021,
+      "rank_strength_ci_low": 130,
+      "rank_strength_ci_high": 140
+    },
+    {
+      "department_code": "FINANCE",
+      "department": "Finance",
+      "school": "Graduate School of Business",
+      "strength": 0.6117576345671774,
+      "rank_strength_ci_low": 132,
+      "rank_strength_ci_high": 140
+    },
+    {
+      "department_code": "PHYSWELL",
+      "department": "Physical Wellness",
+      "school": "Department of Athletics, Physical Education and Recreation",
+      "strength": 0.6116735884232701,
+      "rank_strength_ci_low": 132,
+      "rank_strength_ci_high": 139
+    },
+    {
+      "department_code": "ACCT",
+      "department": "Accounting",
+      "school": "Graduate School of Business",
+      "strength": 0.6106701633032448,
+      "rank_strength_ci_low": 131,
+      "rank_strength_ci_high": 140
+    },
+    {
+      "department_code": "IMMUNOL",
+      "department": "Immunology",
+      "school": "School of Medicine",
+      "strength": 0.6045735155780559,
+      "rank_strength_ci_low": 132,
+      "rank_strength_ci_high": 140
+    }
+  ],
+  "seconds": 2
+}

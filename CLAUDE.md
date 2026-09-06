@@ -217,6 +217,28 @@ his five misses had an intruder from a content-adjacent top-level region, which 
 not exclude. Both instruments are unit-tested on synthetic maps in `tests/`. Run everything with
 `OMP_NUM_THREADS=1` as for stage 04.
 
+**Plan step 4 (2026-09-06).** Four validation checks against findings in the literature, names off, no LLM, in
+`experiments/`: `level_agreement.py` (kNN department and school agreement by course-number level; the level buckets
+1-99 / 100-199 / 200-299 / 300+ are the Bulletin's breakpoints and live in `validation_common.course_number` and
+`level_of`, to move into the pipeline when step 6's level colormap needs them), `crosslisting_distance.py` (department
+pairs sharing cross-listed courses versus held-out centroid distance with school-pair fixed effects and a within-stratum
+permutation test; per-course displacement in `crosslisting_displacement.parquet`), `linear_probe.py` (LinearSVC on the
+embeddings versus tf-idf for school and department, nested cross-validation, about ten minutes with five outer folds in
+parallel; `--quick` for a smoke run) and `department_centrality.py` (strength, eigenvector, kNN in-degree and closeness
+over 140 department centroids, summarised by school and by the three H&S divisions, mapped by hand from Wikipedia's
+department list and recorded in the JSON). Shared helpers in `experiments/validation_common.py`; outputs are the
+`validation_*` files plus `crosslisting_displacement.parquet` in `data/stanford/`, all copied by stage 07; unit tests on
+synthetic data in `tests/test_validation_common.py` and `tests/test_validation_checks.py`. Headlines: agreement rises
+0.40 to 0.42 (department) and 0.67 to 0.73 (school) from 1-99 to 100-199 and is flat above, within-department
+contrasts about +0.03 with intervals excluding zero; linked department pairs are closer (0.197 vs 0.308, P closer 0.80,
+FE -0.089, permutation p 0.001) and displacement grows with listings (+0.019 / +0.032 / +0.045 for 2 / 3 / 4+ within
+department); the home department is the content-nearest listing no more often than chance (43% vs 44%); the centrality
+core is the cross-cutting units (overseas programmes, MLA, DLCL, SYMSYS, CSRE) and strength tracks within-department
+spread (Spearman 0.63), the H&S Natural Sciences are the periphery (mean rank 117 of 140) and Engineering is central by
+in-degree only; the probe gives school 0.83 / 0.84 and department 0.66 / 0.66 for embeddings / tf-idf (majority 0.50 and
+0.06), so bag-of-words recovers the org chart as well as the embedding does, with half the department errors inside the
+right school.
+
 ## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
 
 - 254 departments in 9 schools, 16 with zero active courses.

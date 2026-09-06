@@ -89,11 +89,65 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   missing "Shipboard Oceanography and Estuarine Biogeochemistry" among climate-policy names and "AI Regulation
   Privacy Law Practicums" among law-and-politics names; `--score` adds human-listener agreement to the record,
   which is the grounding for using the listener in step 2 [Krumdick 2025].
-- [ ] **4. Validation checks**, each a short script in `experiments/`, results into the record:
+- [x] ~~**4. Validation checks**, each a short script in `experiments/`, results into the record:
   kNN department and school agreement by course-number level [4.3.1]; department pairs sharing
   cross-listed courses versus centroid distance, controlling for school [4.3.4, 4.2.2 displacement];
   linear probe on the embeddings versus tf-idf for school and department [4.3.5]; department
-  centrality in the existing department-centroid similarity graph [4.3.3].
+  centrality in the existing department-centroid similarity graph [4.3.3].~~
+  *Landed 2026-09-06:* four scripts on `experiments/validation_common.py` (the map's inputs aligned to the corpus,
+  course-number levels at the Bulletin's own breakpoints, department centroids, bootstrap intervals, a within-department
+  fixed-effects contrast), names off, no LLM, seconds each except the probe; the pure functions are unit-tested on
+  synthetic data in `tests/test_validation_common.py` and `tests/test_validation_checks.py`; every output is a
+  `validation_*` file in `data/stanford/`, copied into the record by stage 07. Run with `OMP_NUM_THREADS=1`.
+  *Level* (`level_agreement.py`): 1-99 / 100-199 / 200-299 / 300+ from the number in `primary_code`, the Bulletin's
+  own breakpoints (it also says Stanford has no standard numbering, so nothing finer); agreement is the share of a
+  course's 15 nearest neighbours (cosine in the embedding space, euclidean in the layout) in the same department or
+  school; tested on the UG and GR careers, the professional schools' own schemes tabulated only. Department agreement
+  is 0.40 at 1-99 and 0.42 at every level above, school 0.67 then 0.73-0.74; the within-department contrasts against
+  1-99 are +0.03 (department) and +0.02 to +0.04 (school) at every higher level with intervals excluding zero (one
+  layout contrast, department at 300+, touches it), and there is no further rise above 100-199. Size-matched chance is
+  0.01 for department, so the step is not a department-size artefact. Pardos & Nam's lower-division effect replicates
+  in content as a small step at the 100 boundary, not a gradient.
+  *Cross-listing* (`crosslisting_distance.py`): centroids are the unit-norm mean of a department's *single-listed*
+  courses (155 departments with ten or more; 10,492 courses), so no cross-listed course contributes to a centroid it
+  is compared with, and a single-listed course's own displacement leaves it out; the naive centroid is a sensitivity
+  row with the same signs. Of 11,935 department pairs, 851 share a cross-listed course; their centroid distance is
+  0.197 against 0.308, a random linked pair is closer than a random unlinked one with probability 0.80 (0.73 among
+  same-school pairs, 0.75 among cross-school pairs), the linked coefficient with school-pair fixed effects is -0.089
+  [-0.095, -0.083] with a within-school-pair permutation p of 0.001 (the floor at 1,000 permutations), and distance
+  falls with the number of shared courses (0.23 / 0.18 / 0.16 for 1 / 2-4 / 5+; Spearman -0.40 among linked pairs).
+  Displacement from the home centroid rises with listings, 0.158 / 0.177 / 0.193 / 0.206 for 1 / 2 / 3 / 4+,
+  within-department +0.019 / +0.032 / +0.045, and is larger when the listings span schools (0.223 against 0.175).
+  The home department, the registrar's `academicOrganization`, is the content-nearest of a cross-listed course's
+  listed departments 43% of the time against 44% for a random pick among them: cross-listed courses sit between their
+  departments, not in the owner's core. `crosslisting_displacement.parquet` is per course, aligned to the corpus, for
+  step 6.
+  *Probe* (`linear_probe.py`, nine minutes, five outer folds in parallel): LinearSVC (one-vs-rest, squared hinge) on
+  the unit-norm embeddings and on tf-idf over the same embedded text (unigrams and bigrams, min_df 2, sublinear tf, fit
+  per training fold), C from {0.1, 1, 10} by 3-fold inner cross-validation, 5-fold stratified outer, on the 10,729
+  courses in the 165 departments with ten or more. School (9 classes, majority 0.50): embeddings 0.827, tf-idf 0.837,
+  macro-F1 0.78 both. Department (165 classes, majority 0.06): 0.659 against 0.656, macro-F1 0.60 both, fold sd under
+  0.01; about half of the wrong department predictions land in the right school (0.51 / 0.52). Open Syllabus's
+  bag-of-words result replicates: a linear bag-of-words classifier recovers the org chart from descriptions as well as
+  the embedding does, and both leave a third of departments unrecovered from content (`validation_probe_departments.csv`
+  has per-department recall; interdisciplinary programmes and language departments are the misses, professional and
+  performance departments the hits). The inner search picked C = 10, the top of the grid, in 18 of 20 folds, with the
+  gain from 1 to 10 under 0.005, so a wider grid would not move the numbers. Cross-validated predictions per course are in
+  `validation_probe_predictions.parquet`.
+  *Centrality* (`department_centrality.py`): 140 departments with 15 or more courses, centroid cosine similarity;
+  strength (mean similarity to the others), eigenvector centrality, in-degree and closeness in the 5-nearest-department
+  graph, the last two again in the 2-d layout, and a 200-draw course bootstrap for the strength rank. The core by
+  strength is the cross-cutting units: the overseas-studies programmes, the Master of Liberal Arts, the Division of
+  Literatures, Cultures & Languages, Stanford in New York, Symbolic Systems, CSRE; strength tracks within-department
+  spread (Spearman 0.63), a heterogeneous unit's centroid sitting near the global mean. By school, VPUE leads
+  (probability of higher strength than a department outside the group 0.91) and Medicine and Athletics trail (0.22,
+  0.03); Engineering is mid-table by strength (mean rank 85 of 140, probability 0.39) but ties VPUE for the highest
+  in-degree (6.2). Within H&S, mapped to its three divisions by the department list on Wikipedia's page for the school
+  (the school's own site names the divisions but did not list members on the pages fetched; mapping recorded in the
+  JSON, a small hand mapping accepted where the 254-to-20 one of 4.3.2 was cut), the Natural Sciences are the
+  periphery: mean strength rank 117 of 140, probability 0.15, p 0.002; the Social Sciences are central (0.73). Gim et
+  al. half-replicates: natural sciences peripheral, yes; engineering core, only by in-degree. The measures disagree
+  (in-degree against strength, Spearman 0.44), so the CSV keeps all of them.
 - [ ] **5. Archive with a DOI** [4.4.2]. Gate: read the ExploreCourses terms of use first. If
   redistribution is allowed, Zenodo deposit of the raw XML snapshot, embeddings, corpus parquet, and
   the record; if not, the deposit drops the raw XML and the write-up says why. DOI into the README

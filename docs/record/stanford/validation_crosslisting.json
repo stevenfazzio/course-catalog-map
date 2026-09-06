@@ -1,0 +1,369 @@
+{
+  "source": "stanford",
+  "embedding_model": "qwen3-0.6b",
+  "computed_at": "2026-09-06T15:31:09+00:00",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.0"
+  },
+  "min_single_listed": 10,
+  "n_permutations": 1000,
+  "definitions": {
+    "centroid_heldout": "unit-norm mean embedding of a department's single-listed courses (n_listings == 1); a single-listed course's own displacement leaves it out of the centroid",
+    "centroid_naive": "unit-norm mean over every course by primary department (leave-one-out for displacement)",
+    "distance": "cosine distance, 1 - cos",
+    "linked": "the two departments share at least one cross-listed course (both codes in listed_in)",
+    "prob_linked_closer": "P(random linked pair closer than random unlinked pair), Mann-Whitney U / (n1 n0)",
+    "linked_effect": "OLS of pair distance on the linked indicator with school-pair fixed effects; percentile bootstrap over pairs (approximate: pairs sharing a department are dependent); permutation p reassigns the linked indicator at random within each school pair, one-sided (linked closer)",
+    "displacement": "cosine distance from a course to its home department's held-out centroid",
+    "within_department_contrasts": "OLS of displacement on n_listings-bucket dummies with department fixed effects, baseline single-listed; bootstrap over courses",
+    "spans_schools": "the course's listing departments belong to more than one school (departments with no primary course, hence no school here, ignored)",
+    "home_is_nearest_listed": "for a cross-listed course with two or more listed departments among those with centroids, whether the primary department's centroid is the closest of them; share_if_home_were_random is the mean of 1 / (number of such departments)"
+  },
+  "n_courses": 11091,
+  "n_departments_with_centroids": 155,
+  "n_courses_covered": 10492,
+  "n_pairs": 11935,
+  "n_linked_pairs": 851,
+  "pairs": {
+    "distance_heldout": {
+      "by_stratum": {
+        "all": {
+          "n_pairs": 11935,
+          "n_linked": 851,
+          "linked": {
+            "mean": 0.19717532639055782,
+            "ci_low": 0.19180123316416703,
+            "ci_high": 0.20257171891018258,
+            "n": 851
+          },
+          "unlinked": {
+            "mean": 0.3077049346082802,
+            "ci_low": 0.30595105938371375,
+            "ci_high": 0.3096616575880077,
+            "n": 11084
+          },
+          "prob_linked_closer": 0.8001062074422813
+        },
+        "same_school": {
+          "n_pairs": 3101,
+          "n_linked": 561,
+          "linked": {
+            "mean": 0.1753356459481785,
+            "ci_low": 0.1692591419024648,
+            "ci_high": 0.18152166116578128,
+            "n": 561
+          },
+          "unlinked": {
+            "mean": 0.2568134687711102,
+            "ci_low": 0.25271599407008927,
+            "ci_high": 0.26078608400085274,
+            "n": 2540
+          },
+          "prob_linked_closer": 0.7342926719721532
+        },
+        "cross_school": {
+          "n_pairs": 8834,
+          "n_linked": 290,
+          "linked": {
+            "mean": 0.23942381166012605,
+            "ci_low": 0.2304947413640853,
+            "ci_high": 0.24890858181313016,
+            "n": 290
+          },
+          "unlinked": {
+            "mean": 0.32283418592223284,
+            "ci_low": 0.32078659189503167,
+            "ci_high": 0.32492418846051435,
+            "n": 8544
+          },
+          "prob_linked_closer": 0.7521442754746223
+        }
+      },
+      "linked_effect_school_pair_fixed_effects": {
+        "estimate": -0.08918849910053069,
+        "ci_low": -0.09529887588415652,
+        "ci_high": -0.0834499065976526,
+        "n_school_pairs": 43,
+        "permutation_p": 0.000999000999000999,
+        "permutation_null_mean": -5.1022001107299054e-05,
+        "permutation_null_sd": 0.003380231939555059
+      },
+      "dose_spearman_among_linked": {
+        "rho": -0.39820315459500083,
+        "p": 1.0131055928522382e-33,
+        "n": 851
+      },
+      "by_n_shared": [
+        {
+          "n_shared": "0",
+          "mean": 0.3077049346082802,
+          "ci_low": 0.30595105938371375,
+          "ci_high": 0.3096616575880077,
+          "n": 11084
+        },
+        {
+          "n_shared": "1",
+          "mean": 0.23287127522851533,
+          "ci_low": 0.22378142069607368,
+          "ci_high": 0.24107042512582402,
+          "n": 343
+        },
+        {
+          "n_shared": "2-4",
+          "mean": 0.18353664030261935,
+          "ci_low": 0.17536821184662932,
+          "ci_high": 0.19200383002086271,
+          "n": 305
+        },
+        {
+          "n_shared": "5+",
+          "mean": 0.15735310375706915,
+          "ci_low": 0.14905129544014406,
+          "ci_high": 0.16659850052901423,
+          "n": 203
+        }
+      ]
+    },
+    "distance_naive": {
+      "by_stratum": {
+        "all": {
+          "n_pairs": 11935,
+          "n_linked": 851,
+          "linked": {
+            "mean": 0.1879440250342394,
+            "ci_low": 0.1822969549424449,
+            "ci_high": 0.1935149253706783,
+            "n": 851
+          },
+          "unlinked": {
+            "mean": 0.3064224884770422,
+            "ci_low": 0.3046764557716587,
+            "ci_high": 0.3083697267266637,
+            "n": 11084
+          },
+          "prob_linked_closer": 0.8124143120730446
+        },
+        "same_school": {
+          "n_pairs": 3101,
+          "n_linked": 561,
+          "linked": {
+            "mean": 0.1655708011602533,
+            "ci_low": 0.15956444056064897,
+            "ci_high": 0.1718354949810773,
+            "n": 561
+          },
+          "unlinked": {
+            "mean": 0.2546992331655057,
+            "ci_low": 0.2507823449540265,
+            "ci_high": 0.2587029298664304,
+            "n": 2540
+          },
+          "prob_linked_closer": 0.7538366527713447
+        },
+        "cross_school": {
+          "n_pairs": 8834,
+          "n_linked": 290,
+          "linked": {
+            "mean": 0.2312246408732263,
+            "ci_low": 0.22241564760754215,
+            "ci_high": 0.2410844901583327,
+            "n": 290
+          },
+          "unlinked": {
+            "mean": 0.3217990180289269,
+            "ci_low": 0.31969025824868996,
+            "ci_high": 0.32392649017241704,
+            "n": 8544
+          },
+          "prob_linked_closer": 0.7661819546687331
+        }
+      },
+      "linked_effect_school_pair_fixed_effects": {
+        "estimate": -0.09791389104095975,
+        "ci_low": -0.10396615487444565,
+        "ci_high": -0.09215876032517625,
+        "n_school_pairs": 43,
+        "permutation_p": 0.000999000999000999,
+        "permutation_null_mean": -5.640000207932354e-05,
+        "permutation_null_sd": 0.00346477595583618
+      },
+      "dose_spearman_among_linked": {
+        "rho": -0.4504739848183007,
+        "p": 9.283099530070541e-44,
+        "n": 851
+      },
+      "by_n_shared": [
+        {
+          "n_shared": "0",
+          "mean": 0.3064224884770422,
+          "ci_low": 0.3046764557716587,
+          "ci_high": 0.3083697267266637,
+          "n": 11084
+        },
+        {
+          "n_shared": "1",
+          "mean": 0.2278488695722521,
+          "ci_low": 0.21868192321575458,
+          "ci_high": 0.23620381880566052,
+          "n": 343
+        },
+        {
+          "n_shared": "2-4",
+          "mean": 0.17484778846086813,
+          "ci_low": 0.16671468588680216,
+          "ci_high": 0.18269254399992896,
+          "n": 305
+        },
+        {
+          "n_shared": "5+",
+          "mean": 0.1401952096566034,
+          "ci_low": 0.13219443223559196,
+          "ci_high": 0.14941938418972803,
+          "n": 203
+        }
+      ]
+    }
+  },
+  "displacement": {
+    "heldout": {
+      "by_n_listings": [
+        {
+          "n_listings": "1",
+          "mean": 0.1581031849528918,
+          "ci_low": 0.15654880032036805,
+          "ci_high": 0.15968061968115752,
+          "n": 8191
+        },
+        {
+          "n_listings": "2",
+          "mean": 0.17650955083278924,
+          "ci_low": 0.17286408196814312,
+          "ci_high": 0.180399446557103,
+          "n": 1468
+        },
+        {
+          "n_listings": "3",
+          "mean": 0.19343179732557522,
+          "ci_low": 0.18743514361022356,
+          "ci_high": 0.1994240058544427,
+          "n": 426
+        },
+        {
+          "n_listings": "4+",
+          "mean": 0.20584163255855983,
+          "ci_low": 0.1992709714061814,
+          "ci_high": 0.21243600390834416,
+          "n": 407
+        }
+      ],
+      "within_department_contrasts": {
+        "baseline": "1",
+        "n_groups": 155,
+        "n": 10492,
+        "contrasts": {
+          "2": {
+            "estimate": 0.018996616915651302,
+            "ci_low": 0.014396366037047073,
+            "ci_high": 0.02307886288873186
+          },
+          "3": {
+            "estimate": 0.032246403458268076,
+            "ci_low": 0.025864193891320976,
+            "ci_high": 0.039087048573387066
+          },
+          "4+": {
+            "estimate": 0.04465229124456146,
+            "ci_low": 0.03749268302673696,
+            "ci_high": 0.051448393202005276
+          }
+        }
+      },
+      "cross_listed_spanning_schools": {
+        "mean": 0.2227245737961992,
+        "ci_low": 0.21640186895668684,
+        "ci_high": 0.22891247067617743,
+        "n": 483
+      },
+      "cross_listed_within_school": {
+        "mean": 0.1747632241974694,
+        "ci_low": 0.17184424930321773,
+        "ci_high": 0.17757732408292984,
+        "n": 1818
+      }
+    },
+    "naive": {
+      "by_n_listings": [
+        {
+          "n_listings": "1",
+          "mean": 0.15841145688925753,
+          "ci_low": 0.15688407837082335,
+          "ci_high": 0.15997070037064304,
+          "n": 8191
+        },
+        {
+          "n_listings": "2",
+          "mean": 0.16836355088114915,
+          "ci_low": 0.16485617089581175,
+          "ci_high": 0.17207393683766914,
+          "n": 1468
+        },
+        {
+          "n_listings": "3",
+          "mean": 0.17802367940936745,
+          "ci_low": 0.17245387621377753,
+          "ci_high": 0.183915251372134,
+          "n": 426
+        },
+        {
+          "n_listings": "4+",
+          "mean": 0.1865967731539143,
+          "ci_low": 0.18030344419795635,
+          "ci_high": 0.1930723660430233,
+          "n": 407
+        }
+      ],
+      "within_department_contrasts": {
+        "baseline": "1",
+        "n_groups": 155,
+        "n": 10492,
+        "contrasts": {
+          "2": {
+            "estimate": 0.011162345906872881,
+            "ci_low": 0.0069259966239726125,
+            "ci_high": 0.015303562206718614
+          },
+          "3": {
+            "estimate": 0.018907953178591376,
+            "ci_low": 0.012906946278044307,
+            "ci_high": 0.02566101083050389
+          },
+          "4+": {
+            "estimate": 0.027710272652047226,
+            "ci_low": 0.02105755567657613,
+            "ci_high": 0.03429048076407924
+          }
+        }
+      },
+      "cross_listed_spanning_schools": {
+        "mean": 0.2104737672411654,
+        "ci_low": 0.20449824747191178,
+        "ci_high": 0.2168191171621491,
+        "n": 483
+      },
+      "cross_listed_within_school": {
+        "mean": 0.1635213626062034,
+        "ci_low": 0.16079605514175804,
+        "ci_high": 0.16608520974418153,
+        "n": 1818
+      }
+    }
+  },
+  "nearest_listed": {
+    "n_courses": 1552,
+    "share_home_is_nearest": 0.4265463917525773,
+    "share_if_home_were_random": 0.4382514625265914
+  },
+  "seconds": 30
+}

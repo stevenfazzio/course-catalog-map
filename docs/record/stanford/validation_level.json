@@ -1,0 +1,828 @@
+{
+  "source": "stanford",
+  "embedding_model": "qwen3-0.6b",
+  "computed_at": "2026-09-06T15:22:17+00:00",
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.0"
+  },
+  "k": 15,
+  "levels": [
+    "1-99",
+    "100-199",
+    "200-299",
+    "300+"
+  ],
+  "course_numbering_source": "https://bulletin.stanford.edu/academic-polices/courses/course-numbering",
+  "tested_careers": [
+    "UG",
+    "GR"
+  ],
+  "definitions": {
+    "agreement": "share of a course's 15 nearest neighbours with the same department (or school); embedding space is cosine over the unit-norm Qwen3-0.6B embeddings, layout is euclidean in the published 2-d coordinates; neighbours are drawn from the whole corpus regardless of level",
+    "chance": "size-matched chance: (n_same_label - 1) / (n - 1) per course, averaged over the group",
+    "within_department_contrasts": "OLS of per-course agreement on level dummies with department fixed effects (within-department demeaning), baseline 1-99, over the UG and GR careers; 95% percentile bootstrap over courses (1,000 resamples)",
+    "level": "from the number in primary_code; the Bulletin's own breakpoints"
+  },
+  "n_courses": 11091,
+  "level_counts": {
+    "1-99": 2369,
+    "100-199": 2881,
+    "200-299": 2858,
+    "300+": 2983
+  },
+  "by_level": [
+    {
+      "careers": "UG+GR",
+      "level": "1-99",
+      "n": 2369,
+      "embedding_department": {
+        "mean": 0.4011256507668496,
+        "ci_low": 0.3867996341635007,
+        "ci_high": 0.41424933164485717,
+        "n": 2369
+      },
+      "embedding_school": {
+        "mean": 0.6663852539749543,
+        "ci_low": 0.6530730265934993,
+        "ci_high": 0.6792197833122273,
+        "n": 2369
+      },
+      "layout_department": {
+        "mean": 0.35176586464049525,
+        "ci_low": 0.33808076544252147,
+        "ci_high": 0.3652173913043478,
+        "n": 2369
+      },
+      "layout_school": {
+        "mean": 0.6332629801604053,
+        "ci_low": 0.6195567750105531,
+        "ci_high": 0.6468573237653018,
+        "n": 2369
+      },
+      "chance_department": 0.010253077301072121,
+      "chance_school": 0.31375719819535547
+    },
+    {
+      "careers": "UG+GR",
+      "level": "100-199",
+      "n": 2881,
+      "embedding_department": {
+        "mean": 0.42242276987157235,
+        "ci_low": 0.40944000925604535,
+        "ci_high": 0.43510470901307424,
+        "n": 2881
+      },
+      "embedding_school": {
+        "mean": 0.7308804813143586,
+        "ci_low": 0.7203951174360754,
+        "ci_high": 0.7410627097072775,
+        "n": 2881
+      },
+      "layout_department": {
+        "mean": 0.38403332176327665,
+        "ci_low": 0.3707271780631725,
+        "ci_high": 0.39740946430637514,
+        "n": 2881
+      },
+      "layout_school": {
+        "mean": 0.7117898877704502,
+        "ci_low": 0.700358093254657,
+        "ci_high": 0.7227154923059123,
+        "n": 2881
+      },
+      "chance_department": 0.011741114086914393,
+      "chance_school": 0.3761138631292549
+    },
+    {
+      "careers": "UG+GR",
+      "level": "200-299",
+      "n": 2610,
+      "embedding_department": {
+        "mean": 0.4177777777777778,
+        "ci_low": 0.4055172413793104,
+        "ci_high": 0.4304003831417625,
+        "n": 2610
+      },
+      "embedding_school": {
+        "mean": 0.7367049808429119,
+        "ci_low": 0.72627969348659,
+        "ci_high": 0.7470268199233715,
+        "n": 2610
+      },
+      "layout_department": {
+        "mean": 0.37977011494252877,
+        "ci_low": 0.3666072796934866,
+        "ci_high": 0.3927994891443167,
+        "n": 2610
+      },
+      "layout_school": {
+        "mean": 0.7184674329501917,
+        "ci_low": 0.7071251596424011,
+        "ci_high": 0.729272030651341,
+        "n": 2610
+      },
+      "chance_department": 0.012551779415371963,
+      "chance_school": 0.3069220484437673
+    },
+    {
+      "careers": "UG+GR",
+      "level": "300+",
+      "n": 1864,
+      "embedding_department": {
+        "mean": 0.4222818311874106,
+        "ci_low": 0.4072246065808297,
+        "ci_high": 0.43670153791130184,
+        "n": 1864
+      },
+      "embedding_school": {
+        "mean": 0.7314020028612304,
+        "ci_low": 0.7197049356223175,
+        "ci_high": 0.7438125894134477,
+        "n": 1864
+      },
+      "layout_department": {
+        "mean": 0.378898426323319,
+        "ci_low": 0.36380275393419176,
+        "ci_high": 0.3937079756795422,
+        "n": 1864
+      },
+      "layout_school": {
+        "mean": 0.7126251788268957,
+        "ci_low": 0.7001412732474963,
+        "ci_high": 0.7258959227467813,
+        "n": 1864
+      },
+      "chance_department": 0.014607561233296052,
+      "chance_school": 0.3295727117574894
+    },
+    {
+      "careers": "UG",
+      "level": "1-99",
+      "n": 2368,
+      "embedding_department": {
+        "mean": 0.4012387387387387,
+        "ci_low": 0.3865076013513513,
+        "ci_high": 0.41455799549549555,
+        "n": 2368
+      },
+      "embedding_school": {
+        "mean": 0.6663851351351351,
+        "ci_low": 0.6526428772522523,
+        "ci_high": 0.6799838119369369,
+        "n": 2368
+      },
+      "layout_department": {
+        "mean": 0.3519144144144144,
+        "ci_low": 0.33868032094594597,
+        "ci_high": 0.36537232545045045,
+        "n": 2368
+      },
+      "layout_school": {
+        "mean": 0.6332488738738739,
+        "ci_low": 0.6185529279279279,
+        "ci_high": 0.6476921452702703,
+        "n": 2368
+      },
+      "chance_department": 0.010255655508980575,
+      "chance_school": 0.3138507801647455
+    },
+    {
+      "careers": "UG",
+      "level": "100-199",
+      "n": 2865,
+      "embedding_department": {
+        "mean": 0.42303664921465967,
+        "ci_low": 0.4104659685863874,
+        "ci_high": 0.43469517161140203,
+        "n": 2865
+      },
+      "embedding_school": {
+        "mean": 0.7317277486910995,
+        "ci_low": 0.7213490401396162,
+        "ci_high": 0.7430442117510181,
+        "n": 2865
+      },
+      "layout_department": {
+        "mean": 0.3847120418848168,
+        "ci_low": 0.3724874927283305,
+        "ci_high": 0.39713845258871444,
+        "n": 2865
+      },
+      "layout_school": {
+        "mean": 0.712367655613729,
+        "ci_low": 0.700870273414776,
+        "ci_high": 0.7247731239092494,
+        "n": 2865
+      },
+      "chance_department": 0.01176671277521532,
+      "chance_school": 0.3764505230094247
+    },
+    {
+      "careers": "UG",
+      "level": "200-299",
+      "n": 782,
+      "embedding_department": {
+        "mean": 0.40315430520034107,
+        "ci_low": 0.3802195225916454,
+        "ci_high": 0.42404092071611255,
+        "n": 782
+      },
+      "embedding_school": {
+        "mean": 0.8422847399829498,
+        "ci_low": 0.8301726342710997,
+        "ci_high": 0.8549040920716112,
+        "n": 782
+      },
+      "layout_department": {
+        "mean": 0.3481670929241262,
+        "ci_low": 0.3268393009377664,
+        "ci_high": 0.3688043478260869,
+        "n": 782
+      },
+      "layout_school": {
+        "mean": 0.8159420289855072,
+        "ci_low": 0.8017902813299232,
+        "ci_high": 0.8310315430520034,
+        "n": 782
+      },
+      "chance_department": 0.01614343467421861,
+      "chance_school": 0.4842994656599456
+    },
+    {
+      "careers": "UG",
+      "level": "300+",
+      "n": 8,
+      "embedding_department": {
+        "mean": 0.25,
+        "ci_low": 0.13333333333333333,
+        "ci_high": 0.39166666666666666,
+        "n": 8
+      },
+      "embedding_school": {
+        "mean": 0.6749999999999999,
+        "ci_low": 0.45,
+        "ci_high": 0.8668749999999998,
+        "n": 8
+      },
+      "layout_department": {
+        "mean": 0.15,
+        "ci_low": 0.05,
+        "ci_high": 0.3,
+        "n": 8
+      },
+      "layout_school": {
+        "mean": 0.6333333333333333,
+        "ci_low": 0.39166666666666666,
+        "ci_high": 0.8333333333333334,
+        "n": 8
+      },
+      "chance_department": 0.0068530207394048685,
+      "chance_school": 0.3038999098286745
+    },
+    {
+      "careers": "GR",
+      "level": "1-99",
+      "n": 1,
+      "embedding_department": {
+        "mean": 0.13333333333333333,
+        "ci_low": 0.13333333333333333,
+        "ci_high": 0.13333333333333333,
+        "n": 1
+      },
+      "embedding_school": {
+        "mean": 0.6666666666666666,
+        "ci_low": 0.6666666666666666,
+        "ci_high": 0.6666666666666666,
+        "n": 1
+      },
+      "layout_department": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n": 1
+      },
+      "layout_school": {
+        "mean": 0.6666666666666666,
+        "ci_low": 0.6666666666666666,
+        "ci_high": 0.6666666666666666,
+        "n": 1
+      },
+      "chance_department": 0.004147880973850316,
+      "chance_school": 0.09215509467989179
+    },
+    {
+      "careers": "GR",
+      "level": "100-199",
+      "n": 16,
+      "embedding_department": {
+        "mean": 0.3125,
+        "ci_low": 0.1915625,
+        "ci_high": 0.43760416666666657,
+        "n": 16
+      },
+      "embedding_school": {
+        "mean": 0.5791666666666666,
+        "ci_low": 0.45833333333333337,
+        "ci_high": 0.6958333333333333,
+        "n": 16
+      },
+      "layout_department": {
+        "mean": 0.2625,
+        "ci_low": 0.15833333333333335,
+        "ci_high": 0.3833333333333333,
+        "n": 16
+      },
+      "layout_school": {
+        "mean": 0.6083333333333334,
+        "ci_low": 0.46656249999999994,
+        "ci_high": 0.7374999999999999,
+        "n": 16
+      },
+      "chance_department": 0.007157348963029756,
+      "chance_school": 0.315830703336339
+    },
+    {
+      "careers": "GR",
+      "level": "200-299",
+      "n": 1828,
+      "embedding_department": {
+        "mean": 0.42403355215171407,
+        "ci_low": 0.4106409555069293,
+        "ci_high": 0.4387381473377097,
+        "n": 1828
+      },
+      "embedding_school": {
+        "mean": 0.6915390226112326,
+        "ci_low": 0.6789824945295405,
+        "ci_high": 0.7048285922684172,
+        "n": 1828
+      },
+      "layout_department": {
+        "mean": 0.3932895696571846,
+        "ci_low": 0.3783005105762217,
+        "ci_high": 0.4079257840991977,
+        "n": 1828
+      },
+      "layout_school": {
+        "mean": 0.6767687819110138,
+        "ci_low": 0.6633068927789935,
+        "ci_high": 0.6905187819110139,
+        "n": 1828
+      },
+      "chance_department": 0.011015305447966016,
+      "chance_school": 0.23104177477689009
+    },
+    {
+      "careers": "GR",
+      "level": "300+",
+      "n": 1856,
+      "embedding_department": {
+        "mean": 0.42302442528735634,
+        "ci_low": 0.4086566091954023,
+        "ci_high": 0.4386206896551725,
+        "n": 1856
+      },
+      "embedding_school": {
+        "mean": 0.7316451149425288,
+        "ci_low": 0.7189278017241381,
+        "ci_high": 0.7451517600574713,
+        "n": 1856
+      },
+      "layout_department": {
+        "mean": 0.37988505747126433,
+        "ci_low": 0.3643633261494253,
+        "ci_high": 0.39454202586206905,
+        "n": 1856
+      },
+      "layout_school": {
+        "mean": 0.7129669540229885,
+        "ci_low": 0.700359195402299,
+        "ci_high": 0.7268327945402301,
+        "n": 1856
+      },
+      "chance_department": 0.014640985976804204,
+      "chance_school": 0.3296833703864929
+    },
+    {
+      "careers": "LAW",
+      "level": "200-299",
+      "n": 85,
+      "embedding_department": {
+        "mean": 0.5827450980392157,
+        "ci_low": 0.5160588235294118,
+        "ci_high": 0.6423725490196078,
+        "n": 85
+      },
+      "embedding_school": {
+        "mean": 0.6007843137254902,
+        "ci_low": 0.531764705882353,
+        "ci_high": 0.6635490196078431,
+        "n": 85
+      },
+      "layout_department": {
+        "mean": 0.5725490196078431,
+        "ci_low": 0.49647058823529416,
+        "ci_high": 0.637686274509804,
+        "n": 85
+      },
+      "layout_school": {
+        "mean": 0.5819607843137254,
+        "ci_low": 0.5097843137254902,
+        "ci_high": 0.6486470588235295,
+        "n": 85
+      },
+      "chance_department": 0.0613260489046836,
+      "chance_school": 0.06789370391980057
+    },
+    {
+      "careers": "LAW",
+      "level": "300+",
+      "n": 605,
+      "embedding_department": {
+        "mean": 0.722534435261708,
+        "ci_low": 0.6999421487603307,
+        "ci_high": 0.7435812672176308,
+        "n": 605
+      },
+      "embedding_school": {
+        "mean": 0.7315702479338844,
+        "ci_low": 0.7089724517906336,
+        "ci_high": 0.7522892561983471,
+        "n": 605
+      },
+      "layout_department": {
+        "mean": 0.6780165289256199,
+        "ci_low": 0.6534407713498623,
+        "ci_high": 0.7002809917355372,
+        "n": 605
+      },
+      "layout_school": {
+        "mean": 0.6868319559228651,
+        "ci_low": 0.6617079889807164,
+        "ci_high": 0.709754820936639,
+        "n": 605
+      },
+      "chance_department": 0.062037871956717755,
+      "chance_school": 0.06266907123534715
+    },
+    {
+      "careers": "GSB",
+      "level": "200-299",
+      "n": 48,
+      "embedding_department": {
+        "mean": 0.3055555555555555,
+        "ci_low": 0.26385416666666667,
+        "ci_high": 0.3472569444444443,
+        "n": 48
+      },
+      "embedding_school": {
+        "mean": 0.5819444444444445,
+        "ci_low": 0.5249652777777778,
+        "ci_high": 0.6347222222222222,
+        "n": 48
+      },
+      "layout_department": {
+        "mean": 0.24722222222222223,
+        "ci_low": 0.20277777777777775,
+        "ci_high": 0.28753472222222215,
+        "n": 48
+      },
+      "layout_school": {
+        "mean": 0.5930555555555556,
+        "ci_low": 0.5305555555555556,
+        "ci_high": 0.6513888888888889,
+        "n": 48
+      },
+      "chance_department": 0.0034302675082657046,
+      "chance_school": 0.03688007213706041
+    },
+    {
+      "careers": "GSB",
+      "level": "300+",
+      "n": 339,
+      "embedding_department": {
+        "mean": 0.18485742379547687,
+        "ci_low": 0.1669567354965585,
+        "ci_high": 0.20255653883972466,
+        "n": 339
+      },
+      "embedding_school": {
+        "mean": 0.3978367748279253,
+        "ci_low": 0.37246312684365784,
+        "ci_high": 0.4234119960668634,
+        "n": 339
+      },
+      "layout_department": {
+        "mean": 0.14768928220255653,
+        "ci_low": 0.13215339233038348,
+        "ci_high": 0.16362340216322516,
+        "n": 339
+      },
+      "layout_school": {
+        "mean": 0.37718780727630286,
+        "ci_low": 0.3486676499508359,
+        "ci_high": 0.40688298918387417,
+        "n": 339
+      },
+      "chance_department": 0.004240712220475541,
+      "chance_school": 0.03688007213706041
+    },
+    {
+      "careers": "MED",
+      "level": "200-299",
+      "n": 115,
+      "embedding_department": {
+        "mean": 0.4255072463768115,
+        "ci_low": 0.3715652173913043,
+        "ci_high": 0.4753623188405796,
+        "n": 115
+      },
+      "embedding_school": {
+        "mean": 0.8197101449275364,
+        "ci_low": 0.776231884057971,
+        "ci_high": 0.8591304347826086,
+        "n": 115
+      },
+      "layout_department": {
+        "mean": 0.35884057971014494,
+        "ci_low": 0.3089855072463768,
+        "ci_high": 0.4075652173913043,
+        "n": 115
+      },
+      "layout_school": {
+        "mean": 0.8168115942028986,
+        "ci_low": 0.7744782608695651,
+        "ci_high": 0.8568115942028985,
+        "n": 115
+      },
+      "chance_department": 0.004468577253303015,
+      "chance_school": 0.09215509467989179
+    },
+    {
+      "careers": "MED",
+      "level": "300+",
+      "n": 175,
+      "embedding_department": {
+        "mean": 0.5333333333333334,
+        "ci_low": 0.5024761904761905,
+        "ci_high": 0.5638095238095238,
+        "n": 175
+      },
+      "embedding_school": {
+        "mean": 0.9954285714285716,
+        "ci_low": 0.9923809523809524,
+        "ci_high": 0.9984761904761905,
+        "n": 175
+      },
+      "layout_department": {
+        "mean": 0.4605714285714285,
+        "ci_low": 0.4224666666666667,
+        "ci_high": 0.49753333333333327,
+        "n": 175
+      },
+      "layout_school": {
+        "mean": 0.9958095238095237,
+        "ci_low": 0.9931428571428572,
+        "ci_high": 0.9977142857142859,
+        "n": 175
+      },
+      "chance_department": 0.0043210099188458065,
+      "chance_school": 0.09241787968568853
+    }
+  ],
+  "within_department_contrasts": {
+    "embedding_department": {
+      "baseline": "1-99",
+      "n_groups": 228,
+      "n": 9724,
+      "contrasts": {
+        "100-199": {
+          "estimate": 0.03235678282626891,
+          "ci_low": 0.016620114661168816,
+          "ci_high": 0.04864073309060852
+        },
+        "200-299": {
+          "estimate": 0.02908667841397148,
+          "ci_low": 0.00911777971409404,
+          "ci_high": 0.04749288935810059
+        },
+        "300+": {
+          "estimate": 0.02505709210725056,
+          "ci_low": 0.0048016788747388345,
+          "ci_high": 0.04521256297176137
+        }
+      }
+    },
+    "embedding_school": {
+      "baseline": "1-99",
+      "n_groups": 228,
+      "n": 9724,
+      "contrasts": {
+        "100-199": {
+          "estimate": 0.019708206286682992,
+          "ci_low": 0.0053404902460534535,
+          "ci_high": 0.03458471120447788
+        },
+        "200-299": {
+          "estimate": 0.04376365642710406,
+          "ci_low": 0.02866936198615398,
+          "ci_high": 0.058777938130009436
+        },
+        "300+": {
+          "estimate": 0.022698255473551945,
+          "ci_low": 0.0047255492367415134,
+          "ci_high": 0.03867214996804425
+        }
+      }
+    },
+    "layout_department": {
+      "baseline": "1-99",
+      "n_groups": 228,
+      "n": 9724,
+      "contrasts": {
+        "100-199": {
+          "estimate": 0.036678564814657005,
+          "ci_low": 0.017750904316133954,
+          "ci_high": 0.0548856897672276
+        },
+        "200-299": {
+          "estimate": 0.03505572297176686,
+          "ci_low": 0.015168254296105466,
+          "ci_high": 0.054421807198808014
+        },
+        "300+": {
+          "estimate": 0.021763103697250496,
+          "ci_low": -0.0005739394054836342,
+          "ci_high": 0.04290009177510299
+        }
+      }
+    },
+    "layout_school": {
+      "baseline": "1-99",
+      "n_groups": 228,
+      "n": 9724,
+      "contrasts": {
+        "100-199": {
+          "estimate": 0.021703926184838847,
+          "ci_low": 0.006664826739019493,
+          "ci_high": 0.038012433524569664
+        },
+        "200-299": {
+          "estimate": 0.044864866411767894,
+          "ci_low": 0.02749964861442064,
+          "ci_high": 0.062488133118290316
+        },
+        "300+": {
+          "estimate": 0.021214875174052007,
+          "ci_low": 0.00226043305401322,
+          "ci_high": 0.039583314844731286
+        }
+      }
+    }
+  },
+  "by_career": [
+    {
+      "career": "UG",
+      "n": 6023,
+      "embedding_department": {
+        "mean": 0.4116553212684709,
+        "ci_low": 0.40279539542863463,
+        "ci_high": 0.41997952293984175,
+        "n": 6023
+      },
+      "embedding_school": {
+        "mean": 0.7203165642813659,
+        "ci_low": 0.7126775139742101,
+        "ci_high": 0.7282865681554043,
+        "n": 6023
+      },
+      "layout_department": {
+        "mean": 0.3667607504565831,
+        "ci_low": 0.3577605290829598,
+        "ci_high": 0.37494244285793343,
+        "n": 6023
+      },
+      "layout_school": {
+        "mean": 0.6946040179312636,
+        "ci_low": 0.6866672201007249,
+        "ci_high": 0.7028286014721346,
+        "n": 6023
+      }
+    },
+    {
+      "career": "GR",
+      "n": 3701,
+      "embedding_department": {
+        "mean": 0.4229667657389895,
+        "ci_low": 0.4123741331171755,
+        "ci_high": 0.43327163829595605,
+        "n": 3701
+      },
+      "embedding_school": {
+        "mean": 0.711159146176709,
+        "ci_low": 0.701932810951995,
+        "ci_high": 0.7198612987480861,
+        "n": 3701
+      },
+      "layout_department": {
+        "mean": 0.3858957038638206,
+        "ci_low": 0.374636584706836,
+        "ci_high": 0.39642033684589745,
+        "n": 3701
+      },
+      "layout_school": {
+        "mean": 0.6946230748446366,
+        "ci_low": 0.6848050076555886,
+        "ci_high": 0.7039912636224444,
+        "n": 3701
+      }
+    },
+    {
+      "career": "LAW",
+      "n": 690,
+      "embedding_department": {
+        "mean": 0.7053140096618357,
+        "ci_low": 0.6848260869565218,
+        "ci_high": 0.7258067632850241,
+        "n": 690
+      },
+      "embedding_school": {
+        "mean": 0.7154589371980675,
+        "ci_low": 0.6943937198067632,
+        "ci_high": 0.7359468599033816,
+        "n": 690
+      },
+      "layout_department": {
+        "mean": 0.665024154589372,
+        "ci_low": 0.6407729468599034,
+        "ci_high": 0.6877367149758453,
+        "n": 690
+      },
+      "layout_school": {
+        "mean": 0.6739130434782609,
+        "ci_low": 0.6497560386473431,
+        "ci_high": 0.6957657004830918,
+        "n": 690
+      }
+    },
+    {
+      "career": "GSB",
+      "n": 387,
+      "embedding_department": {
+        "mean": 0.19982773471145568,
+        "ci_low": 0.18208440999138675,
+        "ci_high": 0.21619293712316967,
+        "n": 387
+      },
+      "embedding_school": {
+        "mean": 0.42067183462532304,
+        "ci_low": 0.3953445305770888,
+        "ci_high": 0.44289405684754524,
+        "n": 387
+      },
+      "layout_department": {
+        "mean": 0.1600344530577089,
+        "ci_low": 0.14332472006890612,
+        "ci_high": 0.17450904392764857,
+        "n": 387
+      },
+      "layout_school": {
+        "mean": 0.40396210163652024,
+        "ci_low": 0.37466838931955215,
+        "ci_high": 0.43015503875968997,
+        "n": 387
+      }
+    },
+    {
+      "career": "MED",
+      "n": 290,
+      "embedding_department": {
+        "mean": 0.49057471264367813,
+        "ci_low": 0.4636724137931034,
+        "ci_high": 0.5195459770114942,
+        "n": 290
+      },
+      "embedding_school": {
+        "mean": 0.9257471264367817,
+        "ci_low": 0.906896551724138,
+        "ci_high": 0.9439080459770115,
+        "n": 290
+      },
+      "layout_department": {
+        "mean": 0.4202298850574713,
+        "ci_low": 0.3891896551724138,
+        "ci_high": 0.45126436781609197,
+        "n": 290
+      },
+      "layout_school": {
+        "mean": 0.9248275862068965,
+        "ci_low": 0.905287356321839,
+        "ci_high": 0.9443793103448276,
+        "n": 290
+      }
+    }
+  ],
+  "seconds": 4
+}

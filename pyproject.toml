@@ -62,4 +62,9 @@ known-first-party = [
     "listener",
     "wayfinding_lineup",
     "name_intrusion",
+    "validation_common",
+    "level_agreement",
+    "crosslisting_distance",
+    "linear_probe",
+    "department_centrality",
 ]
