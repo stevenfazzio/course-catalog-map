@@ -1,0 +1,222 @@
+{
+ "what": "name-intrusion task on the published region names: four children of one region plus one intruder from elsewhere, pick the intruder; Chang et al. 2009 adapted to region names",
+ "construction": "four regions at one layer that share an ancestor (children of one parent where the map has enough of them, otherwise descendants of one grandparent through at least two of its children) plus one same-layer region under a different coarsest ancestor; every parent with 4+ children once, then grandparent groups at random to fill; item order and intruder position shuffled; seed 0",
+ "instructions_shown": "Each item shows five names of regions on a map of Stanford's course catalog. Four of them name regions that sit together inside one larger region of the map; one comes from elsewhere on the map. Pick the one that does not belong.",
+ "n_items": 50,
+ "by_child_layer": {
+  "layer_0": 37,
+  "layer_1": 10,
+  "layer_2": 3
+ },
+ "by_unit": {
+  "grandparent": 10,
+  "parent": 40
+ },
+ "status": "complete",
+ "human": {
+  "n_items": 50,
+  "n_answered": 50,
+  "n_correct": 45,
+  "accuracy": 0.9,
+  "wilson95": [
+   0.7863950966521162,
+   0.956524876008429
+  ],
+  "p_value_vs_chance": 2.510578045515748e-26,
+  "chance": 0.2,
+  "by_child_layer": {
+   "layer_0": {
+    "n": 37,
+    "n_correct": 35,
+    "accuracy": 0.9459459459459459,
+    "wilson95": [
+     0.822950349364601,
+     0.9850493372294601
+    ]
+   },
+   "layer_1": {
+    "n": 10,
+    "n_correct": 7,
+    "accuracy": 0.7,
+    "wilson95": [
+     0.39677321997956516,
+     0.892210712513788
+    ]
+   },
+   "layer_2": {
+    "n": 3,
+    "n_correct": 3,
+    "accuracy": 1.0,
+    "wilson95": [
+     0.43849391955098227,
+     1.0
+    ]
+   }
+  },
+  "misses": [
+   {
+    "item": "I08",
+    "child_layer": 1,
+    "unit": "parent",
+    "ancestor_name": "Global History, Race, and Empire",
+    "picked": "Feminist, Queer, and Trans Studies",
+    "intruder": "Criminal Justice Doctrine And Clinics",
+    "intruder_parent_name": "Law and Politics"
+   },
+   {
+    "item": "I15",
+    "child_layer": 0,
+    "unit": "parent",
+    "ancestor_name": "Climate Policy and Sustainability Governance",
+    "picked": "Indigenous Environmental Knowledge And Sovereignty",
+    "intruder": "Shipboard Oceanography and Estuarine Biogeochemistry",
+    "intruder_parent_name": "Marine Biology and Oceanography Fieldwork"
+   },
+   {
+    "item": "I18",
+    "child_layer": 1,
+    "unit": "parent",
+    "ancestor_name": "Law and Politics",
+    "picked": "China Reform and Global Development History",
+    "intruder": "AI Regulation Privacy Law Practicums",
+    "intruder_parent_name": "AI Ethics, Design, and Governance"
+   },
+   {
+    "item": "I26",
+    "child_layer": 1,
+    "unit": "parent",
+    "ancestor_name": "Asian and Middle Eastern Languages",
+    "picked": "Modern and Classical Chinese Reading Sequences",
+    "intruder": "Spanish Portuguese Multitrack Proficiency Courses",
+    "intruder_parent_name": "European Languages and Linguistics"
+   },
+   {
+    "item": "I50",
+    "child_layer": 0,
+    "unit": "grandparent",
+    "ancestor_name": "AI Ethics, Design, and Governance",
+    "picked": "Learning Sciences And Technology Design",
+    "intruder": "Proof-Based Analysis And PDE Theory",
+    "intruder_parent_name": "Applied Analysis, Linear Algebra, Computation"
+   }
+  ],
+  "by_unit": {
+   "grandparent": {
+    "n": 10,
+    "n_correct": 9,
+    "accuracy": 0.9,
+    "wilson95": [
+     0.5958436145024278,
+     0.9821242504842788
+    ]
+   },
+   "parent": {
+    "n": 40,
+    "n_correct": 36,
+    "accuracy": 0.9,
+    "wilson95": [
+     0.7694792561952611,
+     0.9604211124044252
+    ]
+   }
+  },
+  "rater": "the map's author, a single rater, who had seen the map and every region name before rating"
+ },
+ "listener": {
+  "n_items": 50,
+  "n_answered": 50,
+  "n_correct": 48,
+  "accuracy": 0.96,
+  "wilson95": [
+   0.8653966212204534,
+   0.9889613473391734
+  ],
+  "p_value_vs_chance": 2.2293944055390856e-31,
+  "chance": 0.2,
+  "by_child_layer": {
+   "layer_0": {
+    "n": 37,
+    "n_correct": 36,
+    "accuracy": 0.972972972972973,
+    "wilson95": [
+     0.8617562156243666,
+     0.9952131489450924
+    ]
+   },
+   "layer_1": {
+    "n": 10,
+    "n_correct": 9,
+    "accuracy": 0.9,
+    "wilson95": [
+     0.5958436145024278,
+     0.9821242504842788
+    ]
+   },
+   "layer_2": {
+    "n": 3,
+    "n_correct": 3,
+    "accuracy": 1.0,
+    "wilson95": [
+     0.43849391955098227,
+     1.0
+    ]
+   }
+  },
+  "misses": [
+   {
+    "item": "I15",
+    "child_layer": 0,
+    "unit": "parent",
+    "ancestor_name": "Climate Policy and Sustainability Governance",
+    "picked": "Environmental, Climate and Natural Resources Law",
+    "intruder": "Shipboard Oceanography and Estuarine Biogeochemistry",
+    "intruder_parent_name": "Marine Biology and Oceanography Fieldwork"
+   },
+   {
+    "item": "I18",
+    "child_layer": 1,
+    "unit": "parent",
+    "ancestor_name": "Law and Politics",
+    "picked": "Western Political Philosophy From Machiavelli",
+    "intruder": "AI Regulation Privacy Law Practicums",
+    "intruder_parent_name": "AI Ethics, Design, and Governance"
+   }
+  ],
+  "by_unit": {
+   "grandparent": {
+    "n": 10,
+    "n_correct": 10,
+    "accuracy": 1.0,
+    "wilson95": [
+     0.7224598312333834,
+     1.0
+    ]
+   },
+   "parent": {
+    "n": 40,
+    "n_correct": 38,
+    "accuracy": 0.95,
+    "wilson95": [
+     0.834958291820748,
+     0.9861796228538989
+    ]
+   }
+  },
+  "model": "claude-sonnet-5"
+ },
+ "human_listener_agreement": {
+  "n": 50,
+  "same_pick": 45,
+  "share_same_pick": 0.9,
+  "both_correct": 45,
+  "human_only_correct": 0,
+  "listener_only_correct": 3,
+  "both_wrong": 2
+ },
+ "disclosures": [
+  "single human rater, the map's author, who had seen the map and all names before rating",
+  "the region names were written by Claude Opus 5 (stage 04); the listener is Claude Sonnet 5",
+  "items test whether names of regions that share an ancestor read as one group; a miss can come from a vague or wrong name or from an ancestor whose descendants do not read as one group"
+ ],
+ "computed_at": "2026-09-06T14:54:23+00:00"
+}

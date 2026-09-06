@@ -30,6 +30,21 @@ RECORD_FILES = [
     "stability_regions.csv",
     "stability_meta.json",
     "stability_layouts.npz",
+    # step 2 (experiments/wayfinding_lineup.py): can a listener find a region from its name among its neighbours
+    "wayfinding_items.json",
+    "wayfinding_lineup.csv",
+    "wayfinding_lineup.json",
+    "wayfinding_calls.jsonl",  # the listener's raw answers
+    "wayfinding_calls.runs.json",  # what the calls cost, per paid run
+    # step 3 (experiments/name_intrusion.py): the human name-intrusion task, its sealed key, answers and result
+    "name_intrusion_items.csv",
+    "name_intrusion_key.json",
+    "name_intrusion_rater.html",
+    "name_intrusion_answers.csv",
+    "name_intrusion_llm.csv",
+    "name_intrusion_calls.jsonl",
+    "name_intrusion_calls.runs.json",
+    "name_intrusion.json",
 ]
 RECORD_GLOBS = ["evoc_topic_names*.json", "evoc_labels_meta*.json", "name_guardrail*.csv", "raw/_manifest.json"]
 

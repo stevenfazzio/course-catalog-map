@@ -195,7 +195,27 @@ published layers 0.92 / 0.94 / 0.91 / 0.86 finest to coarsest, 14-16% of publish
 subsamples 0.89 / 0.91 / 0.88 / 0.82. Median region co-assignment 0.68 at the finest layer (71 of 357 regions above
 0.9, 10 below 0.2); the coarsest layer's large regions split (median 0.60). Per course, `stay_seeds_layer_i` is the
 share of its published-region peers it stays with, NaN where the published layer leaves it unlabelled: the step-6
-hover or colormap input. The seed layouts in the npz are step 2's null layouts.
+hover or colormap input. The seed layouts in the npz were meant as step 2's null layouts; step 2 turned out not
+to need them, so they remain for step 6.
+
+**Plan steps 2 and 3 (2026-09-06).** Both are name evaluations and share `experiments/published_map.py` (the map's
+record as one object: corpus text, embeddings, layout, labels, names, tree) and `experiments/listener.py` (Claude
+Sonnet 5 through the Anthropic SDK with structured output, eight threads, a JSONL resume cache keyed by question id
+with per-call token usage, refusals recorded rather than raised). Sonnet 5 rather than the namer, Opus 5, is the
+no-self-preference rule from Steven's Toponymy evaluation; Sonnet 5 takes no temperature parameter, so repeats
+measure the band at the model default. Step 2, `experiments/wayfinding_lineup.py` (`--dry-run` builds the items
+and estimates the calls without spending; `--quick` is a twenty-call smoke test): probability mass on the true
+region 0.58 [0.55, 0.60] over 135 items against chance 0.20, floor 0.18, ceiling 0.93, top-1 0.93, repeat band
+p90 0.12; one item ("Emerging Viral Diseases And Biosecurity") dropped because the listener's safety classifier
+refused it, category bio; about $5.50 for 680 calls. Outputs `wayfinding_items.json`, `wayfinding_lineup.csv`,
+`wayfinding_lineup.json`, copied into the record by stage 07. Step 3, `experiments/name_intrusion.py`: fifty
+items written to `name_intrusion_items.csv`, a sealed `name_intrusion_key.json`, and a rater page
+`name_intrusion_rater.html` (serve `data/stanford/` on 8765; answers are kept in localStorage and copied out as
+CSV); `--llm` had the listener answer them (48/50) and `--score` writes `name_intrusion.json`. Steven rated all
+fifty on 2026-09-06: 45/50 (Wilson 95% [0.79, 0.96]), same pick as the listener on 45, both wrong on two; three of
+his five misses had an intruder from a content-adjacent top-level region, which the tree-based intruder rule does
+not exclude. Both instruments are unit-tested on synthetic maps in `tests/`. Run everything with
+`OMP_NUM_THREADS=1` as for stage 04.
 
 ## Stanford data facts (2026-27 catalog, fetched 2026-09-05 UTC)
 

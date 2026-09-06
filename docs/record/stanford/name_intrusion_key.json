@@ -1,0 +1,1666 @@
+{
+ "instructions": "Each item shows five names of regions on a map of Stanford's course catalog. Four of them name regions that sit together inside one larger region of the map; one comes from elsewhere on the map. Pick the one that does not belong.",
+ "construction": "four regions at one layer that share an ancestor (children of one parent where the map has enough of them, otherwise descendants of one grandparent through at least two of its children) plus one same-layer region under a different coarsest ancestor; every parent with 4+ children once, then grandparent groups at random to fill; item order and intruder position shuffled; seed 0",
+ "n_items": 50,
+ "by_child_layer": {
+  "layer_0": 37,
+  "layer_1": 10,
+  "layer_2": 3
+ },
+ "by_unit": {
+  "grandparent": 10,
+  "parent": 40
+ },
+ "items": [
+  {
+   "item": "I01",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    44
+   ],
+   "ancestor_name": "Geophysics and Earth-Planetary Systems",
+   "siblings": [
+    126,
+    133,
+    162,
+    163
+   ],
+   "intruder": 352,
+   "intruder_parent_name": "Russian Empire and Soviet Europe",
+   "clusters_in_order": [
+    162,
+    133,
+    163,
+    352,
+    126
+   ],
+   "names_in_order": [
+    "Planetary Geophysics And Remote Sensing",
+    "Earth and Planetary Sciences Research",
+    "Structural Geology, Tectonics, Geophysics",
+    "Imperial Russia, Ukraine, Modern Europe",
+    "Earth Systems Capstone And Research"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I02",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    17
+   ],
+   "ancestor_name": "Electrical Engineering Devices and Design",
+   "siblings": [
+    46,
+    47,
+    48,
+    49
+   ],
+   "intruder": 84,
+   "intruder_parent_name": "Financial Economics and Corporate Finance",
+   "clusters_in_order": [
+    47,
+    84,
+    49,
+    46,
+    48
+   ],
+   "names_in_order": [
+    "Integrated Circuit Design And Semiconductor Devices",
+    "Applied Valuation And Investment Analysis",
+    "Engineering Directed Research And Theses",
+    "EE Independent Projects And Practical Training",
+    "Prototyping Manufacturing And Capstone Design"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I03",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    24
+   ],
+   "ancestor_name": "Physical Education Fitness and Sports",
+   "siblings": [
+    57,
+    58,
+    63,
+    64
+   ],
+   "intruder": 166,
+   "intruder_parent_name": "Epidemiology and Clinical Research Methods",
+   "clusters_in_order": [
+    57,
+    64,
+    166,
+    63,
+    58
+   ],
+   "names_in_order": [
+    "Physical Education Swimming and Horsemanship",
+    "Health Related Fitness Training And Injury Prevention",
+    "Emerging Viral Diseases And Biosecurity",
+    "Sport Skill Instruction And Competitive Athletics",
+    "Outdoor Adventure Skills And Safety"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I04",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    2
+   ],
+   "ancestor_name": "European Languages and Linguistics",
+   "siblings": [
+    4,
+    6,
+    11,
+    12
+   ],
+   "intruder": 31,
+   "intruder_parent_name": "Pure and Applied Mathematics Courses",
+   "clusters_in_order": [
+    12,
+    6,
+    31,
+    11,
+    4
+   ],
+   "names_in_order": [
+    "Linguistic Theory, Sociolinguistics, and Research",
+    "Spanish Portuguese Multitrack Proficiency Courses",
+    "Graduate Algebra, Geometry, Topology",
+    "Academic English Literacy And Teaching Methods",
+    "French Italian Proficiency With Study Abroad"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I05",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    108
+   ],
+   "ancestor_name": "Legal Profession, Drafting, Dispute Resolution",
+   "siblings": [
+    324,
+    332,
+    334,
+    335
+   ],
+   "intruder": 63,
+   "intruder_parent_name": "Physical Education Fitness and Sports",
+   "clusters_in_order": [
+    324,
+    332,
+    334,
+    63,
+    335
+   ],
+   "names_in_order": [
+    "International Business Law And Arbitration",
+    "Negotiation, Mediation And Dispute Resolution",
+    "Lawyer Regulation And Litigation Practice Norms",
+    "Sport Skill Instruction And Competitive Athletics",
+    "Supreme Court Practice, Moot Court Competition"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I06",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    18
+   ],
+   "ancestor_name": "Theater Performance Studies and Dramaturgy",
+   "siblings": [
+    48,
+    62,
+    65,
+    66
+   ],
+   "intruder": 194,
+   "intruder_parent_name": "Comparative Religious Studies And Theology",
+   "clusters_in_order": [
+    194,
+    66,
+    48,
+    62,
+    65
+   ],
+   "names_in_order": [
+    "Theories of Religion and Religious Studies",
+    "Theater History Dramaturgy And Playwriting",
+    "Shakespeare And Early Modern Drama",
+    "Dramatic Literature And Theatrical Genres",
+    "Studio Acting And Devised Performance"
+   ],
+   "intruder_pos": "A"
+  },
+  {
+   "item": "I07",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    21
+   ],
+   "ancestor_name": "Instrument Classes Composition And Musicianship",
+   "siblings": [
+    47,
+    53,
+    67,
+    68
+   ],
+   "intruder": 344,
+   "intruder_parent_name": "Black, Latinx, and Indigenous Americas",
+   "clusters_in_order": [
+    68,
+    67,
+    47,
+    53,
+    344
+   ],
+   "names_in_order": [
+    "Tonal Theory Musicianship And Jazz Studies",
+    "Jazz World And Vocal Ensembles",
+    "Audition-Based Instrument Class And Lesson Signups",
+    "Composition Seminars Orchestration And Improvisation Collectives",
+    "American And Latin American Studies"
+   ],
+   "intruder_pos": "E"
+  },
+  {
+   "item": "I08",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    37
+   ],
+   "ancestor_name": "Global History, Race, and Empire",
+   "siblings": [
+    99,
+    113,
+    116,
+    117
+   ],
+   "intruder": 102,
+   "intruder_parent_name": "Law and Politics",
+   "clusters_in_order": [
+    116,
+    113,
+    99,
+    117,
+    102
+   ],
+   "names_in_order": [
+    "Russian Empire and Soviet Europe",
+    "Feminist, Queer, and Trans Studies",
+    "Ottoman Legacies And Modern Middle East",
+    "Anglo-American Revolutions and Survey Histories",
+    "Criminal Justice Doctrine And Clinics"
+   ],
+   "intruder_pos": "E"
+  },
+  {
+   "item": "I09",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    79
+   ],
+   "ancestor_name": "Urban Sociology, Housing and Inequality",
+   "siblings": [
+    219,
+    222,
+    254,
+    255
+   ],
+   "intruder": 134,
+   "intruder_parent_name": "Prototyping Manufacturing And Capstone Design",
+   "clusters_in_order": [
+    134,
+    255,
+    222,
+    254,
+    219
+   ],
+   "names_in_order": [
+    "Mechanical Design And Product Realization",
+    "Urban Planning And Sustainable Cities",
+    "Housing Policy And Urban Law",
+    "Urban Studies And Inequality",
+    "Sociology Research Training Seminars"
+   ],
+   "intruder_pos": "A"
+  },
+  {
+   "item": "I10",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    11
+   ],
+   "ancestor_name": "Academic English Literacy And Teaching Methods",
+   "siblings": [
+    32,
+    38,
+    39,
+    45
+   ],
+   "intruder": 282,
+   "intruder_parent_name": "Ancient Mediterranean Archaeology and Medieval Worlds",
+   "clusters_in_order": [
+    32,
+    282,
+    45,
+    39,
+    38
+   ],
+   "names_in_order": [
+    "Public Speaking and Presentation Skills",
+    "Classical Literature In Translation Seminars",
+    "Secondary English And World Language Teaching Methods",
+    "Academic Writing And Thesis Support",
+    "English for Non-Native Speakers"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I11",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    40
+   ],
+   "ancestor_name": "Modern Physics, Quantum Mechanics, Astrophysics",
+   "siblings": [
+    111,
+    138,
+    148,
+    149
+   ],
+   "intruder": 4,
+   "intruder_parent_name": "Asian and Middle Eastern Languages",
+   "clusters_in_order": [
+    148,
+    138,
+    149,
+    4,
+    111
+   ],
+   "names_in_order": [
+    "Quantum Computing And Information",
+    "Undergraduate Physics Research And Laboratory",
+    "Modern Physics And Quantum Mechanics",
+    "South Asian Language Instruction",
+    "Astrophysics, Cosmology, And Observational Astronomy"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I12",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    107
+   ],
+   "ancestor_name": "Jurisprudence, Legal History, Rule Of Law",
+   "siblings": [
+    323,
+    329,
+    336,
+    337
+   ],
+   "intruder": 227,
+   "intruder_parent_name": "Leadership and Social-Impact Organizations",
+   "clusters_in_order": [
+    337,
+    329,
+    227,
+    323,
+    336
+   ],
+   "names_in_order": [
+    "Jurisprudential Schools And Critical Legal Movements",
+    "Legal History Across National Traditions",
+    "Scholarly Organization Theory And Analysis",
+    "Rule Of Law Statebuilding And Anticorruption",
+    "Legal Philosophy, Gender, Sexuality Law"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I13",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    94
+   ],
+   "ancestor_name": "Ancient Mediterranean Archaeology and Medieval Worlds",
+   "siblings": [
+    282,
+    289,
+    291,
+    297
+   ],
+   "intruder": 227,
+   "intruder_parent_name": "Leadership and Social-Impact Organizations",
+   "clusters_in_order": [
+    289,
+    291,
+    297,
+    282,
+    227
+   ],
+   "names_in_order": [
+    "Ancient Mediterranean Art And Reception",
+    "Medieval Studies Sources And Methods",
+    "Archaeological Theory Methods And Heritage",
+    "Classical Literature In Translation Seminars",
+    "Scholarly Organization Theory And Analysis"
+   ],
+   "intruder_pos": "E"
+  },
+  {
+   "item": "I14",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    10
+   ],
+   "ancestor_name": "Education Policy and Teacher Preparation",
+   "siblings": [
+    78,
+    79,
+    84,
+    85
+   ],
+   "intruder": 136,
+   "intruder_parent_name": "Clinical Medicine Training",
+   "clusters_in_order": [
+    85,
+    78,
+    79,
+    84,
+    136
+   ],
+   "names_in_order": [
+    "Economics And Finance Of Education",
+    "Education Data Science and Statistics",
+    "Disability Studies In Education",
+    "Academic Career And Graduate Success",
+    "Perioperative Anesthesiology Clerkships And Subinternships"
+   ],
+   "intruder_pos": "E"
+  },
+  {
+   "item": "I15",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    18
+   ],
+   "ancestor_name": "Climate Policy and Sustainability Governance",
+   "siblings": [
+    116,
+    117,
+    185,
+    187
+   ],
+   "intruder": 59,
+   "intruder_parent_name": "Marine Biology and Oceanography Fieldwork",
+   "clusters_in_order": [
+    116,
+    59,
+    185,
+    117,
+    187
+   ],
+   "names_in_order": [
+    "Hydrology And Environmental Fluid Mechanics",
+    "Shipboard Oceanography and Estuarine Biogeochemistry",
+    "Environmental, Climate and Natural Resources Law",
+    "Water and Wastewater Treatment Engineering",
+    "Indigenous Environmental Knowledge And Sovereignty"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I16",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    25
+   ],
+   "ancestor_name": "AI Ethics, Design, and Governance",
+   "siblings": [
+    61,
+    69,
+    71,
+    72
+   ],
+   "intruder": 87,
+   "intruder_parent_name": "Cinema History and Documentary Filmmaking",
+   "clusters_in_order": [
+    71,
+    69,
+    61,
+    72,
+    87
+   ],
+   "names_in_order": [
+    "AI Regulation Privacy Law Practicums",
+    "Foundations Of AI And Language Models",
+    "Internet Speech Governance And Content Moderation",
+    "Human-Centered AI Design Ethics Studios",
+    "Documentary Production And Screenwriting Practice"
+   ],
+   "intruder_pos": "E"
+  },
+  {
+   "item": "I17",
+   "child_layer": 2,
+   "unit": "parent",
+   "ancestor": [
+    3,
+    6
+   ],
+   "ancestor_name": "Clinical Medicine Training",
+   "siblings": [
+    21,
+    22,
+    23,
+    24
+   ],
+   "intruder": 1,
+   "intruder_parent_name": "European Language Sequences",
+   "clusters_in_order": [
+    21,
+    23,
+    24,
+    22,
+    1
+   ],
+   "names_in_order": [
+    "Genetic Counseling, Epidemiology, and Bioethics",
+    "Public Health Equity and Policy",
+    "Hospital Clerkship Rotations",
+    "Biodesign and Organ System Medicine",
+    "Slavic Central European Language Courses"
+   ],
+   "intruder_pos": "E"
+  },
+  {
+   "item": "I18",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    3,
+    12
+   ],
+   "ancestor_name": "Law and Politics",
+   "siblings": [
+    95,
+    96,
+    100,
+    102
+   ],
+   "intruder": 71,
+   "intruder_parent_name": "AI Ethics, Design, and Governance",
+   "clusters_in_order": [
+    102,
+    71,
+    100,
+    96,
+    95
+   ],
+   "names_in_order": [
+    "Criminal Justice Doctrine And Clinics",
+    "AI Regulation Privacy Law Practicums",
+    "Asylum, Atrocity Accountability, Border Governance",
+    "Western Political Philosophy From Machiavelli",
+    "China Reform and Global Development History"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I19",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    74
+   ],
+   "ancestor_name": "Energy Climate Economics and Policy",
+   "siblings": [
+    202,
+    206,
+    211,
+    212
+   ],
+   "intruder": 327,
+   "intruder_parent_name": "Federal Courts, Amendments, Democratic Structure",
+   "clusters_in_order": [
+    206,
+    212,
+    327,
+    211,
+    202
+   ],
+   "names_in_order": [
+    "Equitable Electrification Law And Policy Practicums",
+    "Carbon Markets And Climate Tech Economics",
+    "Founding, Reconstruction And Constitutional Change Over Time",
+    "Sustainable Energy Transitions And Equity",
+    "Environmental and Climate Economics Policy"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I20",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    2
+   ],
+   "ancestor_name": "African Asian Indigenous Language Sequences",
+   "siblings": [
+    13,
+    15,
+    27,
+    28
+   ],
+   "intruder": 61,
+   "intruder_parent_name": "Doctoral Candidacy Dissertation Research Registration",
+   "clusters_in_order": [
+    15,
+    28,
+    13,
+    27,
+    61
+   ],
+   "names_in_order": [
+    "Filipino, Hawaiian, Samoan, Haitian Creole",
+    "Communicative Swahili Zulu Amharic Sequences",
+    "Hybrid Distance Indigenous Language Sequences",
+    "Igbo Twi Tigrinya Continuation Courses",
+    "Faculty-Supervised Doctoral Dissertation Research"
+   ],
+   "intruder_pos": "E"
+  },
+  {
+   "item": "I21",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    97
+   ],
+   "ancestor_name": "International Security and Foreign Policy",
+   "siblings": [
+    292,
+    310,
+    314,
+    315
+   ],
+   "intruder": 189,
+   "intruder_parent_name": "AI Ethics, Design, and Governance",
+   "clusters_in_order": [
+    310,
+    314,
+    189,
+    292,
+    315
+   ],
+   "names_in_order": [
+    "Indo-Pacific Great Power Rivalry And Strategy",
+    "National Security Technology Innovation",
+    "Learning Sciences And Technology Design",
+    "International Relations Thesis and Capstone Research",
+    "American Foreign Policymaking Intervention And Economic Statecraft"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I22",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    3,
+    3
+   ],
+   "ancestor_name": "Computer Science and AI",
+   "siblings": [
+    28,
+    43,
+    54,
+    57
+   ],
+   "intruder": 44,
+   "intruder_parent_name": "Geophysics and Earth System Dynamics",
+   "clusters_in_order": [
+    43,
+    57,
+    54,
+    44,
+    28
+   ],
+   "names_in_order": [
+    "Hands-On Data Analysis And Capstones",
+    "Human-Centered Design Studio Curriculum",
+    "Probability Theory and Statistical Inference",
+    "Geophysics and Earth-Planetary Systems",
+    "Econometrics and Causal Inference Methods"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I23",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    39
+   ],
+   "ancestor_name": "Elasticity Plasticity And Structural Dynamics",
+   "siblings": [
+    107,
+    137,
+    157,
+    158
+   ],
+   "intruder": 172,
+   "intruder_parent_name": "Biodesign, Digital Health Innovation",
+   "clusters_in_order": [
+    157,
+    137,
+    107,
+    172,
+    158
+   ],
+   "names_in_order": [
+    "Structural Engineering Analysis and Seismic Design",
+    "Dynamic Systems Modeling And Control",
+    "Materials Science Curriculum And Mentorship",
+    "Biodesign Health Technology Innovation",
+    "Computational Solid Mechanics And Plasticity"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I24",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    32
+   ],
+   "ancestor_name": "Applied Analysis, Linear Algebra, Computation",
+   "siblings": [
+    96,
+    100,
+    103,
+    104
+   ],
+   "intruder": 39,
+   "intruder_parent_name": "Academic English Literacy And Teaching Methods",
+   "clusters_in_order": [
+    96,
+    39,
+    104,
+    100,
+    103
+   ],
+   "names_in_order": [
+    "Numerical Methods and Scientific Computing",
+    "Academic Writing And Thesis Support",
+    "Proof-Based Analysis And PDE Theory",
+    "ACE Supplemental Engineering Calculus Sections",
+    "Mathematics Department Independent Study Requirements"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I25",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    35
+   ],
+   "ancestor_name": "Comparative Literature and Fiction Studies",
+   "siblings": [
+    261,
+    301,
+    316,
+    345
+   ],
+   "intruder": 198,
+   "intruder_parent_name": "Global Health Equity and Social Justice",
+   "clusters_in_order": [
+    301,
+    198,
+    261,
+    316,
+    345
+   ],
+   "names_in_order": [
+    "Continental Philosophy And Literature",
+    "Medical Humanities and Healing Arts",
+    "Chinese Literary History And Criticism",
+    "Science Fiction and Speculative Futures",
+    "American Modernist Fiction Race Gender"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I26",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    3
+   ],
+   "ancestor_name": "Asian and Middle Eastern Languages",
+   "siblings": [
+    5,
+    7,
+    13,
+    14
+   ],
+   "intruder": 6,
+   "intruder_parent_name": "European Languages and Linguistics",
+   "clusters_in_order": [
+    14,
+    13,
+    6,
+    7,
+    5
+   ],
+   "names_in_order": [
+    "Spoken Mandarin and Putonghua Communication",
+    "Modern and Classical Chinese Reading Sequences",
+    "Spanish Portuguese Multitrack Proficiency Courses",
+    "Japanese and Korean Proficiency Sequences",
+    "Arabic and Persian Proficiency Sequences"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I27",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    83
+   ],
+   "ancestor_name": "PWR Seminars on Media Rhetoric",
+   "siblings": [
+    256,
+    276,
+    287,
+    288
+   ],
+   "intruder": 40,
+   "intruder_parent_name": "Linguistic Theory, Sociolinguistics, and Research",
+   "clusters_in_order": [
+    256,
+    287,
+    288,
+    40,
+    276
+   ],
+   "names_in_order": [
+    "Journalism Reporting And News Media",
+    "Core PWR Research Based Argument Sequence",
+    "Themed PWR Seminars On Belonging And Change",
+    "Sociolinguistics, Phonetics, And Interaction",
+    "PWR Rhetorics Of Witness And Identity"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I28",
+   "child_layer": 2,
+   "unit": "parent",
+   "ancestor": [
+    3,
+    5
+   ],
+   "ancestor_name": "Engineering and Applied Physics",
+   "siblings": [
+    11,
+    12,
+    13,
+    16
+   ],
+   "intruder": 35,
+   "intruder_parent_name": "Comparative Literature and Fiction Studies",
+   "clusters_in_order": [
+    35,
+    12,
+    16,
+    13,
+    11
+   ],
+   "names_in_order": [
+    "Comparative Literature and Fiction Studies",
+    "Aerospace Engineering and Fluid Mechanics",
+    "Quantum Physics and Materials Chemistry",
+    "Structural Engineering and Architectural Design",
+    "Pure and Applied Mathematics Courses"
+   ],
+   "intruder_pos": "A"
+  },
+  {
+   "item": "I29",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    38
+   ],
+   "ancestor_name": "Architectural Design and Sustainable Construction",
+   "siblings": [
+    141,
+    142,
+    155,
+    156
+   ],
+   "intruder": 55,
+   "intruder_parent_name": "Computer Vision, Graphics, and Robotics",
+   "clusters_in_order": [
+    156,
+    55,
+    142,
+    155,
+    141
+   ],
+   "names_in_order": [
+    "Modern Architecture Histories Theory And Placemaking",
+    "Computer Graphics, Vision, Imaging",
+    "Construction Engineering And Project Management",
+    "Studio Sequence Craft And Architectural Drawing",
+    "Integrated Sustainable Building Design Studios"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I30",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    73
+   ],
+   "ancestor_name": "Sustainability Governance Justice And Social Science",
+   "siblings": [
+    209,
+    220,
+    240,
+    241
+   ],
+   "intruder": 285,
+   "intruder_parent_name": "China Reform and Global Development History",
+   "clusters_in_order": [
+    240,
+    209,
+    285,
+    241,
+    220
+   ],
+   "names_in_order": [
+    "Environmental Anthropology And Justice",
+    "Environmental Social Sciences Research Training",
+    "Political Economy of China",
+    "Global Environmental Change and Society",
+    "Sustainability Leadership And Systems Transformation"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I31",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    63
+   ],
+   "ancestor_name": "Clinical Clerkships in Patient Care",
+   "siblings": [
+    184,
+    188,
+    224,
+    225
+   ],
+   "intruder": 67,
+   "intruder_parent_name": "Instrument Classes Composition And Musicianship",
+   "clusters_in_order": [
+    184,
+    188,
+    225,
+    224,
+    67
+   ],
+   "names_in_order": [
+    "Obstetrics And Gynecology Clinical Clerkships",
+    "Physician Assistant Studies Clinical Clerkships",
+    "Primary Care Clinical Clerkships",
+    "Inpatient Medicine And Pediatrics Clerkships",
+    "Jazz World And Vocal Ensembles"
+   ],
+   "intruder_pos": "E"
+  },
+  {
+   "item": "I32",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    53
+   ],
+   "ancestor_name": "Epidemiology and Clinical Research Methods",
+   "siblings": [
+    166,
+    167,
+    170,
+    171
+   ],
+   "intruder": 52,
+   "intruder_parent_name": "Spanish Portuguese Multitrack Proficiency Courses",
+   "clusters_in_order": [
+    170,
+    167,
+    52,
+    171,
+    166
+   ],
+   "names_in_order": [
+    "Biostatistics for Clinical Research",
+    "History of Epidemics and Society",
+    "Multitrack Spanish For Heritage Learners",
+    "Epidemiologic Study Design and Methods",
+    "Emerging Viral Diseases And Biosecurity"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I33",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    33
+   ],
+   "ancestor_name": "Neuroscience from Synapses to Cognition",
+   "siblings": [
+    105,
+    106,
+    121,
+    122
+   ],
+   "intruder": 321,
+   "intruder_parent_name": "Aesthetics, Imagination, and Literary Philosophy",
+   "clusters_in_order": [
+    105,
+    321,
+    106,
+    122,
+    121
+   ],
+   "names_in_order": [
+    "Synaptic Physiology And Neural Circuit Foundations",
+    "Moral Judgment And Visual Culture",
+    "Clinical Neuroscience Of Stress Sleep Psychopathology",
+    "Computational and Cognitive Neuroscience Methods",
+    "Cognitive Science of Memory"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I34",
+   "child_layer": 2,
+   "unit": "parent",
+   "ancestor": [
+    3,
+    12
+   ],
+   "ancestor_name": "Law and Politics",
+   "siblings": [
+    36,
+    39,
+    40,
+    41
+   ],
+   "intruder": 7,
+   "intruder_parent_name": "Music and Performing Arts",
+   "clusters_in_order": [
+    40,
+    41,
+    39,
+    7,
+    36
+   ],
+   "names_in_order": [
+    "Legal Theory and Comparative Law",
+    "Legal Profession, Drafting, Dispute Resolution",
+    "Constitutional Structure and Electoral Politics",
+    "Music Lessons and Performing Ensembles",
+    "International Security and Foreign Policy"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I35",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    30
+   ],
+   "ancestor_name": "Aerospace Engineering and Fluid Mechanics",
+   "siblings": [
+    90,
+    93,
+    112,
+    113
+   ],
+   "intruder": 73,
+   "intruder_parent_name": "Undergraduate Directed Study Honors Tutorials",
+   "clusters_in_order": [
+    93,
+    90,
+    112,
+    73,
+    113
+   ],
+   "names_in_order": [
+    "Chemical Engineering Curriculum And Research",
+    "Turbulence, Flow Instability, Advanced Fluid Mechanics",
+    "Aeronautics And Astronautics Engineering",
+    "Faculty-Supervised Independent Study Courses",
+    "Fluid Mechanics And Heat Transfer"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I36",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    66
+   ],
+   "ancestor_name": "Molecular Biology and Biochemical Techniques",
+   "siblings": [
+    186,
+    199,
+    238,
+    239
+   ],
+   "intruder": 200,
+   "intruder_parent_name": "Surgical Clerkships and Clinical Anatomy",
+   "clusters_in_order": [
+    200,
+    199,
+    239,
+    186,
+    238
+   ],
+   "names_in_order": [
+    "General And Subspecialty Surgery Rotations",
+    "Stem Cell Biology Regenerative Medicine",
+    "Quantitative Cell Dynamics And Signaling Networks",
+    "Microbiology, Microbial Genomics And Microbiomes",
+    "Biomolecular Chemistry And Structural Characterization Methods"
+   ],
+   "intruder_pos": "A"
+  },
+  {
+   "item": "I37",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    20
+   ],
+   "ancestor_name": "Molecular Biology and Bioengineering",
+   "siblings": [
+    58,
+    59,
+    66,
+    67
+   ],
+   "intruder": 22,
+   "intruder_parent_name": "Music Lessons and Performing Ensembles",
+   "clusters_in_order": [
+    67,
+    22,
+    66,
+    59,
+    58
+   ],
+   "names_in_order": [
+    "Independent Biology Research and Mentorship",
+    "Auditioned Large Performing Ensembles",
+    "Molecular Biology and Biochemical Techniques",
+    "Bioengineering Biomaterials Immunology and Devices",
+    "Evolutionary Biology, Biodiversity, and Paleobiology"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I38",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    35
+   ],
+   "ancestor_name": "Comparative Literature and Fiction Studies",
+   "siblings": [
+    109,
+    110,
+    118,
+    119
+   ],
+   "intruder": 89,
+   "intruder_parent_name": "Studio Art Practice",
+   "clusters_in_order": [
+    119,
+    110,
+    109,
+    89,
+    118
+   ],
+   "names_in_order": [
+    "Novel Form From Romance To Modernism",
+    "Fiction and Cross-Genre Prose Workshops",
+    "Aesthetics, Imagination, and Literary Philosophy",
+    "Modern Art Institutions and Marginality",
+    "Black Feminist And Diasporic Fiction"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I39",
+   "child_layer": 0,
+   "unit": "parent",
+   "ancestor": [
+    1,
+    70
+   ],
+   "ancestor_name": "Leadership and Social-Impact Organizations",
+   "siblings": [
+    192,
+    207,
+    213,
+    226
+   ],
+   "intruder": 258,
+   "intruder_parent_name": "(root)",
+   "clusters_in_order": [
+    207,
+    192,
+    226,
+    213,
+    258
+   ],
+   "names_in_order": [
+    "Social Entrepreneurship And Strategic Philanthropy",
+    "Community-Engaged Research And Public Service",
+    "Applied Leadership Practice And Self-Development",
+    "Community Organizing And Leadership Facilitation",
+    "Fashion Cultures and Apocalyptic Futures"
+   ],
+   "intruder_pos": "E"
+  },
+  {
+   "item": "I40",
+   "child_layer": 1,
+   "unit": "parent",
+   "ancestor": [
+    2,
+    30
+   ],
+   "ancestor_name": "Financial Economics and Corporate Finance",
+   "siblings": [
+    78,
+    81,
+    84,
+    85
+   ],
+   "intruder": 65,
+   "intruder_parent_name": "Public Health Equity and Policy",
+   "clusters_in_order": [
+    84,
+    81,
+    85,
+    65,
+    78
+   ],
+   "names_in_order": [
+    "Applied Valuation And Investment Analysis",
+    "Tax Design and Government Budgets",
+    "PhD Macroeconomics And Financial Economics",
+    "Global Health Equity and Social Justice",
+    "Game Theory And Market Design"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I41",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    2,
+    21
+   ],
+   "ancestor_name": "Genetic Counseling, Epidemiology, and Bioethics",
+   "siblings": [
+    143,
+    166,
+    167,
+    171
+   ],
+   "intruder": 276,
+   "intruder_parent_name": "PWR Seminars on Media Rhetoric",
+   "clusters_in_order": [
+    143,
+    166,
+    167,
+    276,
+    171
+   ],
+   "names_in_order": [
+    "Clinical Medical Genetics And Genetic Counseling",
+    "Emerging Viral Diseases And Biosecurity",
+    "History of Epidemics and Society",
+    "PWR Rhetorics Of Witness And Identity",
+    "Epidemiologic Study Design and Methods"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I42",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    2,
+    10
+   ],
+   "ancestor_name": "Education Policy and Teacher Preparation",
+   "siblings": [
+    76,
+    83,
+    84,
+    120
+   ],
+   "intruder": 215,
+   "intruder_parent_name": "Foundations Of AI And Language Models",
+   "clusters_in_order": [
+    84,
+    76,
+    83,
+    215,
+    120
+   ],
+   "names_in_order": [
+    "Academic Career And Graduate Success",
+    "Social Science Research Methods",
+    "Higher Education Diversity Admissions Debates",
+    "Artificial Intelligence And Deep Learning",
+    "Education Policy And Comparative Research"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I43",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    2,
+    23
+   ],
+   "ancestor_name": "Public Health Equity and Policy",
+   "siblings": [
+    176,
+    198,
+    216,
+    217
+   ],
+   "intruder": 57,
+   "intruder_parent_name": "Physical Education Fitness and Sports",
+   "clusters_in_order": [
+    216,
+    57,
+    176,
+    217,
+    198
+   ],
+   "names_in_order": [
+    "Global Health In Resource-Poor Settings",
+    "Physical Education Swimming and Horsemanship",
+    "Health Policy And Economics",
+    "Structural Racism And Health Disparities",
+    "Medical Humanities and Healing Arts"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I44",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    2,
+    8
+   ],
+   "ancestor_name": "Philosophy: Metaphysics, Epistemology, Ethics",
+   "siblings": [
+    72,
+    77,
+    110,
+    129
+   ],
+   "intruder": 103,
+   "intruder_parent_name": "Applied Analysis, Linear Algebra, Computation",
+   "clusters_in_order": [
+    103,
+    77,
+    72,
+    129,
+    110
+   ],
+   "names_in_order": [
+    "Mathematics Department Independent Study Requirements",
+    "Analytic Philosophy And Language",
+    "Mathematical Logic and Philosophy",
+    "Social Epistemology and Embodied Phenomenology",
+    "Ancient and Comparative Philosophy"
+   ],
+   "intruder_pos": "A"
+  },
+  {
+   "item": "I45",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    2,
+    11
+   ],
+   "ancestor_name": "Pure and Applied Mathematics Courses",
+   "siblings": [
+    96,
+    100,
+    103,
+    104
+   ],
+   "intruder": 102,
+   "intruder_parent_name": "Moral Theory, Responsibility, Metaethical Foundations",
+   "clusters_in_order": [
+    103,
+    100,
+    102,
+    104,
+    96
+   ],
+   "names_in_order": [
+    "Mathematics Department Independent Study Requirements",
+    "ACE Supplemental Engineering Calculus Sections",
+    "Normative Ethical Theory and Metaethics",
+    "Proof-Based Analysis And PDE Theory",
+    "Numerical Methods and Scientific Computing"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I46",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    3,
+    2
+   ],
+   "ancestor_name": "Music and Performing Arts",
+   "siblings": [
+    47,
+    48,
+    49,
+    65
+   ],
+   "intruder": 103,
+   "intruder_parent_name": "Applied Analysis, Linear Algebra, Computation",
+   "clusters_in_order": [
+    48,
+    49,
+    103,
+    65,
+    47
+   ],
+   "names_in_order": [
+    "Shakespeare And Early Modern Drama",
+    "Western Music History And Analysis",
+    "Mathematics Department Independent Study Requirements",
+    "Studio Acting And Devised Performance",
+    "Audition-Based Instrument Class And Lesson Signups"
+   ],
+   "intruder_pos": "C"
+  },
+  {
+   "item": "I47",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    2,
+    5
+   ],
+   "ancestor_name": "Theater and Dance Performance Studies",
+   "siblings": [
+    35,
+    48,
+    62,
+    65
+   ],
+   "intruder": 166,
+   "intruder_parent_name": "Epidemiology and Clinical Research Methods",
+   "clusters_in_order": [
+    166,
+    65,
+    35,
+    62,
+    48
+   ],
+   "names_in_order": [
+    "Emerging Viral Diseases And Biosecurity",
+    "Studio Acting And Devised Performance",
+    "Dance Technique And Choreography Courses",
+    "Dramatic Literature And Theatrical Genres",
+    "Shakespeare And Early Modern Drama"
+   ],
+   "intruder_pos": "A"
+  },
+  {
+   "item": "I48",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    3,
+    3
+   ],
+   "ancestor_name": "Computer Science and AI",
+   "siblings": [
+    150,
+    173,
+    214,
+    223
+   ],
+   "intruder": 157,
+   "intruder_parent_name": "Elasticity Plasticity And Structural Dynamics",
+   "clusters_in_order": [
+    223,
+    150,
+    214,
+    157,
+    173
+   ],
+   "names_in_order": [
+    "Practical Software Tools And Design",
+    "Community-Partnered Data Science Capstone Teams",
+    "Cognitive Science and AI",
+    "Structural Engineering Analysis and Seismic Design",
+    "Internet Speech Governance And Content Moderation"
+   ],
+   "intruder_pos": "D"
+  },
+  {
+   "item": "I49",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    2,
+    34
+   ],
+   "ancestor_name": "Studio Art Practice",
+   "siblings": [
+    259,
+    266,
+    271,
+    272
+   ],
+   "intruder": 201,
+   "intruder_parent_name": "Surgical Clerkships and Clinical Anatomy",
+   "clusters_in_order": [
+    272,
+    201,
+    271,
+    266,
+    259
+   ],
+   "names_in_order": [
+    "Global Modernism And Marginalized Artists",
+    "Clinical And Surgical Human Anatomy",
+    "Public Art And Visual Literacy",
+    "Introductory Drawing Painting Sculpture Studios",
+    "Experimental Animation And Moving-Image Arts"
+   ],
+   "intruder_pos": "B"
+  },
+  {
+   "item": "I50",
+   "child_layer": 0,
+   "unit": "grandparent",
+   "ancestor": [
+    2,
+    25
+   ],
+   "ancestor_name": "AI Ethics, Design, and Governance",
+   "siblings": [
+    173,
+    189,
+    210,
+    214
+   ],
+   "intruder": 104,
+   "intruder_parent_name": "Applied Analysis, Linear Algebra, Computation",
+   "clusters_in_order": [
+    173,
+    214,
+    189,
+    104,
+    210
+   ],
+   "names_in_order": [
+    "Internet Speech Governance And Content Moderation",
+    "Cognitive Science and AI",
+    "Learning Sciences And Technology Design",
+    "Proof-Based Analysis And PDE Theory",
+    "Natural Language Processing"
+   ],
+   "intruder_pos": "D"
+  }
+ ]
+}

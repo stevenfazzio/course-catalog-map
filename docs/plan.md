@@ -41,11 +41,54 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
   stands. Seeds: AMI 0.92 / 0.94 / 0.91 / 0.86 by layer, finest first; subsamples 0.89 / 0.91 / 0.88 /
   0.82; control 0.99+. Median region co-assignment 0.68 at the finest layer, 71 of 357 regions above
   0.9 and 10 below 0.2; the coarsest layer splits its large regions (median 0.60).
-- [ ] **2. Wayfinding lineup** (Wickham et al.), sampled, reusing the step-1 seed runs as the null
-  layouts.
-- [ ] **3. Name intrusion task** [4.1.3]: fifty items, four names from one region layer plus one
+- [x] ~~**2. Wayfinding lineup** (Wickham et al.), sampled, reusing the step-1 seed runs as the null
+  layouts.~~
+  *Landed 2026-09-06:* `experiments/wayfinding_lineup.py`, the instrument from Steven's Toponymy label-quality
+  study (TutteInstitute/toponymy discussion 177): a listener model sees a region's name and five candidate
+  regions, the region and its four nearest same-layer neighbours by centroid cosine in the embedding space, each
+  shown as five held-out member courses (title and description excerpt, no codes); the name's score is the
+  probability mass the listener puts on the true region. *Deviation:* the step-1 seed layouts are not used. The
+  task shows course text, not positions, so a null layout has no role in it, and a graphical lineup of the
+  published layout among seed layouts would test the inverse of the usual hypothesis (a distinguishable panel
+  would mean instability), which step 1's co-assignment already measures. Choices: listener Claude Sonnet 5
+  (the namer was Opus 5, so no same-model listener; same family, disclosed), effort medium, structured output,
+  eight concurrent calls with a resume cache; 136 items (forty regions at layers 0 and 1, every region at 2
+  and 3); gold three times with candidate order reshuffled (position bias marginalised, repeat band measured),
+  a shuffled-name floor (a random non-candidate same-layer name) and a distant-distractor ceiling; held-out
+  documents replay Toponymy's central exemplar selection (eight per region) and exclude those courses, which
+  eleven true regions were too small to allow in full (they scored lower, 0.51 against 0.58, so no inflation).
+  Result: probability mass 0.58 [0.55, 0.60] against chance 0.20; per layer 0.53 / 0.59 / 0.58 / 0.64 finest
+  to coarsest; top-1 0.93; no item below chance; shuffled 0.18, distant 0.93; repeat band p90 0.12; mean
+  score by position flat. Lowest names: "Warfare Society And Asia-Pacific Historical Transformation" (0.20),
+  "Faculty-Supervised Doctoral Dissertation Research" (0.23), "European Languages and Linguistics" (0.25).
+  One item dropped: the listener's safety classifier refused every call on "Emerging Viral Diseases And
+  Biosecurity" (category bio), recorded in the JSON. 680 calls in two runs, about $5.50. The numbers sit where
+  the same instrument put gold labels on 20 Newsgroups and arXiv (0.55 to 0.57 gold, 0.12 to 0.18 shuffled,
+  0.81 to 0.94 distant).
+- [x] ~~**3. Name intrusion task** [4.1.3]: fifty items, four names from one region layer plus one
   intruder, layers mixed and order shuffled. Steven is the single rater and has seen the map; both
-  facts are disclosed in the record next to the result.
+  facts are disclosed in the record next to the result.~~
+  *Landed 2026-09-06:* Steven rated all fifty: 45 correct (0.90, Wilson 95% [0.79, 0.96], exact binomial p
+  against chance 0.20 of 2.5e-26); by child layer 35/37, 7/10, 3/3 finest first; parent-unit items 36/40,
+  grandparent-unit 9/10. The listener (Sonnet 5) scored 48/50 on the same items and made the same pick as
+  Steven on 45; both missed I15 and I18, the listener alone got three more, Steven alone none. Three of
+  Steven's five misses had an intruder whose own parent sits next to the item's ancestor in content (criminal
+  justice among global-history names, oceanography among climate-policy names, Spanish among Asian-language
+  names): the intruder rule is "different coarsest ancestor", a tree criterion, and does not guarantee
+  semantic distance, so those items read as hard rather than as bad names. Record: `name_intrusion.json`,
+  with the answers, key, items and rater page beside it. *Instrument, built earlier the same day:* `experiments/name_intrusion.py`. The
+  plan left the coherence unit of the four names open; the parent region is the direct analogue of Chang et
+  al.'s topic, so an item is four children of one region at one layer plus one same-layer region under a
+  different coarsest ancestor. Parents with four or more same-layer children give 40 items (several parents'
+  children are split across layers); the other ten are four descendants of one grandparent drawn through at
+  least two of its children, chosen at random. By child layer 37 / 10 / 3; the 14 coarsest regions have no
+  sibling structure above them and are tested by the lineup instead. Item order and intruder position are
+  shuffled (seed 0). To rate: serve `data/stanford/` on port 8765, open `name_intrusion_rater.html`, answer all
+  fifty, copy the answers into `data/stanford/name_intrusion_answers.csv`, run `--score`, then stage 07; do not
+  open `name_intrusion_key.json` first. The listener (Sonnet 5) has already answered the same items, 48 of 50,
+  missing "Shipboard Oceanography and Estuarine Biogeochemistry" among climate-policy names and "AI Regulation
+  Privacy Law Practicums" among law-and-politics names; `--score` adds human-listener agreement to the record,
+  which is the grounding for using the listener in step 2 [Krumdick 2025].
 - [ ] **4. Validation checks**, each a short script in `experiments/`, results into the record:
   kNN department and school agreement by course-number level [4.3.1]; department pairs sharing
   cross-listed courses versus centroid distance, controlling for school [4.3.4, 4.2.2 displacement];
@@ -90,3 +133,5 @@ The map, an auditable record, and one public write-up, promoted. Not a research 
 - Zenodo DOI rather than a release asset alone, gated on the terms of use.
 - Region confidence: compute first, then choose among blog figure, hover text, and colormap on the
   rebuilt map. All three are cheap once the step-1 parquet exists.
+- (2026-09-06) "Wayfinding lineup" means the discussion-177 instrument, an identification task on course text;
+  the step-1 seed layouts are not its nulls and stay available for step 6's display options.
