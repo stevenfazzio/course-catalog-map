@@ -37,7 +37,8 @@ Each university is an adapter in `pipeline/sources/` producing the common schema
 
 ## Archive
 
-The record behind the map is archived on Zenodo: https://doi.org/10.5281/zenodo.22550382. The deposit holds the cleaned
+The record behind the map is being archived on Zenodo under the reserved DOI 10.5281/zenodo.22550382
+(https://doi.org/10.5281/zenodo.22550382 resolves once the deposit is published). The deposit holds the cleaned
 corpus and the catalog it was cut from, every candidate model's embeddings, the layout, regions and names,
 the versioned record directory, and the code at the archived commit. The raw ExploreCourses XML is not
 redistributed (Stanford's site terms restrict downloads to personal, non-commercial use); the deposit
