@@ -165,6 +165,16 @@ def build_point_data(courses: pd.DataFrame) -> pd.DataFrame:
     )
 
 
+# Plausible analytics: the one site that covers all of stevenfazzio.com. The script
+# ignores localhost and file:// pages, so local previews stay out of the stats.
+PLAUSIBLE_SNIPPET = """<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-dvmKWiL1gpqH63wOvMp-g.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>"""
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--source", default=config.DEFAULT_SOURCE)
@@ -231,6 +241,9 @@ def main() -> None:
         inline_data=True,
     )
     plot.save(str(files["map_html"]))
+    text = files["map_html"].read_text(encoding="utf-8")
+    assert "</head>" in text, "no </head> in the rendered page"
+    files["map_html"].write_text(text.replace("</head>", PLAUSIBLE_SNIPPET + "\n</head>", 1), encoding="utf-8")
     size_mb = os.stat(files["map_html"]).st_size / 1e6
     print(f"wrote {files['map_html']} ({size_mb:.1f} MB)")
 
